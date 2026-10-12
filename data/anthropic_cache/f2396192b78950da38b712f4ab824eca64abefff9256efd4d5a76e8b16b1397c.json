@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "label": "top_up_reverted",
+    "confidence": 0.55
+  },
+  "model": "claude-haiku-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2135,
+    "output_tokens": 166,
+    "output_tokens_details": {
+      "thinking_tokens": 143
+    },
+    "server_tool_use": null,
+    "service_tier": "batch"
+  },
+  "usd": 0.00014825,
+  "latency_seconds": null,
+  "transport": "batch",
+  "batch_id": "msgbatch_014WEfETrzotyLgq17CgKwf4",
+  "request_sha256": "f2396192b78950da38b712f4ab824eca64abefff9256efd4d5a76e8b16b1397c"
+}

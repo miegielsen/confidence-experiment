@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "label": "terminate_account",
+    "confidence": 0.97
+  },
+  "model": "claude-sonnet-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2114,
+    "output_tokens": 20,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "batch"
+  },
+  "usd": 0.002214,
+  "latency_seconds": null,
+  "transport": "batch",
+  "batch_id": "msgbatch_01WnQxKpyTDxCSRmGdYXeQmn",
+  "request_sha256": "bed4aa117f3885ce267626b18b9c85052c245d2a16273093d30af1f53d9c8c45"
+}

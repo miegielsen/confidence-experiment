@@ -1,0 +1,39 @@
+{
+  "id": "msg_011CfsBQFegYWkFH9u2spgCY",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQS6wgKEAgSGAI4AUIIdGhpbmtpbmcSDKD3AKGjUzURe5jYzhoMhY+92vK5dEhlosVQIjCCmSzqoL8IQd1tNtc4KLisi7YBPFpSFIUJovHCm6WwKdUVLaWO71Kpsm9p638/axwqiAjmiK5UjiJ5IzVTEWBukfl3qCjPyZYNm7G1R+J0C2BAXE0kwHayJIj+RR2SMlCgoBCejtuD1TlQITovHH3CfiGbPQN4288ucA4ikxzK+jeasvATTJKPLQmLMJ30T64H3jTk5SZSLn+6x769onb9b/4FbxniBnXHO7JsRGYHvm8dnMT6h+CtVjD+V4SLfv1GSeEg9m6wUUTU8/zB6JxCubRUAHLaa4x0Ls4CTrseTLK6Ry7Mf5GN59X4HH7V61zFDI5xJJgD365N9VzTAHGuhkStGGXHEbXw0mGmtzJPt84midRqftCtIefCAVISfNkZlg3YSmgpqBsdrQJw35/ql2SxYcBoMYHMTX+Nicw9uzxo2DxbcftAdT/9rjFq+pIbKin/b8sRp/iBpmRcJCUQ81SQ4MYlj8PZL2rOmNcpCKsvP9IR7qEjWEbEF5X8yqGFPY9V30GOIYiYGiuG53x53Z4m/bb2h3bJN8x5TxU4Wa9jggPYwNLAYgXS+BzfNE/rZjjWkdIxxihxWZWefor+nHqZkqLv5kxYwzdwW562QC9oHuMdXTY0T8aMkeVFS0rGtFqW2ozakqvWnzCTySISMs0oV52ld8KE2z/ev4eszCnu2FRB6xIZ+b6SQZwjThqDMFaDv77VcHIREMiXxCdJvH/K14lHKN55rVbbaHxV3sOtESy/m0nsgsJbXUsKQLk+si59SIyZ9pEBL4R4UIqNgnnNVtoKDcZI5CoEIbPsP3TzV4yHgqtUz91K9WjEwV7Kh4XhDy72Tx5kUaQUWdL3gPwwvSB96uQ5Vfz1z40TYAe4WsBFzkZpJTRMtoeubLaXLztqMgtZltsc5kiJjlfqG4/QfYUCrj+EzPyuqoXGl0Rog4Nl4rrQDSJYofkdXb6euAz0YUujncb7yWts/tHuz7oIDN0jlW1P0I8dsNHzcSHLfJ2FjDPLqAE24WWMN7lRHJmDpmXklUNUA1FzFyePFaiW/gWnsuSWJNxDVx82z3Sg8AHryb9qrkSbaITrXLdS+qUeGtfogVFIKUzzCeGKOPgOixKkU3ZgjYr++lKvbzbdVk2W4LmJnHOvkZb8Ul8Fk9vEA91PVQpyToEcllIKwbNW5mdUl0WKZL/z2JNHXUNZ0vZMgf860JGecbs9JcvLwsq40XZa99mWPy5bXSP4mQzrAZKeTG9nE/WgvsOu/lU60RjpK+onl8XaZXXeY44KDo8chOstu6WunwvDWliy6BY3QbhiW56bW3SM5dmSczyZeu8RcczSeP2+MRRBLL+8W+wTS0WlN6LVXHuu060tu2T9bROWg+fh6q1yv0iu183nEGC3GkJecz7HqDfVnojyHNkU55UJZo/CmwaHFtnntRm4jC+E2S8vgbsYAQ==",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"confidence\": 0.72}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-haiku-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1106,
+    "output_tokens": 191,
+    "output_tokens_details": {
+      "thinking_tokens": 178
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  }
+}

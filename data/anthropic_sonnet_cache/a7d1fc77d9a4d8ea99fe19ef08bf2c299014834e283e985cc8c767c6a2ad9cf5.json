@@ -1,0 +1,27 @@
+{
+  "parsed": {
+    "confidence": 0.62
+  },
+  "model": "claude-sonnet-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1133,
+    "output_tokens": 12,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "batch"
+  },
+  "usd": 0.001193,
+  "latency_seconds": null,
+  "transport": "batch",
+  "batch_id": "msgbatch_01TuYcXS1C9N2Tyk5Van2LEk",
+  "request_sha256": "a7d1fc77d9a4d8ea99fe19ef08bf2c299014834e283e985cc8c767c6a2ad9cf5"
+}

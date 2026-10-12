@@ -1,0 +1,39 @@
+{
+  "id": "msg_011CfsPjEuxpVi8gXf7T4x1m",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQS+AcKEAgSGAI4AUIIdGhpbmtpbmcSDBNxMPlmuAaEtgJ2AxoMyRzrmnTN6BlIwm/TIjD/RThF1Gm+bZckIbA1jUJWuOSDowUpLIow//LBzNgU+XJKAWjlxlGzMCd3ZAa+kUIqlQc1FXaiZei/oUhkfSrlMCP41i2iObvltmqAxHkiS8t5vl0eCctbqn2Z4nbg6M1gW5f1UKd84lBcQt8RsyCQEZkiWyrZuBdCJfzQ2F2om8LOSb8X9zraPxDswnWre+m06K4ty1f4BYcvapA29uUAKbw+7pCWmkoPZcNJ86pakg+NLKcFydqWGo9v2bTioFC8I6qTosDvcwau8z2tXBpmTwjL2CuXIlLQ2ZXVP5/wXhDjZO60390YDNmlOFyFOogB/A5nKI4EFdjY4R50WrP+1vzg6diG9Iz/HdStf0yd7v9+tcZhha5LbRacWOex5DrgXPCU6aLU3bWDY431r4Hq3s6pN1PygYkS4OXS7hNihs8bLmRHi4kcwhFwK6aRug5ltMr/TUTO7G8ujrAglPSvWYf0RGmHK0YoKtNlERMi33LT6Q68by4LnfMlxDTrN9mjKesO6LMwI/8bLkgZmdmvg7ljCahQha5puXg2EPv+1Suwt6hMSonKME6H6yAd6spKMZ1tVHqsGSOpVizf0kkzHX4XbjP6zoVpvFcuvvYnlQGbHC7tCt2jxO5VQlG3cT8vhqXuL1xRitQYHmKgc2Qao5r78Udfb1Pz0hRhpNkgw4hnfDGqZYlluUKoDdy4ydOxixJuQpSq30zXQrxys0OnTh5IVxuYfSevxpOjWQmUifzGKHIHAWGtw16zf4c0paNIcGPaHxoMGi5lXtcMuZbgE/rhPBDED0fSfY8qceCIgv8f7ZjnOOZGi8+Ak8grS1Vph6e1aHzBZCx4GEnk2ul0QgyLKzWujiz3dkfjPS8AjquhSxJ8xxfFPl2pOJ6ah0ds5gPVe4z7egbGPyGnKJMISJt17Q8wRlzDOr3dvk1sCR/pzv+17+lx/0uTTSMutbEWe51iB07eX+9FbY1ENxwOyB4R9IfRM8bxGPcFGE5hHveBhXC8DJ7ANLZPYytEwunLHMhmwL4FjM0t+YTkKJ0tVk6G8xdNSKoZ7eg/JMJQ8QTslEBSUEeanoQeJmLH4z2f/Chh+7ibeXiiCgfm3+XMVvXGPxWjeNsga4LdycJnIW9ALFZfy5XE+LFcHJ8XEKQo/iGm+NjDwY0c3ipwuA5bmfWkWE8qmx14gkMpP2/+46AkvaobSK+pCfWll1Mj8mzcvsUK38p+THztFhfRybIdZ5IrD8zCUl7/cZ3P5AH6R/RZ+YDNC9+CL8NwiNld/R7sJeARDLxrPhgB",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"confidence\": 0.62}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-opus-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1111,
+    "output_tokens": 173,
+    "output_tokens_details": {
+      "thinking_tokens": 160
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  }
+}

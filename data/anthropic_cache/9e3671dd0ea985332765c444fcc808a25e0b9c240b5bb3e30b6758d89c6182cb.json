@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "label": "card_payment_fee_charged",
+    "confidence": 0.85
+  },
+  "model": "claude-haiku-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2094,
+    "output_tokens": 28,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "batch"
+  },
+  "usd": 0.0001117,
+  "latency_seconds": null,
+  "transport": "batch",
+  "batch_id": "msgbatch_014WEfETrzotyLgq17CgKwf4",
+  "request_sha256": "9e3671dd0ea985332765c444fcc808a25e0b9c240b5bb3e30b6758d89c6182cb"
+}

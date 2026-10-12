@@ -1,0 +1,26 @@
+{
+  "parsed": {
+    "label": "fiat_currency_support",
+    "confidence": 0.93
+  },
+  "model": "claude-haiku-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2115,
+    "output_tokens": 24,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "latency_seconds": 3.7613995000720024,
+  "usd": 0.0002235,
+  "request_sha256": "97fb8c48a880ef8ec7440ec3fc9bd3ac85e6f176023911f5d83573b59cf50a7a"
+}

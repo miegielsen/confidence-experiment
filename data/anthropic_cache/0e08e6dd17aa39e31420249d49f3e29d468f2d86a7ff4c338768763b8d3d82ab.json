@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "label": "contactless_not_working",
+    "confidence": 0.6
+  },
+  "model": "claude-haiku-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2107,
+    "output_tokens": 22,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "batch"
+  },
+  "usd": 0.00011085000000000001,
+  "latency_seconds": null,
+  "transport": "batch",
+  "batch_id": "msgbatch_01W3QTT4EGhTcyZESJn6qCaF",
+  "request_sha256": "0e08e6dd17aa39e31420249d49f3e29d468f2d86a7ff4c338768763b8d3d82ab"
+}

@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "label": "lost_or_stolen_phone",
+    "confidence": 0.97
+  },
+  "model": "claude-sonnet-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2111,
+    "output_tokens": 26,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "batch"
+  },
+  "usd": 0.002241,
+  "latency_seconds": null,
+  "transport": "batch",
+  "batch_id": "msgbatch_011hWDhu3Qz11tubYkWqW4uH",
+  "request_sha256": "d5232132637d08a0c2b94ae93e0dc9aa6f6283c1b3b65aeda7b80957be64fe7b"
+}

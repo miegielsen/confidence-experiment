@@ -1,0 +1,26 @@
+{
+  "parsed": {
+    "label": "card_delivery_estimate",
+    "confidence": 0.35
+  },
+  "model": "claude-haiku-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2108,
+    "output_tokens": 25,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "latency_seconds": 1.7299592001363635,
+  "usd": 0.0002233,
+  "request_sha256": "8930bcd58702d6cd6ee569d721e23a8d3e0dd76ac4414279ee9971ab2d50d7f2"
+}

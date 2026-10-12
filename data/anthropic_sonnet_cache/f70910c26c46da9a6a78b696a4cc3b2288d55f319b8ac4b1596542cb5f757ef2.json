@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "label": "wrong_exchange_rate_for_cash_withdrawal",
+    "confidence": 0.96
+  },
+  "model": "claude-sonnet-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2116,
+    "output_tokens": 36,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "batch"
+  },
+  "usd": 0.002296,
+  "latency_seconds": null,
+  "transport": "batch",
+  "batch_id": "msgbatch_01KGjpvS4AYJZ6ZjdETGfjX8",
+  "request_sha256": "f70910c26c46da9a6a78b696a4cc3b2288d55f319b8ac4b1596542cb5f757ef2"
+}

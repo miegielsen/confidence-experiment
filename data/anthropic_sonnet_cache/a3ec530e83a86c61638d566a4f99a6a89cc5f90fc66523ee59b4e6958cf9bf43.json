@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "label": "verify_source_of_funds",
+    "confidence": 0.98
+  },
+  "model": "claude-sonnet-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2076,
+    "output_tokens": 24,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "batch"
+  },
+  "usd": 0.002196,
+  "latency_seconds": null,
+  "transport": "batch",
+  "batch_id": "msgbatch_01CLRVCr97AQ2qFDS9PR9GTE",
+  "request_sha256": "a3ec530e83a86c61638d566a4f99a6a89cc5f90fc66523ee59b4e6958cf9bf43"
+}

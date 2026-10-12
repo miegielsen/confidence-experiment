@@ -1,0 +1,49 @@
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.env
+*.pyc
+
+# Local environments, caches and editor state
+venv/
+.cache/
+.mypy_cache/
+.ruff_cache/
+.vscode/
+.git-empty-move-remainder/
+*.tmp
+.lock
+*.pid
+
+# Credentials: keep the key setup/loader scripts, never the actual key files.
+.env.*
+!.env.example
+secrets/
+credentials/
+*.clixml
+*.key
+*.pem
+*.pfx
+*.p12
+credentials.json
+client_secret*.json
+service-account*.json
+service_account*.json
+
+# Trained models, calibrators, and encoder/checkpoint weights.
+# Dataset arrays (.npy) and bootstrap samples (.npz) are research data and stay.
+*.joblib
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.bin
+*.h5
+*.hdf5
+*.ckpt
+checkpoints/
+
+# Data, API response caches, run outputs, reports and figures are included.

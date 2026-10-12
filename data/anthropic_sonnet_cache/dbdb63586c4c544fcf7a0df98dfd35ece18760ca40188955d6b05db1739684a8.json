@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "label": "activate_my_card",
+    "confidence": 0.5
+  },
+  "model": "claude-sonnet-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2110,
+    "output_tokens": 21,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "batch"
+  },
+  "usd": 0.002215,
+  "latency_seconds": null,
+  "transport": "batch",
+  "batch_id": "msgbatch_01CLRVCr97AQ2qFDS9PR9GTE",
+  "request_sha256": "dbdb63586c4c544fcf7a0df98dfd35ece18760ca40188955d6b05db1739684a8"
+}

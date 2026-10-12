@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "label": "declined_card_payment",
+    "confidence": 0.45
+  },
+  "model": "claude-haiku-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2078,
+    "output_tokens": 141,
+    "output_tokens_details": {
+      "thinking_tokens": 118
+    },
+    "server_tool_use": null,
+    "service_tier": "batch"
+  },
+  "usd": 0.00013915,
+  "latency_seconds": null,
+  "transport": "batch",
+  "batch_id": "msgbatch_01Tjpzw3CjJdbDkabBzdqqoq",
+  "request_sha256": "2cd7dd79057536c0cb84c078e54e46c0e0add89c14bbe1c9d9bf8dd9de434673"
+}

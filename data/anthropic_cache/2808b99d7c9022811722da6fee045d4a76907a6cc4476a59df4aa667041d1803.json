@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "confidence": 0.97
+  },
+  "model": "claude-haiku-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2082,
+    "output_tokens": 37,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "batch"
+  },
+  "usd": 0.00011335,
+  "latency_seconds": null,
+  "transport": "batch",
+  "batch_id": "msgbatch_01ACWUN5YhcJxCQTiBBZ3wT1",
+  "request_sha256": "2808b99d7c9022811722da6fee045d4a76907a6cc4476a59df4aa667041d1803"
+}

@@ -1,0 +1,21 @@
+seed = 42
+data_dir = "data/banking77"
+run_dir = "runs/openai-decisions-v2"
+methods = ["openai_decisions"]
+max_error = 0.01
+threshold_rule = "wilson"
+
+[decisions]
+enabled = true
+model = "gpt-6-luna"
+cache_dir = "data/openai_decisions_cache"
+# Original charges and OpenAI remain here; Anthropic now has its own ledger.
+# Budget enforcement is disabled at the user's request; costs are still recorded.
+ledger_path = "data/anthropic_cache/spending.json"
+budget_usd = 25.0
+enforce_budget = false
+refusal_policy = "abstain"
+max_new_calls = 5000
+input_usd_per_million = 0.10
+# Standard global endpoint, short text only; no regional/long-context premium.
+timeout_seconds = 120

@@ -1,0 +1,31 @@
+# Same data, prompts, schemas and scoring as the Haiku/Sonnet protocols.
+# Opus requires adaptive thinking; 2048 tokens allow reasoning plus JSON.
+seed = 42
+data_dir = "data/banking77"
+run_dir = "runs/anthropic-opus-5-5"
+methods = ["tfidf", "llm"]
+max_error = 0.01
+threshold_rule = "wilson"
+
+[supervised]
+C = 10.0
+max_iter = 1000
+
+[llm]
+transport = "batch"
+enabled = true
+model = "claude-opus-5-5"
+verifier_model = "claude-opus-5-5"
+cache_dir = "data/anthropic_opus_cache"
+ledger_path = "data/anthropic_opus_cache/spending.json"
+enforce_budget = false
+budget_usd = 100000.0
+max_new_calls = 22000
+max_output_tokens = 2048
+thinking = "adaptive"
+batch_size = 2000
+poll_seconds = 30
+# Standard rates checked on 2026-10-09; batch adapter halves them.
+input_usd_per_million = 4.0
+cached_input_usd_per_million = 0.20
+output_usd_per_million = 20.0

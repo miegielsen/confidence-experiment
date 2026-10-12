@@ -1,0 +1,10 @@
+{
+  "state": "stopped_for_batch_migration",
+  "started_utc": "2026-10-09T19:01:13.960973+00:00",
+  "config": "configs/anthropic.toml",
+  "pid": 9596,
+  "log": "runs\\anthropic\\background.log",
+  "budget_usd": 25.0,
+  "child_pid": 8372,
+  "updated_utc": "2026-10-09T19:01:14.001763+00:00"
+}

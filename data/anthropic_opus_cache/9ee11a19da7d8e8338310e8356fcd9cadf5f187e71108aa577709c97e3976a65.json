@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "label": "reverted_card_payment?",
+    "confidence": 0.5
+  },
+  "model": "claude-opus-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2078,
+    "output_tokens": 255,
+    "output_tokens_details": {
+      "thinking_tokens": 230
+    },
+    "server_tool_use": null,
+    "service_tier": "batch"
+  },
+  "usd": 0.006706,
+  "latency_seconds": null,
+  "transport": "batch",
+  "batch_id": "msgbatch_017Ypy3kEvwRPDa25B7tUhDE",
+  "request_sha256": "9ee11a19da7d8e8338310e8356fcd9cadf5f187e71108aa577709c97e3976a65"
+}

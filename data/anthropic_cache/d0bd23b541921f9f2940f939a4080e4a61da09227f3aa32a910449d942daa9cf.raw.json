@@ -1,0 +1,39 @@
+{
+  "id": "msg_011CfsBY1d3gCTGw5vPBALDE",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQSgAcKEAgSGAI4AUIIdGhpbmtpbmcSDDr8YGezXQbNbuWOcxoM/7fD8n7/wEnrT39OIjA4TBc1xY1alOFX9o31v6c6OJsyYy5tREYjpmUwa6w6dp4aNnFYWeF9dbIgNtul7/cqnQbT+0M0VDySom7/Pz8wEL6JNr/HjDGorVP3rl3MAlKmgz+4JtvUNYQEVkwVI2LTMvhhKhwIeOlyRjnA7HtSmMsvHNWJLYW6sNEDY5IAyrnIG6+Jn82nqaQTKK0Dx8KEQ/LUEPNgeAFL8DJLKAgxiuNyuZ0H/ikUnEF4VIZyXB3UR0V3Q1yO4z4/f3+Vkr6zXX1xuIYC46TisY/AXx6rinnyierqDPtHXSPs01cRgi2saSCYw9S9TGI4YZJMAQFjfzDweC9FY0Eoi6CBn+t5Wot9mmYprE+PjBQksndqPt63VDNjlLF5IAAOTkbSfS4fXGknZ6z2dFteArbL4+DsNq650WZ4cD59hJ7PaIQ+V9QsKC+fevzr3Hr4jhzml4sgfJM1JqqgUvpUKITsu/6eQB/H8xKZn7dzD2TCpZXBetaDjyy/AFGrPPCGLOjNLUiX/64NeqOwGqL7zIhmkVLFK+0P8ZqTuOjsTvBVNzwiqMmpqi6eh9cFW4J1Al08E4JWOsb3U5yQgVH7QuiTIiEuBU/MGqB2nYJEhBHKZOKari9pbW4QknRtimlB8bSOjVMotLuOB84o/6uK6t9hVGryK6st0JQx8iSV8lzByJ2yJ8Rjct0c4J1QCIBLVrtnFfNUm3p5aB/uMATJb68VuK+vMgD90MFQaVvruFGsvPA0A2w393TRZ75ZXOnzDXmuHeiJQzgSFRL/SwTeKKCMXvKZTDKH5WqtXQH5j8wEr+jazywP9pa/ZEsINdnmqzV+ij4c+Z7Lr0DggE7BZxdTzQjztAVJSoGxs5mLHsXFVjXFm0R0KQjjS9/V5qpmbitl8pNewrH27tpsNO3i07W1xy4lKDgK7QGvuaDcpoCyxoLpxucYWjqxnOKfF9XR3jmphJbHgcJnvczWcC/pPPolYEuqIJy7rVn9Bg6tlEQkygeIb9KCyqY/v37xidzhn4zNoPMtFUKjQ8GLsur9fUkw8MIa0hKn7VD0ER4p1Wrby56lWL2KlMlxXz5J0hdl+zz8/NvWxtsxDZIQsIwNLfEZsxh24wDl8/hpIKsV27FX6zjjMhgB",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"label\": \"card_delivery_estimate\", \"confidence\": 0.6}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-haiku-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2094,
+    "output_tokens": 139,
+    "output_tokens_details": {
+      "thinking_tokens": 112
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  }
+}

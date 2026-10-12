@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "label": "card_payment_wrong_exchange_rate",
+    "confidence": 0.4
+  },
+  "model": "claude-sonnet-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2099,
+    "output_tokens": 30,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "batch"
+  },
+  "usd": 0.002249,
+  "latency_seconds": null,
+  "transport": "batch",
+  "batch_id": "msgbatch_011hWDhu3Qz11tubYkWqW4uH",
+  "request_sha256": "d9cd471bbba4d19afc90d8cbb51fbc30b8eb33760582e150158624d9c1ea8c0e"
+}

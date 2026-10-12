@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "label": "balance_not_updated_after_bank_transfer",
+    "confidence": 0.3
+  },
+  "model": "claude-opus-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2106,
+    "output_tokens": 229,
+    "output_tokens_details": {
+      "thinking_tokens": 197
+    },
+    "server_tool_use": null,
+    "service_tier": "batch"
+  },
+  "usd": 0.006502,
+  "latency_seconds": null,
+  "transport": "batch",
+  "batch_id": "msgbatch_012ENYrNq9j9SakparNNiEj5",
+  "request_sha256": "5706f78d4295a0f84e083f67d105811cf677f7dc75c1c6f9b3734b69ba9c7fc2"
+}

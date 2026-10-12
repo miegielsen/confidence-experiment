@@ -1,0 +1,168 @@
+{
+  "created_utc": "2026-10-09T19:39:20.571743+00:00",
+  "config": {
+    "seed": 42,
+    "data_dir": "data/banking77",
+    "run_dir": "runs/pilot",
+    "methods": [
+      "tfidf"
+    ],
+    "max_error": 0.01,
+    "threshold_rule": "wilson",
+    "supervised": {
+      "C": 10.0,
+      "max_iter": 1000
+    },
+    "llm": {
+      "enabled": false,
+      "model": "",
+      "verifier_model": "",
+      "max_new_calls": 0,
+      "max_output_tokens": 256,
+      "input_usd_per_million": 0.0,
+      "cached_input_usd_per_million": 0.0,
+      "output_usd_per_million": 0.0
+    }
+  },
+  "dataset": {
+    "dataset": "BANKING77",
+    "revision": "57ec275d8078af65b7731c2a98be812d844a6d6b",
+    "seed": 42,
+    "labels": [
+      "Refund_not_showing_up",
+      "activate_my_card",
+      "age_limit",
+      "apple_pay_or_google_pay",
+      "atm_support",
+      "automatic_top_up",
+      "balance_not_updated_after_bank_transfer",
+      "balance_not_updated_after_cheque_or_cash_deposit",
+      "beneficiary_not_allowed",
+      "cancel_transfer",
+      "card_about_to_expire",
+      "card_acceptance",
+      "card_arrival",
+      "card_delivery_estimate",
+      "card_linking",
+      "card_not_working",
+      "card_payment_fee_charged",
+      "card_payment_not_recognised",
+      "card_payment_wrong_exchange_rate",
+      "card_swallowed",
+      "cash_withdrawal_charge",
+      "cash_withdrawal_not_recognised",
+      "change_pin",
+      "compromised_card",
+      "contactless_not_working",
+      "country_support",
+      "declined_card_payment",
+      "declined_cash_withdrawal",
+      "declined_transfer",
+      "direct_debit_payment_not_recognised",
+      "disposable_card_limits",
+      "edit_personal_details",
+      "exchange_charge",
+      "exchange_rate",
+      "exchange_via_app",
+      "extra_charge_on_statement",
+      "failed_transfer",
+      "fiat_currency_support",
+      "get_disposable_virtual_card",
+      "get_physical_card",
+      "getting_spare_card",
+      "getting_virtual_card",
+      "lost_or_stolen_card",
+      "lost_or_stolen_phone",
+      "order_physical_card",
+      "passcode_forgotten",
+      "pending_card_payment",
+      "pending_cash_withdrawal",
+      "pending_top_up",
+      "pending_transfer",
+      "pin_blocked",
+      "receiving_money",
+      "request_refund",
+      "reverted_card_payment?",
+      "supported_cards_and_currencies",
+      "terminate_account",
+      "top_up_by_bank_transfer_charge",
+      "top_up_by_card_charge",
+      "top_up_by_cash_or_cheque",
+      "top_up_failed",
+      "top_up_limits",
+      "top_up_reverted",
+      "topping_up_by_card",
+      "transaction_charged_twice",
+      "transfer_fee_charged",
+      "transfer_into_account",
+      "transfer_not_received_by_recipient",
+      "transfer_timing",
+      "unable_to_verify_identity",
+      "verify_my_identity",
+      "verify_source_of_funds",
+      "verify_top_up",
+      "virtual_card_not_working",
+      "visa_or_mastercard",
+      "why_verify_identity",
+      "wrong_amount_of_cash_received",
+      "wrong_exchange_rate_for_cash_withdrawal"
+    ],
+    "official_sha256": {
+      "train": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+      "test": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+    },
+    "split_sha256": {
+      "fit": "424df2b9ba8e82e2681594a93a953ccb96e44a99b4cea1fc0a5e7101c4d2a51d",
+      "correctness": "f224fc20771788679a6ab32b742d48b06e1c8ee197e29a73e5c3b4c012094a5b",
+      "calibration": "b6d78cb7fa97b26356db523a7f677cfc647b169eeb412bf1607ac56d7aaccaf7",
+      "development": "e5b055283ad883a785e529acace68fb8dd28c41454a828b00c6405eaac85ed6f",
+      "test": "00cdfb38f968b167e2cb4d371eb78e1ffe4d53227b516b7d286272b7878ba76f"
+    },
+    "sizes": {
+      "fit": 5992,
+      "correctness": 2000,
+      "calibration": 1000,
+      "development": 1000,
+      "test": 3080
+    },
+    "audit": {
+      "conflicting_train_texts": 0,
+      "train_test_overlap_texts": 7,
+      "duplicate_train_rows_removed": 4,
+      "total_train_rows_excluded": 11,
+      "duplicate_test_texts": 1
+    },
+    "policy": "Remove conflicting training texts, remove train/test text overlaps from training, deduplicate training. Preserve official test rows and labels."
+  },
+  "identity": "e7f19709dea69a6b471b5d31b26a8879c32e37613c26516b00d90a5fa05e1df1",
+  "evaluation_role": "development",
+  "python": "3.12.7",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "anthropic": "1.13.0",
+    "torch": "2.14.1",
+    "transformers": "4.57.6",
+    "sentence-transformers": "5.7.0"
+  },
+  "runtime_seconds": 0.8242311999201775,
+  "model_details": {
+    "tfidf": {
+      "total_seconds": 25.601979600265622,
+      "inference_seconds": {
+        "fit": 0.2032361002638936,
+        "correctness": 0.07063489966094494,
+        "calibration": 0.040094099938869476,
+        "development": 0.03324100002646446
+      }
+    }
+  },
+  "api_ledger": null,
+  "limitations": [
+    "LLM prompts use intent names as category definitions and no labeled examples (zero-shot).",
+    "Prompt-order stability features, LEDGAR and CLINC150 are deferred extensions.",
+    "Development acceptance metrics reuse threshold-selection data; only frozen final evaluation estimates held-out performance."
+  ]
+}

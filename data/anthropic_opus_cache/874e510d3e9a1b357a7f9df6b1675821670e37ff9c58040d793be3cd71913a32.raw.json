@@ -1,0 +1,39 @@
+{
+  "id": "msg_011CfsPimRUbyQSsAB9r4AXY",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQS2AcKEAgSGAI4AUIIdGhpbmtpbmcSDP6HDALxEm2N1Lws7BoMi0+spUrelBOj3KesIjAia8ORe/FckAYvGwoGexl66g7bKrmdOypWVpz6SvsBQJLXFMTDB9cKQOmFWJevRmgq9QY9T6cWUrFLLMSNTiFrlMEnFCi4a2oTCSakxYzXA3Q1HJA3P/KsnEmMnC01XM0nZ9NF/tSWb5HQ8ySiiheuE21Txx+CqOywyqkqL0QvUAOe9by6nFNwGyIMX2sOXY88dgfMitQivkSgQuSjFKXunBmyv3FhGnqMI1zOY9loFhc21A3GOXdhSrE7v5qZQ1F2Vmb0X3bi1OX5czaKK+mvpzp+/96SYDZNm44SzLHnlL/M5E8aHv6ffcWACDw0Iqo2o/Rz1hbt8ZknVHjqYmzEcf3YdbRNGGgS8C1eoIxlal36KUjXdgL77Pt+Zo1geRKFg0bFH84us5MHOCpvjPAnlWTrhduu5RpSP9iDKGojHAGqvRbnFvNiu5Kyo7SanoqdXuNr0qyn0ufxaNRvUJxD1FedjJI6rZc31nJqwYVbFP+zQxUAgdasYcAM8Hd4lSTzDl8/Kqisi5W2FxvJq2KBIDIM24eCXAEhh3mXZvCsR4uuSM11T2Bz6yyVisIka53iCNjNhirphG5asTScaZjb96bmln51pZHiZiGqVgKbdv5mmg1w9E2Hvck0THw7gIObIGi+JLOFzi3kIOvonkNev3OPxKqgpvtyFAVqBqjI9SXkcgO+Btjv97MxB4c4e/ASQkM/T3RTesZyy3mVZoaryd3XM1X7htV/3sUI4C+j8Gq3YINtqoQI+auU5e3cn2fwNCNuJ5o2EIieGmoVhRR9AwAIvfo05RB7K98lspPDCQP85ba/fkwUYzvXkAG71vEHAJpWgymtVWwj8/nrIpGDBdoCJq6M5Fi3JZAYhYumcXj1C/87zwPZFasv+NROCpZRePLKTDYc1UpYDJzfs8Raff7ZeO7mhlop7bYx87LOLDATp0jEr0OXmo5Wac+XzKyBPVIMHMJPtYXqaRksl0qotHQ1RziuRGCJJboKsjxf7bjaZ5ESFieLRbQmeIHgS1VflibxTW3eOknJh9qkBRVMK8QsSlwTh6rxFuas3MNwFEnaZfnCqqIO9TCrcVIQiy7VnFazjmrFLPO81D5z+vI6ETxC/voQD0ZME3sDFi0naEHIjwExSpw8+sMuyBZL1+2TldcC9WqtOtlprs8OOv+6hmkyuV/WKq6sVyl61vWr/NfBTGYQXEZFNDPWZ7kJgFLz1YvGM+q1pAQmJN11R1iaTd/QKoYt6PsYAQ==",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"confidence\": 0.88}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-opus-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1119,
+    "output_tokens": 163,
+    "output_tokens_details": {
+      "thinking_tokens": 150
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  }
+}

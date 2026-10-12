@@ -1,0 +1,27 @@
+{
+  "parsed": {
+    "confidence": 0.55
+  },
+  "model": "claude-opus-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1117,
+    "output_tokens": 228,
+    "output_tokens_details": {
+      "thinking_tokens": 215
+    },
+    "server_tool_use": null,
+    "service_tier": "batch"
+  },
+  "usd": 0.004514,
+  "latency_seconds": null,
+  "transport": "batch",
+  "batch_id": "msgbatch_01GosDfNDKMESgnEtToC3bj6",
+  "request_sha256": "813cec8426fea3189dd74e3772632d47afad20c93e04d46bddd03a32188c7329"
+}

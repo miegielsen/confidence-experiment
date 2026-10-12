@@ -1,0 +1,17 @@
+
+Started 2026-10-09T19:10:02.387984+00:00
+Submitted msgbatch_01B6pReUfbUZZt2ynLrpTQkA: 2000 requests; reserved $0.974
+Submitted msgbatch_014eM8rRnz7pp4s2U4LvMYhT: 2000 requests; reserved $0.974
+Submitted msgbatch_014WEfETrzotyLgq17CgKwf4: 2000 requests; reserved $0.974
+Submitted msgbatch_01Tjpzw3CjJdbDkabBzdqqoq: 1904 requests; reserved $0.927
+Imported msgbatch_01B6pReUfbUZZt2ynLrpTQkA: 1941 valid results, $0.243
+Traceback (most recent call last):
+  File "H:\Mijn Drive\Projects\confidence-experiment\scripts\run_anthropic_batch.py", line 252, in <module>
+    execute(tomllib.loads(Path(args.config).read_text(encoding="utf-8")), args.final)
+  File "H:\Mijn Drive\Projects\confidence-experiment\scripts\run_anthropic_batch.py", line 228, in execute
+    batcher.wave(first, "classification_and_blind")
+  File "H:\Mijn Drive\Projects\confidence-experiment\scripts\run_anthropic_batch.py", line 184, in wave
+    self.import_results(job)
+  File "H:\Mijn Drive\Projects\confidence-experiment\scripts\run_anthropic_batch.py", line 154, in import_results
+    raise RuntimeError(f"Batch {batch_id} has {len(errors)} failed results. Successful responses are cached; inspect its job file before retrying.")
+RuntimeError: Batch msgbatch_01B6pReUfbUZZt2ynLrpTQkA has 59 failed results. Successful responses are cached; inspect its job file before retrying.

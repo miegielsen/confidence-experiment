@@ -1,0 +1,26 @@
+seed = 42
+data_dir = "data/banking77"
+run_dir = "runs/anthropic-batch"
+methods = ["tfidf", "llm"]
+max_error = 0.01
+threshold_rule = "wilson"
+
+[supervised]
+C = 10.0
+max_iter = 1000
+
+[llm]
+transport = "batch"
+enabled = true
+model = "claude-haiku-5-5"
+verifier_model = "claude-haiku-5-5"
+cache_dir = "data/anthropic_cache"
+budget_usd = 25.0
+max_new_calls = 22000
+max_output_tokens = 256
+batch_size = 2000
+poll_seconds = 30
+# Standard rates; the batch adapter applies the 50% discount itself.
+input_usd_per_million = 0.10
+cached_input_usd_per_million = 0.01
+output_usd_per_million = 0.50

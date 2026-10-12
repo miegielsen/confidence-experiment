@@ -1,0 +1,39 @@
+{
+  "id": "msg_011CfsBFHfy6xhoAhNR41r2X",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQS0QYKEAgSGAI4AUIIdGhpbmtpbmcSDJP7Ehf0EbFmqHwkrxoMrwQ8jtqaXsrdN0vQIjBsUr/JI+TtG0dgRB/zpcGpbakcey/avw+t335Ax3ER0QKgvSXt/9kMaQOrMjdFsHsq7gW13INrx0K6oubpbdVUC4A5AUEY3HQWu5qf0xRWpyZ8wxDyyfFwXYrbb778TTmqvYq+xhYlXW7h9FUrTxjQTmYRx/KvcjB9WqR8TVJCQkK/1OXilV76lYXPu9iacQh6BJeZfYbTWFSlwPbCbDcBo97AGVbwww7tehv7S3/uHc86/r91zEqEseJkmeGt4a4u0uY1kABXZ/ZYbY/+Gt6q5dy8xn0hn2MODZJ+pkD9vtVAjQaMB+sDhqKoZJnCTsO7KNFQB7ECPjOnWd6U9iktO7M6BDZKy6NDZ/fmIPTcv+CaZWqkcK4MRfnn1CUJ2K5RL5gkvjQE4kFqkjP/5dqtK6n3Y9NjUp2hpSwY0bBVbBqQzS7J9Fs/c9k4lnJTvC3wG3gXiXuQNJjsL72pKZWepuK9r6TtYnOaqG9jVoPzKXWj0DPqrNpRO48kJv64TJjOL/S03rS3N46Q7SodPuC6Q1lhRtil4kxlSaV5EVLIekQVh7oJGmO8/w5SGTVG6TQM2GG1Kq9vlT0mO/E+Hv/Ya9PfqGWxs6EQCQozw9+E431R2QgHKMVcV4Qqg6ScmJUEXIrvUTDh0RVrJokOgPA0wKXauN9Mc5pcoFVMaIcPzONYzQrNgAjKtmJWOSq4iKhdRXYrETGV2y1O6YrKlGBJI5+Fv7y+amDoRGdULe5xdjaqFx2NxrCQXKI4gVpNn1woerz84YhGA3f+jePKoBAH1tSj4xxF2lnFvq0Lxy1kh2X/6k6Sfh368A3nWINoyy5kXsfmzfeaCMXVXLvKCBvFyEhtA9BPmsCFBgYNWYJcWRNLHtOnOxrmahdwLNwf+JiKKZ//rPXvVhFucGDoMxVPxlmqSmrvel1/WyqDbwt5Dgyu/jRnVoKOOX4OxjIdQZcW596DEjkATw9J1EqrkFLyFwPL0GTjfP8h7Y0f5wOHaIU0KlzWQVHBhM8FKvSQHU/3frUIP5HnlOuqrZRFr1CkBY8D9PQ9HkvKS/5C45s25zAYAQ==",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"label\":\"card_delivery_estimate\",\"confidence\":0.35}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-haiku-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2071,
+    "output_tokens": 123,
+    "output_tokens_details": {
+      "thinking_tokens": 98
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  }
+}

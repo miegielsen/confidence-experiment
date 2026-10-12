@@ -1,0 +1,53 @@
+{
+  "phase": "classification_and_blind",
+  "batches": [
+    {
+      "id": "msgbatch_01B6pReUfbUZZt2ynLrpTQkA",
+      "state": "in_progress",
+      "counts": {
+        "canceled": 0,
+        "errored": 0,
+        "expired": 0,
+        "processing": 2000,
+        "succeeded": 0
+      }
+    },
+    {
+      "id": "msgbatch_014eM8rRnz7pp4s2U4LvMYhT",
+      "state": "in_progress",
+      "counts": {
+        "canceled": 0,
+        "errored": 0,
+        "expired": 0,
+        "processing": 2000,
+        "succeeded": 0
+      }
+    },
+    {
+      "id": "msgbatch_014WEfETrzotyLgq17CgKwf4",
+      "state": "in_progress",
+      "counts": {
+        "canceled": 0,
+        "errored": 0,
+        "expired": 0,
+        "processing": 2000,
+        "succeeded": 0
+      }
+    },
+    {
+      "id": "msgbatch_01Tjpzw3CjJdbDkabBzdqqoq",
+      "state": "in_progress",
+      "counts": {
+        "canceled": 0,
+        "errored": 0,
+        "expired": 0,
+        "processing": 1904,
+        "succeeded": 0
+      }
+    }
+  ],
+  "pending_batches": 4,
+  "spent_usd": 0.0280695,
+  "reserved_usd": 3.8487399,
+  "updated_utc": "2026-10-09T19:19:55.936229+00:00"
+}

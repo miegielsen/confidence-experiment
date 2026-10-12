@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "label": "top_up_by_bank_transfer_charge",
+    "confidence": 0.5
+  },
+  "model": "claude-opus-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2079,
+    "output_tokens": 305,
+    "output_tokens_details": {
+      "thinking_tokens": 274
+    },
+    "server_tool_use": null,
+    "service_tier": "batch"
+  },
+  "usd": 0.007208,
+  "latency_seconds": null,
+  "transport": "batch",
+  "batch_id": "msgbatch_012ENYrNq9j9SakparNNiEj5",
+  "request_sha256": "d2a503ea35088af3b5ce5a849b0148433ab925fb056ba5a242e241069c082c56"
+}

@@ -1,0 +1,1038 @@
+{
+  "role": "development",
+  "n": 1000,
+  "bins": 10,
+  "binning": "equal width; score 1 in final bin",
+  "intervals": "Nominal pointwise 95% Wilson; no multiple-bin adjustment",
+  "reliability": {
+    "embeddings:embedding_lr_raw": [
+      {
+        "bin": 1,
+        "n": 1,
+        "confidence": 0.1971897,
+        "accuracy": 0.0,
+        "ci95": [
+          0.0,
+          0.7934506856227626
+        ]
+      },
+      {
+        "bin": 2,
+        "n": 7,
+        "confidence": 0.2626890928571428,
+        "accuracy": 0.2857142857142857,
+        "ci95": [
+          0.08221892400405678,
+          0.6410655481673808
+        ]
+      },
+      {
+        "bin": 3,
+        "n": 11,
+        "confidence": 0.36982367454545456,
+        "accuracy": 0.6363636363636364,
+        "ci95": [
+          0.35380117450784887,
+          0.8483352890463243
+        ]
+      },
+      {
+        "bin": 4,
+        "n": 28,
+        "confidence": 0.44863829535714295,
+        "accuracy": 0.8214285714285714,
+        "ci95": [
+          0.6440857521065705,
+          0.9212149805439572
+        ]
+      },
+      {
+        "bin": 5,
+        "n": 26,
+        "confidence": 0.5532003330769231,
+        "accuracy": 0.7692307692307693,
+        "ci95": [
+          0.5794844592105632,
+          0.8896615059421671
+        ]
+      },
+      {
+        "bin": 6,
+        "n": 32,
+        "confidence": 0.6610982224999999,
+        "accuracy": 0.875,
+        "ci95": [
+          0.7193169451834978,
+          0.9502986561251991
+        ]
+      },
+      {
+        "bin": 7,
+        "n": 45,
+        "confidence": 0.7584823035555556,
+        "accuracy": 0.9333333333333333,
+        "ci95": [
+          0.8214339803640811,
+          0.977067967400749
+        ]
+      },
+      {
+        "bin": 8,
+        "n": 140,
+        "confidence": 0.8588939527857142,
+        "accuracy": 0.9928571428571429,
+        "ci95": [
+          0.9606516069372742,
+          0.9987379955557328
+        ]
+      },
+      {
+        "bin": 9,
+        "n": 710,
+        "confidence": 0.9638768212112676,
+        "accuracy": 1.0,
+        "ci95": [
+          0.9946186106547518,
+          0.9999999999999999
+        ]
+      }
+    ],
+    "embeddings:embedding_lr_temperature": [
+      {
+        "bin": 3,
+        "n": 6,
+        "confidence": 0.3526458966666666,
+        "accuracy": 0.16666666666666666,
+        "ci95": [
+          0.030053369748306635,
+          0.5635028221864702
+        ]
+      },
+      {
+        "bin": 4,
+        "n": 8,
+        "confidence": 0.46136884375000003,
+        "accuracy": 0.625,
+        "ci95": [
+          0.30574239460262737,
+          0.8631557141764026
+        ]
+      },
+      {
+        "bin": 5,
+        "n": 11,
+        "confidence": 0.5663102763636364,
+        "accuracy": 0.7272727272727273,
+        "ci95": [
+          0.43435469882387084,
+          0.902539407099751
+        ]
+      },
+      {
+        "bin": 6,
+        "n": 20,
+        "confidence": 0.6518789965,
+        "accuracy": 0.7,
+        "ci95": [
+          0.4810271816464765,
+          0.8545227551323956
+        ]
+      },
+      {
+        "bin": 7,
+        "n": 15,
+        "confidence": 0.7602361726666664,
+        "accuracy": 0.8666666666666667,
+        "ci95": [
+          0.6211801716767764,
+          0.9626387408969346
+        ]
+      },
+      {
+        "bin": 8,
+        "n": 41,
+        "confidence": 0.8580674978048781,
+        "accuracy": 0.8536585365853658,
+        "ci95": [
+          0.7155654195751904,
+          0.9311575185870407
+        ]
+      },
+      {
+        "bin": 9,
+        "n": 899,
+        "confidence": 0.9932853481535038,
+        "accuracy": 0.9955506117908788,
+        "ci95": [
+          0.9886158320256949,
+          0.9982684002999213
+        ]
+      }
+    ],
+    "anthropic-batch-v2:llm_same_raw": [
+      {
+        "bin": 0,
+        "n": 1,
+        "confidence": 0.0,
+        "accuracy": 0.0,
+        "ci95": [
+          0.0,
+          0.7934506856227626
+        ]
+      },
+      {
+        "bin": 1,
+        "n": 2,
+        "confidence": 0.125,
+        "accuracy": 0.0,
+        "ci95": [
+          0.0,
+          0.6576197724933469
+        ]
+      },
+      {
+        "bin": 3,
+        "n": 36,
+        "confidence": 0.34444444444444444,
+        "accuracy": 0.3333333333333333,
+        "ci95": [
+          0.2021461882430531,
+          0.4966600212884348
+        ]
+      },
+      {
+        "bin": 4,
+        "n": 17,
+        "confidence": 0.45,
+        "accuracy": 0.29411764705882354,
+        "ci95": [
+          0.1327998961029523,
+          0.5313311006653985
+        ]
+      },
+      {
+        "bin": 5,
+        "n": 23,
+        "confidence": 0.5282608695652176,
+        "accuracy": 0.43478260869565216,
+        "ci95": [
+          0.25634635325674215,
+          0.6318862491498354
+        ]
+      },
+      {
+        "bin": 6,
+        "n": 177,
+        "confidence": 0.6012429378531072,
+        "accuracy": 0.4858757062146893,
+        "ci95": [
+          0.41333078977642923,
+          0.5590206829853697
+        ]
+      },
+      {
+        "bin": 7,
+        "n": 15,
+        "confidence": 0.7093333333333333,
+        "accuracy": 0.7333333333333333,
+        "ci95": [
+          0.4804956594401943,
+          0.8910254667430761
+        ]
+      },
+      {
+        "bin": 8,
+        "n": 226,
+        "confidence": 0.8324778761061946,
+        "accuracy": 0.7389380530973452,
+        "ci95": [
+          0.6780224269972001,
+          0.7918666894143603
+        ]
+      },
+      {
+        "bin": 9,
+        "n": 503,
+        "confidence": 0.9349304174950299,
+        "accuracy": 0.9264413518886679,
+        "ci95": [
+          0.9002538096247866,
+          0.9461647154070573
+        ]
+      }
+    ],
+    "anthropic-batch-v2:llm_correctness_raw": [
+      {
+        "bin": 0,
+        "n": 86,
+        "confidence": 0.053723124557916745,
+        "accuracy": 0.011627906976744186,
+        "ci95": [
+          0.0020555686652495644,
+          0.06296406589291725
+        ]
+      },
+      {
+        "bin": 1,
+        "n": 64,
+        "confidence": 0.1478249290849018,
+        "accuracy": 0.0625,
+        "ci95": [
+          0.024571201396618017,
+          0.14997485092208662
+        ]
+      },
+      {
+        "bin": 2,
+        "n": 45,
+        "confidence": 0.24894172745019394,
+        "accuracy": 0.2222222222222222,
+        "ci95": [
+          0.12544685532626396,
+          0.36269292174756296
+        ]
+      },
+      {
+        "bin": 3,
+        "n": 24,
+        "confidence": 0.34480679084219573,
+        "accuracy": 0.4583333333333333,
+        "ci95": [
+          0.2789133373121099,
+          0.6492513464108051
+        ]
+      },
+      {
+        "bin": 4,
+        "n": 25,
+        "confidence": 0.44694705162839143,
+        "accuracy": 0.48,
+        "ci95": [
+          0.30031285954112974,
+          0.6650148304964322
+        ]
+      },
+      {
+        "bin": 5,
+        "n": 34,
+        "confidence": 0.5540758369589335,
+        "accuracy": 0.7352941176470589,
+        "ci95": [
+          0.5688285871705534,
+          0.8539880932278825
+        ]
+      },
+      {
+        "bin": 6,
+        "n": 23,
+        "confidence": 0.6547963049495039,
+        "accuracy": 0.8260869565217391,
+        "ci95": [
+          0.6286235235977385,
+          0.9302134643693744
+        ]
+      },
+      {
+        "bin": 7,
+        "n": 30,
+        "confidence": 0.7666765909796582,
+        "accuracy": 0.8333333333333334,
+        "ci95": [
+          0.6643564949358398,
+          0.9266345762815145
+        ]
+      },
+      {
+        "bin": 8,
+        "n": 77,
+        "confidence": 0.8542446136853705,
+        "accuracy": 0.9090909090909091,
+        "ci95": [
+          0.8240388171888766,
+          0.9552642893982226
+        ]
+      },
+      {
+        "bin": 9,
+        "n": 592,
+        "confidence": 0.9763935880125458,
+        "accuracy": 0.9797297297297297,
+        "ci95": [
+          0.9649064847282084,
+          0.9883672285917765
+        ]
+      }
+    ],
+    "anthropic-sonnet-5-5:llm_same_raw": [
+      {
+        "bin": 0,
+        "n": 3,
+        "confidence": 0.049999999999999996,
+        "accuracy": 0.0,
+        "ci95": [
+          5.551115123125783e-17,
+          0.5614970317550454
+        ]
+      },
+      {
+        "bin": 1,
+        "n": 2,
+        "confidence": 0.125,
+        "accuracy": 0.0,
+        "ci95": [
+          0.0,
+          0.6576197724933469
+        ]
+      },
+      {
+        "bin": 2,
+        "n": 5,
+        "confidence": 0.20400000000000001,
+        "accuracy": 0.0,
+        "ci95": [
+          0.0,
+          0.43448246478317476
+        ]
+      },
+      {
+        "bin": 3,
+        "n": 51,
+        "confidence": 0.30764705882352944,
+        "accuracy": 0.37254901960784315,
+        "ci95": [
+          0.25320519466264424,
+          0.5097478653114912
+        ]
+      },
+      {
+        "bin": 4,
+        "n": 91,
+        "confidence": 0.40450549450549445,
+        "accuracy": 0.5714285714285714,
+        "ci95": [
+          0.46889749285370325,
+          0.6681733637278853
+        ]
+      },
+      {
+        "bin": 5,
+        "n": 163,
+        "confidence": 0.5343558282208588,
+        "accuracy": 0.7423312883435583,
+        "ci95": [
+          0.6701545903907836,
+          0.8033488215213717
+        ]
+      },
+      {
+        "bin": 6,
+        "n": 65,
+        "confidence": 0.6058461538461539,
+        "accuracy": 0.7692307692307693,
+        "ci95": [
+          0.6535529085185335,
+          0.8548616515383899
+        ]
+      },
+      {
+        "bin": 7,
+        "n": 45,
+        "confidence": 0.7199999999999999,
+        "accuracy": 0.7555555555555555,
+        "ci95": [
+          0.6132661994297965,
+          0.8576452056622828
+        ]
+      },
+      {
+        "bin": 8,
+        "n": 175,
+        "confidence": 0.8205142857142855,
+        "accuracy": 0.9485714285714286,
+        "ci95": [
+          0.9051620819910615,
+          0.9727104260687598
+        ]
+      },
+      {
+        "bin": 9,
+        "n": 400,
+        "confidence": 0.938125,
+        "accuracy": 0.97,
+        "ci95": [
+          0.9483014642909042,
+          0.9827569790348569
+        ]
+      }
+    ],
+    "anthropic-sonnet-5-5:llm_correctness_raw": [
+      {
+        "bin": 0,
+        "n": 31,
+        "confidence": 0.07281293436652757,
+        "accuracy": 0.0,
+        "ci95": [
+          0.0,
+          0.11025539546043596
+        ]
+      },
+      {
+        "bin": 1,
+        "n": 45,
+        "confidence": 0.15064681997958407,
+        "accuracy": 0.06666666666666667,
+        "ci95": [
+          0.022932032599250987,
+          0.17856601963591895
+        ]
+      },
+      {
+        "bin": 2,
+        "n": 30,
+        "confidence": 0.2446816889139138,
+        "accuracy": 0.13333333333333333,
+        "ci95": [
+          0.053096554840547455,
+          0.296813266820363
+        ]
+      },
+      {
+        "bin": 3,
+        "n": 30,
+        "confidence": 0.3513246805902757,
+        "accuracy": 0.3333333333333333,
+        "ci95": [
+          0.19230498083676134,
+          0.5121994835545616
+        ]
+      },
+      {
+        "bin": 4,
+        "n": 24,
+        "confidence": 0.4438663666173124,
+        "accuracy": 0.3333333333333333,
+        "ci95": [
+          0.1797219032729775,
+          0.5329368316186824
+        ]
+      },
+      {
+        "bin": 5,
+        "n": 21,
+        "confidence": 0.5439217516286217,
+        "accuracy": 0.6666666666666666,
+        "ci95": [
+          0.4537345197425524,
+          0.8280524739491653
+        ]
+      },
+      {
+        "bin": 6,
+        "n": 24,
+        "confidence": 0.64950056472976,
+        "accuracy": 0.875,
+        "ci95": [
+          0.6899611872949993,
+          0.9565566591987655
+        ]
+      },
+      {
+        "bin": 7,
+        "n": 48,
+        "confidence": 0.7490912202778617,
+        "accuracy": 0.9166666666666666,
+        "ci95": [
+          0.8044669820963272,
+          0.9671162431819081
+        ]
+      },
+      {
+        "bin": 8,
+        "n": 78,
+        "confidence": 0.8579090373921545,
+        "accuracy": 0.8717948717948718,
+        "ci95": [
+          0.7798404960135338,
+          0.9288467736876552
+        ]
+      },
+      {
+        "bin": 9,
+        "n": 669,
+        "confidence": 0.9789729077325844,
+        "accuracy": 0.9835575485799701,
+        "ci95": [
+          0.9707991012847087,
+          0.9907944383494466
+        ]
+      }
+    ],
+    "anthropic-opus-5-5:llm_same_raw": [
+      {
+        "bin": 1,
+        "n": 1,
+        "confidence": 0.12,
+        "accuracy": 0.0,
+        "ci95": [
+          0.0,
+          0.7934506856227626
+        ]
+      },
+      {
+        "bin": 2,
+        "n": 1,
+        "confidence": 0.2,
+        "accuracy": 0.0,
+        "ci95": [
+          0.0,
+          0.7934506856227626
+        ]
+      },
+      {
+        "bin": 3,
+        "n": 27,
+        "confidence": 0.33703703703703697,
+        "accuracy": 0.3333333333333333,
+        "ci95": [
+          0.18643261498715644,
+          0.5217523949267991
+        ]
+      },
+      {
+        "bin": 4,
+        "n": 37,
+        "confidence": 0.4297297297297297,
+        "accuracy": 0.5405405405405406,
+        "ci95": [
+          0.3838404689217949,
+          0.6896143019562697
+        ]
+      },
+      {
+        "bin": 5,
+        "n": 111,
+        "confidence": 0.5369369369369368,
+        "accuracy": 0.6396396396396397,
+        "ci95": [
+          0.5470363596699198,
+          0.7229009984787725
+        ]
+      },
+      {
+        "bin": 6,
+        "n": 125,
+        "confidence": 0.6001599999999996,
+        "accuracy": 0.84,
+        "ci95": [
+          0.7657538554890242,
+          0.8939716767893138
+        ]
+      },
+      {
+        "bin": 7,
+        "n": 60,
+        "confidence": 0.7289999999999999,
+        "accuracy": 0.85,
+        "ci95": [
+          0.7388541093022145,
+          0.9190255941983225
+        ]
+      },
+      {
+        "bin": 8,
+        "n": 279,
+        "confidence": 0.8346594982078852,
+        "accuracy": 0.9498207885304659,
+        "ci95": [
+          0.917545785553726,
+          0.9698771581920144
+        ]
+      },
+      {
+        "bin": 9,
+        "n": 359,
+        "confidence": 0.9386629526462396,
+        "accuracy": 0.9888579387186629,
+        "ci95": [
+          0.9717058731236893,
+          0.9956587746230671
+        ]
+      }
+    ],
+    "anthropic-opus-5-5:llm_correctness_raw": [
+      {
+        "bin": 0,
+        "n": 9,
+        "confidence": 0.07581473341433424,
+        "accuracy": 0.0,
+        "ci95": [
+          0.0,
+          0.2991450484195441
+        ]
+      },
+      {
+        "bin": 1,
+        "n": 28,
+        "confidence": 0.15779282975757622,
+        "accuracy": 0.03571428571428571,
+        "ci95": [
+          0.0063325198490377516,
+          0.1771219774335332
+        ]
+      },
+      {
+        "bin": 2,
+        "n": 22,
+        "confidence": 0.24552621685949647,
+        "accuracy": 0.0,
+        "ci95": [
+          0.0,
+          0.14865487460862087
+        ]
+      },
+      {
+        "bin": 3,
+        "n": 25,
+        "confidence": 0.33950651197129583,
+        "accuracy": 0.48,
+        "ci95": [
+          0.30031285954112974,
+          0.6650148304964322
+        ]
+      },
+      {
+        "bin": 4,
+        "n": 18,
+        "confidence": 0.45083736011739073,
+        "accuracy": 0.3888888888888889,
+        "ci95": [
+          0.2030524657216362,
+          0.613809583977621
+        ]
+      },
+      {
+        "bin": 5,
+        "n": 23,
+        "confidence": 0.5520854717901542,
+        "accuracy": 0.6086956521739131,
+        "ci95": [
+          0.4078552239138171,
+          0.7784237720752205
+        ]
+      },
+      {
+        "bin": 6,
+        "n": 25,
+        "confidence": 0.6454054253966391,
+        "accuracy": 0.8,
+        "ci95": [
+          0.6086904963045967,
+          0.9113941531319742
+        ]
+      },
+      {
+        "bin": 7,
+        "n": 45,
+        "confidence": 0.7574832718254745,
+        "accuracy": 0.8222222222222222,
+        "ci95": [
+          0.6867017537354023,
+          0.9070561048589585
+        ]
+      },
+      {
+        "bin": 8,
+        "n": 85,
+        "confidence": 0.8604053185038331,
+        "accuracy": 0.9294117647058824,
+        "ci95": [
+          0.8544394064253049,
+          0.9672490368873332
+        ]
+      },
+      {
+        "bin": 9,
+        "n": 720,
+        "confidence": 0.9777281422116268,
+        "accuracy": 0.9805555555555555,
+        "ci95": [
+          0.9676278373592043,
+          0.988382614332011
+        ]
+      }
+    ],
+    "openai-decisions-v2:decisions_probability_raw": [
+      {
+        "bin": 0,
+        "n": 2,
+        "confidence": 0.04,
+        "accuracy": 0.0,
+        "ci95": [
+          0.0,
+          0.6576197724933469
+        ]
+      },
+      {
+        "bin": 1,
+        "n": 12,
+        "confidence": 0.15416666666666667,
+        "accuracy": 0.3333333333333333,
+        "ci95": [
+          0.13812009109121315,
+          0.6093779111272004
+        ]
+      },
+      {
+        "bin": 2,
+        "n": 30,
+        "confidence": 0.24933333333333338,
+        "accuracy": 0.26666666666666666,
+        "ci95": [
+          0.14182663319596317,
+          0.4444796169518888
+        ]
+      },
+      {
+        "bin": 3,
+        "n": 40,
+        "confidence": 0.348,
+        "accuracy": 0.3,
+        "ci95": [
+          0.18074845229746528,
+          0.45430018818144935
+        ]
+      },
+      {
+        "bin": 4,
+        "n": 75,
+        "confidence": 0.4477333333333332,
+        "accuracy": 0.36,
+        "ci95": [
+          0.26064928908616347,
+          0.47299338680902214
+        ]
+      },
+      {
+        "bin": 5,
+        "n": 68,
+        "confidence": 0.540735294117647,
+        "accuracy": 0.5,
+        "ci95": [
+          0.38438064984606757,
+          0.6156193501539324
+        ]
+      },
+      {
+        "bin": 6,
+        "n": 61,
+        "confidence": 0.6473770491803279,
+        "accuracy": 0.5081967213114754,
+        "ci95": [
+          0.3860261849109117,
+          0.6293960467628898
+        ]
+      },
+      {
+        "bin": 7,
+        "n": 84,
+        "confidence": 0.7416666666666667,
+        "accuracy": 0.7023809523809523,
+        "ci95": [
+          0.5975091495076318,
+          0.7895518175626247
+        ]
+      },
+      {
+        "bin": 8,
+        "n": 117,
+        "confidence": 0.8503418803418802,
+        "accuracy": 0.7350427350427351,
+        "ci95": [
+          0.6485333176364496,
+          0.8066084899579922
+        ]
+      },
+      {
+        "bin": 9,
+        "n": 511,
+        "confidence": 0.9644031311154598,
+        "accuracy": 0.923679060665362,
+        "ci95": [
+          0.8973662250753723,
+          0.9436693842010021
+        ]
+      }
+    ],
+    "openai-decisions-v2:decisions_probability_temperature": [
+      {
+        "bin": 0,
+        "n": 31,
+        "confidence": 0.07337114641342729,
+        "accuracy": 0.3225806451612903,
+        "ci95": [
+          0.18569426566359176,
+          0.49858990691914357
+        ]
+      },
+      {
+        "bin": 1,
+        "n": 100,
+        "confidence": 0.15598423508372877,
+        "accuracy": 0.35,
+        "ci95": [
+          0.26364248243097527,
+          0.44745556703112027
+        ]
+      },
+      {
+        "bin": 2,
+        "n": 113,
+        "confidence": 0.24963530460519393,
+        "accuracy": 0.46017699115044247,
+        "ci95": [
+          0.3711039869616077,
+          0.5518685598480699
+        ]
+      },
+      {
+        "bin": 3,
+        "n": 104,
+        "confidence": 0.3464217253273147,
+        "accuracy": 0.6057692307692307,
+        "ci95": [
+          0.5096921459626521,
+          0.6943110290739446
+        ]
+      },
+      {
+        "bin": 4,
+        "n": 105,
+        "confidence": 0.4513115750216646,
+        "accuracy": 0.7523809523809524,
+        "ci95": [
+          0.6618966438611229,
+          0.825050155403231
+        ]
+      },
+      {
+        "bin": 5,
+        "n": 99,
+        "confidence": 0.5514940336012576,
+        "accuracy": 0.8080808080808081,
+        "ci95": [
+          0.7195963938569909,
+          0.8735496067880852
+        ]
+      },
+      {
+        "bin": 6,
+        "n": 133,
+        "confidence": 0.6536434112389977,
+        "accuracy": 0.8646616541353384,
+        "ci95": [
+          0.7962021511881133,
+          0.9126473512649472
+        ]
+      },
+      {
+        "bin": 7,
+        "n": 71,
+        "confidence": 0.753324851887705,
+        "accuracy": 0.8873239436619719,
+        "ci95": [
+          0.7930995148918869,
+          0.9417872827020712
+        ]
+      },
+      {
+        "bin": 8,
+        "n": 81,
+        "confidence": 0.8235354855699223,
+        "accuracy": 0.9506172839506173,
+        "ci95": [
+          0.8797976976951905,
+          0.9806306944459662
+        ]
+      },
+      {
+        "bin": 9,
+        "n": 163,
+        "confidence": 0.9345360348922672,
+        "accuracy": 0.9754601226993865,
+        "ci95": [
+          0.9386092032907107,
+          0.9904164783090874
+        ]
+      }
+    ]
+  },
+  "high_confidence": [
+    {
+      "method": "Embedding LR calibrated",
+      "n": 899,
+      "errors": 4,
+      "risk": 0.004449388209121246
+    },
+    {
+      "method": "Haiku original",
+      "n": 503,
+      "errors": 37,
+      "risk": 0.073558648111332
+    },
+    {
+      "method": "Haiku learned",
+      "n": 592,
+      "errors": 12,
+      "risk": 0.02027027027027027
+    },
+    {
+      "method": "OpenAI native probability",
+      "n": 511,
+      "errors": 39,
+      "risk": 0.07632093933463796
+    },
+    {
+      "method": "Sonnet original",
+      "n": 400,
+      "errors": 12,
+      "risk": 0.03
+    },
+    {
+      "method": "Sonnet learned",
+      "n": 669,
+      "errors": 11,
+      "risk": 0.016442451420029897
+    },
+    {
+      "method": "Opus original",
+      "n": 359,
+      "errors": 4,
+      "risk": 0.011142061281337047
+    },
+    {
+      "method": "Opus learned",
+      "n": 720,
+      "errors": 14,
+      "risk": 0.019444444444444445
+    }
+  ],
+  "source_sha256": {
+    "runs\\embeddings\\development\\embedding_lr_raw.predictions.csv": "cabe3d567ebc8750d5c149bea004744ee3f27b2c559d6df5b1de020c1d8970ae",
+    "runs\\embeddings\\development\\embedding_lr_temperature.predictions.csv": "77914ef85f92cf1a8dc64c09069542884fb83548604fd7fc244086bbe3675a4c",
+    "runs\\anthropic-batch-v2\\development\\llm_same_raw.predictions.csv": "121621665e78b881ce45eb7da6b764d25bee4e99877f834b7716a9f78872f0a2",
+    "runs\\anthropic-batch-v2\\development\\llm_correctness_raw.predictions.csv": "458418581a023b985d130f36fea2184f931abcd28263120c77a6b8a20ffb2895",
+    "runs\\anthropic-sonnet-5-5\\development\\llm_same_raw.predictions.csv": "229fbc7f0a65324bae4903e44385795a365ae64ed98242b105d708a17c9470dd",
+    "runs\\anthropic-sonnet-5-5\\development\\llm_correctness_raw.predictions.csv": "778523ce1450f69b21c721220b70ccdd3aec720d664e02c00b9e443c95b40441",
+    "runs\\anthropic-opus-5-5\\development\\llm_same_raw.predictions.csv": "88bcaefdff46dd42df28788ad8431dfeb828fa1ea7b128d04984d7195aca2e80",
+    "runs\\anthropic-opus-5-5\\development\\llm_correctness_raw.predictions.csv": "448845675c117f6cdc4726aaeb94cc94dcb03ae5d9eff8a8c5c92210dde0ee3f",
+    "runs\\openai-decisions-v2\\development\\decisions_probability_raw.predictions.csv": "ddc12dc38327ee1654059001852058c8cf6de18b16bfa5fdc4ffb22703a64d0c",
+    "runs\\openai-decisions-v2\\development\\decisions_probability_temperature.predictions.csv": "7264a5df07124fdc550f7606e16ffbb60462a25fcb23838e76de10617a3eb35d"
+  },
+  "captions": {
+    "probability_reliability": "Reliability comparisons on the same 1,000 development examples. Each row holds the classifier's selected labels fixed. Points show mean reported correctness probability versus observed fraction correct in ten shared equal-width bins; whiskers are nominal 95% Wilson intervals, without multiple-bin adjustment. The diagonal indicates perfect calibration. Count bars below each panel use a logarithmic axis and show every nonempty bin's sample size. Empty bins are omitted; no smoothing or connecting lines are used. OpenAI temperature inputs are log returned probabilities, not native logits. Haiku and Sonnet learned scores include extra inference calls and supervised TF-IDF evidence.",
+    "probability_outcomes": "Scores split by observed outcome on the development set. Each curve is normalized within correct or incorrect cases, so its bin shares sum to 100%; the two outcome curves do not show the overall error prevalence. Legend counts retain that denominator. Strong separation helps triage errors, while reliability must be assessed in the other figure. Cross-classifier comparisons involve different mistakes and error rates; comparisons within Haiku or Sonnet hold the predictions fixed."
+  },
+  "sonnet_included": true,
+  "opus_included": true,
+  "official_test_evaluated": false
+}

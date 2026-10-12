@@ -1,0 +1,121 @@
+{
+  "scope": "staged files, excluding this generated audit report",
+  "staged_file_count": 48721,
+  "staged_bytes": 449613487,
+  "text_files_scanned": 48655,
+  "checks": [
+    "provider_api_key",
+    "huggingface_token",
+    "github_token",
+    "aws_access_key",
+    "private_key",
+    "literal_bearer_token",
+    "literal_json_key",
+    "credential_from_environment",
+    "excluded_file_types",
+    "blob_size"
+  ],
+  "findings": [],
+  "passed": true,
+  "directories": {
+    ".gitignore": {
+      "files": 1,
+      "bytes": 751
+    },
+    "README.md": {
+      "files": 1,
+      "bytes": 24538
+    },
+    "REPOSITORY_CONTENTS.md": {
+      "files": 1,
+      "bytes": 2510
+    },
+    "configs": {
+      "files": 10,
+      "bytes": 6231
+    },
+    "data": {
+      "files": 48076,
+      "bytes": 379986847
+    },
+    "experiment.md": {
+      "files": 1,
+      "bytes": 10949
+    },
+    "pyproject.toml": {
+      "files": 1,
+      "bytes": 803
+    },
+    "reports": {
+      "files": 301,
+      "bytes": 26043746
+    },
+    "requirements-cpu.lock": {
+      "files": 1,
+      "bytes": 714
+    },
+    "requirements-neural.lock": {
+      "files": 1,
+      "bytes": 1159
+    },
+    "runs": {
+      "files": 280,
+      "bytes": 43214966
+    },
+    "scripts": {
+      "files": 29,
+      "bytes": 249889
+    },
+    "src": {
+      "files": 10,
+      "bytes": 43490
+    },
+    "tests": {
+      "files": 8,
+      "bytes": 26894
+    }
+  },
+  "largest_files": [
+    {
+      "path": "runs/embeddings/embeddings/4064fb280fbaaff522e1a78a8752fc4bb50727a3bc6504f637fe9dc5bdcf762a.npy",
+      "bytes": 18407552
+    },
+    {
+      "path": "data/anthropic_sonnet_cache/batches/17d1f4ddeb441468419752e5ff475152d30f2eb7d1aa8ff5786c88d29017c9a8.requests.json",
+      "bytes": 13147943
+    },
+    {
+      "path": "data/anthropic_sonnet_cache/batches/8faa9cc59dd664ace0d1e64777158e3dc37bcf5044d8d443d11a4dd106984f75.requests.json",
+      "bytes": 13138949
+    },
+    {
+      "path": "data/anthropic_sonnet_cache/batches/00590e5cd9e3393724710875ef8989aed4e8ab91f32b147cef998ec59ffd991b.requests.json",
+      "bytes": 13137457
+    },
+    {
+      "path": "data/anthropic_opus_cache/batches/7d2a79ad142553185f4024ada917fe88cb4ab525e3ed003140c4682bb933e2a3.requests.json",
+      "bytes": 13135943
+    },
+    {
+      "path": "data/anthropic_cache/batches/2b2c43a264d5e1c251ccb126a1c367f4c371c7ed7a57fcd4e3c9f546ff5d8bc4.requests.json",
+      "bytes": 13135873
+    },
+    {
+      "path": "data/anthropic_opus_cache/batches/8ea167b4e4dbd737b9ecec4498fdc8f36364fc24b94e8da8547cd5e2235e940c.requests.json",
+      "bytes": 13126949
+    },
+    {
+      "path": "data/anthropic_cache/batches/68d6ab94ab62c4ba2b5a9a9a074dabe4b7cdbec9da8ecc9ed38b5c18a1b317b0.requests.json",
+      "bytes": 13126931
+    },
+    {
+      "path": "data/anthropic_cache/batches/170d41f84e052a0130ce7d6b7a52da1dab7819a8c92e615de875cfe111b8778b.requests.json",
+      "bytes": 13125537
+    },
+    {
+      "path": "data/anthropic_opus_cache/batches/748252c0cf424ce0d8bcf067daea556b5ed976a1df2ef470c6961681a0a8faf3.requests.json",
+      "bytes": 13125457
+    }
+  ],
+  "limitations": "Pattern-based credential checks cannot recognize every possible secret."
+}

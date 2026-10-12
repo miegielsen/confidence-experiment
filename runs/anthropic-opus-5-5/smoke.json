@@ -1,0 +1,44 @@
+{
+  "status": "connectivity and schema smoke check; not a benchmark result",
+  "model": "claude-opus-5-5",
+  "thinking": "adaptive",
+  "examples": 3,
+  "seconds": 18.851060800254345,
+  "ledger": {
+    "usd": 0.07670800000000001,
+    "calls": 9,
+    "reservations": {}
+  },
+  "rows": [
+    {
+      "id": "train:1004",
+      "label": "fiat_currency_support",
+      "confidence": 0.8,
+      "verifier": 0.88,
+      "blind_label": "fiat_currency_support",
+      "blind_confidence": 0.85,
+      "usd": 0.025484,
+      "latency_seconds": 5.426964099518955
+    },
+    {
+      "id": "train:1007",
+      "label": "card_delivery_estimate",
+      "confidence": 0.5,
+      "verifier": 0.62,
+      "blind_label": "card_delivery_estimate",
+      "blind_confidence": 0.55,
+      "usd": 0.025619999999999997,
+      "latency_seconds": 6.487807699479163
+    },
+    {
+      "id": "train:1029",
+      "label": "card_delivery_estimate",
+      "confidence": 0.8,
+      "verifier": 0.75,
+      "blind_label": "card_delivery_estimate",
+      "blind_confidence": 0.8,
+      "usd": 0.025604000000000002,
+      "latency_seconds": 5.782258200459182
+    }
+  ]
+}

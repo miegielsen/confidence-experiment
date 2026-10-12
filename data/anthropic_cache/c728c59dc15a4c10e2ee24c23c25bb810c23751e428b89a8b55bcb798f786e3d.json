@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "label": "lost_or_stolen_card",
+    "confidence": 0.86
+  },
+  "model": "claude-haiku-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2105,
+    "output_tokens": 115,
+    "output_tokens_details": {
+      "thinking_tokens": 87
+    },
+    "server_tool_use": null,
+    "service_tier": "batch"
+  },
+  "usd": 0.000134,
+  "latency_seconds": null,
+  "transport": "batch",
+  "batch_id": "msgbatch_014eM8rRnz7pp4s2U4LvMYhT",
+  "request_sha256": "c728c59dc15a4c10e2ee24c23c25bb810c23751e428b89a8b55bcb798f786e3d"
+}

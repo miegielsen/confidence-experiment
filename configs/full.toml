@@ -1,0 +1,37 @@
+seed = 42
+data_dir = "data/banking77"
+run_dir = "runs/full"
+methods = ["tfidf", "embedding_lr", "embedding_mlp", "modernbert", "llm"]
+max_error = 0.01
+threshold_rule = "wilson"
+
+[supervised]
+C = 10.0
+max_iter = 1000
+
+[embedding]
+model = "google/embeddinggemma-300m"
+revision = "main"
+batch_size = 16
+device = "cpu"
+hidden_units = 128
+mlp_epochs = 100
+
+[encoder]
+model = "answerdotai/ModernBERT-base"
+revision = "main"
+device = "cpu"
+max_length = 256
+batch_size = 8
+epochs = 3
+learning_rate = 0.00002
+
+[llm]
+enabled = false
+model = ""
+verifier_model = ""
+max_new_calls = 0
+max_output_tokens = 256
+input_usd_per_million = 0.0
+cached_input_usd_per_million = 0.0
+output_usd_per_million = 0.0

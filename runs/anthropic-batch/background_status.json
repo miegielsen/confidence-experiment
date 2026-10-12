@@ -1,0 +1,12 @@
+{
+  "state": "failed",
+  "started_utc": "2026-10-09T19:10:02.336756+00:00",
+  "config": "configs/anthropic-batch.toml",
+  "pid": 12528,
+  "log": "runs\\anthropic-batch\\background.log",
+  "budget_usd": 25.0,
+  "child_pid": 6488,
+  "updated_utc": "2026-10-09T19:10:02.395979+00:00",
+  "exit_code": 1,
+  "completed_utc": "2026-10-09T19:21:19.064664+00:00"
+}

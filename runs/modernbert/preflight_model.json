@@ -1,0 +1,7 @@
+{
+  "model": "answerdotai/ModernBERT-base",
+  "revision": "8949b909ec900327062f0ebf497f51aef5e6f0c8",
+  "weight_bytes": 598635032,
+  "layers": 22,
+  "hidden_size": 768
+}

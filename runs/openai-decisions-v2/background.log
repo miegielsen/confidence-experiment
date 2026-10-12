@@ -1,0 +1,49 @@
+
+Started 2026-10-09T19:49:30.957815+00:00
+Decisions calibration: 50/1000; shared spending $1.0425
+Decisions calibration: 100/1000; shared spending $1.0425
+Decisions calibration: 150/1000; shared spending $1.0425
+Decisions calibration: 200/1000; shared spending $1.0425
+Decisions calibration: 250/1000; shared spending $1.0425
+Decisions calibration: 300/1000; shared spending $1.0425
+Decisions calibration: 350/1000; shared spending $1.0425
+Decisions calibration: 400/1000; shared spending $1.0425
+Decisions calibration: 450/1000; shared spending $1.0425
+Decisions calibration: 500/1000; shared spending $1.0425
+Decisions calibration: 550/1000; shared spending $1.0425
+Decisions calibration: 600/1000; shared spending $1.0425
+Decisions calibration: 650/1000; shared spending $1.0425
+Decisions calibration: 700/1000; shared spending $1.0425
+Decisions calibration: 750/1000; shared spending $1.0448
+Decisions calibration: 800/1000; shared spending $1.0482
+Decisions calibration: 850/1000; shared spending $1.0517
+Decisions calibration: 900/1000; shared spending $1.0552
+Decisions calibration: 950/1000; shared spending $1.0586
+Decisions calibration: 1000/1000; shared spending $1.0621
+Decisions development: 50/1000; shared spending $1.0654
+Decisions development: 100/1000; shared spending $1.0689
+Decisions development: 150/1000; shared spending $1.0724
+Decisions development: 200/1000; shared spending $1.0758
+Decisions development: 250/1000; shared spending $1.0793
+Decisions development: 300/1000; shared spending $1.0828
+Decisions development: 350/1000; shared spending $1.0862
+Decisions development: 400/1000; shared spending $1.0897
+Decisions development: 450/1000; shared spending $1.0931
+Decisions development: 500/1000; shared spending $1.0966
+Decisions development: 550/1000; shared spending $1.1001
+Decisions development: 600/1000; shared spending $1.1035
+Decisions development: 650/1000; shared spending $1.1070
+Decisions development: 700/1000; shared spending $1.1104
+Decisions development: 750/1000; shared spending $1.1139
+Decisions development: 800/1000; shared spending $1.1174
+Decisions development: 850/1000; shared spending $1.1208
+Decisions development: 900/1000; shared spending $1.1243
+Decisions development: 950/1000; shared spending $1.1278
+Decisions development: 1000/1000; shared spending $1.1312
+                           method  accuracy  macro_f1    brier  binary_log_loss  error_auroc  error_average_precision     aurc  accepted_coverage accepted_risk
+         decisions_confidence_raw     0.733  0.735191 0.147245         0.470533     0.824266                 0.599370 0.102023                0.0          None
+     decisions_confidence_sigmoid     0.733  0.735191 0.146883         0.455466     0.824266                 0.599370 0.102023                0.0          None
+        decisions_probability_raw     0.733  0.735191 0.147412         0.470736     0.824266                 0.599370 0.102023                0.0          None
+    decisions_probability_sigmoid     0.733  0.735191 0.146835         0.455279     0.824266                 0.599370 0.102023                0.0          None
+decisions_probability_temperature     0.733  0.735191 0.190341         0.564909     0.812251                 0.579949 0.103425                0.0          None
+Report: H:\Mijn Drive\Projects\confidence-experiment\runs\openai-decisions-v2\development\report.html

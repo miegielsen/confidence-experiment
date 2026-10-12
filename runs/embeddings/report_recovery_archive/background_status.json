@@ -1,0 +1,14 @@
+{
+  "state": "failed",
+  "started_utc": "2026-10-09T19:25:32.507412+00:00",
+  "config": "configs/embeddings.toml",
+  "pid": 19644,
+  "log": "runs\\embeddings\\background.log",
+  "budget_usd": null,
+  "cpu_threads": 2,
+  "priority": "below_normal",
+  "child_pid": 15232,
+  "updated_utc": "2026-10-09T19:33:19.234573+00:00",
+  "exit_code": 1,
+  "completed_utc": "2026-10-09T19:33:19.255653+00:00"
+}

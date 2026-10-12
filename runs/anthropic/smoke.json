@@ -1,0 +1,113 @@
+{
+  "status": "connectivity and schema smoke test only; not a benchmark result",
+  "model": "claude-haiku-5-5",
+  "examples": 10,
+  "seconds": 57.527784899808466,
+  "ledger": {
+    "usd": 0.005829500000000001,
+    "calls": 30,
+    "reservations": {}
+  },
+  "rows": [
+    {
+      "id": "train:1004",
+      "label": "fiat_currency_support",
+      "confidence": 0.93,
+      "verifier": 0.95,
+      "blind_label": "fiat_currency_support",
+      "blind_confidence": 0.95,
+      "usd": 0.0005631,
+      "latency_seconds": 7.431842099875212
+    },
+    {
+      "id": "train:1007",
+      "label": "get_physical_card",
+      "confidence": 0.35,
+      "verifier": 0.3,
+      "blind_label": "card_delivery_estimate",
+      "blind_confidence": 0.45,
+      "usd": 0.0006942000000000001,
+      "latency_seconds": 5.593286800198257
+    },
+    {
+      "id": "train:1029",
+      "label": "card_delivery_estimate",
+      "confidence": 0.85,
+      "verifier": 0.9,
+      "blind_label": "card_delivery_estimate",
+      "blind_confidence": 0.9,
+      "usd": 0.0005611,
+      "latency_seconds": 4.47988420072943
+    },
+    {
+      "id": "train:1053",
+      "label": "card_delivery_estimate",
+      "confidence": 0.9,
+      "verifier": 0.93,
+      "blind_label": "card_delivery_estimate",
+      "blind_confidence": 0.93,
+      "usd": 0.0005623000000000001,
+      "latency_seconds": 4.718454599380493
+    },
+    {
+      "id": "train:1058",
+      "label": "card_delivery_estimate",
+      "confidence": 0.8,
+      "verifier": 0.9,
+      "blind_label": "card_delivery_estimate",
+      "blind_confidence": 0.82,
+      "usd": 0.0005928000000000001,
+      "latency_seconds": 5.297654899768531
+    },
+    {
+      "id": "train:1077",
+      "label": "card_delivery_estimate",
+      "confidence": 0.93,
+      "verifier": 0.88,
+      "blind_label": "card_delivery_estimate",
+      "blind_confidence": 0.93,
+      "usd": 0.0005668,
+      "latency_seconds": 4.826878500171006
+    },
+    {
+      "id": "train:1081",
+      "label": "card_delivery_estimate",
+      "confidence": 0.8,
+      "verifier": 0.5,
+      "blind_label": "card_delivery_estimate",
+      "blind_confidence": 0.8,
+      "usd": 0.0005602000000000001,
+      "latency_seconds": 4.145855399779975
+    },
+    {
+      "id": "train:1082",
+      "label": "card_arrival",
+      "confidence": 0.35,
+      "verifier": 0.35,
+      "blind_label": "card_delivery_estimate",
+      "blind_confidence": 0.35,
+      "usd": 0.0006065,
+      "latency_seconds": 4.996513799764216
+    },
+    {
+      "id": "train:1083",
+      "label": "card_delivery_estimate",
+      "confidence": 0.6,
+      "verifier": 0.82,
+      "blind_label": "card_delivery_estimate",
+      "blind_confidence": 0.6,
+      "usd": 0.0005608,
+      "latency_seconds": 4.823240399360657
+    },
+    {
+      "id": "train:1093",
+      "label": "card_delivery_estimate",
+      "confidence": 0.6,
+      "verifier": 0.35,
+      "blind_label": "card_delivery_estimate",
+      "blind_confidence": 0.6,
+      "usd": 0.0005617,
+      "latency_seconds": 4.771003000438213
+    }
+  ]
+}

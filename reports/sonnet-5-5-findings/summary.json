@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-10-09T20:56:32.746941+00:00",
+  "role": "development",
+  "sonnet_accuracy": 0.83,
+  "original_brier": 0.1200682,
+  "learned_brier": 0.053138502078249036,
+  "best_coverage": 0.0,
+  "best_method": "llm_same_raw",
+  "report": "H:\\Mijn Drive\\Projects\\confidence-experiment\\reports\\sonnet-5-5-findings\\report.html"
+}

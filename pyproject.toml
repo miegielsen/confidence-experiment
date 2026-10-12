@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "confidence-experiment"
+version = "0.1.0"
+description = "Reproducible text classification and correctness confidence experiments"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26,<3", "pandas>=2.2,<4", "scipy>=1.13,<2",
+  "scikit-learn>=1.5,<2", "matplotlib>=3.9,<4", "joblib>=1.4,<2",
+]
+
+[project.optional-dependencies]
+llm = ["anthropic>=0.84,<2", "pydantic>=2.9,<3"]
+neural = ["torch>=2.5,<3", "transformers>=4.56,<5", "sentence-transformers>=5,<6", "accelerate>=1,<2", "hf-xet>=1.2,<2"]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+confidence-experiment = "confidence_experiment.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

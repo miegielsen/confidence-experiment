@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "label": "Refund_not_showing_up",
+    "confidence": 0.3
+  },
+  "model": "claude-haiku-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2078,
+    "output_tokens": 241,
+    "output_tokens_details": {
+      "thinking_tokens": 215
+    },
+    "server_tool_use": null,
+    "service_tier": "batch"
+  },
+  "usd": 0.00016415,
+  "latency_seconds": null,
+  "transport": "batch",
+  "batch_id": "msgbatch_01B6pReUfbUZZt2ynLrpTQkA",
+  "request_sha256": "1d35420c59223cd65d3ff5876ef85eadb490c80b80752dd01b322ee59aefe857"
+}

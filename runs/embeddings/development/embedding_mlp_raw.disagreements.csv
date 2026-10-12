@@ -1,0 +1,32 @@
+id,text,truth,prediction,confidence,correct
+train:1077,I ordered my card a couple weeks ago and haven't received it yet. When can I expect it?,card_delivery_estimate,card_arrival,0.81884617,False
+train:1731,Is there a way to reset my PIN?,pin_blocked,change_pin,0.56811583,False
+train:2045,"Even though I added money ey to the card, I couldn't use it",pending_top_up,top_up_failed,0.6217248,False
+train:2830,"I have checked the account information several times to be sure that it is correct, but the in country transfer I did a few days ago still has not appeared! What is the hold up?",transfer_not_received_by_recipient,balance_not_updated_after_bank_transfer,0.49847445,False
+train:2861,Why hasn't my in country transfer gone through yet? I confirmed the account info a couple days ago but the payment hasn't been posted yet.,transfer_not_received_by_recipient,pending_transfer,0.9480252,False
+train:3461,where is my money from this morning,balance_not_updated_after_cheque_or_cash_deposit,verify_source_of_funds,0.38616103,False
+train:3813,What is the first step I need to make for being able to access my account?,why_verify_identity,activate_my_card,0.27931973,False
+train:4538,My wallet was stolen and all my credit cards were in there.  HELP?!!?,compromised_card,lost_or_stolen_card,0.44840637,False
+train:4755,Purchases I did not make are appearing in my bank statement?,direct_debit_payment_not_recognised,card_payment_not_recognised,0.93052524,False
+train:4878,I can't log in,passcode_forgotten,unable_to_verify_identity,0.5575704,False
+train:5069,i entered my pin in wrong and got it frozen. how many tries do i have,declined_cash_withdrawal,pin_blocked,0.8923626,False
+train:5268,Can you tell me what i steps i should take since my card was stolen?,lost_or_stolen_phone,lost_or_stolen_card,0.9049647,False
+train:5361,I just replaced my phone but how do I use my card information?,lost_or_stolen_phone,card_linking,0.55390096,False
+train:5567,How do I make my transfer go through,declined_transfer,failed_transfer,0.80157447,False
+train:5662,"i have tried everything to complete a transfer but can't, what should i do next",declined_transfer,failed_transfer,0.95547205,False
+train:5681,why cant you just refund me instead of a merchant,Refund_not_showing_up,request_refund,0.61058915,False
+train:6006,What am I supposed to do if the funds haven't show up from a transfer completed this morning?,pending_transfer,balance_not_updated_after_bank_transfer,0.96109235,False
+train:6360,I have been overcharged.,transaction_charged_twice,transfer_fee_charged,0.6653156,False
+train:6664,"I just did a transfer, but don't see the money in my account. What's up?",transfer_timing,balance_not_updated_after_bank_transfer,0.96590894,False
+train:6719,How long does a transfer transaction take?,transfer_timing,transfer_not_received_by_recipient,0.89882857,False
+train:6757,"I would like to make a purchase, however my card has been declined. I would like to ask the reason for this. The past two weeks, the card has been working fine.",reverted_card_payment?,declined_card_payment,0.5351416,False
+train:6775,Why isn't my payment showing?,reverted_card_payment?,pending_card_payment,0.83835614,False
+train:7108,I cant transfer money into my account,beneficiary_not_allowed,transfer_into_account,0.65078974,False
+train:7299,Does it cost anything to buy something from another country? Like is there going to be hidden transfer fees or currency conversion fees?,transfer_fee_charged,exchange_charge,0.5916589,False
+train:7357,I need my payment in another currency,receiving_money,supported_cards_and_currencies,0.5621863,False
+train:7955,What is not accepted in order for me to top up my account?,top_up_by_cash_or_cheque,supported_cards_and_currencies,0.64102525,False
+train:8340,Whats wrong with my currency exchange?,wrong_exchange_rate_for_cash_withdrawal,card_payment_wrong_exchange_rate,0.5289289,False
+train:8509,How can correct Top up with the app to work correctly?,top_up_failed,top_up_reverted,0.44023183,False
+train:8765,How long does it take for money to reach my account?,balance_not_updated_after_bank_transfer,transfer_timing,0.9863594,False
+train:8871,I did not get the cash that is showing up in my app.,cash_withdrawal_not_recognised,wrong_amount_of_cash_received,0.6192428,False
+train:8895,"Someone is using my card to purchase flights to New York it's not me because I'm not going to New York, please can you cancel the card and refund the money?",cash_withdrawal_not_recognised,compromised_card,0.48012415,False

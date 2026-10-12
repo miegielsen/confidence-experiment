@@ -1,0 +1,16 @@
+{
+  "state": "complete",
+  "started_utc": "2026-10-09T19:49:30.931718+00:00",
+  "config": "configs/openai-decisions.toml",
+  "pid": 280,
+  "log": "runs\\openai-decisions-v2\\background.log",
+  "budget_usd": 25.0,
+  "cpu_threads": 2,
+  "priority": "below_normal",
+  "budget_enforced": false,
+  "child_pid": 18308,
+  "updated_utc": "2026-10-09T20:00:18.774089+00:00",
+  "exit_code": 0,
+  "completed_utc": "2026-10-09T20:00:18.801974+00:00",
+  "report": "runs\\openai-decisions-v2\\development\\report.html"
+}

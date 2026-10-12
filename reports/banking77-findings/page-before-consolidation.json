@@ -1,0 +1,510 @@
+{
+  "metadata": {
+    "page_id": "page_8d6b5f224fe88191a0ee1a19d013497b",
+    "layout": "document",
+    "namespace": "data_reports",
+    "symbol": null,
+    "title": "Learning When to Trust a Classifier",
+    "preview": "**BANKING77 experiment findings · 9 October 2026 · Development results**\n\nA frozen embedding model with a linear classifier correctly classified **971 of 1,000 banking queries**. Haiku 5.5 classified 757 correctly; OpenAI Decisions classifi",
+    "creator_account_user_id": "user-hG8rZPZIQmYhyRaxGi2gwiyz",
+    "owner_workspace_id": null,
+    "parent": null,
+    "drive_scope": "personal",
+    "drive_space_id": null,
+    "library_container_id": "fde3_cGFnZV84ZDZiNWYyMjRmZTg4MTkxYTBlZTFhMTlkMDEzNDk3Yg_3ce54b7abbec8191a98bc6938d222787",
+    "file_upload_page_id": "page_8d6b5f224fe88191a0ee1a19d013497b",
+    "position": 1834575232526336,
+    "created_at": "2026-10-09T20:22:55.749814Z",
+    "updated_at": "2026-10-09T20:51:24.068877Z",
+    "deleted_at": null,
+    "current_sequence": 8,
+    "projection_through_sequence": 8,
+    "access": {
+      "can_read": true,
+      "can_comment": true,
+      "can_write": true,
+      "can_share": true,
+      "can_delete": true,
+      "sources": [
+        "library"
+      ]
+    },
+    "url": "https://chatgpt.com/space/page_8d6b5f224fe88191a0ee1a19d013497b"
+  },
+  "content": {
+    "schema_version": 2,
+    "symbol": null,
+    "title": "Learning When to Trust a Classifier",
+    "title_hash": "c6590b83f05d0835ab71abad14d9df4e23e2d320b40dbc5dcaed00d3c22bea99",
+    "blocks": [
+      {
+        "id": "b1ed7ebd-5370-4f7d-9e77-6b45eb16e449",
+        "kind": "markdown",
+        "markdown": "**BANKING77 experiment findings · 9 October 2026 · Development results**",
+        "hash": "91a2ff813c518cc6431d00e5154a6a555dc03732515a2148453b52943a9b2a20",
+        "metadata": {}
+      },
+      {
+        "id": "c5faf019-e5dc-4b40-b861-9299c2feecef",
+        "kind": "markdown",
+        "markdown": "A frozen embedding model with a linear classifier correctly classified **971 of 1,000 banking queries**. Haiku 5.5 classified 757 correctly; OpenAI Decisions classified 733 correctly. For this task, with labeled examples available, the supervised embedding approach is the strongest candidate for further validation.",
+        "hash": "1e16a590a6c6c5836d5dfa2daf40131a8c6467ab8b4a74443073d0fdb0a887f4",
+        "metadata": {}
+      },
+      {
+        "id": "931ea83c-d0fb-4415-86ef-28b3bb64c0a9",
+        "kind": "markdown",
+        "markdown": "The confidence experiment produced a second, distinct finding. Keeping every Haiku prediction unchanged, a small learned correctness model reduced its Brier error by **59%** and substantially improved error detection. The useful advance came from predicting correctness using observed outcomes and several inference-time signals. A separate verifier delivered a much smaller improvement, with uncertainty intervals that included no improvement.",
+        "hash": "32fef84fd3bc45a4eaed9e62dfef4724b723c66dba040ac1181cad59dce54b54",
+        "metadata": {}
+      },
+      {
+        "id": "58e5ef5a-0dd8-4ead-86b3-c165ca3af9ef",
+        "kind": "markdown",
+        "markdown": "The operational results show why both findings matter. The calibrated embedding classifier could accept **895 development predictions with three errors** under the experiment’s threshold-selection rule. Haiku’s learned confidence substantially improved triage, but none of its thresholds met the same stringent 1% error criterion. These are promising development findings; the official test set remains unevaluated.",
+        "hash": "e14a1c7c307002d284c773a98a6945ae7000c0a945380a4624f4a79c152f63df",
+        "metadata": {}
+      },
+      {
+        "id": "8a560afe-1dbf-46d4-be77-4b8493a57fac",
+        "kind": "markdown",
+        "markdown": "## The experiment in brief",
+        "hash": "5bfb238c0dc3b937c969241c830ba09472b534e522ead377af138e97d7d87c7a",
+        "metadata": {}
+      },
+      {
+        "id": "af4ef2f6-a7a5-4dd6-9f5b-5b5f0aeac175",
+        "kind": "markdown",
+        "markdown": "BANKING77 asks a classifier to assign short banking messages to 77 closely related intents. It is useful for studying confidence because a fluent, plausible interpretation can still select the wrong category. The original dataset contains 13,083 annotated examples. [Casanueva and colleagues, 2020](https://aclanthology.org/2020.nlp4convai-1.5/)",
+        "hash": "3c2a9c3df17b2fa4bf32800efd968fcf8950fa39f50656faf98f4385ce368574",
+        "metadata": {}
+      },
+      {
+        "id": "ea9f211f-1583-40bd-b912-93298fe2410c",
+        "kind": "markdown",
+        "markdown": "The data audit removed seven normalized training examples overlapping the official test text and four duplicate training rows. The remaining 9,992 non-test examples were divided into separate roles, using stratified splits and seed 42.",
+        "hash": "b8178e10f879626a380bd766a595b810aeba0e1731d25545bb3e079ca4158280",
+        "metadata": {}
+      },
+      {
+        "id": "b3624440-4f00-46c4-98dc-ef28b0ba8a24",
+        "kind": "markdown",
+        "markdown": "| Data role | Examples | Purpose |\n|---|---:|---|\n| Classifier fitting | 5,992 | Train the supervised classifiers |\n| Correctness training | 2,000 | Learn when Haiku’s selected label is correct |\n| Calibration | 1,000 | Fit probability transformations |\n| Development | 1,000 | Compare methods and choose acceptance thresholds |\n| Official test | 3,080 | Reserved for final evaluation |",
+        "hash": "3b5e1c3bedde106fbd4ab44a0950c99d716e3dab165c6853227e76ce9da8df92",
+        "metadata": {}
+      },
+      {
+        "id": "0a21393c-14ba-4189-81bb-852a44f84f4a",
+        "kind": "markdown",
+        "markdown": "All reported comparisons use the same 1,000 development messages and reference labels. The supervised models learned from 5,992 labeled examples. The LLM classifiers were zero-shot: they received the 77 intent names, without labeled demonstrations or richer category definitions. This comparison describes the implemented operating conditions; it does not isolate model architecture from access to task-specific labels.",
+        "hash": "ae204ec44095e1d01804179b6b3b23acd43184cd76449c49eac7f5ebf6d41024",
+        "metadata": {}
+      },
+      {
+        "id": "002ffdbd-9978-4141-84ad-1953ff400b42",
+        "kind": "markdown",
+        "markdown": "## Frozen embeddings were the strongest classifier",
+        "hash": "579c3310989cc95f997d7ab5fd16336665583536c9da00026a9a0490ca6e29d2",
+        "metadata": {}
+      },
+      {
+        "id": "c4a3c09c-1689-49f6-84bd-5a67c734cd22",
+        "kind": "markdown",
+        "markdown": "| Classifier | Accuracy | Macro F1 | Errors out of 1,000 |\n|---|---:|---:|---:|\n| EmbeddingGemma plus logistic regression | **97.1%** | **0.972** | **29** |\n| EmbeddingGemma plus a small MLP | 96.9% | 0.970 | 31 |\n| TF-IDF plus logistic regression | 87.1% | 0.873 | 129 |\n| Anthropic Haiku 5.5 | 75.7% | 0.756 | 243 |\n| OpenAI Decisions using gpt-6-luna | 73.3% | 0.735 | 267 |",
+        "hash": "66b2da8b0f827bdb118053c3263e89b52d308f3bc23aba5a2d7677b80e4cfe78",
+        "metadata": {}
+      },
+      {
+        "id": "36455390-7456-4246-90ac-baaf3a73cd65",
+        "kind": "markdown",
+        "markdown": "OpenAI’s unsuccessful predictions include one development refusal, retained in the evaluation denominator and routed to review.",
+        "hash": "de4f9a28d8ca519d20073f052bf60d7e878922265aa1f7370a4e7e07972e15bf",
+        "metadata": {}
+      },
+      {
+        "id": "1919bf30-c991-4478-b2fc-12d25936c777",
+        "kind": "markdown",
+        "markdown": "The embedding classifier’s lead is substantial: **21.4 percentage points over Haiku** and **23.8 points over OpenAI Decisions**. Paired bootstrap intervals were 18.8–24.0 points and 21.1–26.5 points, respectively. Those gaps are large within this development sample, although they remain conditional on the fitted models and the particular prompting setup.",
+        "hash": "3100dd8d21ca2246a3f64764b9171cde418eadec6647570b64ace0dcc92375ec",
+        "metadata": {}
+      },
+      {
+        "id": "51e4a05b-80fd-4a5e-9e67-a91ab84614b9",
+        "kind": "markdown",
+        "markdown": "The linear head and MLP were effectively tied. Their accuracy difference was only 0.2 percentage points, with a paired interval from −0.6 to +1.0 points. The MLP also reached its iteration limit, so this run cannot establish the best achievable neural-head performance. It provides no persuasive reason to prefer the more complex head at present.",
+        "hash": "d04c0b15d62116c06d35c7d8f36217945d4d478efaa277ee3529b6c37d223b2e",
+        "metadata": {}
+      },
+      {
+        "id": "494544f8-7393-4cb4-82ec-66a305dde2cf",
+        "kind": "markdown",
+        "markdown": "This is a useful practical result: a frozen representation and a modest supervised head are enough to reach high accuracy here. Full encoder fine-tuning was cancelled because of local resource constraints. The experiment therefore provides no evidence about its possible additional benefit.",
+        "hash": "c5152d14826949a75d1bbeb21d9dfd892e76260d82f6d67a9ac1c22b58e5b631",
+        "metadata": {}
+      },
+      {
+        "id": "8c16528d-998a-482a-b73f-185aeab20d4e",
+        "kind": "markdown",
+        "markdown": "![Classification accuracy on BANKING77 development data](visualize:fde1_bGliZmlsZV9PSTRJdmZSd0YwT054WVd1Tl9oazB3_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+        "hash": "af63f73a690cc1ee97e8f7fd3499f4ec185f7de25d750af5b57576efdfc1aa73",
+        "metadata": {}
+      },
+      {
+        "id": "ceecc655-23f8-46dd-836e-2716bcf14a4d",
+        "kind": "markdown",
+        "markdown": "## Learning correctness materially improved Haiku confidence",
+        "hash": "6f89b3bff76694088ca27db597d12bdaba375995c4541727b7c4af706fe74dce",
+        "metadata": {}
+      },
+      {
+        "id": "379315f1-5a28-46d9-b041-91d0b44335d4",
+        "kind": "markdown",
+        "markdown": "The cleanest confidence comparison holds the classifier fixed. Every Haiku method below uses the same 757 correct and 243 incorrect predictions; only the confidence assigned to each prediction changes.",
+        "hash": "7ec4455f5d8b8c41a0f585b95038b7a8678d7b1e7c352995c38701b632882299",
+        "metadata": {}
+      },
+      {
+        "id": "70ba7c9c-8972-4b2d-b905-6d74dfed9c9e",
+        "kind": "markdown",
+        "markdown": "| Confidence method | Brier error ↓ | Binary log loss ↓ | Error AUROC ↑ |\n|---|---:|---:|---:|\n| Haiku’s original same-call confidence | 0.1454 | 0.4434 | 0.815 |\n| Separate Haiku verifier | 0.1388 | 0.4261 | 0.831 |\n| Learned correctness model | **0.0596** | **0.2093** | **0.961** |\n| Learned correctness plus sigmoid calibration | **0.0578** | 0.2100 | **0.961** |",
+        "hash": "bc91b76a4164049f7e38031f0493c3f1055cb882e0d46c30e0ff9426c14f2a3d",
+        "metadata": {}
+      },
+      {
+        "id": "2d887f57-5401-4fea-acfb-32396dd20a2c",
+        "kind": "markdown",
+        "markdown": "Brier error is the average squared difference between estimated correctness probability and the observed correct/incorrect outcome. Lower is better. Error AUROC measures how well low confidence ranks incorrect predictions above correct predictions; 0.5 is chance ranking and 1.0 is perfect ranking. Brier error and log loss capture both calibration and discrimination, so they should be read alongside reliability plots. [Scikit-learn calibration documentation](https://scikit-learn.org/stable/modules/calibration.html)",
+        "hash": "a889d39581d2f2d3a8f2ad3944f982fc76d3a3836c789ff2b7268ac239a3062d",
+        "metadata": {}
+      },
+      {
+        "id": "b02654e5-4449-4090-8c8a-ab405b8fad2f",
+        "kind": "markdown",
+        "markdown": "The learned model reduced Brier error from 0.1454 to 0.0596: a **59.0% relative reduction**. Its absolute improvement was 0.0858, with a paired 95% bootstrap interval of 0.0724–0.0990. Error AUROC improved by 0.146, with an interval of 0.120–0.173. Both comparisons support a substantial improvement on this sample.",
+        "hash": "3abedc370c54b49a790a4fd6be499217aea691e30a6ce645962e6297fd03d043",
+        "metadata": {}
+      },
+      {
+        "id": "5b638479-03b1-4386-88cc-815d4bedeb07",
+        "kind": "markdown",
+        "markdown": "The separate verifier’s Brier improvement was only 0.0066, with an interval of −0.0024 to +0.0156. Its AUROC improvement also had an interval spanning zero. Rechecking with the same model may help, but this experiment does not establish a reliable gain from verification alone.",
+        "hash": "e5667aaf37616dbce295c15af60cbde3f877c927911f6beb7e74af504eaeee76",
+        "metadata": {}
+      },
+      {
+        "id": "1991caa7-823f-40f5-8cab-9dba4b5b7443",
+        "kind": "markdown",
+        "markdown": "The learned estimator used regularized logistic regression trained on the 2,000-example correctness partition. Its features were original confidence, verifier confidence, agreement with a blind second classification, input length, an empty-input flag, and two signals from the supervised TF-IDF classifier: support for Haiku’s chosen label and the margin between its top two classes. All were available without the development example’s true label. The blind classifier and verifier were additional Haiku calls; their errors need not be independent.",
+        "hash": "f764d26e410a3e61e340e79fe6cdfc88b5d39be8ba768e8fe5cefa3b67aa2fcd",
+        "metadata": {}
+      },
+      {
+        "id": "a8260e7e-0806-4a2e-b35c-2333c742217f",
+        "kind": "markdown",
+        "markdown": "This qualification matters: the winning estimator combines learning, extra calls, and task-specific supervised evidence. There was no feature ablation, so the gain cannot be attributed to one ingredient. The completed run did not use embedding-neighbor features. Learning correctness from black-box model signals has research precedent, although earlier QA and summarization results do not establish performance on this task. [Large Language Model Confidence Estimation via Black-Box Access](https://arxiv.org/abs/2406.04370)",
+        "hash": "235c587fb60ae84463fa30ef35a57b1132f070a51e3ec2251e38a3f8bb3050a9",
+        "metadata": {}
+      },
+      {
+        "id": "4ff0ec23-8fa4-49a7-b11b-e7e0068be50e",
+        "kind": "markdown",
+        "markdown": "One diagnostic example illustrates the change. For “I would like to get a physical card, but I don’t know how. Can you help me?”, Haiku selected “get_physical_card” with 95% confidence. The reference label was “order_physical_card”; learned confidence fell to approximately 20%, and the embedding classifier matched the reference. This selected example shows how additional evidence can flag confident disagreements. It also exposes a benchmark limitation: closely related label names can be ambiguous, and measured correctness means agreement with the reference annotation.",
+        "hash": "a2e9ea9e53f7ca82db1f4c83b61311aceb19ccac0d74f08af9ea194d1a4078fb",
+        "metadata": {}
+      },
+      {
+        "id": "c21c8c82-e042-46b1-b8bc-51f5abc60f52",
+        "kind": "markdown",
+        "markdown": "![Haiku confidence with identical predictions](visualize:fde1_bGliZmlsZV82SEh6R2NCdnhkNDVDQ1pqNGRsT0Nn_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+        "hash": "b182587997a262789d62e40a03f579dfd1ac8a2543cdc13b21bcf245c653cac4",
+        "metadata": {}
+      },
+      {
+        "id": "40f510a0-f147-4597-86ab-6960416931a7",
+        "kind": "markdown",
+        "markdown": "## Better error ranking did not guarantee low-risk automation",
+        "hash": "337d7215d01a99b89486de30b5cfad624b77fb3c76ab7a14b24874a044a6e825",
+        "metadata": {}
+      },
+      {
+        "id": "ab7d1591-ca6f-4b76-a6d2-a6d8b8cbced9",
+        "kind": "markdown",
+        "markdown": "The experiment selected the largest confidence-threshold acceptance set whose **upper endpoint of a 95% Wilson error interval was at most 1%**. This is stricter than requiring an observed error rate below 1%.",
+        "hash": "62febf563625d269a24b941ab66893769472c9f540f4f18c8a7e2ddf9b69c3cb",
+        "metadata": {}
+      },
+      {
+        "id": "200649d4-fc53-467f-a756-d6639e69c06a",
+        "kind": "markdown",
+        "markdown": "| Candidate | Accepted | Errors among accepted | Observed error rate | Development coverage |\n|---|---:|---:|---:|---:|\n| Embedding LR with temperature scaling | **895** | **3** | **0.34%** | **89.5%** |\n| Embedding MLP with raw probabilities | 867 | 2 | 0.23% | 86.7% |\n| TF-IDF, all tested scores | 0 | — | — | 0% |\n| Haiku, all tested scores | 0 | — | — | 0% |\n| OpenAI Decisions, all tested scores | 0 | — | — | 0% |",
+        "hash": "230e7db195427c8e472c4073231ceadb3172df81a1b9adc348f001d40d2a5e93",
+        "metadata": {}
+      },
+      {
+        "id": "c46fad7a-c6a3-4839-95fe-2d637243eb41",
+        "kind": "markdown",
+        "markdown": "For the calibrated embedding LR, the selected confidence threshold was approximately 0.9173. The nominal Wilson interval for its accepted error rate was **0.11%–0.98%**. That threshold was selected using these same development outcomes, so the interval does not account for searching over thresholds. **The 89.5% figure is a candidate operating point, not a validated deployment guarantee.** Its performance must be measured with the threshold frozen on independent data.",
+        "hash": "2622db595cd4c19c83ab62688f8488e392ea5b10fe4f0fe8954d932e452ee347",
+        "metadata": {}
+      },
+      {
+        "id": "525d17c6-97de-42c1-acca-eebb1b8807d5",
+        "kind": "markdown",
+        "markdown": "Haiku shows why a strong AUROC is insufficient for this target. Even its 500 highest learned-confidence predictions contained eight errors: **1.6% observed error**. The score helped place errors toward the review end of the queue, but it did not produce a sufficiently clean accepted group under the selection rule. Zero accepted coverage here means no tested threshold qualified; it does not mean that every prediction was wrong or that the scores have no review value.",
+        "hash": "028a47e47c4f0ff88c541b7caa4b3229613d20eadc8f17f7dfac8b667e8e561c",
+        "metadata": {}
+      },
+      {
+        "id": "4fd5a1c4-d7c6-4529-b32b-f21015a99ab1",
+        "kind": "markdown",
+        "markdown": "Native LLM confidence also contained large ties. A threshold accepting no more than half the examples accepted 381 Haiku predictions, with 19 errors. This cannot be treated as an exactly matched 500-example comparison. The risk–coverage figures preserve tied-score groups rather than breaking them arbitrarily.",
+        "hash": "e3cb13742e2c9bc39ba0f3aaa89d11751df3a34aa21e9525173ce4f0ffaf4936",
+        "metadata": {}
+      },
+      {
+        "id": "2ac88c73-8eec-4dad-a41a-84a51b942d0f",
+        "kind": "markdown",
+        "markdown": "![Development risk and automation coverage](visualize:fde1_bGliZmlsZV9uTjJRdDVNOUFyN2doMFM2X2p5VXRn_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+        "hash": "c1287790667df075c36ed2d36056665ab04b76083918d8952ebb5f38cff15405",
+        "metadata": {}
+      },
+      {
+        "id": "0270e46e-79ea-4704-8fed-aae301a90b00",
+        "kind": "markdown",
+        "markdown": "## Calibration helped selectively",
+        "hash": "007441f4f3783bc79ae6d617c8bea572a71ed3c0c5cf0a1b99651254866d8e1f",
+        "metadata": {}
+      },
+      {
+        "id": "0eb07afe-b9fc-425d-acd0-61b6eac9eafb",
+        "kind": "markdown",
+        "markdown": "Temperature scaling improved the embedding LR’s Brier error from **0.0328 to 0.0208**, while retaining its predicted labels. Its paired improvement interval was 0.0082–0.0157. Binary log loss also fell from 0.1326 to 0.0710. This is a useful improvement from a simple transformation fitted on separate calibration examples. Temperature scaling is an established baseline for calibrating class scores. [Guo and colleagues, 2017](https://proceedings.mlr.press/v70/guo17a.html)",
+        "hash": "33aca6fd95123291b351afad0ae7cbbd8c16b0e7d5a2989e80d783681cd4e616",
+        "metadata": {}
+      },
+      {
+        "id": "c7994453-00ce-4929-bbbf-1e78e7b16eb6",
+        "kind": "markdown",
+        "markdown": "Other transformations were less helpful. Sigmoid calibration of Haiku’s original confidence changed Brier error only from 0.1454 to 0.1437; its paired improvement interval included zero. For learned correctness, sigmoid calibration slightly improved Brier error but slightly worsened log loss. A monotonic sigmoid transformation preserves the ordering of scores, so it cannot improve error AUROC through reranking.",
+        "hash": "49b3674b1330cef800fd5dfe9be0d139fdacdf414f17478e9d038acff3d6fa12",
+        "metadata": {}
+      },
+      {
+        "id": "a090d378-ea05-44c3-868b-134cd9b9dd72",
+        "kind": "markdown",
+        "markdown": "OpenAI Decisions’ native confidence and selected-label probability behaved almost identically, with error AUROC of approximately 0.824. They did not provide two meaningfully distinct signals in this run. The tested temperature transformation worsened selected-label Brier error from **0.1474 to 0.1903**. Its input was the logarithm of returned probabilities clipped at 10⁻¹², used as a surrogate for native logits; fitting minimized multiclass log loss. The result applies to this transformation and objective. It does not establish that temperature scaling generally fails or that native logits were tested.",
+        "hash": "b7a51dd2116077b9a0760057f5489396c895ce22fcd9e198214b719e36f192f9",
+        "metadata": {}
+      },
+      {
+        "id": "9fb74e47-ae3e-4673-8f49-74f683abacf7",
+        "kind": "markdown",
+        "markdown": "These results support evaluating every calibration step on held-out outcomes. Adding a calibrator does not, by itself, establish better probabilities or better automation.",
+        "hash": "6fd318f4b7c6380dde765709ca5b6af63ae88ef58a1ebfb75e4e7905e32f7084",
+        "metadata": {}
+      },
+      {
+        "id": "b1011d60-5ee6-4273-8fbc-dc38b7b5379a",
+        "kind": "markdown",
+        "markdown": "## Comparing the probability curves",
+        "hash": "ab79ed88ee9d9dae9cbe6d8de57711c05563a2b5b75b551d028a375c1ac6de56",
+        "metadata": {}
+      },
+      {
+        "id": "c0a700dd-b080-4b0e-83a2-33e0013bcda7",
+        "kind": "markdown",
+        "markdown": "Reliability plots answer whether a reported probability matches observed correctness. A point below the diagonal indicates overconfidence in that bin; a point above it indicates underconfidence. Each comparison holds the classifier's selected labels fixed. The histogram beneath each panel shows how much evidence supports its points, and nominal Wilson intervals show sampling uncertainty. The plots use shared equal-width bins without smoothing or connecting sparse estimates.",
+        "hash": "155f2f383ff16930d179e6296f8b44f7bf227839f009d38e895266ee521d6b8b",
+        "metadata": {}
+      },
+      {
+        "id": "0e274b86-bc00-4bf6-bb9b-befbd8ef1627",
+        "kind": "markdown",
+        "markdown": "The second figure separates scores assigned to correct and incorrect predictions. Greater separation helps prioritize review, but does not by itself establish calibrated probabilities. Each outcome distribution is normalized separately; its legend reports the actual number of cases. Cross-classifier comparisons also change which examples are errors, so the within-classifier comparisons are the stronger method comparison.",
+        "hash": "def1d1176c2ccfb3ab3948630f5c60b063b75a9af6bc69bc4f7a9e7e9fca8b69",
+        "metadata": {}
+      },
+      {
+        "id": "def1f8e4-cef5-4ba9-b8d2-e90ae5d4aee7",
+        "kind": "markdown",
+        "markdown": "The raw embedding scores are underconfident in several populated bins. Temperature scaling moves more predictions toward high confidence and reduces probability error. Haiku's learned scores assign low confidence to a much larger share of its mistakes while leaving all selected labels unchanged. The tested OpenAI temperature transformation makes several bins underconfident and worsens Brier error. Sparse individual points should be interpreted with their counts and intervals.",
+        "hash": "812c7b98c9e1dd759520bfcf59d62593645c5224f1b433572c6b61e3f92192b6",
+        "metadata": {}
+      },
+      {
+        "id": "37e773e7-a821-49af-81b9-ed82698371cc",
+        "kind": "markdown",
+        "markdown": "| Method | Scores at least 90% | Errors in that group | Observed error rate |\n|---|---:|---:|---:|\n| Embedding LR calibrated | 899 | 4 | 0.44% |\n| Haiku original | 503 | 37 | 7.36% |\n| Haiku learned | 592 | 12 | 2.03% |\n| OpenAI native probability | 511 | 39 | 7.63% |",
+        "hash": "19d2c61503f35972321f0a220c7830939f7664a7f9f8333923a2ea9429274006",
+        "metadata": {}
+      },
+      {
+        "id": "0baf504c-64db-49ae-b5c5-2383634fc978",
+        "kind": "markdown",
+        "markdown": "The 90% cutoff is a descriptive reference point shared across methods. It is separate from the threshold chosen for the 1% automation criterion and does not constitute a deployment guarantee. Probability quality, error ranking, and coverage should be assessed together. The OpenAI temperature comparison uses log returned probabilities as a surrogate for native logits; the learned correctness comparisons also add supervised evidence and extra calls.",
+        "hash": "5370629a171087c54d46633d40c1480fc9eccfd37002d34089234469a0c1c354",
+        "metadata": {}
+      },
+      {
+        "id": "c6780e72-2482-4125-aa1f-aba84a088825",
+        "kind": "markdown",
+        "markdown": "![Reliability curves with bin counts and uncertainty](visualize:fde1_bGliZmlsZV8tcHZseG5iQ3lpZGtqbEZranB6eVhn_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+        "hash": "b1a755919c32b7809a419c81f169ec83db3b32bf85c32cb1dade7e21fb159538",
+        "metadata": {}
+      },
+      {
+        "id": "4fa9f2d8-f1dd-4810-8bba-e4922219cf11",
+        "kind": "markdown",
+        "markdown": "![Confidence distributions for correct and incorrect predictions](visualize:fde1_bGliZmlsZV9VV19hM21Xd25jakpPajNUVGRNYVBR_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+        "hash": "8f66eb8ea348a2d9fb1e53f74d3e79da11673dae27a38f19fa4d161df3e0acb3",
+        "metadata": {}
+      },
+      {
+        "id": "07b1d258-0051-4459-8ef2-3e193a241712",
+        "kind": "markdown",
+        "markdown": "## Why the embedding curves looked volatile",
+        "hash": "3e3b6998f81c0e77637e533467a1f89bce1a9e9052d7f35154a9fb4148297878",
+        "metadata": {}
+      },
+      {
+        "id": "88a80bc9-f9e0-405b-8a83-432f737f5bec",
+        "kind": "markdown",
+        "markdown": "The calibrated embedding LR placed **899 of 1,000 predictions in the 90–100% confidence bin**. Only 101 predictions populated all lower-confidence bins combined. The 30–40% bin contained six examples, of which one was correct; the 40–50% bin contained eight, of which five were correct. One changed outcome moves those bin accuracies by 16.7 or 12.5 percentage points.",
+        "hash": "5c261b2a226dfff68e9e9596dfdc769e574fa6c61caf4cfed8e6883ceeab3bac",
+        "metadata": {}
+      },
+      {
+        "id": "58d0d919-bcac-404a-a81d-39fa01f66b93",
+        "kind": "markdown",
+        "markdown": "Connecting these estimates can make the curve look erratic even when the underlying score is useful. The immediate cause is sparse bin counts and concentrated confidence. High accuracy contributes by leaving only 29 errors, but high accuracy alone does not imply volatile calibration. The same small error count also makes risk–coverage curves advance in visible steps.",
+        "hash": "c7078f7f69e63b4561ef8b5df5fa5f6264a4203e6da3d7b86567b0517b1e44ae",
+        "metadata": {}
+      },
+      {
+        "id": "3ca15991-e342-4741-b970-bade545e4103",
+        "kind": "markdown",
+        "markdown": "The appropriate response is to show counts and uncertainty, avoid smoothing away the scarcity of evidence, and obtain a larger representative evaluation sample. A harder representative task may generate more errors and reveal differences between confidence methods, but increasing evaluation size can improve precision without deliberately weakening classification. A representative document task would also test whether these findings transfer beyond short banking messages.",
+        "hash": "2be1165013aadc2c839474e83117d3f71fd1db02b135166057c4e611bae43c24",
+        "metadata": {}
+      },
+      {
+        "id": "07403e12-bf22-4b96-8307-6e61afcfc051",
+        "kind": "markdown",
+        "markdown": "![Embedding confidence bins and uncertainty](visualize:fde1_bGliZmlsZV9RSTlMeTZIbmdHOURmUDVLZzdUVjF3_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+        "hash": "a984eed01c9fcce46b7008f62549cadf5364e7d2f73972e97c0c8b0fd663f1b5",
+        "metadata": {}
+      },
+      {
+        "id": "974d2e8f-333a-4efb-a06c-b625d3376b59",
+        "kind": "markdown",
+        "markdown": "## What the findings justify next",
+        "hash": "e02ac9a19bb7f1907c71bd8a654d7ed0f682033ccf81744940ba859f1b976e00",
+        "metadata": {}
+      },
+      {
+        "id": "0d684bbe-de13-4c82-9a75-0ce55b72ff93",
+        "kind": "markdown",
+        "markdown": "**Advance frozen EmbeddingGemma plus logistic regression as the main candidate.** It had the best observed classification and automation results, and the MLP showed no convincing advantage. Freeze the classifier, temperature transformation, and selected threshold before evaluating the untouched official test set.",
+        "hash": "a3632c4d06f6e9d7bb0946efef6c13e2fbec9988e3c6536b8fe5e099c5ceea7f",
+        "metadata": {}
+      },
+      {
+        "id": "f592072d-4048-4af7-aee3-85f2f27ad4a0",
+        "kind": "markdown",
+        "markdown": "**Use learned correctness when retaining the LLM classifier has a business reason.** Its gain is substantial, but the next experiment should remove feature groups in turn: native confidence alone, added supervised TF-IDF evidence, blind agreement, and verifier evidence. This will identify which signals justify additional calls and labeled-data requirements. Compare that system against simply using the supervised classifier directly.",
+        "hash": "63a684c1cb08cb533395bccb346c8c15062374f95746230256963193d762a28f",
+        "metadata": {}
+      },
+      {
+        "id": "88507c1e-cba8-4223-9f39-45d504c158c4",
+        "kind": "markdown",
+        "markdown": "**Expand the evaluation around the intended deployment population.** Repeat the strongest methods on a larger document-classification task, audit ambiguous disagreements, and evaluate unsupported inputs separately. Confidence on known banking intents does not establish out-of-scope detection or calibration under distribution shift. Full encoder fine-tuning can remain deferred until there is a clear unresolved question that warrants its resource cost.",
+        "hash": "9db5e7414910568fc49a956ce05f7c8f4210187ff370ea1bd509e5336ced6a3a",
+        "metadata": {}
+      },
+      {
+        "id": "eeb71838-d76e-402a-b363-590db0ca2a9e",
+        "kind": "markdown",
+        "markdown": "## Scope and reproducibility",
+        "hash": "3ff1754e29b86d1dbe32eda0d5219e348795a941dc9c89a3578e9e63dc6c8cd9",
+        "metadata": {}
+      },
+      {
+        "id": "c9703101-df29-4503-84b0-2b1626ef7911",
+        "kind": "markdown",
+        "markdown": "These are development results from one split and one training seed. The 5,000-resample paired bootstrap uses the same sampled example IDs for each compared method and reports percentile intervals. It measures example-sampling uncertainty conditional on the fitted models and calibrators; it does not capture retraining variation, model selection, threshold search, or multiple-comparison adjustment. The confidence-method comparison within Haiku is stronger than a causal comparison across classifier families because its predictions are held fixed.",
+        "hash": "fbc5b549c951decb6ce23c560a6610f92924dc8da1c00ebb45b1227599e7d345",
+        "metadata": {}
+      },
+      {
+        "id": "f8f85bdb-8f92-46ca-8974-5f216514415c",
+        "kind": "markdown",
+        "markdown": "The API comparison covers the exact zero-shot configurations tested, not an optimized provider benchmark. Limited intent definitions, annotation ambiguity, and possible public-benchmark exposure during pretraining constrain interpretation. Two OpenAI calibration refusals and one development refusal were preserved; refusals received operational confidence zero and were always routed to review. Calibration and evaluation examples were not silently dropped to improve reported accuracy.",
+        "hash": "aecd23432bb1304af4ffa308b62c59c646609117d7a9108a17ee339d059512ca",
+        "metadata": {}
+      },
+      {
+        "id": "5a6a0d82-78bc-4405-bc6f-5ebd49fa5b46",
+        "kind": "markdown",
+        "markdown": "Early Haiku requests encountered truncation with adaptive thinking and a 256-token output limit. The comparison was restarted uniformly with thinking disabled; results do not mix selectively retained predictions from the two configurations. Historical calls remain in the cost ledger.",
+        "hash": "bea64b9dc5b2fbef18deb7cf8f26928d1e609ce8e39dddd1cd7d9706e27c7057",
+        "metadata": {}
+      },
+      {
+        "id": "3256d4ef-f115-4e8b-9ede-b311ad7ef285",
+        "kind": "markdown",
+        "markdown": "Recorded API spending was approximately **$2.25**, a token-based ledger estimate including exploratory and discarded calls. It excludes local compute and is not a billing invoice. Batch waiting and resumed cached work make the recorded run durations unsuitable for a clean provider speed comparison.",
+        "hash": "a9518c572f4c7008c4f0259ec2ba9212e9030cd6db9adbd23e275e56e342d2f9",
+        "metadata": {}
+      },
+      {
+        "id": "a18e813e-f6b1-4e75-b8de-ad52b1d5fcfd",
+        "kind": "markdown",
+        "markdown": "The accompanying analysis records input SHA-256 hashes and verifies matching development IDs and unchanged predictions within each LLM confidence family. The scientific source outputs are the development reports and prediction files under runs/embeddings, runs/pilot, runs/anthropic-batch-v2, and runs/openai-decisions-v2. The dataset revision is 57ec275d8078af65b7731c2a98be812d844a6d6b; the frozen embedding revision is 57c266a740f537b4dc058e1b0cda161fd15afa75. The report analysis uses bootstrap seed 20261009. No official test predictions were generated for this report.\n",
+        "hash": "190f87b63245db7a85241e0a4802f0da06c4f0e17b7591b56d635a52450d8651",
+        "metadata": {}
+      }
+    ],
+    "markdown": "**BANKING77 experiment findings · 9 October 2026 · Development results**\n\nA frozen embedding model with a linear classifier correctly classified **971 of 1,000 banking queries**. Haiku 5.5 classified 757 correctly; OpenAI Decisions classified 733 correctly. For this task, with labeled examples available, the supervised embedding approach is the strongest candidate for further validation.\n\nThe confidence experiment produced a second, distinct finding. Keeping every Haiku prediction unchanged, a small learned correctness model reduced its Brier error by **59%** and substantially improved error detection. The useful advance came from predicting correctness using observed outcomes and several inference-time signals. A separate verifier delivered a much smaller improvement, with uncertainty intervals that included no improvement.\n\nThe operational results show why both findings matter. The calibrated embedding classifier could accept **895 development predictions with three errors** under the experiment’s threshold-selection rule. Haiku’s learned confidence substantially improved triage, but none of its thresholds met the same stringent 1% error criterion. These are promising development findings; the official test set remains unevaluated.\n\n## The experiment in brief\n\nBANKING77 asks a classifier to assign short banking messages to 77 closely related intents. It is useful for studying confidence because a fluent, plausible interpretation can still select the wrong category. The original dataset contains 13,083 annotated examples. [Casanueva and colleagues, 2020](https://aclanthology.org/2020.nlp4convai-1.5/)\n\nThe data audit removed seven normalized training examples overlapping the official test text and four duplicate training rows. The remaining 9,992 non-test examples were divided into separate roles, using stratified splits and seed 42.\n\n| Data role | Examples | Purpose |\n|---|---:|---|\n| Classifier fitting | 5,992 | Train the supervised classifiers |\n| Correctness training | 2,000 | Learn when Haiku’s selected label is correct |\n| Calibration | 1,000 | Fit probability transformations |\n| Development | 1,000 | Compare methods and choose acceptance thresholds |\n| Official test | 3,080 | Reserved for final evaluation |\n\nAll reported comparisons use the same 1,000 development messages and reference labels. The supervised models learned from 5,992 labeled examples. The LLM classifiers were zero-shot: they received the 77 intent names, without labeled demonstrations or richer category definitions. This comparison describes the implemented operating conditions; it does not isolate model architecture from access to task-specific labels.\n\n## Frozen embeddings were the strongest classifier\n\n| Classifier | Accuracy | Macro F1 | Errors out of 1,000 |\n|---|---:|---:|---:|\n| EmbeddingGemma plus logistic regression | **97.1%** | **0.972** | **29** |\n| EmbeddingGemma plus a small MLP | 96.9% | 0.970 | 31 |\n| TF-IDF plus logistic regression | 87.1% | 0.873 | 129 |\n| Anthropic Haiku 5.5 | 75.7% | 0.756 | 243 |\n| OpenAI Decisions using gpt-6-luna | 73.3% | 0.735 | 267 |\n\nOpenAI’s unsuccessful predictions include one development refusal, retained in the evaluation denominator and routed to review.\n\nThe embedding classifier’s lead is substantial: **21.4 percentage points over Haiku** and **23.8 points over OpenAI Decisions**. Paired bootstrap intervals were 18.8–24.0 points and 21.1–26.5 points, respectively. Those gaps are large within this development sample, although they remain conditional on the fitted models and the particular prompting setup.\n\nThe linear head and MLP were effectively tied. Their accuracy difference was only 0.2 percentage points, with a paired interval from −0.6 to +1.0 points. The MLP also reached its iteration limit, so this run cannot establish the best achievable neural-head performance. It provides no persuasive reason to prefer the more complex head at present.\n\nThis is a useful practical result: a frozen representation and a modest supervised head are enough to reach high accuracy here. Full encoder fine-tuning was cancelled because of local resource constraints. The experiment therefore provides no evidence about its possible additional benefit.\n\n![Classification accuracy on BANKING77 development data](visualize:fde1_bGliZmlsZV9PSTRJdmZSd0YwT054WVd1Tl9oazB3_FileDrive_3ce54b7abbec8191a98bc6938d222787)\n\n## Learning correctness materially improved Haiku confidence\n\nThe cleanest confidence comparison holds the classifier fixed. Every Haiku method below uses the same 757 correct and 243 incorrect predictions; only the confidence assigned to each prediction changes.\n\n| Confidence method | Brier error ↓ | Binary log loss ↓ | Error AUROC ↑ |\n|---|---:|---:|---:|\n| Haiku’s original same-call confidence | 0.1454 | 0.4434 | 0.815 |\n| Separate Haiku verifier | 0.1388 | 0.4261 | 0.831 |\n| Learned correctness model | **0.0596** | **0.2093** | **0.961** |\n| Learned correctness plus sigmoid calibration | **0.0578** | 0.2100 | **0.961** |\n\nBrier error is the average squared difference between estimated correctness probability and the observed correct/incorrect outcome. Lower is better. Error AUROC measures how well low confidence ranks incorrect predictions above correct predictions; 0.5 is chance ranking and 1.0 is perfect ranking. Brier error and log loss capture both calibration and discrimination, so they should be read alongside reliability plots. [Scikit-learn calibration documentation](https://scikit-learn.org/stable/modules/calibration.html)\n\nThe learned model reduced Brier error from 0.1454 to 0.0596: a **59.0% relative reduction**. Its absolute improvement was 0.0858, with a paired 95% bootstrap interval of 0.0724–0.0990. Error AUROC improved by 0.146, with an interval of 0.120–0.173. Both comparisons support a substantial improvement on this sample.\n\nThe separate verifier’s Brier improvement was only 0.0066, with an interval of −0.0024 to +0.0156. Its AUROC improvement also had an interval spanning zero. Rechecking with the same model may help, but this experiment does not establish a reliable gain from verification alone.\n\nThe learned estimator used regularized logistic regression trained on the 2,000-example correctness partition. Its features were original confidence, verifier confidence, agreement with a blind second classification, input length, an empty-input flag, and two signals from the supervised TF-IDF classifier: support for Haiku’s chosen label and the margin between its top two classes. All were available without the development example’s true label. The blind classifier and verifier were additional Haiku calls; their errors need not be independent.\n\nThis qualification matters: the winning estimator combines learning, extra calls, and task-specific supervised evidence. There was no feature ablation, so the gain cannot be attributed to one ingredient. The completed run did not use embedding-neighbor features. Learning correctness from black-box model signals has research precedent, although earlier QA and summarization results do not establish performance on this task. [Large Language Model Confidence Estimation via Black-Box Access](https://arxiv.org/abs/2406.04370)\n\nOne diagnostic example illustrates the change. For “I would like to get a physical card, but I don’t know how. Can you help me?”, Haiku selected “get_physical_card” with 95% confidence. The reference label was “order_physical_card”; learned confidence fell to approximately 20%, and the embedding classifier matched the reference. This selected example shows how additional evidence can flag confident disagreements. It also exposes a benchmark limitation: closely related label names can be ambiguous, and measured correctness means agreement with the reference annotation.\n\n![Haiku confidence with identical predictions](visualize:fde1_bGliZmlsZV82SEh6R2NCdnhkNDVDQ1pqNGRsT0Nn_FileDrive_3ce54b7abbec8191a98bc6938d222787)\n\n## Better error ranking did not guarantee low-risk automation\n\nThe experiment selected the largest confidence-threshold acceptance set whose **upper endpoint of a 95% Wilson error interval was at most 1%**. This is stricter than requiring an observed error rate below 1%.\n\n| Candidate | Accepted | Errors among accepted | Observed error rate | Development coverage |\n|---|---:|---:|---:|---:|\n| Embedding LR with temperature scaling | **895** | **3** | **0.34%** | **89.5%** |\n| Embedding MLP with raw probabilities | 867 | 2 | 0.23% | 86.7% |\n| TF-IDF, all tested scores | 0 | — | — | 0% |\n| Haiku, all tested scores | 0 | — | — | 0% |\n| OpenAI Decisions, all tested scores | 0 | — | — | 0% |\n\nFor the calibrated embedding LR, the selected confidence threshold was approximately 0.9173. The nominal Wilson interval for its accepted error rate was **0.11%–0.98%**. That threshold was selected using these same development outcomes, so the interval does not account for searching over thresholds. **The 89.5% figure is a candidate operating point, not a validated deployment guarantee.** Its performance must be measured with the threshold frozen on independent data.\n\nHaiku shows why a strong AUROC is insufficient for this target. Even its 500 highest learned-confidence predictions contained eight errors: **1.6% observed error**. The score helped place errors toward the review end of the queue, but it did not produce a sufficiently clean accepted group under the selection rule. Zero accepted coverage here means no tested threshold qualified; it does not mean that every prediction was wrong or that the scores have no review value.\n\nNative LLM confidence also contained large ties. A threshold accepting no more than half the examples accepted 381 Haiku predictions, with 19 errors. This cannot be treated as an exactly matched 500-example comparison. The risk–coverage figures preserve tied-score groups rather than breaking them arbitrarily.\n\n![Development risk and automation coverage](visualize:fde1_bGliZmlsZV9uTjJRdDVNOUFyN2doMFM2X2p5VXRn_FileDrive_3ce54b7abbec8191a98bc6938d222787)\n\n## Calibration helped selectively\n\nTemperature scaling improved the embedding LR’s Brier error from **0.0328 to 0.0208**, while retaining its predicted labels. Its paired improvement interval was 0.0082–0.0157. Binary log loss also fell from 0.1326 to 0.0710. This is a useful improvement from a simple transformation fitted on separate calibration examples. Temperature scaling is an established baseline for calibrating class scores. [Guo and colleagues, 2017](https://proceedings.mlr.press/v70/guo17a.html)\n\nOther transformations were less helpful. Sigmoid calibration of Haiku’s original confidence changed Brier error only from 0.1454 to 0.1437; its paired improvement interval included zero. For learned correctness, sigmoid calibration slightly improved Brier error but slightly worsened log loss. A monotonic sigmoid transformation preserves the ordering of scores, so it cannot improve error AUROC through reranking.\n\nOpenAI Decisions’ native confidence and selected-label probability behaved almost identically, with error AUROC of approximately 0.824. They did not provide two meaningfully distinct signals in this run. The tested temperature transformation worsened selected-label Brier error from **0.1474 to 0.1903**. Its input was the logarithm of returned probabilities clipped at 10⁻¹², used as a surrogate for native logits; fitting minimized multiclass log loss. The result applies to this transformation and objective. It does not establish that temperature scaling generally fails or that native logits were tested.\n\nThese results support evaluating every calibration step on held-out outcomes. Adding a calibrator does not, by itself, establish better probabilities or better automation.\n\n## Comparing the probability curves\n\nReliability plots answer whether a reported probability matches observed correctness. A point below the diagonal indicates overconfidence in that bin; a point above it indicates underconfidence. Each comparison holds the classifier's selected labels fixed. The histogram beneath each panel shows how much evidence supports its points, and nominal Wilson intervals show sampling uncertainty. The plots use shared equal-width bins without smoothing or connecting sparse estimates.\n\nThe second figure separates scores assigned to correct and incorrect predictions. Greater separation helps prioritize review, but does not by itself establish calibrated probabilities. Each outcome distribution is normalized separately; its legend reports the actual number of cases. Cross-classifier comparisons also change which examples are errors, so the within-classifier comparisons are the stronger method comparison.\n\nThe raw embedding scores are underconfident in several populated bins. Temperature scaling moves more predictions toward high confidence and reduces probability error. Haiku's learned scores assign low confidence to a much larger share of its mistakes while leaving all selected labels unchanged. The tested OpenAI temperature transformation makes several bins underconfident and worsens Brier error. Sparse individual points should be interpreted with their counts and intervals.\n\n| Method | Scores at least 90% | Errors in that group | Observed error rate |\n|---|---:|---:|---:|\n| Embedding LR calibrated | 899 | 4 | 0.44% |\n| Haiku original | 503 | 37 | 7.36% |\n| Haiku learned | 592 | 12 | 2.03% |\n| OpenAI native probability | 511 | 39 | 7.63% |\n\nThe 90% cutoff is a descriptive reference point shared across methods. It is separate from the threshold chosen for the 1% automation criterion and does not constitute a deployment guarantee. Probability quality, error ranking, and coverage should be assessed together. The OpenAI temperature comparison uses log returned probabilities as a surrogate for native logits; the learned correctness comparisons also add supervised evidence and extra calls.\n\n![Reliability curves with bin counts and uncertainty](visualize:fde1_bGliZmlsZV8tcHZseG5iQ3lpZGtqbEZranB6eVhn_FileDrive_3ce54b7abbec8191a98bc6938d222787)\n\n![Confidence distributions for correct and incorrect predictions](visualize:fde1_bGliZmlsZV9VV19hM21Xd25jakpPajNUVGRNYVBR_FileDrive_3ce54b7abbec8191a98bc6938d222787)\n\n## Why the embedding curves looked volatile\n\nThe calibrated embedding LR placed **899 of 1,000 predictions in the 90–100% confidence bin**. Only 101 predictions populated all lower-confidence bins combined. The 30–40% bin contained six examples, of which one was correct; the 40–50% bin contained eight, of which five were correct. One changed outcome moves those bin accuracies by 16.7 or 12.5 percentage points.\n\nConnecting these estimates can make the curve look erratic even when the underlying score is useful. The immediate cause is sparse bin counts and concentrated confidence. High accuracy contributes by leaving only 29 errors, but high accuracy alone does not imply volatile calibration. The same small error count also makes risk–coverage curves advance in visible steps.\n\nThe appropriate response is to show counts and uncertainty, avoid smoothing away the scarcity of evidence, and obtain a larger representative evaluation sample. A harder representative task may generate more errors and reveal differences between confidence methods, but increasing evaluation size can improve precision without deliberately weakening classification. A representative document task would also test whether these findings transfer beyond short banking messages.\n\n![Embedding confidence bins and uncertainty](visualize:fde1_bGliZmlsZV9RSTlMeTZIbmdHOURmUDVLZzdUVjF3_FileDrive_3ce54b7abbec8191a98bc6938d222787)\n\n## What the findings justify next\n\n**Advance frozen EmbeddingGemma plus logistic regression as the main candidate.** It had the best observed classification and automation results, and the MLP showed no convincing advantage. Freeze the classifier, temperature transformation, and selected threshold before evaluating the untouched official test set.\n\n**Use learned correctness when retaining the LLM classifier has a business reason.** Its gain is substantial, but the next experiment should remove feature groups in turn: native confidence alone, added supervised TF-IDF evidence, blind agreement, and verifier evidence. This will identify which signals justify additional calls and labeled-data requirements. Compare that system against simply using the supervised classifier directly.\n\n**Expand the evaluation around the intended deployment population.** Repeat the strongest methods on a larger document-classification task, audit ambiguous disagreements, and evaluate unsupported inputs separately. Confidence on known banking intents does not establish out-of-scope detection or calibration under distribution shift. Full encoder fine-tuning can remain deferred until there is a clear unresolved question that warrants its resource cost.\n\n## Scope and reproducibility\n\nThese are development results from one split and one training seed. The 5,000-resample paired bootstrap uses the same sampled example IDs for each compared method and reports percentile intervals. It measures example-sampling uncertainty conditional on the fitted models and calibrators; it does not capture retraining variation, model selection, threshold search, or multiple-comparison adjustment. The confidence-method comparison within Haiku is stronger than a causal comparison across classifier families because its predictions are held fixed.\n\nThe API comparison covers the exact zero-shot configurations tested, not an optimized provider benchmark. Limited intent definitions, annotation ambiguity, and possible public-benchmark exposure during pretraining constrain interpretation. Two OpenAI calibration refusals and one development refusal were preserved; refusals received operational confidence zero and were always routed to review. Calibration and evaluation examples were not silently dropped to improve reported accuracy.\n\nEarly Haiku requests encountered truncation with adaptive thinking and a 256-token output limit. The comparison was restarted uniformly with thinking disabled; results do not mix selectively retained predictions from the two configurations. Historical calls remain in the cost ledger.\n\nRecorded API spending was approximately **$2.25**, a token-based ledger estimate including exploratory and discarded calls. It excludes local compute and is not a billing invoice. Batch waiting and resumed cached work make the recorded run durations unsuitable for a clean provider speed comparison.\n\nThe accompanying analysis records input SHA-256 hashes and verifies matching development IDs and unchanged predictions within each LLM confidence family. The scientific source outputs are the development reports and prediction files under runs/embeddings, runs/pilot, runs/anthropic-batch-v2, and runs/openai-decisions-v2. The dataset revision is 57ec275d8078af65b7731c2a98be812d844a6d6b; the frozen embedding revision is 57c266a740f537b4dc058e1b0cda161fd15afa75. The report analysis uses bootstrap seed 20261009. No official test predictions were generated for this report.\n",
+    "page_id": "page_8d6b5f224fe88191a0ee1a19d013497b"
+  },
+  "references": [
+    {
+      "reference": "visualize:fde1_bGliZmlsZV9PSTRJdmZSd0YwT054WVd1Tl9oazB3_FileDrive_3ce54b7abbec8191a98bc6938d222787",
+      "metadata_available": true,
+      "mime_type": "text/html",
+      "byte_size": 16708
+    },
+    {
+      "reference": "visualize:fde1_bGliZmlsZV82SEh6R2NCdnhkNDVDQ1pqNGRsT0Nn_FileDrive_3ce54b7abbec8191a98bc6938d222787",
+      "metadata_available": true,
+      "mime_type": "text/html",
+      "byte_size": 23952
+    },
+    {
+      "reference": "visualize:fde1_bGliZmlsZV9uTjJRdDVNOUFyN2doMFM2X2p5VXRn_FileDrive_3ce54b7abbec8191a98bc6938d222787",
+      "metadata_available": true,
+      "mime_type": "text/html",
+      "byte_size": 73867
+    },
+    {
+      "reference": "visualize:fde1_bGliZmlsZV8tcHZseG5iQ3lpZGtqbEZranB6eVhn_FileDrive_3ce54b7abbec8191a98bc6938d222787",
+      "metadata_available": true,
+      "mime_type": "text/html",
+      "byte_size": 134100
+    },
+    {
+      "reference": "visualize:fde1_bGliZmlsZV9VV19hM21Xd25jakpPajNUVGRNYVBR_FileDrive_3ce54b7abbec8191a98bc6938d222787",
+      "metadata_available": true,
+      "mime_type": "text/html",
+      "byte_size": 47336
+    },
+    {
+      "reference": "visualize:fde1_bGliZmlsZV9RSTlMeTZIbmdHOURmUDVLZzdUVjF3_FileDrive_3ce54b7abbec8191a98bc6938d222787",
+      "metadata_available": true,
+      "mime_type": "text/html",
+      "byte_size": 32831
+    }
+  ],
+  "references_truncated": false
+}

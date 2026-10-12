@@ -1,0 +1,125 @@
+id,text,truth,prediction,confidence,correct
+train:1077,I ordered my card a couple weeks ago and haven't received it yet. When can I expect it?,card_delivery_estimate,card_arrival,0.8,False
+train:1272,WHAT IS THE REASON FOR THAT,card_not_working,why_verify_identity,0.12,False
+train:129,How long will it be to get this new card?,card_arrival,card_delivery_estimate,0.75,False
+train:1296,My card was declined at a restaurant today and I am not sure why.,card_not_working,declined_card_payment,0.88,False
+train:1322,Today I used my card at a restaurant and it was declined. Why?,card_not_working,declined_card_payment,0.88,False
+train:1731,Is there a way to reset my PIN?,pin_blocked,change_pin,0.8,False
+train:180,"The card I thought was lost was just in my jacket, so can I reactivate it since I found it this morning?",card_linking,lost_or_stolen_card,0.75,False
+train:1847,How much does a transfer cost?,top_up_by_bank_transfer_charge,transfer_fee_charged,0.6,False
+train:1864,is there a fee for swift transfer,top_up_by_bank_transfer_charge,transfer_fee_charged,0.6,False
+train:1872,Does this program take SWIFT transfers?,top_up_by_bank_transfer_charge,transfer_into_account,0.55,False
+train:1888,Are you aware of any charges for receiving money?,top_up_by_bank_transfer_charge,receiving_money,0.55,False
+train:189,"I need a card reactivation, I had reported my card lost but I ran across it in my jacket.",card_linking,lost_or_stolen_card,0.55,False
+train:1904,Does it cost me to add cash?,top_up_by_bank_transfer_charge,top_up_by_cash_or_cheque,0.6,False
+train:237,"I'd lke my card reactivated, I was thinking it was misplaced but I discovered when I woke up that I had left it in my coat.",card_linking,lost_or_stolen_card,0.6,False
+train:2562,Why and I being charged this fee?,card_payment_fee_charged,extra_charge_on_statement,0.3,False
+train:2618,Why am I charged a fee when using my debit or credit card?,card_payment_fee_charged,top_up_by_card_charge,0.55,False
+train:2687,Is there an allowance on cards?,card_payment_fee_charged,getting_spare_card,0.3,False
+train:2725,I tried to transfer some money and it hasn't done it yet - what's going on?,transfer_not_received_by_recipient,pending_transfer,0.55,False
+train:2748,I need to transfer some money to a friend who is in urgent need of some fast cash. How long will it take before she can use that money?,transfer_not_received_by_recipient,transfer_timing,0.85,False
+train:2755,I am just waiting for the transaction to be completed.,transfer_not_received_by_recipient,pending_transfer,0.35,False
+train:2861,Why hasn't my in country transfer gone through yet? I confirmed the account info a couple days ago but the payment hasn't been posted yet.,transfer_not_received_by_recipient,pending_transfer,0.35,False
+train:3074,why hasn't my virtual card arrived?,getting_virtual_card,card_arrival,0.55,False
+train:3176,My top-up was cancelled and I am writing to ask if I need to complete the 3D Secure authentication section before I submit it.,top_up_reverted,top_up_failed,0.5,False
+train:3384,"I put money in my account a week ago but its still not there, what is happening?",balance_not_updated_after_cheque_or_cash_deposit,balance_not_updated_after_bank_transfer,0.5,False
+train:3461,where is my money from this morning,balance_not_updated_after_cheque_or_cash_deposit,balance_not_updated_after_bank_transfer,0.35,False
+train:3511,I'm not sure where this charge came from.,card_payment_not_recognised,extra_charge_on_statement,0.45,False
+train:3557,"I just saw some charges on my card from the past days that I dont recognize, I need to freeze the card asap! Will I be able to get my money back?",card_payment_not_recognised,compromised_card,0.55,False
+train:3813,What is the first step I need to make for being able to access my account?,why_verify_identity,verify_my_identity,0.35,False
+train:3897,Help me verify my identify?,unable_to_verify_identity,verify_my_identity,0.9,False
+train:3989,I'm still waiting on my identity verification.,unable_to_verify_identity,verify_my_identity,0.55,False
+train:3997,my pin hasn't arrived in the post! How do I cancel it or get a new one?,get_physical_card,card_arrival,0.45,False
+train:4050,When do I set up my card PIN?,get_physical_card,change_pin,0.5,False
+train:4062,How long do I wait for my PIN,get_physical_card,card_delivery_estimate,0.45,False
+train:4094,can i create my own pin right away,get_physical_card,change_pin,0.6,False
+train:4117,"I have a Visa and Mastercard, can I use these?",visa_or_mastercard,supported_cards_and_currencies,0.6,False
+train:4236,i can not see my top up,topping_up_by_card,pending_top_up,0.4,False
+train:4239,"I tried topping up using my card, but the money is gone?",topping_up_by_card,top_up_reverted,0.45,False
+train:4268,Why was my card charged when topping off my balance but it's not showing up in my wallet balance?,topping_up_by_card,pending_top_up,0.5,False
+train:4304,My friends would like to add to my account. What is the procedure?,topping_up_by_card,receiving_money,0.6,False
+train:4404,Why can't I use a disposable card?,disposable_card_limits,virtual_card_not_working,0.55,False
+train:4538,My wallet was stolen and all my credit cards were in there.  HELP?!!?,compromised_card,lost_or_stolen_card,0.93,False
+train:4706,"Recently, a few weeks ago there was a transaction made on my account by some seller that I don't recognize. I am very certain that didn't happen  and will like for you to trace back to make sure.",direct_debit_payment_not_recognised,card_payment_not_recognised,0.85,False
+train:4727,what is this charge i didnt do it what can i do,direct_debit_payment_not_recognised,card_payment_not_recognised,0.45,False
+train:4755,Purchases I did not make are appearing in my bank statement?,direct_debit_payment_not_recognised,card_payment_not_recognised,0.8,False
+train:4796,I just found a payment from a while back in my account that I didn't make.  Can I still dispute it even though it was a couple of months ago?,direct_debit_payment_not_recognised,card_payment_not_recognised,0.72,False
+train:5069,i entered my pin in wrong and got it frozen. how many tries do i have,declined_cash_withdrawal,pin_blocked,0.95,False
+train:5136,Why haven't I gotten my payment yet?,pending_card_payment,balance_not_updated_after_bank_transfer,0.3,False
+train:5268,Can you tell me what i steps i should take since my card was stolen?,lost_or_stolen_phone,lost_or_stolen_card,0.93,False
+train:5361,I just replaced my phone but how do I use my card information?,lost_or_stolen_phone,card_linking,0.45,False
+train:5510,Canceling my order is what I need to do right now.,request_refund,cancel_transfer,0.4,False
+train:5559,Why do you keep declining my transfers? it's always been working really well so far but when I tried to buy something just now the card got declined . I tried couple of times already  but same thing is happening .,declined_transfer,declined_card_payment,0.6,False
+train:5567,How do I make my transfer go through,declined_transfer,pending_transfer,0.4,False
+train:5608,Please help me as my online payment is getting declined since yesterday while i am trying to purchase something online.,declined_transfer,declined_card_payment,0.8,False
+train:5625,I've made more than one attempt to make a purchase and the card keeps getting declined. Why do you keep denying my transfers?,declined_transfer,declined_card_payment,0.6,False
+train:563,"I'm going on a trip soon and I needed to convert my Russian ruble to UK pounds, but when I did, your company charged me above the exchange rate. Did you mess up my transaction?",card_payment_wrong_exchange_rate,exchange_charge,0.6,False
+train:5662,"i have tried everything to complete a transfer but can't, what should i do next",declined_transfer,failed_transfer,0.45,False
+train:5681,why cant you just refund me instead of a merchant,Refund_not_showing_up,request_refund,0.6,False
+train:5870,My card wasn't working in a shop,declined_card_payment,card_not_working,0.5,False
+train:6006,What am I supposed to do if the funds haven't show up from a transfer completed this morning?,pending_transfer,balance_not_updated_after_bank_transfer,0.75,False
+train:6014,Why is it taking so long for my pending transaction to post as cleared?,pending_transfer,pending_card_payment,0.55,False
+train:6092,when will my transfer clear,pending_transfer,transfer_timing,0.55,False
+train:6360,I have been overcharged.,transaction_charged_twice,extra_charge_on_statement,0.35,False
+train:6516,where can I see who sent me funds,verify_source_of_funds,receiving_money,0.55,False
+train:6630,When will the money show in my account?,transfer_timing,balance_not_updated_after_bank_transfer,0.35,False
+train:6664,"I just did a transfer, but don't see the money in my account. What's up?",transfer_timing,balance_not_updated_after_bank_transfer,0.72,False
+train:673,There is a pending payment on my account that is very strange. I don't remember making this and it won't go away. Can you help me figure this out?,extra_charge_on_statement,card_payment_not_recognised,0.55,False
+train:6757,"I would like to make a purchase, however my card has been declined. I would like to ask the reason for this. The past two weeks, the card has been working fine.",reverted_card_payment?,declined_card_payment,0.85,False
+train:6762,"My card has an issue, the payment has been deferred.",reverted_card_payment?,pending_card_payment,0.55,False
+train:6775,Why isn't my payment showing?,reverted_card_payment?,balance_not_updated_after_bank_transfer,0.3,False
+train:6834,"I purchased something and already received it, why hasn't the money taken out?",reverted_card_payment?,pending_card_payment,0.72,False
+train:7005,is there something blocking me from making transfers,beneficiary_not_allowed,declined_transfer,0.55,False
+train:7025,I'm trying to purchase crypto via the app. I haven't been able to get it to go through. Am I doing something wrong?,beneficiary_not_allowed,exchange_via_app,0.4,False
+train:7028,why didnt a transfer to my account process,beneficiary_not_allowed,balance_not_updated_after_bank_transfer,0.5,False
+train:7039,I wanted to purchase some crypto. The app will not let me. What's going on here? I really want to make this exchange.,beneficiary_not_allowed,fiat_currency_support,0.55,False
+train:7108,I cant transfer money into my account,beneficiary_not_allowed,transfer_into_account,0.45,False
+train:7119,"I was trying to make a transfer and got an error message telling me it was not possible to make the transfer. This has never happened before, what happened?",beneficiary_not_allowed,declined_transfer,0.6,False
+train:7135,Why cant I transfer to my account?,beneficiary_not_allowed,declined_transfer,0.35,False
+train:7218,why was i chargged,transfer_fee_charged,extra_charge_on_statement,0.3,False
+train:7227,Could you inform me as to why I have been charged a higher fee for doing banking abroad.,transfer_fee_charged,card_payment_fee_charged,0.3,False
+train:7299,Does it cost anything to buy something from another country? Like is there going to be hidden transfer fees or currency conversion fees?,transfer_fee_charged,exchange_charge,0.55,False
+train:7357,I need my payment in another currency,receiving_money,fiat_currency_support,0.35,False
+train:7440,I believe that my transfer hasn't gone through.,failed_transfer,pending_transfer,0.4,False
+train:7553,"I can't transfer any money from my account to my friend's account, it keeps rejecting it. Can you tell me why? I have enough funds in my account to transfer.",failed_transfer,declined_transfer,0.75,False
+train:7558,"When I tried to transfer funds to my friend today I was unable to do so, why?",failed_transfer,declined_transfer,0.5,False
+train:7634,How can I deposit money to my account?,transfer_into_account,top_up_by_cash_or_cheque,0.4,False
+train:7869,I want a new card,getting_spare_card,order_physical_card,0.35,False
+train:7955,What is not accepted in order for me to top up my account?,top_up_by_cash_or_cheque,supported_cards_and_currencies,0.55,False
+train:8083,What areas are cards delivered to?,order_physical_card,country_support,0.55,False
+train:8216,Why did my exchange rate change?,wrong_exchange_rate_for_cash_withdrawal,exchange_rate,0.55,False
+train:8226,"I was overcharged at an ATM while on vacation. I needed cash so I had to use it, but your charges are outregous and I wish I would have known beforehand.",wrong_exchange_rate_for_cash_withdrawal,cash_withdrawal_charge,0.6,False
+train:8228,"Hi, I have withdrawn cash from the ATM on holiday and i guess withdrawal amount has been overcharged. I did it as i was not aware of these charges.",wrong_exchange_rate_for_cash_withdrawal,cash_withdrawal_charge,0.6,False
+train:8229,I withdrew  money from the ATM and was overcharged.  It said nothing about an extra fee.,wrong_exchange_rate_for_cash_withdrawal,cash_withdrawal_charge,0.8,False
+train:8233,what are weekend rates for getting cash,wrong_exchange_rate_for_cash_withdrawal,exchange_charge,0.4,False
+train:825,Why is a transaction still pending?,pending_cash_withdrawal,pending_card_payment,0.45,False
+train:8258,Is there a fee associated with using foreign exchange ATMs?,wrong_exchange_rate_for_cash_withdrawal,cash_withdrawal_charge,0.55,False
+train:833,Explain pending transactions.,pending_cash_withdrawal,pending_card_payment,0.55,False
+train:8339,The exchange rate applied was incorrect when I was traveling outside the country.,wrong_exchange_rate_for_cash_withdrawal,card_payment_wrong_exchange_rate,0.75,False
+train:8340,Whats wrong with my currency exchange?,wrong_exchange_rate_for_cash_withdrawal,card_payment_wrong_exchange_rate,0.4,False
+train:8368,You applied the wrong exchange rate while I was traveling outside the country.,wrong_exchange_rate_for_cash_withdrawal,card_payment_wrong_exchange_rate,0.75,False
+train:8381,can i get a virtual card online,get_disposable_virtual_card,getting_virtual_card,0.88,False
+train:8416,How can disposable cards be used?,get_disposable_virtual_card,disposable_card_limits,0.55,False
+train:8644,What's the time frame normally for a UK account transfer? I just made one and it's not showing up anywhere. I want to be sure that everything is good.,balance_not_updated_after_bank_transfer,transfer_timing,0.5,False
+train:8646,Is there a longer processing time for international bank transfers?,balance_not_updated_after_bank_transfer,transfer_timing,0.8,False
+train:873,When will the cash that I put in the ATM be cleared from pending status?,pending_cash_withdrawal,balance_not_updated_after_cheque_or_cash_deposit,0.55,False
+train:8754,Help me find the transfer that I did.,balance_not_updated_after_bank_transfer,transfer_not_received_by_recipient,0.35,False
+train:8765,How long does it take for money to reach my account?,balance_not_updated_after_bank_transfer,transfer_timing,0.6,False
+train:878,Why has my deposit in the ATM not cleared yet?,pending_cash_withdrawal,balance_not_updated_after_cheque_or_cash_deposit,0.85,False
+train:8816,Why is there extra cash in my account?,cash_withdrawal_not_recognised,reverted_card_payment?,0.2,False
+train:8826,My app shows cash I didn't get.,cash_withdrawal_not_recognised,wrong_amount_of_cash_received,0.5,False
+train:8864,I hope you can help me. My account has been compromised from a different town that I haven't been to. Can you please place a hold on my account until I can make it to the bank?,cash_withdrawal_not_recognised,compromised_card,0.6,False
+train:8871,I did not get the cash that is showing up in my app.,cash_withdrawal_not_recognised,wrong_amount_of_cash_received,0.6,False
+train:8895,"Someone is using my card to purchase flights to New York it's not me because I'm not going to New York, please can you cancel the card and refund the money?",cash_withdrawal_not_recognised,card_payment_not_recognised,0.55,False
+train:8932,"My wallet was just stolen, and they've already used my card! Please help, I can't afford to lose more money!",cash_withdrawal_not_recognised,lost_or_stolen_card,0.6,False
+train:9306,What identification is required to activate my card?,activate_my_card,verify_my_identity,0.5,False
+train:9335,How can my new card be renewed?,activate_my_card,card_about_to_expire,0.6,False
+train:9517,"I am overseas in China, can I get a replacement card?",card_about_to_expire,card_delivery_estimate,0.35,False
+train:9586,Can I get a new card in China?,card_about_to_expire,country_support,0.5,False
+train:9619,I'm in China and really need a new card.,card_about_to_expire,order_physical_card,0.35,False
+train:9666,"I am having a slight problem with my American express in apple play, can you help me fix the problem with top up?",apple_pay_or_google_pay,top_up_failed,0.5,False
+train:967,Are you able to make exchanges to EUR?,fiat_currency_support,exchange_via_app,0.6,False
+train:9756,"i have been trying to add money with apple pay but it wont work, why?",apple_pay_or_google_pay,top_up_failed,0.55,False
+train:9760,"I got my American Express in Apple Pay, why is top up not working correctly?",apple_pay_or_google_pay,top_up_failed,0.55,False
+train:9860,why do I need to show ID,verify_my_identity,why_verify_identity,0.88,False
+train:997,Are you okay with exchanges to EUR?,fiat_currency_support,exchange_via_app,0.55,False

@@ -1,0 +1,26 @@
+{
+  "parsed": {
+    "label": "fiat_currency_support",
+    "confidence": 0.97
+  },
+  "model": "claude-sonnet-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2114,
+    "output_tokens": 23,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "latency_seconds": 1.9860562002286315,
+  "usd": 0.004458,
+  "request_sha256": "8b43e9f8a9430f8482dc9c19d26b45ba81ebd54afa4fb50e4601481aa8d7e566"
+}

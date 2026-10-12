@@ -1,0 +1,16 @@
+{
+  "state": "complete",
+  "started_utc": "2026-10-09T20:32:13.143116+00:00",
+  "config": "configs/anthropic-sonnet-5-5.toml",
+  "pid": 13356,
+  "log": "runs\\anthropic-sonnet-5-5\\background.log",
+  "budget_usd": 25.0,
+  "cpu_threads": 2,
+  "priority": "below_normal",
+  "budget_enforced": false,
+  "child_pid": 22328,
+  "updated_utc": "2026-10-09T20:56:02.915298+00:00",
+  "exit_code": 0,
+  "completed_utc": "2026-10-09T20:56:03.019038+00:00",
+  "report": "runs\\anthropic-sonnet-5-5\\development\\report.html"
+}

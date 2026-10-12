@@ -1,0 +1,19 @@
+seed = 42
+data_dir = "data/banking77"
+run_dir = "runs/modernbert"
+methods = ["modernbert"]
+max_error = 0.01
+threshold_rule = "wilson"
+
+[encoder]
+model = "answerdotai/ModernBERT-base"
+revision = "8949b909ec900327062f0ebf497f51aef5e6f0c8"
+device = "cpu"
+max_length = 256
+batch_size = 4
+epochs = 3
+learning_rate = 0.00002
+
+[runtime]
+# Leave room for full weights, gradients, two Adam states, and activations.
+min_available_memory_gib = 4.0

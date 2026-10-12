@@ -1,0 +1,15 @@
+{
+  "state": "complete",
+  "started_utc": "2026-10-09T19:47:19.695078+00:00",
+  "config": "configs/anthropic-batch-v2.toml",
+  "pid": 16280,
+  "log": "runs\\anthropic-batch-v2\\background.log",
+  "budget_usd": 25.0,
+  "cpu_threads": 2,
+  "priority": "below_normal",
+  "child_pid": 3596,
+  "updated_utc": "2026-10-09T20:07:53.754263+00:00",
+  "exit_code": 0,
+  "completed_utc": "2026-10-09T20:07:53.819765+00:00",
+  "report": "runs\\anthropic-batch-v2\\development\\report.html"
+}

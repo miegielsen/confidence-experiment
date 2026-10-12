@@ -1,0 +1,8 @@
+{
+  "reason": "Clamp tiny negative plotted interval lengths after CSV roundtrip",
+  "old_identity": "184dbdd4a5a58398e79826866ecd5a7edeace443a50f156fd5497213b87bf8fc",
+  "new_identity": "e7f19709dea69a6b471b5d31b26a8879c32e37613c26516b00d90a5fa05e1df1",
+  "scientific_metrics_identical": true,
+  "used_existing_supervised_checkpoint": true,
+  "recovered_utc": "2026-10-09T19:39:21.632319+00:00"
+}

@@ -1,0 +1,220 @@
+{'opus_minus_sonnet_accuracy': 0.04600000000000004, 'opus_minus_tfidf_accuracy': 0.0050000000000000044, 'opus_minus_haiku_accuracy': 0.119, 'embedding_minus_opus_accuracy': 0.09499999999999997, 'opus_original_minus_learned_brier': 0.04627860064859523, 'opus_original_minus_verifier_brier': 0.007478600000000002, 'opus_learned_minus_original_auroc': 0.08791335248195609}
+                     title         method  calibration_errors    brier  log_loss  error_auroc  coverage  exact_one_errors
+            Embedding + LR            raw                  39 0.032789  0.132625     0.960865     0.892                 0
+            Embedding + LR    temperature                  39 0.020810  0.070956     0.962179     0.895                 0
+            Embedding + LR logistic_score                  39 0.021332  0.084150     0.960865     0.892                 0
+            Embedding + LR logistic_logit                  39 0.021659  0.073846     0.960865     0.892                 0
+            Embedding + LR       isotonic                  39 0.022585  0.074567     0.955929     0.845                 0
+           Embedding + MLP            raw                  29 0.022347  0.074855     0.959919     0.867                 0
+           Embedding + MLP    temperature                  29 0.022644  0.075961     0.959819     0.865                 0
+           Embedding + MLP logistic_score                  29 0.025551  0.102675     0.959919     0.867                 0
+           Embedding + MLP logistic_logit                  29 0.022266  0.075630     0.959919     0.867                 0
+           Embedding + MLP       isotonic                  29 0.023503  0.078462     0.957239     0.818                 0
+              Haiku native            raw                 252 0.145365  0.443396     0.815356     0.000                 0
+              Haiku native logistic_score                 252 0.143749  0.448840     0.815356     0.000                 0
+              Haiku native logistic_logit                 252 0.141680  0.434090     0.815356     0.000                 0
+              Haiku native       isotonic                 252 0.141640  0.431477     0.812934     0.000                 0
+            Haiku verifier            raw                 252 0.138783  0.426119     0.830509     0.000                 0
+            Haiku verifier logistic_score                 252 0.141137  0.441080     0.830509     0.000                 0
+            Haiku verifier logistic_logit                 252 0.137746  0.425767     0.830509     0.000                 0
+            Haiku verifier       isotonic                 252 0.136671  0.430820     0.828857     0.000                 1
+ Haiku learned correctness            raw                 252 0.059576  0.209298     0.961245     0.000                 0
+ Haiku learned correctness logistic_score                 252 0.057796  0.209962     0.961245     0.000                 0
+ Haiku learned correctness logistic_logit                 252 0.058509  0.205945     0.961245     0.000                 0
+ Haiku learned correctness       isotonic                 252 0.058515  0.205684     0.959014     0.000                 0
+               TF-IDF + LR            raw                 118 0.145159  0.438383     0.867194     0.000                 0
+               TF-IDF + LR    temperature                 118 0.075406  0.248567     0.901023     0.000                 0
+               TF-IDF + LR logistic_score                 118 0.086810  0.279520     0.867194     0.000                 0
+               TF-IDF + LR logistic_logit                 118 0.085698  0.274967     0.867194     0.000                 0
+               TF-IDF + LR       isotonic                 118 0.087464  0.319346     0.862303     0.000                 1
+             Sonnet native            raw                 184 0.120068  0.378247     0.834752     0.000                 0
+             Sonnet native logistic_score                 184 0.106521  0.343005     0.834752     0.000                 0
+             Sonnet native logistic_logit                 184 0.107057  0.344836     0.834752     0.000                 0
+             Sonnet native       isotonic                 184 0.107846  0.361198     0.832360     0.000                 1
+           Sonnet verifier            raw                 184 0.124918  0.389472     0.834189     0.000                 0
+           Sonnet verifier logistic_score                 184 0.107545  0.345485     0.834189     0.000                 0
+           Sonnet verifier logistic_logit                 184 0.107350  0.342341     0.834189     0.000                 0
+           Sonnet verifier       isotonic                 184 0.107904  0.372810     0.834734     0.000                 1
+Sonnet learned correctness            raw                 184 0.053139  0.192069     0.952027     0.000                 0
+Sonnet learned correctness logistic_score                 184 0.050516  0.188552     0.952027     0.000                 0
+Sonnet learned correctness logistic_logit                 184 0.051929  0.190686     0.952027     0.000                 0
+Sonnet learned correctness       isotonic                 184 0.053277  0.224090     0.945188     0.000                 3
+               Opus native            raw                 133 0.097202  0.325616     0.851106     0.000                 0
+               Opus native logistic_score                 133 0.083629  0.280691     0.851106     0.000                 0
+               Opus native logistic_logit                 133 0.083927  0.279610     0.851106     0.000                 0
+               Opus native       isotonic                 133 0.085485  0.374672     0.839557     0.000                 8
+             Opus verifier            raw                 133 0.089723  0.304237     0.855110     0.000                 0
+             Opus verifier logistic_score                 133 0.081559  0.277260     0.855110     0.000                 0
+             Opus verifier logistic_logit                 133 0.081105  0.272500     0.855110     0.000                 0
+             Opus verifier       isotonic                 133 0.082063  0.364176     0.847258     0.000                 8
+  Opus learned correctness            raw                 133 0.050923  0.182426     0.939019     0.000                 0
+  Opus learned correctness logistic_score                 133 0.049911  0.185585     0.939019     0.000                 0
+  Opus learned correctness logistic_logit                 133 0.049943  0.180776     0.939019     0.000                 0
+  Opus learned correctness       isotonic                 133 0.050241  0.246826     0.928957     0.000                 5
+         OpenAI confidence            raw                 255 0.147245  0.470533     0.824266     0.000                 1
+         OpenAI confidence logistic_score                 255 0.146883  0.455466     0.824266     0.000                 0
+         OpenAI confidence logistic_logit                 255 0.144013  0.449139     0.824266     0.000                 0
+         OpenAI confidence       isotonic                 255 0.145467  0.513353     0.822818     0.000                 0
+        OpenAI probability            raw                 255 0.147412  0.470736     0.824266     0.000                 1
+        OpenAI probability logistic_score                 255 0.146835  0.455279     0.824266     0.000                 0
+        OpenAI probability    temperature                 255 0.190341  0.564909     0.812251     0.000                 0
+        OpenAI probability logistic_logit                 255 0.144002  0.449202     0.824266     0.000                 0
+        OpenAI probability       isotonic                 255 0.145467  0.513353     0.822818     0.000                 0
+Report: H:\Mijn Drive\Projects\confidence-experiment\reports\calibrator-comparison\report.html
+{
+  "stage_costs": {
+    "haiku": {
+      "original": {
+        "actual": 0.11176185000000001,
+        "standard_rate_proxy": 0.22352370000000002,
+        "batch_calls": 1000,
+        "synchronous_calls": 0
+      },
+      "blind": {
+        "actual": 0.11024110000000001,
+        "standard_rate_proxy": 0.22048220000000002,
+        "batch_calls": 1000,
+        "synchronous_calls": 0
+      },
+      "verifier": {
+        "actual": 0.058949850000000005,
+        "standard_rate_proxy": 0.11789970000000001,
+        "batch_calls": 1000,
+        "synchronous_calls": 0
+      }
+    },
+    "sonnet": {
+      "original": {
+        "actual": 2.238963,
+        "standard_rate_proxy": 4.464564,
+        "batch_calls": 997,
+        "synchronous_calls": 3
+      },
+      "blind": {
+        "actual": 2.205584,
+        "standard_rate_proxy": 4.398004,
+        "batch_calls": 997,
+        "synchronous_calls": 3
+      },
+      "verifier": {
+        "actual": 1.182417,
+        "standard_rate_proxy": 2.357804,
+        "batch_calls": 997,
+        "synchronous_calls": 3
+      }
+    },
+    "opus": {
+      "original": {
+        "actual": 4.631082,
+        "standard_rate_proxy": 9.235368,
+        "batch_calls": 997,
+        "synchronous_calls": 3
+      },
+      "blind": {
+        "actual": 4.656004,
+        "standard_rate_proxy": 9.285608,
+        "batch_calls": 997,
+        "synchronous_calls": 3
+      },
+      "verifier": {
+        "actual": 3.055712,
+        "standard_rate_proxy": 6.087912,
+        "batch_calls": 997,
+        "synchronous_calls": 3
+      }
+    }
+  },
+  "frontiers": {
+    "all_api_fee_only": {
+      "accuracy": [
+        "embedding_lr.raw",
+        "embedding_lr.temperature",
+        "embedding_lr.logistic_score",
+        "embedding_lr.logistic_logit",
+        "embedding_lr.isotonic"
+      ],
+      "brier": [
+        "embedding_lr.temperature"
+      ],
+      "error_auroc": [
+        "embedding_lr.temperature"
+      ],
+      "coverage": [
+        "embedding_lr.temperature"
+      ]
+    },
+    "hosted_api_fee_only": {
+      "accuracy": [
+        "haiku_same.raw",
+        "haiku_same.logistic_score",
+        "haiku_same.logistic_logit",
+        "haiku_same.isotonic",
+        "sonnet_same.raw",
+        "sonnet_same.logistic_score",
+        "sonnet_same.logistic_logit",
+        "sonnet_same.isotonic",
+        "opus_same.raw",
+        "opus_same.logistic_score",
+        "opus_same.logistic_logit",
+        "opus_same.isotonic",
+        "decisions_confidence.raw",
+        "decisions_confidence.logistic_score",
+        "decisions_confidence.logistic_logit",
+        "decisions_confidence.isotonic",
+        "decisions_probability.raw",
+        "decisions_probability.logistic_score",
+        "decisions_probability.temperature",
+        "decisions_probability.logistic_logit",
+        "decisions_probability.isotonic"
+      ],
+      "brier": [
+        "haiku_same.isotonic",
+        "haiku_verifier.isotonic",
+        "haiku_correctness.logistic_score",
+        "sonnet_correctness.logistic_score",
+        "opus_correctness.logistic_score",
+        "decisions_probability.logistic_logit"
+      ],
+      "error_auroc": [
+        "haiku_verifier.raw",
+        "haiku_verifier.logistic_score",
+        "haiku_verifier.logistic_logit",
+        "haiku_correctness.raw",
+        "haiku_correctness.logistic_score",
+        "haiku_correctness.logistic_logit",
+        "decisions_confidence.raw",
+        "decisions_confidence.logistic_score",
+        "decisions_confidence.logistic_logit",
+        "decisions_probability.raw",
+        "decisions_probability.logistic_score",
+        "decisions_probability.logistic_logit"
+      ],
+      "coverage": [
+        "decisions_confidence.raw",
+        "decisions_confidence.logistic_score",
+        "decisions_confidence.logistic_logit",
+        "decisions_confidence.isotonic",
+        "decisions_probability.raw",
+        "decisions_probability.logistic_score",
+        "decisions_probability.temperature",
+        "decisions_probability.logistic_logit",
+        "decisions_probability.isotonic"
+      ]
+    },
+    "hosted_cost_accuracy_brier": [
+      "haiku_same.isotonic",
+      "haiku_verifier.isotonic",
+      "haiku_correctness.logistic_score",
+      "sonnet_same.logistic_score",
+      "sonnet_correctness.logistic_score",
+      "opus_same.logistic_score",
+      "opus_verifier.logistic_logit",
+      "opus_correctness.logistic_score",
+      "decisions_probability.logistic_logit"
+    ]
+  },
+  "retained_total": 73.07171324999999
+}
+Complete report: H:\Mijn Drive\Projects\confidence-experiment\reports\banking77-findings\report.html
+Verified 139 source hashes; 12 figures; 5336 words.
+Opus local reports complete; Page sync pending.

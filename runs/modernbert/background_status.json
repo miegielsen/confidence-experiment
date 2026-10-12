@@ -1,0 +1,16 @@
+{
+  "state": "cancelled",
+  "started_utc": "2026-10-09T20:01:41.868459+00:00",
+  "config": "configs/modernbert.toml",
+  "pid": 11672,
+  "log": "runs\\modernbert\\background.log",
+  "budget_usd": null,
+  "cpu_threads": 2,
+  "priority": "below_normal",
+  "budget_enforced": true,
+  "child_pid": 12504,
+  "updated_utc": "2026-10-09T20:04:12.330211+00:00",
+  "reason": "User: forget about BERT for now",
+  "cancelled_utc": "2026-10-09T20:04:16.297672+00:00",
+  "training_started": false
+}

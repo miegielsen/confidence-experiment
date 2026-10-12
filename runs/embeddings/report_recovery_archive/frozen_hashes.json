@@ -1,0 +1,6 @@
+{
+  "frozen.joblib": "2d1d9c7648ea6e5069f145f71c1aae5222969702d5f65d27b68558e78c639884",
+  "embedding_lr.joblib": "465835848f3a8ca45208c9780f348bfa9aa2b0b9334f6615f7ba2564eb09917b",
+  "embedding_mlp.joblib": "82f35c0637a7a77c02902ad3b1e023a45fa5f9260deb3d0c11f68398d212cda4",
+  "embedding_model.json": "49f6a541151310aeb4ca2837c529f0c865f7aad2f657c4b056d4b306a47f2c50"
+}

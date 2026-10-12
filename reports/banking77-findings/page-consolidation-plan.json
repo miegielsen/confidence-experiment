@@ -1,0 +1,339 @@
+{
+  "page_id": "page_8d6b5f224fe88191a0ee1a19d013497b",
+  "operations": [
+    {
+      "op": "replace_block_markdown",
+      "block_id": "c5faf019-e5dc-4b40-b861-9299c2feecef",
+      "expected_hash": "1e16a590a6c6c5836d5dfa2daf40131a8c6467ab8b4a74443073d0fdb0a887f4",
+      "markdown": "A frozen embedding model with a linear classifier correctly classified **971 of 1,000 banking queries**. Sonnet 5.5 classified 830 correctly, Haiku 5.5 classified 757, and OpenAI Decisions classified 733. With task-specific labeled examples available, the supervised embedding approach remains the strongest candidate for further validation."
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "931ea83c-d0fb-4415-86ef-28b3bb64c0a9",
+      "expected_hash": "32fef84fd3bc45a4eaed9e62dfef4724b723c66dba040ac1181cad59dce54b54",
+      "markdown": "Learning correctness was useful for both Claude models. Keeping their predictions unchanged, a small learned estimator reduced Brier error by **59.0% for Haiku and 55.7% for Sonnet**, before final probability calibration. Verification alone showed no clear benefit. Temperature scaling, logistic calibration, and isotonic regression produced different outcomes across confidence sources; greater flexibility did not produce a consistent advantage."
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "58e5ef5a-0dd8-4ead-86b3-c165ca3af9ef",
+      "expected_hash": "e14a1c7c307002d284c773a98a6945ae7000c0a945380a4624f4a79c152f63df",
+      "markdown": "The calibrated embedding classifier could accept **895 development predictions with three errors** under the experiment’s threshold-selection rule. Learned confidence improved LLM triage, but no tested Haiku or Sonnet threshold met the same stringent 1% error criterion. These are development findings; the official test set remains unevaluated."
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "b3624440-4f00-46c4-98dc-ef28b0ba8a24",
+      "expected_hash": "3b5e1c3bedde106fbd4ab44a0950c99d716e3dab165c6853227e76ce9da8df92",
+      "markdown": "| Data role | Examples | Purpose |\n|---|---:|---|\n| Classifier fitting | 5,992 | Train the supervised classifiers |\n| Correctness training | 2,000 | Train separate Haiku and Sonnet correctness estimators |\n| Calibration | 1,000 | Fit temperature, logistic and isotonic transformations |\n| Development | 1,000 | Compare methods and choose acceptance thresholds |\n| Official test | 3,080 | Reserved for final evaluation |"
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "c4a3c09c-1689-49f6-84bd-5a67c734cd22",
+      "expected_hash": "66b2da8b0f827bdb118053c3263e89b52d308f3bc23aba5a2d7677b80e4cfe78",
+      "markdown": "| Classifier | Accuracy | Macro F1 | Errors out of 1,000 |\n|---|---:|---:|---:|\n| EmbeddingGemma plus logistic regression | **97.1%** | **0.972** | **29** |\n| EmbeddingGemma plus a small MLP | 96.9% | 0.970 | 31 |\n| TF-IDF plus logistic regression | 87.1% | 0.873 | 129 |\n| Anthropic Sonnet 5.5 | 83.0% | 0.829 | 170 |\n| Anthropic Haiku 5.5 | 75.7% | 0.756 | 243 |\n| OpenAI Decisions using gpt-6-luna | 73.3% | 0.735 | 267 |"
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "1919bf30-c991-4478-b2fc-12d25936c777",
+      "expected_hash": "3100dd8d21ca2246a3f64764b9171cde418eadec6647570b64ace0dcc92375ec",
+      "markdown": "The embedding classifier led Sonnet by **14.1 percentage points**, with a paired 95% bootstrap interval of **11.9–16.3 points**. Its leads over Haiku and OpenAI Decisions were 21.4 points and 23.8 points, with intervals of 18.8–24.0 and 21.1–26.5 points. These gaps are large within this development sample, conditional on the fitted models, available task labels, and the particular prompting setup."
+    },
+    {
+      "op": "insert_markdown",
+      "at": {
+        "kind": "between_blocks",
+        "preceding_block_id": "8c16528d-998a-482a-b73f-185aeab20d4e",
+        "following_block_id": "ceecc655-23f8-46dd-836e-2716bcf14a4d"
+      },
+      "markdown": "Six classifiers on the same 1,000 development messages; whiskers are marginal 95% Wilson accuracy intervals. The three supervised classifiers used 5,992 labeled fitting examples; LLM classifiers used zero-shot intent names. These are different task-specific training conditions."
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "70ba7c9c-8972-4b2d-b905-6d74dfed9c9e",
+      "expected_hash": "bc91b76a4164049f7e38031f0493c3f1055cb882e0d46c30e0ff9426c14f2a3d",
+      "markdown": "| Confidence method | Brier error ↓ | Binary log loss ↓ | Error AUROC ↑ |\n|---|---:|---:|---:|\n| Haiku’s original same-call confidence | 0.1454 | 0.4434 | 0.815 |\n| Separate Haiku verifier | 0.1388 | 0.4261 | 0.831 |\n| Learned correctness model | 0.0596 | **0.2093** | **0.961** |\n| Learned correctness plus logistic on score | **0.0578** | 0.2100 | **0.961** |"
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "1991caa7-823f-40f5-8cab-9dba4b5b7443",
+      "expected_hash": "f764d26e410a3e61e340e79fe6cdfc88b5d39be8ba768e8fe5cefa3b67aa2fcd",
+      "markdown": "The Haiku and Sonnet correctness estimators used separate regularized logistic regressions trained on the same 2,000-example correctness partition. Features were original confidence, verifier confidence, agreement with a blind second classification, input length, an empty-input flag, and two signals from the shared supervised TF-IDF classifier: support for the LLM’s chosen label and the margin between its top two classes. All were available without the development example’s true label. The blind classifier and verifier were additional calls to the same Claude model; their errors need not be independent."
+    },
+    {
+      "op": "insert_markdown",
+      "at": {
+        "kind": "between_blocks",
+        "preceding_block_id": "4ff0ec23-8fa4-49a7-b11b-e7e0068be50e",
+        "following_block_id": "c21c8c82-e042-46b1-b8bc-51f5abc60f52"
+      },
+      "markdown": "## Sonnet replicated the gain from learned correctness\n\nSonnet classified **83.0%** of the development messages correctly, an improvement of **7.3 percentage points over Haiku**, with a paired interval of **5.1–9.6 points**. It remained below the supervised TF-IDF and embedding classifiers in these operating conditions. The replication used the same splits, prompts, feature definitions, and supervised TF-IDF support, with a separate correctness estimator for Sonnet.\n\n| Sonnet confidence method | Brier error ↓ | Binary log loss ↓ | Error AUROC ↑ |\n|---|---:|---:|---:|\n| Original confidence | 0.1201 | 0.3782 | 0.835 |\n| Original plus logistic on score | 0.1065 | 0.3430 | 0.835 |\n| Separate verifier | 0.1249 | 0.3895 | 0.834 |\n| Verifier plus logistic on score | 0.1075 | 0.3455 | 0.834 |\n| Learned correctness | 0.0531 | 0.1921 | 0.952 |\n| Learned plus logistic on score | 0.0505 | 0.1886 | 0.952 |\n\nHolding all 830 correct and 170 incorrect Sonnet predictions fixed, learned correctness reduced Brier error from **0.1201 to 0.0531**, a **55.7% reduction** before final calibration. The absolute reduction was 0.0669, with a paired interval of **0.0582–0.0758**. Error AUROC rose from **0.835 to 0.952**; the increase of 0.117 had an interval of 0.092–0.144. Logistic calibration on the learned score reduced Brier error further to **0.0505**.\n\nVerification alone did not reproduce that gain: the verifier’s raw Brier error was 0.1249, slightly worse than Sonnet’s original 0.1201. The original-minus-verifier difference was −0.0049, with an interval of −0.0106 to +0.0006. Together with Haiku’s uncertain verifier improvement, this supports testing learned combinations of evidence rather than assuming a second same-model call is a reliable confidence measure.\n\nThe absolute learned-confidence Brier score was lower for Sonnet than for Haiku, but their different error prevalences and error sets prevent interpreting that difference as pure calibration superiority. The within-model reductions establish the replicated result."
+    },
+    {
+      "op": "insert_markdown",
+      "at": {
+        "kind": "between_blocks",
+        "preceding_block_id": "c21c8c82-e042-46b1-b8bc-51f5abc60f52",
+        "following_block_id": "40f510a0-f147-4597-86ab-6960416931a7"
+      },
+      "markdown": "Within each Claude model, the original, verifier and learned scores retain identical selected labels. Whiskers are conditional 95% bootstrap intervals from 5,000 shared resamples. Learned scores combine extra same-model calls and supervised TF-IDF evidence; no feature ablation identifies the responsible ingredient."
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "200649d4-fc53-467f-a756-d6639e69c06a",
+      "expected_hash": "230e7db195427c8e472c4073231ceadb3172df81a1b9adc348f001d40d2a5e93",
+      "markdown": "| Candidate | Accepted | Errors among accepted | Observed error rate | Development coverage |\n|---|---:|---:|---:|---:|\n| Embedding LR with temperature scaling | **895** | **3** | **0.34%** | **89.5%** |\n| Embedding LR with logistic on log-odds | 892 | 3 | 0.34% | 89.2% |\n| Embedding LR with isotonic | 845 | 1 | 0.12% | 84.5% |\n| Embedding MLP with raw probabilities | 867 | 2 | 0.23% | 86.7% |\n| TF-IDF, all tested scores | 0 | — | — | 0% |\n| Haiku, all tested scores | 0 | — | — | 0% |\n| Sonnet, all tested scores | 0 | — | — | 0% |\n| OpenAI Decisions, all tested scores | 0 | — | — | 0% |"
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "525d17c6-97de-42c1-acca-eebb1b8807d5",
+      "expected_hash": "028a47e47c4f0ff88c541b7caa4b3229613d20eadc8f17f7dfac8b667e8e561c",
+      "markdown": "Both Claude models show why a strong AUROC is insufficient for this target. Their 500 highest raw learned-confidence predictions contained **eight errors for Haiku (1.6%) and six for Sonnet (1.2%)**. The scores moved many errors toward the review end of the queue, but no tested threshold qualified under the Wilson rule. Zero coverage means no threshold qualified, rather than every prediction being wrong or review ranking being useless."
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "0270e46e-79ea-4704-8fed-aae301a90b00",
+      "expected_hash": "007441f4f3783bc79ae6d617c8bea572a71ed3c0c5cf0a1b99651254866d8e1f",
+      "markdown": "Descriptive risk–coverage curves on development data; tied scores enter together. The 1% line marks observed risk, while threshold selection uses the upper endpoint of a Wilson interval. The highlighted operating point was selected on these outcomes and requires independent validation."
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "0eb07afe-b9fc-425d-acd0-61b6eac9eafb",
+      "expected_hash": "33aca6fd95123291b351afad0ae7cbbd8c16b0e7d5a2989e80d783681cd4e616",
+      "markdown": "## Temperature logistic and isotonic calibration"
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "c7994453-00ce-4929-bbbf-1e78e7b16eb6",
+      "expected_hash": "49b3674b1330cef800fd5dfe9be0d139fdacdf414f17478e9d038acff3d6fa12",
+      "markdown": "Temperature scaling divides the classifier’s class logits by one learned positive temperature before softmax. It changes the sharpness of the class distribution while preserving the selected class. For the embedding LR, it reduced Brier error from **0.03279 to 0.02081**, a **36.5% reduction**; binary log loss fell from 0.1326 to 0.0710. The original paired Brier improvement interval was 0.0082–0.0157. Simplicity helped here. [Guo and colleagues, 2017](https://proceedings.mlr.press/v70/guo17a.html)"
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "a090d378-ea05-44c3-868b-134cd9b9dd72",
+      "expected_hash": "b7a51dd2116077b9a0760057f5489396c895ce22fcd9e198214b719e36f192f9",
+      "markdown": "The scalar comparison adds two logistic calibrators and isotonic regression. Logistic on score learns a slope and intercept for the original confidence; it is the sigmoid calibration already used in the LLM runs. Logistic on log-odds instead uses logit(p) as its feature. Both use regularization C=1. Isotonic learns a flexible non-decreasing mapping, with greater risk of overfitting when evidence is sparse. It can introduce tied scores and change ranking metrics. [Scikit-learn calibration documentation](https://scikit-learn.org/stable/modules/calibration.html)"
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "9fb74e47-ae3e-4673-8f49-74f683abacf7",
+      "expected_hash": "6fd318f4b7c6380dde765709ca5b6af63ae88ef58a1ebfb75e4e7905e32f7084",
+      "markdown": "All scalar mappings were fitted on the same **1,000 calibration examples** and evaluated on the separate **1,000 development examples**, estimating whether the unchanged selected label was correct. Temperature instead optimized multiclass log loss over 77 classes. An advantage in binary correctness Brier therefore does not establish better full class probabilities. Dashes indicate that the temperature transform was unavailable for that scalar confidence source."
+    },
+    {
+      "op": "insert_markdown",
+      "at": {
+        "kind": "between_blocks",
+        "preceding_block_id": "9fb74e47-ae3e-4673-8f49-74f683abacf7",
+        "following_block_id": "b1011d60-5ee6-4273-8fbc-dc38b7b5379a"
+      },
+      "markdown": "| Confidence source | Raw | Temperature | Logistic score | Logistic log-odds | Isotonic |\n|---|---:|---:|---:|---:|---:|\n| Embedding LR | 0.03279 | 0.02081 | 0.02133 | 0.02166 | 0.02258 |\n| Embedding MLP | 0.02235 | 0.02264 | 0.02555 | 0.02227 | 0.02350 |\n| TF-IDF LR | 0.14516 | 0.07541 | 0.08681 | 0.08570 | 0.08746 |\n| Haiku native | 0.14536 | — | 0.14375 | 0.14168 | 0.14164 |\n| Haiku verifier | 0.13878 | — | 0.14114 | 0.13775 | 0.13667 |\n| Haiku learned | 0.05958 | — | 0.05780 | 0.05851 | 0.05851 |\n| Sonnet native | 0.12007 | — | 0.10652 | 0.10706 | 0.10785 |\n| Sonnet verifier | 0.12492 | — | 0.10755 | 0.10735 | 0.10790 |\n| Sonnet learned | 0.05314 | — | 0.05052 | 0.05193 | 0.05328 |\n| OpenAI confidence | 0.14724 | — | 0.14688 | 0.14401 | 0.14547 |\n| OpenAI probability | 0.14741 | 0.19034 | 0.14683 | 0.14400 | 0.14547 |\n\nValues are development Brier errors; lower is better. Temperature had the lowest embedding LR point estimate. Isotonic minus temperature was **+0.00177**, with a paired 95% interval of **−0.00004 to +0.00348**. This sample therefore leaves the difference uncertain. Only **39 calibration errors** informed the embedding LR mapping, and 29 informed the embedding MLP mapping; 1,000 calibration examples do not imply 1,000 informative error cases.\n\nFor Haiku native confidence, isotonic and logistic on log-odds were nearly tied: 0.14164 and 0.14168. Sonnet native confidence favored logistic on score by point estimate. For Sonnet learned correctness, isotonic’s Brier error of **0.05328** exceeded logistic-on-score’s **0.05052**, with a conditional paired difference interval of **+0.00051 to +0.00503**. Isotonic assigned probability exactly one to **three incorrect development predictions**, and binary log loss was **0.2241 versus 0.1886**. The log-loss calculation clips probabilities at 10⁻⁷, consistently with the original reports; an incorrect exact-one probability has infinite un-clipped log loss.\n\nOpenAI’s selected-label probability improved from 0.14741 to **0.14400 with logistic on log-odds** and 0.14547 with isotonic. The tested temperature transform worsened it to 0.19034. That transform used log returned probabilities clipped at 10⁻¹² as a surrogate for native logits and optimized multiclass log loss. Native confidence and selected-label probability remained almost identical signals in this run. The result supports checking the transformation and target together.\n\nAll fitted logistic slopes were positive, so their strictly increasing maps preserved error ranking and threshold acceptance groups. Isotonic introduced ties: embedding LR coverage under the exploratory Wilson rule fell from **89.2% with raw or logistic scores to 84.5% with isotonic**, versus 89.5% with temperature. A calibrator can improve probability estimates yet affect usable acceptance thresholds through ties. The development-selected coverage figures still require independent validation.\n\nScalar mappings fitted only on the 1,000 calibration examples. Logistic on score and on log-odds learn slope and intercept with C=1. Isotonic fits a non-decreasing map with clipped out-of-range inputs. Temperature cannot be drawn as one universal map of top confidence because it transforms the full class distribution.\n\nThe fitted calibration methods evaluated on 1,000 separate development examples. Marker size grows with bin count; thin whiskers are nominal pointwise 95% Wilson intervals. Sparse bins remain uncertain. All methods within a panel retain identical selected labels."
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "def1f8e4-cef5-4ba9-b8d2-e90ae5d4aee7",
+      "expected_hash": "812c7b98c9e1dd759520bfcf59d62593645c5224f1b433572c6b61e3f92192b6",
+      "markdown": "The raw embedding scores are underconfident in several populated bins. Temperature scaling moves more predictions toward high confidence and reduces probability error. Haiku's and Sonnet's learned scores assign low confidence to a much larger share of its mistakes while leaving all selected labels unchanged. The tested OpenAI temperature transformation makes several bins underconfident and worsens Brier error. Sparse individual points should be interpreted with their counts and intervals."
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "37e773e7-a821-49af-81b9-ed82698371cc",
+      "expected_hash": "19d2c61503f35972321f0a220c7830939f7664a7f9f8333923a2ea9429274006",
+      "markdown": "| Method | Scores at least 90% | Errors in that group | Observed error rate |\n|---|---:|---:|---:|\n| Embedding LR calibrated | 899 | 4 | 0.44% |\n| Haiku original | 503 | 37 | 7.36% |\n| Haiku learned | 592 | 12 | 2.03% |\n| OpenAI native probability | 511 | 39 | 7.63% |\n| Sonnet original | 400 | 12 | 3.00% |\n| Sonnet learned | 669 | 11 | 1.64% |"
+    },
+    {
+      "op": "insert_markdown",
+      "at": {
+        "kind": "between_blocks",
+        "preceding_block_id": "c6780e72-2482-4125-aa1f-aba84a088825",
+        "following_block_id": "4fa9f2d8-f1dd-4810-8bba-e4922219cf11"
+      },
+      "markdown": "Reliability comparisons on the same 1,000 development examples. Each row holds the classifier's selected labels fixed. Points show mean reported correctness probability versus observed fraction correct in ten shared equal-width bins; whiskers are nominal 95% Wilson intervals, without multiple-bin adjustment. The diagonal indicates perfect calibration. Count bars below each panel use a logarithmic axis and show every nonempty bin's sample size. Empty bins are omitted; no smoothing or connecting lines are used. OpenAI temperature inputs are log returned probabilities, not native logits. Haiku and Sonnet learned scores include extra inference calls and supervised TF-IDF evidence."
+    },
+    {
+      "op": "insert_markdown",
+      "at": {
+        "kind": "between_blocks",
+        "preceding_block_id": "4fa9f2d8-f1dd-4810-8bba-e4922219cf11",
+        "following_block_id": "07b1d258-0051-4459-8ef2-3e193a241712"
+      },
+      "markdown": "Scores split by observed outcome on the development set. Each curve is normalized within correct or incorrect cases, so its bin shares sum to 100%; the two outcome curves do not show the overall error prevalence. Legend counts retain that denominator. Strong separation helps triage errors, while reliability must be assessed in the other figure. Cross-classifier comparisons involve different mistakes and error rates; comparisons within Haiku or Sonnet hold the predictions fixed."
+    },
+    {
+      "op": "insert_markdown",
+      "at": {
+        "kind": "between_blocks",
+        "preceding_block_id": "07403e12-bf22-4b96-8307-6e61afcfc051",
+        "following_block_id": "974d2e8f-333a-4efb-a06c-b625d3376b59"
+      },
+      "markdown": "Figure 4. Temperature-scaled embedding LR. Points are equal-width bin averages with 95% Wilson intervals and example counts; empty bins are omitted. No connecting line or smoothing is used. The right panel uses a logarithmic count axis to show both sparse bins and the 899-example final bin."
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "0d684bbe-de13-4c82-9a75-0ce55b72ff93",
+      "expected_hash": "a3632c4d06f6e9d7bb0946efef6c13e2fbec9988e3c6536b8fe5e099c5ceea7f",
+      "markdown": "**Advance frozen EmbeddingGemma plus logistic regression with temperature scaling as the main candidate.** It had the best observed classification and acceptance results. Neither the MLP nor a more flexible calibration map showed a convincing advantage. Freeze the complete candidate and its threshold before evaluating the untouched official test set."
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "f592072d-4048-4af7-aee3-85f2f27ad4a0",
+      "expected_hash": "63a684c1cb08cb533395bccb346c8c15062374f95746230256963193d762a28f",
+      "markdown": "**Use learned correctness when retaining an LLM classifier has a business reason.** The gain replicated with Sonnet, but its higher classification accuracy still did not satisfy the stringent automation rule. Remove feature groups in turn: native confidence alone, supervised TF-IDF evidence, blind agreement, and verifier evidence. This will identify which signals justify additional calls and labeled-data requirements. Compare that system against using the supervised classifier directly."
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "c9703101-df29-4503-84b0-2b1626ef7911",
+      "expected_hash": "fbc5b549c951decb6ce23c560a6610f92924dc8da1c00ebb45b1227599e7d345",
+      "markdown": "These are development results from one split and one training seed. Each paired bootstrap uses 5,000 shared example resamples and percentile intervals, with seed 20261009. The intervals condition on fitted models and calibrators; they omit calibration-training and retraining variation, method selection, threshold search, and multiple-comparison adjustment. The later scalar calibration comparison adds exploratory development comparisons. Within each confidence family, selected labels stay fixed, making those comparisons stronger than causal comparisons across classifier families."
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "5a6a0d82-78bc-4405-bc6f-5ebd49fa5b46",
+      "expected_hash": "bea64b9dc5b2fbef18deb7cf8f26928d1e609ce8e39dddd1cd7d9706e27c7057",
+      "markdown": "Early Haiku requests encountered truncation with adaptive thinking and a 256-token output limit. Its comparison was restarted uniformly with thinking disabled. Sonnet used the same 256-token limit and between_tools thinking mode because its API rejected disabled; the protocol supplied no tools. This configuration difference constrains attribution of the Sonnet–Haiku gap solely to model identity. Historical and discarded calls remain in the ledger."
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "3256d4ef-f115-4e8b-9ede-b311ad7ef285",
+      "expected_hash": "a9518c572f4c7008c4f0259ec2ba9212e9030cd6db9adbd23e275e56e342d2f9",
+      "markdown": "Recorded API spending was approximately **$24.71**, including **$22.46 for the Sonnet replication** and $2.25 in earlier ledgers. These are token-based ledger estimates including exploratory and discarded calls; they exclude local compute and are not billing invoices. Logistic and isotonic comparisons reused cached outputs and incurred no additional API calls. Batch waiting and resumed work make recorded run durations unsuitable for a clean provider speed comparison."
+    },
+    {
+      "op": "replace_block_markdown",
+      "block_id": "a18e813e-f6b1-4e75-b8de-ad52b1d5fcfd",
+      "expected_hash": "190f87b63245db7a85241e0a4802f0da06c4f0e17b7591b56d635a52450d8651",
+      "markdown": "The accompanying evidence records source SHA-256 hashes and verifies matching development IDs, frozen artifacts, and unchanged selected labels within each confidence family. It combines the original analysis, the paired Sonnet replication, and the 48 score variants from 11 confidence sources in the scalar calibration comparison. Scientific source outputs remain under runs/embeddings, runs/pilot, runs/anthropic-batch-v2, runs/anthropic-sonnet-5-5, runs/openai-decisions-v2, and reports/calibrator-comparison. The dataset revision is 57ec275d8078af65b7731c2a98be812d844a6d6b; the frozen embedding revision is 57c266a740f537b4dc058e1b0cda161fd15afa75. No official test predictions were generated for this report."
+    }
+  ],
+  "desired_blocks": [
+    "**BANKING77 experiment findings · 9 October 2026 · Development results**",
+    "A frozen embedding model with a linear classifier correctly classified **971 of 1,000 banking queries**. Sonnet 5.5 classified 830 correctly, Haiku 5.5 classified 757, and OpenAI Decisions classified 733. With task-specific labeled examples available, the supervised embedding approach remains the strongest candidate for further validation.",
+    "Learning correctness was useful for both Claude models. Keeping their predictions unchanged, a small learned estimator reduced Brier error by **59.0% for Haiku and 55.7% for Sonnet**, before final probability calibration. Verification alone showed no clear benefit. Temperature scaling, logistic calibration, and isotonic regression produced different outcomes across confidence sources; greater flexibility did not produce a consistent advantage.",
+    "The calibrated embedding classifier could accept **895 development predictions with three errors** under the experiment’s threshold-selection rule. Learned confidence improved LLM triage, but no tested Haiku or Sonnet threshold met the same stringent 1% error criterion. These are development findings; the official test set remains unevaluated.",
+    "## The experiment in brief",
+    "BANKING77 asks a classifier to assign short banking messages to 77 closely related intents. It is useful for studying confidence because a fluent, plausible interpretation can still select the wrong category. The original dataset contains 13,083 annotated examples. [Casanueva and colleagues, 2020](https://aclanthology.org/2020.nlp4convai-1.5/)",
+    "The data audit removed seven normalized training examples overlapping the official test text and four duplicate training rows. The remaining 9,992 non-test examples were divided into separate roles, using stratified splits and seed 42.",
+    "| Data role | Examples | Purpose |\n|---|---:|---|\n| Classifier fitting | 5,992 | Train the supervised classifiers |\n| Correctness training | 2,000 | Train separate Haiku and Sonnet correctness estimators |\n| Calibration | 1,000 | Fit temperature, logistic and isotonic transformations |\n| Development | 1,000 | Compare methods and choose acceptance thresholds |\n| Official test | 3,080 | Reserved for final evaluation |",
+    "All reported comparisons use the same 1,000 development messages and reference labels. The supervised models learned from 5,992 labeled examples. The LLM classifiers were zero-shot: they received the 77 intent names, without labeled demonstrations or richer category definitions. This comparison describes the implemented operating conditions; it does not isolate model architecture from access to task-specific labels.",
+    "## Frozen embeddings were the strongest classifier",
+    "| Classifier | Accuracy | Macro F1 | Errors out of 1,000 |\n|---|---:|---:|---:|\n| EmbeddingGemma plus logistic regression | **97.1%** | **0.972** | **29** |\n| EmbeddingGemma plus a small MLP | 96.9% | 0.970 | 31 |\n| TF-IDF plus logistic regression | 87.1% | 0.873 | 129 |\n| Anthropic Sonnet 5.5 | 83.0% | 0.829 | 170 |\n| Anthropic Haiku 5.5 | 75.7% | 0.756 | 243 |\n| OpenAI Decisions using gpt-6-luna | 73.3% | 0.735 | 267 |",
+    "OpenAI’s unsuccessful predictions include one development refusal, retained in the evaluation denominator and routed to review.",
+    "The embedding classifier led Sonnet by **14.1 percentage points**, with a paired 95% bootstrap interval of **11.9–16.3 points**. Its leads over Haiku and OpenAI Decisions were 21.4 points and 23.8 points, with intervals of 18.8–24.0 and 21.1–26.5 points. These gaps are large within this development sample, conditional on the fitted models, available task labels, and the particular prompting setup.",
+    "The linear head and MLP were effectively tied. Their accuracy difference was only 0.2 percentage points, with a paired interval from −0.6 to +1.0 points. The MLP also reached its iteration limit, so this run cannot establish the best achievable neural-head performance. It provides no persuasive reason to prefer the more complex head at present.",
+    "This is a useful practical result: a frozen representation and a modest supervised head are enough to reach high accuracy here. Full encoder fine-tuning was cancelled because of local resource constraints. The experiment therefore provides no evidence about its possible additional benefit.",
+    "![Classification accuracy on BANKING77 development data](visualize:fde1_bGliZmlsZV9PSTRJdmZSd0YwT054WVd1Tl9oazB3_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+    "Six classifiers on the same 1,000 development messages; whiskers are marginal 95% Wilson accuracy intervals. The three supervised classifiers used 5,992 labeled fitting examples; LLM classifiers used zero-shot intent names. These are different task-specific training conditions.",
+    "## Learning correctness materially improved Haiku confidence",
+    "The cleanest confidence comparison holds the classifier fixed. Every Haiku method below uses the same 757 correct and 243 incorrect predictions; only the confidence assigned to each prediction changes.",
+    "| Confidence method | Brier error ↓ | Binary log loss ↓ | Error AUROC ↑ |\n|---|---:|---:|---:|\n| Haiku’s original same-call confidence | 0.1454 | 0.4434 | 0.815 |\n| Separate Haiku verifier | 0.1388 | 0.4261 | 0.831 |\n| Learned correctness model | 0.0596 | **0.2093** | **0.961** |\n| Learned correctness plus logistic on score | **0.0578** | 0.2100 | **0.961** |",
+    "Brier error is the average squared difference between estimated correctness probability and the observed correct/incorrect outcome. Lower is better. Error AUROC measures how well low confidence ranks incorrect predictions above correct predictions; 0.5 is chance ranking and 1.0 is perfect ranking. Brier error and log loss capture both calibration and discrimination, so they should be read alongside reliability plots. [Scikit-learn calibration documentation](https://scikit-learn.org/stable/modules/calibration.html)",
+    "The learned model reduced Brier error from 0.1454 to 0.0596: a **59.0% relative reduction**. Its absolute improvement was 0.0858, with a paired 95% bootstrap interval of 0.0724–0.0990. Error AUROC improved by 0.146, with an interval of 0.120–0.173. Both comparisons support a substantial improvement on this sample.",
+    "The separate verifier’s Brier improvement was only 0.0066, with an interval of −0.0024 to +0.0156. Its AUROC improvement also had an interval spanning zero. Rechecking with the same model may help, but this experiment does not establish a reliable gain from verification alone.",
+    "The Haiku and Sonnet correctness estimators used separate regularized logistic regressions trained on the same 2,000-example correctness partition. Features were original confidence, verifier confidence, agreement with a blind second classification, input length, an empty-input flag, and two signals from the shared supervised TF-IDF classifier: support for the LLM’s chosen label and the margin between its top two classes. All were available without the development example’s true label. The blind classifier and verifier were additional calls to the same Claude model; their errors need not be independent.",
+    "This qualification matters: the winning estimator combines learning, extra calls, and task-specific supervised evidence. There was no feature ablation, so the gain cannot be attributed to one ingredient. The completed run did not use embedding-neighbor features. Learning correctness from black-box model signals has research precedent, although earlier QA and summarization results do not establish performance on this task. [Large Language Model Confidence Estimation via Black-Box Access](https://arxiv.org/abs/2406.04370)",
+    "One diagnostic example illustrates the change. For “I would like to get a physical card, but I don’t know how. Can you help me?”, Haiku selected “get_physical_card” with 95% confidence. The reference label was “order_physical_card”; learned confidence fell to approximately 20%, and the embedding classifier matched the reference. This selected example shows how additional evidence can flag confident disagreements. It also exposes a benchmark limitation: closely related label names can be ambiguous, and measured correctness means agreement with the reference annotation.",
+    "## Sonnet replicated the gain from learned correctness",
+    "Sonnet classified **83.0%** of the development messages correctly, an improvement of **7.3 percentage points over Haiku**, with a paired interval of **5.1–9.6 points**. It remained below the supervised TF-IDF and embedding classifiers in these operating conditions. The replication used the same splits, prompts, feature definitions, and supervised TF-IDF support, with a separate correctness estimator for Sonnet.",
+    "| Sonnet confidence method | Brier error ↓ | Binary log loss ↓ | Error AUROC ↑ |\n|---|---:|---:|---:|\n| Original confidence | 0.1201 | 0.3782 | 0.835 |\n| Original plus logistic on score | 0.1065 | 0.3430 | 0.835 |\n| Separate verifier | 0.1249 | 0.3895 | 0.834 |\n| Verifier plus logistic on score | 0.1075 | 0.3455 | 0.834 |\n| Learned correctness | 0.0531 | 0.1921 | 0.952 |\n| Learned plus logistic on score | 0.0505 | 0.1886 | 0.952 |",
+    "Holding all 830 correct and 170 incorrect Sonnet predictions fixed, learned correctness reduced Brier error from **0.1201 to 0.0531**, a **55.7% reduction** before final calibration. The absolute reduction was 0.0669, with a paired interval of **0.0582–0.0758**. Error AUROC rose from **0.835 to 0.952**; the increase of 0.117 had an interval of 0.092–0.144. Logistic calibration on the learned score reduced Brier error further to **0.0505**.",
+    "Verification alone did not reproduce that gain: the verifier’s raw Brier error was 0.1249, slightly worse than Sonnet’s original 0.1201. The original-minus-verifier difference was −0.0049, with an interval of −0.0106 to +0.0006. Together with Haiku’s uncertain verifier improvement, this supports testing learned combinations of evidence rather than assuming a second same-model call is a reliable confidence measure.",
+    "The absolute learned-confidence Brier score was lower for Sonnet than for Haiku, but their different error prevalences and error sets prevent interpreting that difference as pure calibration superiority. The within-model reductions establish the replicated result.",
+    "![Haiku confidence with identical predictions](visualize:fde1_bGliZmlsZV82SEh6R2NCdnhkNDVDQ1pqNGRsT0Nn_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+    "Within each Claude model, the original, verifier and learned scores retain identical selected labels. Whiskers are conditional 95% bootstrap intervals from 5,000 shared resamples. Learned scores combine extra same-model calls and supervised TF-IDF evidence; no feature ablation identifies the responsible ingredient.",
+    "## Better error ranking did not guarantee low-risk automation",
+    "The experiment selected the largest confidence-threshold acceptance set whose **upper endpoint of a 95% Wilson error interval was at most 1%**. This is stricter than requiring an observed error rate below 1%.",
+    "| Candidate | Accepted | Errors among accepted | Observed error rate | Development coverage |\n|---|---:|---:|---:|---:|\n| Embedding LR with temperature scaling | **895** | **3** | **0.34%** | **89.5%** |\n| Embedding LR with logistic on log-odds | 892 | 3 | 0.34% | 89.2% |\n| Embedding LR with isotonic | 845 | 1 | 0.12% | 84.5% |\n| Embedding MLP with raw probabilities | 867 | 2 | 0.23% | 86.7% |\n| TF-IDF, all tested scores | 0 | — | — | 0% |\n| Haiku, all tested scores | 0 | — | — | 0% |\n| Sonnet, all tested scores | 0 | — | — | 0% |\n| OpenAI Decisions, all tested scores | 0 | — | — | 0% |",
+    "For the calibrated embedding LR, the selected confidence threshold was approximately 0.9173. The nominal Wilson interval for its accepted error rate was **0.11%–0.98%**. That threshold was selected using these same development outcomes, so the interval does not account for searching over thresholds. **The 89.5% figure is a candidate operating point, not a validated deployment guarantee.** Its performance must be measured with the threshold frozen on independent data.",
+    "Both Claude models show why a strong AUROC is insufficient for this target. Their 500 highest raw learned-confidence predictions contained **eight errors for Haiku (1.6%) and six for Sonnet (1.2%)**. The scores moved many errors toward the review end of the queue, but no tested threshold qualified under the Wilson rule. Zero coverage means no threshold qualified, rather than every prediction being wrong or review ranking being useless.",
+    "Native LLM confidence also contained large ties. A threshold accepting no more than half the examples accepted 381 Haiku predictions, with 19 errors. This cannot be treated as an exactly matched 500-example comparison. The risk–coverage figures preserve tied-score groups rather than breaking them arbitrarily.",
+    "![Development risk and automation coverage](visualize:fde1_bGliZmlsZV9uTjJRdDVNOUFyN2doMFM2X2p5VXRn_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+    "Descriptive risk–coverage curves on development data; tied scores enter together. The 1% line marks observed risk, while threshold selection uses the upper endpoint of a Wilson interval. The highlighted operating point was selected on these outcomes and requires independent validation.",
+    "## Temperature logistic and isotonic calibration",
+    "Temperature scaling divides the classifier’s class logits by one learned positive temperature before softmax. It changes the sharpness of the class distribution while preserving the selected class. For the embedding LR, it reduced Brier error from **0.03279 to 0.02081**, a **36.5% reduction**; binary log loss fell from 0.1326 to 0.0710. The original paired Brier improvement interval was 0.0082–0.0157. Simplicity helped here. [Guo and colleagues, 2017](https://proceedings.mlr.press/v70/guo17a.html)",
+    "The scalar comparison adds two logistic calibrators and isotonic regression. Logistic on score learns a slope and intercept for the original confidence; it is the sigmoid calibration already used in the LLM runs. Logistic on log-odds instead uses logit(p) as its feature. Both use regularization C=1. Isotonic learns a flexible non-decreasing mapping, with greater risk of overfitting when evidence is sparse. It can introduce tied scores and change ranking metrics. [Scikit-learn calibration documentation](https://scikit-learn.org/stable/modules/calibration.html)",
+    "All scalar mappings were fitted on the same **1,000 calibration examples** and evaluated on the separate **1,000 development examples**, estimating whether the unchanged selected label was correct. Temperature instead optimized multiclass log loss over 77 classes. An advantage in binary correctness Brier therefore does not establish better full class probabilities. Dashes indicate that the temperature transform was unavailable for that scalar confidence source.",
+    "| Confidence source | Raw | Temperature | Logistic score | Logistic log-odds | Isotonic |\n|---|---:|---:|---:|---:|---:|\n| Embedding LR | 0.03279 | 0.02081 | 0.02133 | 0.02166 | 0.02258 |\n| Embedding MLP | 0.02235 | 0.02264 | 0.02555 | 0.02227 | 0.02350 |\n| TF-IDF LR | 0.14516 | 0.07541 | 0.08681 | 0.08570 | 0.08746 |\n| Haiku native | 0.14536 | — | 0.14375 | 0.14168 | 0.14164 |\n| Haiku verifier | 0.13878 | — | 0.14114 | 0.13775 | 0.13667 |\n| Haiku learned | 0.05958 | — | 0.05780 | 0.05851 | 0.05851 |\n| Sonnet native | 0.12007 | — | 0.10652 | 0.10706 | 0.10785 |\n| Sonnet verifier | 0.12492 | — | 0.10755 | 0.10735 | 0.10790 |\n| Sonnet learned | 0.05314 | — | 0.05052 | 0.05193 | 0.05328 |\n| OpenAI confidence | 0.14724 | — | 0.14688 | 0.14401 | 0.14547 |\n| OpenAI probability | 0.14741 | 0.19034 | 0.14683 | 0.14400 | 0.14547 |",
+    "Values are development Brier errors; lower is better. Temperature had the lowest embedding LR point estimate. Isotonic minus temperature was **+0.00177**, with a paired 95% interval of **−0.00004 to +0.00348**. This sample therefore leaves the difference uncertain. Only **39 calibration errors** informed the embedding LR mapping, and 29 informed the embedding MLP mapping; 1,000 calibration examples do not imply 1,000 informative error cases.",
+    "For Haiku native confidence, isotonic and logistic on log-odds were nearly tied: 0.14164 and 0.14168. Sonnet native confidence favored logistic on score by point estimate. For Sonnet learned correctness, isotonic’s Brier error of **0.05328** exceeded logistic-on-score’s **0.05052**, with a conditional paired difference interval of **+0.00051 to +0.00503**. Isotonic assigned probability exactly one to **three incorrect development predictions**, and binary log loss was **0.2241 versus 0.1886**. The log-loss calculation clips probabilities at 10⁻⁷, consistently with the original reports; an incorrect exact-one probability has infinite un-clipped log loss.",
+    "OpenAI’s selected-label probability improved from 0.14741 to **0.14400 with logistic on log-odds** and 0.14547 with isotonic. The tested temperature transform worsened it to 0.19034. That transform used log returned probabilities clipped at 10⁻¹² as a surrogate for native logits and optimized multiclass log loss. Native confidence and selected-label probability remained almost identical signals in this run. The result supports checking the transformation and target together.",
+    "All fitted logistic slopes were positive, so their strictly increasing maps preserved error ranking and threshold acceptance groups. Isotonic introduced ties: embedding LR coverage under the exploratory Wilson rule fell from **89.2% with raw or logistic scores to 84.5% with isotonic**, versus 89.5% with temperature. A calibrator can improve probability estimates yet affect usable acceptance thresholds through ties. The development-selected coverage figures still require independent validation.",
+    "Scalar mappings fitted only on the 1,000 calibration examples. Logistic on score and on log-odds learn slope and intercept with C=1. Isotonic fits a non-decreasing map with clipped out-of-range inputs. Temperature cannot be drawn as one universal map of top confidence because it transforms the full class distribution.",
+    "The fitted calibration methods evaluated on 1,000 separate development examples. Marker size grows with bin count; thin whiskers are nominal pointwise 95% Wilson intervals. Sparse bins remain uncertain. All methods within a panel retain identical selected labels.",
+    "## Comparing the probability curves",
+    "Reliability plots answer whether a reported probability matches observed correctness. A point below the diagonal indicates overconfidence in that bin; a point above it indicates underconfidence. Each comparison holds the classifier's selected labels fixed. The histogram beneath each panel shows how much evidence supports its points, and nominal Wilson intervals show sampling uncertainty. The plots use shared equal-width bins without smoothing or connecting sparse estimates.",
+    "The second figure separates scores assigned to correct and incorrect predictions. Greater separation helps prioritize review, but does not by itself establish calibrated probabilities. Each outcome distribution is normalized separately; its legend reports the actual number of cases. Cross-classifier comparisons also change which examples are errors, so the within-classifier comparisons are the stronger method comparison.",
+    "The raw embedding scores are underconfident in several populated bins. Temperature scaling moves more predictions toward high confidence and reduces probability error. Haiku's and Sonnet's learned scores assign low confidence to a much larger share of its mistakes while leaving all selected labels unchanged. The tested OpenAI temperature transformation makes several bins underconfident and worsens Brier error. Sparse individual points should be interpreted with their counts and intervals.",
+    "| Method | Scores at least 90% | Errors in that group | Observed error rate |\n|---|---:|---:|---:|\n| Embedding LR calibrated | 899 | 4 | 0.44% |\n| Haiku original | 503 | 37 | 7.36% |\n| Haiku learned | 592 | 12 | 2.03% |\n| OpenAI native probability | 511 | 39 | 7.63% |\n| Sonnet original | 400 | 12 | 3.00% |\n| Sonnet learned | 669 | 11 | 1.64% |",
+    "The 90% cutoff is a descriptive reference point shared across methods. It is separate from the threshold chosen for the 1% automation criterion and does not constitute a deployment guarantee. Probability quality, error ranking, and coverage should be assessed together. The OpenAI temperature comparison uses log returned probabilities as a surrogate for native logits; the learned correctness comparisons also add supervised evidence and extra calls.",
+    "![Reliability curves with bin counts and uncertainty](visualize:fde1_bGliZmlsZV8tcHZseG5iQ3lpZGtqbEZranB6eVhn_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+    "Reliability comparisons on the same 1,000 development examples. Each row holds the classifier's selected labels fixed. Points show mean reported correctness probability versus observed fraction correct in ten shared equal-width bins; whiskers are nominal 95% Wilson intervals, without multiple-bin adjustment. The diagonal indicates perfect calibration. Count bars below each panel use a logarithmic axis and show every nonempty bin's sample size. Empty bins are omitted; no smoothing or connecting lines are used. OpenAI temperature inputs are log returned probabilities, not native logits. Haiku and Sonnet learned scores include extra inference calls and supervised TF-IDF evidence.",
+    "![Confidence distributions for correct and incorrect predictions](visualize:fde1_bGliZmlsZV9VV19hM21Xd25jakpPajNUVGRNYVBR_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+    "Scores split by observed outcome on the development set. Each curve is normalized within correct or incorrect cases, so its bin shares sum to 100%; the two outcome curves do not show the overall error prevalence. Legend counts retain that denominator. Strong separation helps triage errors, while reliability must be assessed in the other figure. Cross-classifier comparisons involve different mistakes and error rates; comparisons within Haiku or Sonnet hold the predictions fixed.",
+    "## Why the embedding curves looked volatile",
+    "The calibrated embedding LR placed **899 of 1,000 predictions in the 90–100% confidence bin**. Only 101 predictions populated all lower-confidence bins combined. The 30–40% bin contained six examples, of which one was correct; the 40–50% bin contained eight, of which five were correct. One changed outcome moves those bin accuracies by 16.7 or 12.5 percentage points.",
+    "Connecting these estimates can make the curve look erratic even when the underlying score is useful. The immediate cause is sparse bin counts and concentrated confidence. High accuracy contributes by leaving only 29 errors, but high accuracy alone does not imply volatile calibration. The same small error count also makes risk–coverage curves advance in visible steps.",
+    "The appropriate response is to show counts and uncertainty, avoid smoothing away the scarcity of evidence, and obtain a larger representative evaluation sample. A harder representative task may generate more errors and reveal differences between confidence methods, but increasing evaluation size can improve precision without deliberately weakening classification. A representative document task would also test whether these findings transfer beyond short banking messages.",
+    "![Embedding confidence bins and uncertainty](visualize:fde1_bGliZmlsZV9RSTlMeTZIbmdHOURmUDVLZzdUVjF3_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+    "Figure 4. Temperature-scaled embedding LR. Points are equal-width bin averages with 95% Wilson intervals and example counts; empty bins are omitted. No connecting line or smoothing is used. The right panel uses a logarithmic count axis to show both sparse bins and the 899-example final bin.",
+    "## What the findings justify next",
+    "**Advance frozen EmbeddingGemma plus logistic regression with temperature scaling as the main candidate.** It had the best observed classification and acceptance results. Neither the MLP nor a more flexible calibration map showed a convincing advantage. Freeze the complete candidate and its threshold before evaluating the untouched official test set.",
+    "**Use learned correctness when retaining an LLM classifier has a business reason.** The gain replicated with Sonnet, but its higher classification accuracy still did not satisfy the stringent automation rule. Remove feature groups in turn: native confidence alone, supervised TF-IDF evidence, blind agreement, and verifier evidence. This will identify which signals justify additional calls and labeled-data requirements. Compare that system against using the supervised classifier directly.",
+    "**Expand the evaluation around the intended deployment population.** Repeat the strongest methods on a larger document-classification task, audit ambiguous disagreements, and evaluate unsupported inputs separately. Confidence on known banking intents does not establish out-of-scope detection or calibration under distribution shift. Full encoder fine-tuning can remain deferred until there is a clear unresolved question that warrants its resource cost.",
+    "## Scope and reproducibility",
+    "These are development results from one split and one training seed. Each paired bootstrap uses 5,000 shared example resamples and percentile intervals, with seed 20261009. The intervals condition on fitted models and calibrators; they omit calibration-training and retraining variation, method selection, threshold search, and multiple-comparison adjustment. The later scalar calibration comparison adds exploratory development comparisons. Within each confidence family, selected labels stay fixed, making those comparisons stronger than causal comparisons across classifier families.",
+    "The API comparison covers the exact zero-shot configurations tested, not an optimized provider benchmark. Limited intent definitions, annotation ambiguity, and possible public-benchmark exposure during pretraining constrain interpretation. Two OpenAI calibration refusals and one development refusal were preserved; refusals received operational confidence zero and were always routed to review. Calibration and evaluation examples were not silently dropped to improve reported accuracy.",
+    "Early Haiku requests encountered truncation with adaptive thinking and a 256-token output limit. Its comparison was restarted uniformly with thinking disabled. Sonnet used the same 256-token limit and between_tools thinking mode because its API rejected disabled; the protocol supplied no tools. This configuration difference constrains attribution of the Sonnet–Haiku gap solely to model identity. Historical and discarded calls remain in the ledger.",
+    "Recorded API spending was approximately **$24.71**, including **$22.46 for the Sonnet replication** and $2.25 in earlier ledgers. These are token-based ledger estimates including exploratory and discarded calls; they exclude local compute and are not billing invoices. Logistic and isotonic comparisons reused cached outputs and incurred no additional API calls. Batch waiting and resumed work make recorded run durations unsuitable for a clean provider speed comparison.",
+    "The accompanying evidence records source SHA-256 hashes and verifies matching development IDs, frozen artifacts, and unchanged selected labels within each confidence family. It combines the original analysis, the paired Sonnet replication, and the 48 score variants from 11 confidence sources in the scalar calibration comparison. Scientific source outputs remain under runs/embeddings, runs/pilot, runs/anthropic-batch-v2, runs/anthropic-sonnet-5-5, runs/openai-decisions-v2, and reports/calibrator-comparison. The dataset revision is 57ec275d8078af65b7731c2a98be812d844a6d6b; the frozen embedding revision is 57c266a740f537b4dc058e1b0cda161fd15afa75. No official test predictions were generated for this report."
+  ],
+  "figure_keys": [
+    "classification_accuracy",
+    "llm_confidence",
+    "risk_coverage",
+    "probability_reliability",
+    "probability_outcomes",
+    "reliability_counts"
+  ],
+  "figure_originals": {
+    "classification_accuracy": {
+      "id": "8c16528d-998a-482a-b73f-185aeab20d4e",
+      "kind": "markdown",
+      "markdown": "![Classification accuracy on BANKING77 development data](visualize:fde1_bGliZmlsZV9PSTRJdmZSd0YwT054WVd1Tl9oazB3_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+      "hash": "af63f73a690cc1ee97e8f7fd3499f4ec185f7de25d750af5b57576efdfc1aa73",
+      "metadata": {}
+    },
+    "llm_confidence": {
+      "id": "c21c8c82-e042-46b1-b8bc-51f5abc60f52",
+      "kind": "markdown",
+      "markdown": "![Haiku confidence with identical predictions](visualize:fde1_bGliZmlsZV82SEh6R2NCdnhkNDVDQ1pqNGRsT0Nn_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+      "hash": "b182587997a262789d62e40a03f579dfd1ac8a2543cdc13b21bcf245c653cac4",
+      "metadata": {}
+    },
+    "risk_coverage": {
+      "id": "2ac88c73-8eec-4dad-a41a-84a51b942d0f",
+      "kind": "markdown",
+      "markdown": "![Development risk and automation coverage](visualize:fde1_bGliZmlsZV9uTjJRdDVNOUFyN2doMFM2X2p5VXRn_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+      "hash": "c1287790667df075c36ed2d36056665ab04b76083918d8952ebb5f38cff15405",
+      "metadata": {}
+    },
+    "probability_reliability": {
+      "id": "c6780e72-2482-4125-aa1f-aba84a088825",
+      "kind": "markdown",
+      "markdown": "![Reliability curves with bin counts and uncertainty](visualize:fde1_bGliZmlsZV8tcHZseG5iQ3lpZGtqbEZranB6eVhn_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+      "hash": "b1a755919c32b7809a419c81f169ec83db3b32bf85c32cb1dade7e21fb159538",
+      "metadata": {}
+    },
+    "probability_outcomes": {
+      "id": "4fa9f2d8-f1dd-4810-8bba-e4922219cf11",
+      "kind": "markdown",
+      "markdown": "![Confidence distributions for correct and incorrect predictions](visualize:fde1_bGliZmlsZV9VV19hM21Xd25jakpPajNUVGRNYVBR_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+      "hash": "8f66eb8ea348a2d9fb1e53f74d3e79da11673dae27a38f19fa4d161df3e0acb3",
+      "metadata": {}
+    },
+    "reliability_counts": {
+      "id": "07403e12-bf22-4b96-8307-6e61afcfc051",
+      "kind": "markdown",
+      "markdown": "![Embedding confidence bins and uncertainty](visualize:fde1_bGliZmlsZV9RSTlMeTZIbmdHOURmUDVLZzdUVjF3_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+      "hash": "a984eed01c9fcce46b7008f62549cadf5364e7d2f73972e97c0c8b0fd663f1b5",
+      "metadata": {}
+    }
+  }
+}

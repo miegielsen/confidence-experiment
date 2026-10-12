@@ -1,0 +1,32 @@
+{
+  "model": "claude-haiku-5-5",
+  "thinking": "disabled",
+  "checks": [
+    {
+      "key": "e462e6899dd9ad9c2dff9126f7ea712e54a8b2ed3c38e555435272249bd5e9d0",
+      "output_tokens": 24,
+      "thinking_tokens": 0
+    },
+    {
+      "key": "de9aef0a824189ac8e404c568c5ff2424ab3712dfcab3827c35eac690bfac11f",
+      "output_tokens": 24,
+      "thinking_tokens": 0
+    },
+    {
+      "key": "2c50c83ca37755c36401ed69caad3802bf85fb13e317ec0d21c264854a7adcf4",
+      "output_tokens": 21,
+      "thinking_tokens": 0
+    },
+    {
+      "key": "f43accb42e8d1d7ff8fa1ac5927a71f8498dc39e53a6aa8af84762e637233fae",
+      "output_tokens": 29,
+      "thinking_tokens": 0
+    },
+    {
+      "key": "19102f2be95766fe4735aa9390e48724e22acbe9471538c9b9885091768be867",
+      "output_tokens": 25,
+      "thinking_tokens": 0
+    }
+  ],
+  "ledger_usd": 0.9929642000000013
+}

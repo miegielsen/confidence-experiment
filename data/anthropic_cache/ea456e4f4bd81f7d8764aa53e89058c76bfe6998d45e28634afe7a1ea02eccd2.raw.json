@@ -1,0 +1,39 @@
+{
+  "id": "msg_011CfsBTogb4GT3f12Jctv7x",
+  "container": null,
+  "content": [
+    {
+      "signature": "CAQSlQcKEAgSGAI4AUIIdGhpbmtpbmcSDIZtSdetKOmb1Ywa6RoM64dol3q9M4Q2F40wIjCx1LaDrwfXturTULnprbHSt6s6o3VtYsHTW8Wc5DUWQOJuZVzE/6XoFd8c1NvSWL8qsgb3F66/kFoj+6BJ4qC8EjiwPumsQs5LZAqS+i1koH1h8wRqgqqqTWgWzqzTOMDQ6noXyOEdqDYTR1sX1TfkV8Zkm44t9oEWOcOUw/wNsWFX3vLGIRfxkqjPn/nfUd1uHFyzjH7RGxwWARrTPNDAmy77080YBBW/knO3QwfjsU2lu0HeNXQ622w1v5Yt18cnO5g+h918VTFQCBtZGfV2pImR/3by1+CRd0e9ElbHUwmawGoiUDeoX7/0hewyYdEd06T7oeYypWTmjuvOnIU4Z5R8jBrR63lg0st4JhlMYWYKvP2tTUyYAUZAQ7L5rkzQUD8+Fe1eXHc7Dmc6LHrWehuVNC1FXZZp7Q7PEO70Tsv8133+zmlJ6ehoWY6yLUQCvhQoocA5Bgh5WVZCOP/UTmsytFXfv6ccLSVPYcg1f3yTE3yhPqz/1GgM2yUXvsbSOuLERqvdV8tXPNkOlV24wNZx32ZDsuSOdvgexZ3HNiSBML1s/Lt60QVRaao53+3zJOnnS2kN9ruZHm1yzxIbWcg+aUjKcQ9fbufKx67Ht1zUpIAInsWvhnNlhRXThXQmsqt3XS4Bi7xdOtxhvQNShHGWtmRCQA4uogLvROpCLxTvgqLXCRfEKmG3S5Q9k4+5gBQAXCcKaDbnlZzShfgFgazPG8BpGIFJwgiY5AmrtPlbTHieElGfCPle6mwWIPJThBC9kpM489uG4Kj7Q52ek3NuQtbGeQO3mAvs1s/qhIan6OZbW5qhOW+X5mD16q9VNmCPzSteXcyWY23JWK3iXJIVOv34O7aFMa1/Zf2w0dukGV65nck8OEByWqmE5ztpuYHHbqNNzqLx/MS6wf4j4/bT1c0QHEEztsLjqPE9l3EXTpvL0G48zJ04Nabakc+SstJPV4il2ah7DQHLA6mPpPPOGDqViCyBlShYGRUUemXTHRzdiRyjnSFafF6GBR2S6qwiHRcg6AAMbU4mmla0M/UjDo5N8qfLiHMCZe0YN9Ap4Yj8uWRlSToC+FbmJ6JiBtNEXIkL4fGxTdXQyj3qcdNw6WBZEsN4d2as9QfWdj3mkuONHY+m/t2Ln8FIyQGSBvHfMxgB",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"label\":\"card_delivery_estimate\",\"confidence\":0.45}",
+      "type": "text"
+    }
+  ],
+  "diagnostics": null,
+  "model": "claude-haiku-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2107,
+    "output_tokens": 148,
+    "output_tokens_details": {
+      "thinking_tokens": 123
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  }
+}

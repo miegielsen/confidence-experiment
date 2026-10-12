@@ -1,0 +1,16 @@
+{
+  "state": "complete",
+  "started_utc": "2026-10-09T21:43:40.740028+00:00",
+  "config": "configs/anthropic-opus-5-5.toml",
+  "pid": 9476,
+  "log": "runs\\anthropic-opus-5-5\\background.log",
+  "budget_usd": 100000.0,
+  "cpu_threads": 2,
+  "priority": "below_normal",
+  "budget_enforced": false,
+  "child_pid": 12808,
+  "updated_utc": "2026-10-09T22:04:29.820968+00:00",
+  "exit_code": 0,
+  "completed_utc": "2026-10-09T22:04:29.843660+00:00",
+  "report": "runs\\anthropic-opus-5-5\\development\\report.html"
+}
