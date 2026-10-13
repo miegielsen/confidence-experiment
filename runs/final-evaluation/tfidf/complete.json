@@ -1,0 +1,23 @@
+{
+  "plan_sha256": "9ab1b813dba3d60d9b44c970ee0a2e21aed634c64cdfa5cda879933a3c56921e",
+  "outputs_sha256": {
+    "tfidf.raw.predictions.csv": "58fbab806afb833f24d8c07d0fd93efef7940841eb1486a049520f7d74e8eab6",
+    "tfidf.raw.reliability.csv": "1cd65931396d4fd2734b449f4fa61b8fa0ae105641bec6b5135eaf028852b6a1",
+    "tfidf.raw.risk_coverage.csv": "9fb535bf49091da0800a766397f75a18b620121839180f4cd9aabe5234630c4a",
+    "tfidf.logistic_score.predictions.csv": "393d2287b6083026b8c2cd116a2d2df9da5ae3bde8916a91c74220f18299d38e",
+    "tfidf.logistic_score.reliability.csv": "2efef77de6f5a82632fe219423544ebdf4d04ab81fe6de07621f1ad5aec9dedc",
+    "tfidf.logistic_score.risk_coverage.csv": "f5f9ab41bc5f3e53d94e575a2c72d72b3bc7e10e0de9eb8fc933b68f728c2386",
+    "tfidf.logistic_logit.predictions.csv": "458e78ca0c609d7d5a866e5b0f0858f52511f0d53529b1fd31beba31156e43fb",
+    "tfidf.logistic_logit.reliability.csv": "7453d08b3d6ec9916a2dbfe3894c287def472e6ffccfcf1d6e94fa0ff5a25747",
+    "tfidf.logistic_logit.risk_coverage.csv": "53572f4d261b551d718248d03cb362ac033d41795b09cc438a256455a498f102",
+    "tfidf.isotonic.predictions.csv": "765761ba0fb1c1dc246b809ead50c0c04ded3033900b52d988649100393ab9bc",
+    "tfidf.isotonic.reliability.csv": "5c2b5f4751087a25e5642ca1ba8f255ea0d2d94c4e2fc02e2a4b8d450dcc2209",
+    "tfidf.isotonic.risk_coverage.csv": "3960ee76aa3fa4df66128cc19c3c4fe5ff714f5544f20a231191baa4b77773f4",
+    "tfidf.temperature.predictions.csv": "c74288d8694145fe208d1b914667e5d734dd2c2c3032332be1ec33e1034db182",
+    "tfidf.temperature.reliability.csv": "b96f760b68f66680fb01711bacc4750b0bf70b37391275b7429344c339dba4dc",
+    "tfidf.temperature.risk_coverage.csv": "a3cef8f692f4ef66228ab9e347faf18748670afecbcf64c84c63b5db0bc09e53",
+    "metrics.json": "eb8ae1a9accc6702e22720854a6d106e375311c5af0da99b0d03ab8ab0d6932f",
+    "metadata.json": "87a09c27e74dd69f961fe650a8dde975fd38f03cb1cbcdb9e8759cf276c5087e"
+  },
+  "completed_utc": "2026-10-13T19:02:32.612464+00:00"
+}

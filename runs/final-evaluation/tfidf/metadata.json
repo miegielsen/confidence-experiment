@@ -1,0 +1,11 @@
+{
+  "plan_sha256": "9ab1b813dba3d60d9b44c970ee0a2e21aed634c64cdfa5cda879933a3c56921e",
+  "evaluation_role": "official_test",
+  "n": 3080,
+  "created_utc": "2026-10-13T19:02:32.193931+00:00",
+  "costs": [],
+  "details": {
+    "inference_seconds": 0.12899320013821125
+  },
+  "thresholds_refitted": false
+}

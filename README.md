@@ -4,7 +4,36 @@ Read the [consolidated findings](reports/banking77-findings/report.md) or downlo
 the [PDF report](reports/banking77-findings/report.pdf). The completed comparison
 includes EmbeddingGemma, TF-IDF, Haiku 5.5, Sonnet 5.5, Opus 5.5, and OpenAI
 Decisions, with temperature, logistic, and isotonic calibration and cost/Pareto
-analyses. The official test set remains reserved.
+analyses. Independent test validation is described below.
+
+## Independent test validation
+
+The official-test phase now uses `scripts/final_evaluation.py`. Its sealed plan
+includes all 60 development variants and their already selected thresholds.
+Execution currently includes the local classifiers and OpenAI Decisions only
+(24 variants on all 3,080 official test messages); Claude test arms are deferred
+at the user's request. See `runs/final-evaluation/execution-scope.json`.
+
+```powershell
+. ./scripts/load-openai-key.ps1
+& "$env:LOCALAPPDATA/confidence-experiment/venv/Scripts/python.exe" scripts/final_evaluation.py run
+```
+
+This entry point validates frozen evidence before any API request, never fits a
+calibrator or selects a threshold on test outcomes, and skips verified completed
+arms when resuming. Reports can be regenerated separately with
+`python scripts/build_final_report.py`, without inference or paid API calls.
+Results are under `runs/final-evaluation/<arm>/`; `complete.json` is written only
+after every result artifact has been saved and hashed. The original development
+source and fitted objects stay unchanged to preserve their historical identities.
+Use this entry point for the complete calibration comparison rather than the
+legacy `--final` commands documented below.
+
+The primary local test policy failed the 1% error target: it accepted
+2,715 messages with 53 errors (1.95%; 95% Wilson interval 1.50%–2.54%). The report
+includes the complete requested test comparison. OpenAI test accuracy was 76.46%;
+the test cohort's estimated API fees were $0.2125. The development study is
+preserved separately as `reports/banking77-findings/report.development.*`.
 
 This GitHub archive includes data, API response caches, results, and reports, but
 excludes model objects and credentials. See [repository contents and reproduction

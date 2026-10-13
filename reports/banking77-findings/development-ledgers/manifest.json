@@ -1,0 +1,44 @@
+[
+  {
+    "historical_path": "data/anthropic_cache/spending.json",
+    "snapshot": "reports/banking77-findings/development-ledgers/anthropic_cache.json",
+    "sha256": "d901f2f5b0666bacbc8e506cbc4355189056ba1f6f2d9ff96c57c45edf84fb66",
+    "source_commit": "9bf35673d87e3253c730f2f78cb6085dcfffc40f"
+  },
+  {
+    "historical_path": "data/anthropic_spending/spending.json",
+    "snapshot": "reports/banking77-findings/development-ledgers/anthropic_spending.json",
+    "sha256": "9bf3c2e939358171bd20545f72e3c2cbb5626ccb922a804b9ad2d69882545e10",
+    "source_commit": "9bf35673d87e3253c730f2f78cb6085dcfffc40f"
+  },
+  {
+    "historical_path": "data/anthropic_sonnet_cache/spending.json",
+    "snapshot": "reports/banking77-findings/development-ledgers/anthropic_sonnet_cache.json",
+    "sha256": "8d1e082200a0d70b9d2774901622d3e6955a90df88194a1668205cc29197238d",
+    "source_commit": "9bf35673d87e3253c730f2f78cb6085dcfffc40f"
+  },
+  {
+    "historical_path": "data/anthropic_cache/spending.json",
+    "snapshot": "reports/banking77-findings/development-ledgers/anthropic_cache.json",
+    "sha256": "d901f2f5b0666bacbc8e506cbc4355189056ba1f6f2d9ff96c57c45edf84fb66",
+    "source_commit": "9bf35673d87e3253c730f2f78cb6085dcfffc40f"
+  },
+  {
+    "historical_path": "data/anthropic_spending/spending.json",
+    "snapshot": "reports/banking77-findings/development-ledgers/anthropic_spending.json",
+    "sha256": "9bf3c2e939358171bd20545f72e3c2cbb5626ccb922a804b9ad2d69882545e10",
+    "source_commit": "9bf35673d87e3253c730f2f78cb6085dcfffc40f"
+  },
+  {
+    "historical_path": "data/anthropic_sonnet_cache/spending.json",
+    "snapshot": "reports/banking77-findings/development-ledgers/anthropic_sonnet_cache.json",
+    "sha256": "8d1e082200a0d70b9d2774901622d3e6955a90df88194a1668205cc29197238d",
+    "source_commit": "9bf35673d87e3253c730f2f78cb6085dcfffc40f"
+  },
+  {
+    "historical_path": "data/anthropic_opus_cache/spending.json",
+    "snapshot": "reports/banking77-findings/development-ledgers/anthropic_opus_cache.json",
+    "sha256": "0f80b38f9cc9b9031bb05834685337e3521e96b275eb5cdaa78ba865e201ba77",
+    "source_commit": "9bf35673d87e3253c730f2f78cb6085dcfffc40f"
+  }
+]

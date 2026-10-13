@@ -1,0 +1,16 @@
+{
+  "active_arms": [
+    "embeddings",
+    "tfidf",
+    "decisions"
+  ],
+  "deferred_arms": [
+    "haiku",
+    "sonnet",
+    "opus"
+  ],
+  "reason": "User requested local and OpenAI only after being informed of Claude test costs",
+  "frozen_plan_sha256": "9ab1b813dba3d60d9b44c970ee0a2e21aed634c64cdfa5cda879933a3c56921e",
+  "updated_utc": "2026-10-13T19:10:25.770020+00:00",
+  "changes_to_fits_or_thresholds": false
+}

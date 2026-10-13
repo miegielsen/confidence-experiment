@@ -1,0 +1,21 @@
+{
+  "plan_sha256": "9ab1b813dba3d60d9b44c970ee0a2e21aed634c64cdfa5cda879933a3c56921e",
+  "evaluation_role": "official_test",
+  "n": 3080,
+  "created_utc": "2026-10-13T19:06:23.282066+00:00",
+  "costs": [],
+  "details": {
+    "model": {
+      "model": "google/embeddinggemma-300m",
+      "revision": "57c266a740f537b4dc058e1b0cda161fd15afa75"
+    },
+    "model_load_seconds": 4.428323400206864,
+    "encoding_seconds": 183.25932119973004,
+    "cpu_threads": 2,
+    "batch_size": 8,
+    "sha256": "aa7ebc233cbe1e2cc0127056b5c442c50b75a2aca0aef3219de643d0f338e011",
+    "embedding_lr_head_seconds": 0.02764229942113161,
+    "embedding_mlp_head_seconds": 0.02212340012192726
+  },
+  "thresholds_refitted": false
+}

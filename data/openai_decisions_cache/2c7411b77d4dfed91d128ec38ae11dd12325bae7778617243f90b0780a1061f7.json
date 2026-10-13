@@ -1,0 +1,25 @@
+{
+  "request_sha256": "2c7411b77d4dfed91d128ec38ae11dd12325bae7778617243f90b0780a1061f7",
+  "parsed": {
+    "label": "__refusal__",
+    "confidence": null,
+    "selected_probability": null,
+    "probabilities": null,
+    "refused": true
+  },
+  "usd": 9.000000000000001e-07,
+  "latency_seconds": 0.3201716998592019,
+  "model": "gpt-6-luna",
+  "usage": {
+    "input_tokens": 9,
+    "input_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    },
+    "output_tokens": 0,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 9
+  }
+}

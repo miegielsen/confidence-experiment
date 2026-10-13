@@ -1,0 +1,2672 @@
+{
+  "protocol": 1,
+  "created_utc": "2026-10-13T19:00:41.462307+00:00",
+  "evaluation_role": "official_test",
+  "test_n": 3080,
+  "primary": "embedding_lr.temperature",
+  "variants": {
+    "embedding_lr.raw": {
+      "arm": "embeddings",
+      "stream": "embedding_lr",
+      "variant": "raw",
+      "threshold": {
+        "threshold": 0.72222257,
+        "development_coverage": 0.892,
+        "development_risk": 0.0033632286995515697,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.971,
+        "accuracy_ci95": [
+          0.9586616416633058,
+          0.9797335518433012
+        ],
+        "macro_f1": 0.972363732268675,
+        "errors": 29,
+        "brier": 0.03278914649240831,
+        "binary_log_loss": 0.13262467124136904,
+        "ece_10_equal_width": 0.07846068147000002,
+        "error_auroc": 0.96086508753862,
+        "error_average_precision": 0.4615418507994002,
+        "error_prevalence": 0.029,
+        "aurc": 0.0016160330885199698,
+        "acceptance": {
+          "threshold": 0.72222257,
+          "development_coverage": 0.892,
+          "development_risk": 0.0033632286995515697,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 892,
+          "errors": 3,
+          "coverage": 0.892,
+          "risk": 0.0033632286995515697,
+          "risk_ci95": [
+            0.001144446285255717,
+            0.009841268568407838
+          ]
+        }
+      }
+    },
+    "embedding_lr.logistic_score": {
+      "arm": "embeddings",
+      "stream": "embedding_lr",
+      "variant": "logistic_score",
+      "threshold": {
+        "threshold": 0.9374575460219,
+        "development_coverage": 0.892,
+        "development_risk": 0.0033632286995515697,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.971,
+        "accuracy_ci95": [
+          0.9586616416633058,
+          0.9797335518433012
+        ],
+        "macro_f1": 0.972363732268675,
+        "errors": 29,
+        "brier": 0.021332281125997825,
+        "binary_log_loss": 0.08414975099853908,
+        "ece_10_equal_width": 0.01860120761521307,
+        "error_auroc": 0.96086508753862,
+        "error_average_precision": 0.4615418507994002,
+        "error_prevalence": 0.029,
+        "aurc": 0.0016160330885199698,
+        "acceptance": {
+          "threshold": 0.9374575460219,
+          "development_coverage": 0.892,
+          "development_risk": 0.0033632286995515697,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 892,
+          "errors": 3,
+          "coverage": 0.892,
+          "risk": 0.0033632286995515697,
+          "risk_ci95": [
+            0.001144446285255717,
+            0.009841268568407838
+          ]
+        }
+      }
+    },
+    "embedding_lr.logistic_logit": {
+      "arm": "embeddings",
+      "stream": "embedding_lr",
+      "variant": "logistic_logit",
+      "threshold": {
+        "threshold": 0.917527848375803,
+        "development_coverage": 0.892,
+        "development_risk": 0.0033632286995515697,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.971,
+        "accuracy_ci95": [
+          0.9586616416633058,
+          0.9797335518433012
+        ],
+        "macro_f1": 0.972363732268675,
+        "errors": 29,
+        "brier": 0.02165932616009317,
+        "binary_log_loss": 0.0738457875923888,
+        "ece_10_equal_width": 0.012363223104629386,
+        "error_auroc": 0.96086508753862,
+        "error_average_precision": 0.4615418507994002,
+        "error_prevalence": 0.029,
+        "aurc": 0.0016160330885199698,
+        "acceptance": {
+          "threshold": 0.917527848375803,
+          "development_coverage": 0.892,
+          "development_risk": 0.0033632286995515697,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 892,
+          "errors": 3,
+          "coverage": 0.892,
+          "risk": 0.0033632286995515697,
+          "risk_ci95": [
+            0.001144446285255717,
+            0.009841268568407838
+          ]
+        }
+      }
+    },
+    "embedding_lr.isotonic": {
+      "arm": "embeddings",
+      "stream": "embedding_lr",
+      "variant": "isotonic",
+      "threshold": {
+        "threshold": 0.9947089947089947,
+        "development_coverage": 0.845,
+        "development_risk": 0.001183431952662722,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.971,
+        "accuracy_ci95": [
+          0.9586616416633058,
+          0.9797335518433012
+        ],
+        "macro_f1": 0.972363732268675,
+        "errors": 29,
+        "brier": 0.02258479865944864,
+        "binary_log_loss": 0.07456652478959716,
+        "ece_10_equal_width": 0.012243397863743203,
+        "error_auroc": 0.9559288327000248,
+        "error_average_precision": 0.37792961547167725,
+        "error_prevalence": 0.029,
+        "aurc": 0.002283342520527183,
+        "acceptance": {
+          "threshold": 0.9947089947089947,
+          "development_coverage": 0.845,
+          "development_risk": 0.001183431952662722,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 845,
+          "errors": 1,
+          "coverage": 0.845,
+          "risk": 0.001183431952662722,
+          "risk_ci95": [
+            0.00020893535326678772,
+            0.006672748805763022
+          ]
+        }
+      }
+    },
+    "embedding_lr.temperature": {
+      "arm": "embeddings",
+      "stream": "embedding_lr",
+      "variant": "temperature",
+      "threshold": {
+        "threshold": 0.9172774,
+        "development_coverage": 0.895,
+        "development_risk": 0.0033519553072625698,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.971,
+        "accuracy_ci95": [
+          0.9586616416633058,
+          0.9797335518433012
+        ],
+        "macro_f1": 0.972363732268675,
+        "errors": 29,
+        "brier": 0.020810256858206585,
+        "binary_log_loss": 0.07095605071428236,
+        "ece_10_equal_width": 0.008971628490000133,
+        "error_auroc": 0.9621790546539295,
+        "error_average_precision": 0.47640631207283063,
+        "error_prevalence": 0.029,
+        "aurc": 0.0015771064566610208,
+        "acceptance": {
+          "threshold": 0.9172774,
+          "development_coverage": 0.895,
+          "development_risk": 0.0033519553072625698,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 895,
+          "errors": 3,
+          "coverage": 0.895,
+          "risk": 0.0033519553072625698,
+          "risk_ci95": [
+            0.0011406079950417192,
+            0.009808440609821703
+          ]
+        }
+      }
+    },
+    "embedding_mlp.raw": {
+      "arm": "embeddings",
+      "stream": "embedding_mlp",
+      "variant": "raw",
+      "threshold": {
+        "threshold": 0.9615333,
+        "development_coverage": 0.867,
+        "development_risk": 0.002306805074971165,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.969,
+        "accuracy_ci95": [
+          0.9563345039877078,
+          0.9780759965528414
+        ],
+        "macro_f1": 0.9704720155727837,
+        "errors": 31,
+        "brier": 0.022346821399300384,
+        "binary_log_loss": 0.0748553335532888,
+        "ece_10_equal_width": 0.010126724840000042,
+        "error_auroc": 0.9599187722627252,
+        "error_average_precision": 0.43468467418282625,
+        "error_prevalence": 0.031,
+        "aurc": 0.001787843327217164,
+        "acceptance": {
+          "threshold": 0.9615333,
+          "development_coverage": 0.867,
+          "development_risk": 0.002306805074971165,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 867,
+          "errors": 2,
+          "coverage": 0.867,
+          "risk": 0.002306805074971165,
+          "risk_ci95": [
+            0.0006328372649490434,
+            0.0083716247312829
+          ]
+        }
+      }
+    },
+    "embedding_mlp.logistic_score": {
+      "arm": "embeddings",
+      "stream": "embedding_mlp",
+      "variant": "logistic_score",
+      "threshold": {
+        "threshold": 0.9737539236201256,
+        "development_coverage": 0.867,
+        "development_risk": 0.002306805074971165,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.969,
+        "accuracy_ci95": [
+          0.9563345039877078,
+          0.9780759965528414
+        ],
+        "macro_f1": 0.9704720155727837,
+        "errors": 31,
+        "brier": 0.025550713677801574,
+        "binary_log_loss": 0.10267531778739249,
+        "ece_10_equal_width": 0.021306944997492406,
+        "error_auroc": 0.9599187722627252,
+        "error_average_precision": 0.43468467418282625,
+        "error_prevalence": 0.031,
+        "aurc": 0.001787843327217164,
+        "acceptance": {
+          "threshold": 0.9737539236201256,
+          "development_coverage": 0.867,
+          "development_risk": 0.002306805074971165,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 867,
+          "errors": 2,
+          "coverage": 0.867,
+          "risk": 0.002306805074971165,
+          "risk_ci95": [
+            0.0006328372649490434,
+            0.0083716247312829
+          ]
+        }
+      }
+    },
+    "embedding_mlp.logistic_logit": {
+      "arm": "embeddings",
+      "stream": "embedding_mlp",
+      "variant": "logistic_logit",
+      "threshold": {
+        "threshold": 0.9504760419242815,
+        "development_coverage": 0.867,
+        "development_risk": 0.002306805074971165,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.969,
+        "accuracy_ci95": [
+          0.9563345039877078,
+          0.9780759965528414
+        ],
+        "macro_f1": 0.9704720155727837,
+        "errors": 31,
+        "brier": 0.022265510544309464,
+        "binary_log_loss": 0.07563016194080006,
+        "ece_10_equal_width": 0.0057698613478451306,
+        "error_auroc": 0.9599187722627252,
+        "error_average_precision": 0.43468467418282625,
+        "error_prevalence": 0.031,
+        "aurc": 0.001787843327217164,
+        "acceptance": {
+          "threshold": 0.9504760419242815,
+          "development_coverage": 0.867,
+          "development_risk": 0.002306805074971165,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 867,
+          "errors": 2,
+          "coverage": 0.867,
+          "risk": 0.002306805074971165,
+          "risk_ci95": [
+            0.0006328372649490434,
+            0.0083716247312829
+          ]
+        }
+      }
+    },
+    "embedding_mlp.isotonic": {
+      "arm": "embeddings",
+      "stream": "embedding_mlp",
+      "variant": "isotonic",
+      "threshold": {
+        "threshold": 0.9680851063829787,
+        "development_coverage": 0.818,
+        "development_risk": 0.0012224938875305623,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.969,
+        "accuracy_ci95": [
+          0.9563345039877078,
+          0.9780759965528414
+        ],
+        "macro_f1": 0.9704720155727837,
+        "errors": 31,
+        "brier": 0.02350309233355427,
+        "binary_log_loss": 0.07846232626819478,
+        "ece_10_equal_width": 0.011416401442487619,
+        "error_auroc": 0.9572389227337794,
+        "error_average_precision": 0.3776505575736946,
+        "error_prevalence": 0.031,
+        "aurc": 0.0023487641445438896,
+        "acceptance": {
+          "threshold": 0.9680851063829787,
+          "development_coverage": 0.818,
+          "development_risk": 0.0012224938875305623,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 818,
+          "errors": 1,
+          "coverage": 0.818,
+          "risk": 0.0012224938875305623,
+          "risk_ci95": [
+            0.00021583279458985269,
+            0.006891935690436881
+          ]
+        }
+      }
+    },
+    "embedding_mlp.temperature": {
+      "arm": "embeddings",
+      "stream": "embedding_mlp",
+      "variant": "temperature",
+      "threshold": {
+        "threshold": 0.94742733,
+        "development_coverage": 0.865,
+        "development_risk": 0.0023121387283236996,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.969,
+        "accuracy_ci95": [
+          0.9563345039877078,
+          0.9780759965528414
+        ],
+        "macro_f1": 0.9704720155727837,
+        "errors": 31,
+        "brier": 0.022644255864707297,
+        "binary_log_loss": 0.0759612345943828,
+        "ece_10_equal_width": 0.009312418150000017,
+        "error_auroc": 0.9598189020939445,
+        "error_average_precision": 0.43130676039943094,
+        "error_prevalence": 0.031,
+        "aurc": 0.0017902106610676305,
+        "acceptance": {
+          "threshold": 0.94742733,
+          "development_coverage": 0.865,
+          "development_risk": 0.0023121387283236996,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 865,
+          "errors": 2,
+          "coverage": 0.865,
+          "risk": 0.0023121387283236996,
+          "risk_ci95": [
+            0.0006343010015348654,
+            0.008390888509262173
+          ]
+        }
+      }
+    },
+    "tfidf.raw": {
+      "arm": "tfidf",
+      "stream": "tfidf",
+      "variant": "raw",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.871,
+        "accuracy_ci95": [
+          0.8487959904982232,
+          0.890364554705495
+        ],
+        "macro_f1": 0.8727645792009482,
+        "errors": 129,
+        "brier": 0.14515887788639936,
+        "binary_log_loss": 0.4383834290467869,
+        "ece_10_equal_width": 0.20962201718675708,
+        "error_auroc": 0.8671935492483913,
+        "error_average_precision": 0.492058486793089,
+        "error_prevalence": 0.129,
+        "aurc": 0.029003839145200043,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "tfidf.logistic_score": {
+      "arm": "tfidf",
+      "stream": "tfidf",
+      "variant": "logistic_score",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.871,
+        "accuracy_ci95": [
+          0.8487959904982232,
+          0.890364554705495
+        ],
+        "macro_f1": 0.8727645792009482,
+        "errors": 129,
+        "brier": 0.0868103143542267,
+        "binary_log_loss": 0.27952021071872235,
+        "ece_10_equal_width": 0.0346672584819144,
+        "error_auroc": 0.8671935492483913,
+        "error_average_precision": 0.492058486793089,
+        "error_prevalence": 0.129,
+        "aurc": 0.029003839145200043,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "tfidf.logistic_logit": {
+      "arm": "tfidf",
+      "stream": "tfidf",
+      "variant": "logistic_logit",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.871,
+        "accuracy_ci95": [
+          0.8487959904982232,
+          0.890364554705495
+        ],
+        "macro_f1": 0.8727645792009482,
+        "errors": 129,
+        "brier": 0.08569816914119917,
+        "binary_log_loss": 0.2749665422849529,
+        "ece_10_equal_width": 0.029782852755354736,
+        "error_auroc": 0.8671935492483913,
+        "error_average_precision": 0.492058486793089,
+        "error_prevalence": 0.129,
+        "aurc": 0.029003839145200043,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "tfidf.isotonic": {
+      "arm": "tfidf",
+      "stream": "tfidf",
+      "variant": "isotonic",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.871,
+        "accuracy_ci95": [
+          0.8487959904982232,
+          0.890364554705495
+        ],
+        "macro_f1": 0.8727645792009482,
+        "errors": 129,
+        "brier": 0.08746373596489727,
+        "binary_log_loss": 0.319345867824108,
+        "ece_10_equal_width": 0.030245989786418247,
+        "error_auroc": 0.8623029752845789,
+        "error_average_precision": 0.462934351625477,
+        "error_prevalence": 0.129,
+        "aurc": 0.03357408193180926,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "tfidf.temperature": {
+      "arm": "tfidf",
+      "stream": "tfidf",
+      "variant": "temperature",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.871,
+        "accuracy_ci95": [
+          0.8487959904982232,
+          0.890364554705495
+        ],
+        "macro_f1": 0.8727645792009482,
+        "errors": 129,
+        "brier": 0.07540594937254229,
+        "binary_log_loss": 0.24856703622515636,
+        "ece_10_equal_width": 0.018854302302242363,
+        "error_auroc": 0.9010226150108135,
+        "error_average_precision": 0.5768928156710502,
+        "error_prevalence": 0.129,
+        "aurc": 0.024101760617042816,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "haiku_same.raw": {
+      "arm": "haiku",
+      "stream": "haiku_same",
+      "variant": "raw",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.757,
+        "accuracy_ci95": [
+          0.7294665084355112,
+          0.7825665377029134
+        ],
+        "macro_f1": 0.7558137639565851,
+        "errors": 243,
+        "brier": 0.14536459999999998,
+        "binary_log_loss": 0.44339550168889524,
+        "ece_10_equal_width": 0.05164000000000003,
+        "error_auroc": 0.8153557197297107,
+        "error_average_precision": 0.5337982823769613,
+        "error_prevalence": 0.243,
+        "aurc": 0.09833842414907956,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "haiku_same.logistic_score": {
+      "arm": "haiku",
+      "stream": "haiku_same",
+      "variant": "logistic_score",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.757,
+        "accuracy_ci95": [
+          0.7294665084355112,
+          0.7825665377029134
+        ],
+        "macro_f1": 0.7558137639565851,
+        "errors": 243,
+        "brier": 0.14374907103290274,
+        "binary_log_loss": 0.44883961871441147,
+        "ece_10_equal_width": 0.04787381595076421,
+        "error_auroc": 0.8153557197297107,
+        "error_average_precision": 0.5337982823769613,
+        "error_prevalence": 0.243,
+        "aurc": 0.09833842414907956,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "haiku_same.logistic_logit": {
+      "arm": "haiku",
+      "stream": "haiku_same",
+      "variant": "logistic_logit",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.757,
+        "accuracy_ci95": [
+          0.7294665084355112,
+          0.7825665377029134
+        ],
+        "macro_f1": 0.7558137639565851,
+        "errors": 243,
+        "brier": 0.14167952421988747,
+        "binary_log_loss": 0.4340898273878119,
+        "ece_10_equal_width": 0.04111930678798277,
+        "error_auroc": 0.8153557197297107,
+        "error_average_precision": 0.5337982823769613,
+        "error_prevalence": 0.243,
+        "aurc": 0.09833842414907956,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "haiku_same.isotonic": {
+      "arm": "haiku",
+      "stream": "haiku_same",
+      "variant": "isotonic",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.757,
+        "accuracy_ci95": [
+          0.7294665084355112,
+          0.7825665377029134
+        ],
+        "macro_f1": 0.7558137639565851,
+        "errors": 243,
+        "brier": 0.1416395785448296,
+        "binary_log_loss": 0.4314774181977663,
+        "ece_10_equal_width": 0.018954988769203887,
+        "error_auroc": 0.8129338791308556,
+        "error_average_precision": 0.5275380206146597,
+        "error_prevalence": 0.243,
+        "aurc": 0.10152477355448404,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "haiku_verifier.raw": {
+      "arm": "haiku",
+      "stream": "haiku_verifier",
+      "variant": "raw",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.757,
+        "accuracy_ci95": [
+          0.7294665084355112,
+          0.7825665377029134
+        ],
+        "macro_f1": 0.7558137639565851,
+        "errors": 243,
+        "brier": 0.1387825,
+        "binary_log_loss": 0.4261189786707903,
+        "ece_10_equal_width": 0.04434999999999997,
+        "error_auroc": 0.8305092116922441,
+        "error_average_precision": 0.565870101435551,
+        "error_prevalence": 0.243,
+        "aurc": 0.0898025597837293,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "haiku_verifier.logistic_score": {
+      "arm": "haiku",
+      "stream": "haiku_verifier",
+      "variant": "logistic_score",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.757,
+        "accuracy_ci95": [
+          0.7294665084355112,
+          0.7825665377029134
+        ],
+        "macro_f1": 0.7558137639565851,
+        "errors": 243,
+        "brier": 0.1411371981584328,
+        "binary_log_loss": 0.4410799023319227,
+        "ece_10_equal_width": 0.04789820274070954,
+        "error_auroc": 0.8305092116922441,
+        "error_average_precision": 0.565870101435551,
+        "error_prevalence": 0.243,
+        "aurc": 0.0898025597837293,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "haiku_verifier.logistic_logit": {
+      "arm": "haiku",
+      "stream": "haiku_verifier",
+      "variant": "logistic_logit",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.757,
+        "accuracy_ci95": [
+          0.7294665084355112,
+          0.7825665377029134
+        ],
+        "macro_f1": 0.7558137639565851,
+        "errors": 243,
+        "brier": 0.13774628687987203,
+        "binary_log_loss": 0.42576676247462897,
+        "ece_10_equal_width": 0.03669624264250185,
+        "error_auroc": 0.8305092116922441,
+        "error_average_precision": 0.565870101435551,
+        "error_prevalence": 0.243,
+        "aurc": 0.0898025597837293,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "haiku_verifier.isotonic": {
+      "arm": "haiku",
+      "stream": "haiku_verifier",
+      "variant": "isotonic",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.757,
+        "accuracy_ci95": [
+          0.7294665084355112,
+          0.7825665377029134
+        ],
+        "macro_f1": 0.7558137639565851,
+        "errors": 243,
+        "brier": 0.13667109431616467,
+        "binary_log_loss": 0.4308195527789451,
+        "ece_10_equal_width": 0.019669238616945122,
+        "error_auroc": 0.8288565976809041,
+        "error_average_precision": 0.5467318014732304,
+        "error_prevalence": 0.243,
+        "aurc": 0.09564712461465806,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "haiku_correctness.raw": {
+      "arm": "haiku",
+      "stream": "haiku_correctness",
+      "variant": "raw",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.757,
+        "accuracy_ci95": [
+          0.7294665084355112,
+          0.7825665377029134
+        ],
+        "macro_f1": 0.7558137639565851,
+        "errors": 243,
+        "brier": 0.05957587115475965,
+        "binary_log_loss": 0.20929812292431313,
+        "ece_10_equal_width": 0.03213329208071806,
+        "error_auroc": 0.9612451141880175,
+        "error_average_precision": 0.9185568040172604,
+        "error_prevalence": 0.243,
+        "aurc": 0.04352876229860164,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "haiku_correctness.logistic_score": {
+      "arm": "haiku",
+      "stream": "haiku_correctness",
+      "variant": "logistic_score",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.757,
+        "accuracy_ci95": [
+          0.7294665084355112,
+          0.7825665377029134
+        ],
+        "macro_f1": 0.7558137639565851,
+        "errors": 243,
+        "brier": 0.05779635340454475,
+        "binary_log_loss": 0.20996242526431383,
+        "ece_10_equal_width": 0.027586627972476022,
+        "error_auroc": 0.9612451141880175,
+        "error_average_precision": 0.9185568040172604,
+        "error_prevalence": 0.243,
+        "aurc": 0.04352876229860164,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "haiku_correctness.logistic_logit": {
+      "arm": "haiku",
+      "stream": "haiku_correctness",
+      "variant": "logistic_logit",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.757,
+        "accuracy_ci95": [
+          0.7294665084355112,
+          0.7825665377029134
+        ],
+        "macro_f1": 0.7558137639565851,
+        "errors": 243,
+        "brier": 0.05850871587905631,
+        "binary_log_loss": 0.2059454394123957,
+        "ece_10_equal_width": 0.027608662440917357,
+        "error_auroc": 0.9612451141880175,
+        "error_average_precision": 0.9185568040172604,
+        "error_prevalence": 0.243,
+        "aurc": 0.04352876229860164,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "haiku_correctness.isotonic": {
+      "arm": "haiku",
+      "stream": "haiku_correctness",
+      "variant": "isotonic",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.757,
+        "accuracy_ci95": [
+          0.7294665084355112,
+          0.7825665377029134
+        ],
+        "macro_f1": 0.7558137639565851,
+        "errors": 243,
+        "brier": 0.058514706530721244,
+        "binary_log_loss": 0.20568358910949008,
+        "ece_10_equal_width": 0.022161798276395802,
+        "error_auroc": 0.9590135416496784,
+        "error_average_precision": 0.9034940542429719,
+        "error_prevalence": 0.243,
+        "aurc": 0.050437509655386376,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "sonnet_same.raw": {
+      "arm": "sonnet",
+      "stream": "sonnet_same",
+      "variant": "raw",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.83,
+        "accuracy_ci95": [
+          0.805465935038086,
+          0.8520084043614475
+        ],
+        "macro_f1": 0.8285594939747107,
+        "errors": 170,
+        "brier": 0.1200682,
+        "binary_log_loss": 0.37824704180173974,
+        "ece_10_equal_width": 0.10120000000000005,
+        "error_auroc": 0.83475194897236,
+        "error_average_precision": 0.5070575630341022,
+        "error_prevalence": 0.17,
+        "aurc": 0.056407978478129575,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "sonnet_same.logistic_score": {
+      "arm": "sonnet",
+      "stream": "sonnet_same",
+      "variant": "logistic_score",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.83,
+        "accuracy_ci95": [
+          0.805465935038086,
+          0.8520084043614475
+        ],
+        "macro_f1": 0.8285594939747107,
+        "errors": 170,
+        "brier": 0.10652086289080054,
+        "binary_log_loss": 0.3430054784833709,
+        "ece_10_equal_width": 0.027432532366014364,
+        "error_auroc": 0.83475194897236,
+        "error_average_precision": 0.5070575630341022,
+        "error_prevalence": 0.17,
+        "aurc": 0.056407978478129575,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "sonnet_same.logistic_logit": {
+      "arm": "sonnet",
+      "stream": "sonnet_same",
+      "variant": "logistic_logit",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.83,
+        "accuracy_ci95": [
+          0.805465935038086,
+          0.8520084043614475
+        ],
+        "macro_f1": 0.8285594939747107,
+        "errors": 170,
+        "brier": 0.10705697453044334,
+        "binary_log_loss": 0.34483632623757116,
+        "ece_10_equal_width": 0.03442764205749399,
+        "error_auroc": 0.83475194897236,
+        "error_average_precision": 0.5070575630341022,
+        "error_prevalence": 0.17,
+        "aurc": 0.056407978478129575,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "sonnet_same.isotonic": {
+      "arm": "sonnet",
+      "stream": "sonnet_same",
+      "variant": "isotonic",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.83,
+        "accuracy_ci95": [
+          0.805465935038086,
+          0.8520084043614475
+        ],
+        "macro_f1": 0.8285594939747107,
+        "errors": 170,
+        "brier": 0.10784608061214071,
+        "binary_log_loss": 0.3611977159644343,
+        "ece_10_equal_width": 0.03239493173843525,
+        "error_auroc": 0.8323600283486888,
+        "error_average_precision": 0.49717778706265014,
+        "error_prevalence": 0.17,
+        "aurc": 0.059233462053794574,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "sonnet_verifier.raw": {
+      "arm": "sonnet",
+      "stream": "sonnet_verifier",
+      "variant": "raw",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.83,
+        "accuracy_ci95": [
+          0.805465935038086,
+          0.8520084043614475
+        ],
+        "macro_f1": 0.8285594939747107,
+        "errors": 170,
+        "brier": 0.12491849999999999,
+        "binary_log_loss": 0.3894715881371715,
+        "ece_10_equal_width": 0.11104999999999993,
+        "error_auroc": 0.8341885187810063,
+        "error_average_precision": 0.4953835830889299,
+        "error_prevalence": 0.17,
+        "aurc": 0.0576539126599852,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "sonnet_verifier.logistic_score": {
+      "arm": "sonnet",
+      "stream": "sonnet_verifier",
+      "variant": "logistic_score",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.83,
+        "accuracy_ci95": [
+          0.805465935038086,
+          0.8520084043614475
+        ],
+        "macro_f1": 0.8285594939747107,
+        "errors": 170,
+        "brier": 0.10754512656158488,
+        "binary_log_loss": 0.3454854082309677,
+        "ece_10_equal_width": 0.03478673902512944,
+        "error_auroc": 0.8341885187810063,
+        "error_average_precision": 0.4953835830889299,
+        "error_prevalence": 0.17,
+        "aurc": 0.0576539126599852,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "sonnet_verifier.logistic_logit": {
+      "arm": "sonnet",
+      "stream": "sonnet_verifier",
+      "variant": "logistic_logit",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.83,
+        "accuracy_ci95": [
+          0.805465935038086,
+          0.8520084043614475
+        ],
+        "macro_f1": 0.8285594939747107,
+        "errors": 170,
+        "brier": 0.10734988563312499,
+        "binary_log_loss": 0.3423409764082488,
+        "ece_10_equal_width": 0.021667958529682067,
+        "error_auroc": 0.8341885187810063,
+        "error_average_precision": 0.4953835830889299,
+        "error_prevalence": 0.17,
+        "aurc": 0.0576539126599852,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "sonnet_verifier.isotonic": {
+      "arm": "sonnet",
+      "stream": "sonnet_verifier",
+      "variant": "isotonic",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.83,
+        "accuracy_ci95": [
+          0.805465935038086,
+          0.8520084043614475
+        ],
+        "macro_f1": 0.8285594939747107,
+        "errors": 170,
+        "brier": 0.10790359486566334,
+        "binary_log_loss": 0.37281003537417423,
+        "ece_10_equal_width": 0.033480905668165,
+        "error_auroc": 0.8347342310418142,
+        "error_average_precision": 0.48030043497788044,
+        "error_prevalence": 0.17,
+        "aurc": 0.059991761625334046,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "sonnet_correctness.raw": {
+      "arm": "sonnet",
+      "stream": "sonnet_correctness",
+      "variant": "raw",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.83,
+        "accuracy_ci95": [
+          0.805465935038086,
+          0.8520084043614475
+        ],
+        "macro_f1": 0.8285594939747107,
+        "errors": 170,
+        "brier": 0.053138502078249036,
+        "binary_log_loss": 0.1920691159378206,
+        "ece_10_equal_width": 0.03275276264764518,
+        "error_auroc": 0.9520269312544295,
+        "error_average_precision": 0.873646569818989,
+        "error_prevalence": 0.17,
+        "aurc": 0.02541058101889801,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "sonnet_correctness.logistic_score": {
+      "arm": "sonnet",
+      "stream": "sonnet_correctness",
+      "variant": "logistic_score",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.83,
+        "accuracy_ci95": [
+          0.805465935038086,
+          0.8520084043614475
+        ],
+        "macro_f1": 0.8285594939747107,
+        "errors": 170,
+        "brier": 0.05051606251927113,
+        "binary_log_loss": 0.18855167583701582,
+        "ece_10_equal_width": 0.022759319416638186,
+        "error_auroc": 0.9520269312544295,
+        "error_average_precision": 0.873646569818989,
+        "error_prevalence": 0.17,
+        "aurc": 0.02541058101889801,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "sonnet_correctness.logistic_logit": {
+      "arm": "sonnet",
+      "stream": "sonnet_correctness",
+      "variant": "logistic_logit",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.83,
+        "accuracy_ci95": [
+          0.805465935038086,
+          0.8520084043614475
+        ],
+        "macro_f1": 0.8285594939747107,
+        "errors": 170,
+        "brier": 0.051929078296211684,
+        "binary_log_loss": 0.19068649537795845,
+        "ece_10_equal_width": 0.023949921653169882,
+        "error_auroc": 0.9520269312544295,
+        "error_average_precision": 0.873646569818989,
+        "error_prevalence": 0.17,
+        "aurc": 0.02541058101889801,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "sonnet_correctness.isotonic": {
+      "arm": "sonnet",
+      "stream": "sonnet_correctness",
+      "variant": "isotonic",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.83,
+        "accuracy_ci95": [
+          0.805465935038086,
+          0.8520084043614475
+        ],
+        "macro_f1": 0.8285594939747107,
+        "errors": 170,
+        "brier": 0.05327715521127255,
+        "binary_log_loss": 0.22408973502069177,
+        "ece_10_equal_width": 0.026904619942115873,
+        "error_auroc": 0.9451878100637845,
+        "error_average_precision": 0.8464404033590479,
+        "error_prevalence": 0.17,
+        "aurc": 0.03174661106724393,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "opus_same.raw": {
+      "arm": "opus",
+      "stream": "opus_same",
+      "variant": "raw",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.876,
+        "accuracy_ci95": [
+          0.8541222509908473,
+          0.8950000266280154
+        ],
+        "macro_f1": 0.8787208674708483,
+        "errors": 124,
+        "brier": 0.0972021,
+        "binary_log_loss": 0.3256162587412042,
+        "ece_10_equal_width": 0.10331000000000007,
+        "error_auroc": 0.8511056488437178,
+        "error_average_precision": 0.45780748580092917,
+        "error_prevalence": 0.124,
+        "aurc": 0.03543032599367542,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "opus_same.logistic_score": {
+      "arm": "opus",
+      "stream": "opus_same",
+      "variant": "logistic_score",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.876,
+        "accuracy_ci95": [
+          0.8541222509908473,
+          0.8950000266280154
+        ],
+        "macro_f1": 0.8787208674708483,
+        "errors": 124,
+        "brier": 0.08362903545964673,
+        "binary_log_loss": 0.28069124994583855,
+        "ece_10_equal_width": 0.021621622150756352,
+        "error_auroc": 0.8511056488437178,
+        "error_average_precision": 0.45780748580092917,
+        "error_prevalence": 0.124,
+        "aurc": 0.03543032599367542,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "opus_same.logistic_logit": {
+      "arm": "opus",
+      "stream": "opus_same",
+      "variant": "logistic_logit",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.876,
+        "accuracy_ci95": [
+          0.8541222509908473,
+          0.8950000266280154
+        ],
+        "macro_f1": 0.8787208674708483,
+        "errors": 124,
+        "brier": 0.08392717659566273,
+        "binary_log_loss": 0.27961037833945546,
+        "ece_10_equal_width": 0.02752623262291363,
+        "error_auroc": 0.8511056488437178,
+        "error_average_precision": 0.45780748580092917,
+        "error_prevalence": 0.124,
+        "aurc": 0.03543032599367542,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "opus_same.isotonic": {
+      "arm": "opus",
+      "stream": "opus_same",
+      "variant": "isotonic",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.876,
+        "accuracy_ci95": [
+          0.8541222509908473,
+          0.8950000266280154
+        ],
+        "macro_f1": 0.8787208674708483,
+        "errors": 124,
+        "brier": 0.08548458551913637,
+        "binary_log_loss": 0.3746717149474521,
+        "ece_10_equal_width": 0.028670626573135946,
+        "error_auroc": 0.839556635734276,
+        "error_average_precision": 0.42051198715236776,
+        "error_prevalence": 0.124,
+        "aurc": 0.04215654411373715,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "opus_verifier.raw": {
+      "arm": "opus",
+      "stream": "opus_verifier",
+      "variant": "raw",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.876,
+        "accuracy_ci95": [
+          0.8541222509908473,
+          0.8950000266280154
+        ],
+        "macro_f1": 0.8787208674708483,
+        "errors": 124,
+        "brier": 0.0897235,
+        "binary_log_loss": 0.3042368193863635,
+        "ece_10_equal_width": 0.08139000000000002,
+        "error_auroc": 0.8551102887023125,
+        "error_average_precision": 0.5031136737305915,
+        "error_prevalence": 0.124,
+        "aurc": 0.03384016806021985,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "opus_verifier.logistic_score": {
+      "arm": "opus",
+      "stream": "opus_verifier",
+      "variant": "logistic_score",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.876,
+        "accuracy_ci95": [
+          0.8541222509908473,
+          0.8950000266280154
+        ],
+        "macro_f1": 0.8787208674708483,
+        "errors": 124,
+        "brier": 0.08155929609235764,
+        "binary_log_loss": 0.2772599943219941,
+        "ece_10_equal_width": 0.020643357390118428,
+        "error_auroc": 0.8551102887023125,
+        "error_average_precision": 0.5031136737305915,
+        "error_prevalence": 0.124,
+        "aurc": 0.03384016806021985,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "opus_verifier.logistic_logit": {
+      "arm": "opus",
+      "stream": "opus_verifier",
+      "variant": "logistic_logit",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.876,
+        "accuracy_ci95": [
+          0.8541222509908473,
+          0.8950000266280154
+        ],
+        "macro_f1": 0.8787208674708483,
+        "errors": 124,
+        "brier": 0.08110506188850417,
+        "binary_log_loss": 0.2724997807284319,
+        "ece_10_equal_width": 0.024754940161697877,
+        "error_auroc": 0.8551102887023125,
+        "error_average_precision": 0.5031136737305915,
+        "error_prevalence": 0.124,
+        "aurc": 0.03384016806021985,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "opus_verifier.isotonic": {
+      "arm": "opus",
+      "stream": "opus_verifier",
+      "variant": "isotonic",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.876,
+        "accuracy_ci95": [
+          0.8541222509908473,
+          0.8950000266280154
+        ],
+        "macro_f1": 0.8787208674708483,
+        "errors": 124,
+        "brier": 0.08206317785231136,
+        "binary_log_loss": 0.3641761707445423,
+        "ece_10_equal_width": 0.030007964851455744,
+        "error_auroc": 0.8472575121520106,
+        "error_average_precision": 0.471840725375391,
+        "error_prevalence": 0.124,
+        "aurc": 0.03981259577015408,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "opus_correctness.raw": {
+      "arm": "opus",
+      "stream": "opus_correctness",
+      "variant": "raw",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.876,
+        "accuracy_ci95": [
+          0.8541222509908473,
+          0.8950000266280154
+        ],
+        "macro_f1": 0.8787208674708483,
+        "errors": 124,
+        "brier": 0.05092349935140477,
+        "binary_log_loss": 0.18242620467347165,
+        "ece_10_equal_width": 0.030110955104247814,
+        "error_auroc": 0.9390190013256738,
+        "error_average_precision": 0.7959147055717132,
+        "error_prevalence": 0.124,
+        "aurc": 0.01713926814906613,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "opus_correctness.logistic_score": {
+      "arm": "opus",
+      "stream": "opus_correctness",
+      "variant": "logistic_score",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.876,
+        "accuracy_ci95": [
+          0.8541222509908473,
+          0.8950000266280154
+        ],
+        "macro_f1": 0.8787208674708483,
+        "errors": 124,
+        "brier": 0.049911256770776145,
+        "binary_log_loss": 0.18558535918962288,
+        "ece_10_equal_width": 0.021732932343336345,
+        "error_auroc": 0.9390190013256738,
+        "error_average_precision": 0.7959147055717132,
+        "error_prevalence": 0.124,
+        "aurc": 0.01713926814906613,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "opus_correctness.logistic_logit": {
+      "arm": "opus",
+      "stream": "opus_correctness",
+      "variant": "logistic_logit",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.876,
+        "accuracy_ci95": [
+          0.8541222509908473,
+          0.8950000266280154
+        ],
+        "macro_f1": 0.8787208674708483,
+        "errors": 124,
+        "brier": 0.04994339138627652,
+        "binary_log_loss": 0.18077599908095335,
+        "ece_10_equal_width": 0.02247064548052706,
+        "error_auroc": 0.9390190013256738,
+        "error_average_precision": 0.7959147055717132,
+        "error_prevalence": 0.124,
+        "aurc": 0.01713926814906613,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "opus_correctness.isotonic": {
+      "arm": "opus",
+      "stream": "opus_correctness",
+      "variant": "isotonic",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.876,
+        "accuracy_ci95": [
+          0.8541222509908473,
+          0.8950000266280154
+        ],
+        "macro_f1": 0.8787208674708483,
+        "errors": 124,
+        "brier": 0.05024057241781297,
+        "binary_log_loss": 0.24682552911901845,
+        "ece_10_equal_width": 0.017243892849912446,
+        "error_auroc": 0.9289567683016645,
+        "error_average_precision": 0.7652266371862542,
+        "error_prevalence": 0.124,
+        "aurc": 0.02345073528684321,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "decisions_confidence.raw": {
+      "arm": "decisions",
+      "stream": "decisions_confidence",
+      "variant": "raw",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.733,
+        "accuracy_ci95": [
+          0.7047270990046101,
+          0.7594896315411211
+        ],
+        "macro_f1": 0.7351909517618102,
+        "errors": 267,
+        "brier": 0.1472447,
+        "binary_log_loss": 0.4705325793911113,
+        "ece_10_equal_width": 0.06145,
+        "error_auroc": 0.8242663927934557,
+        "error_average_precision": 0.5993701886386867,
+        "error_prevalence": 0.267,
+        "aurc": 0.10202327204061164,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "decisions_confidence.logistic_score": {
+      "arm": "decisions",
+      "stream": "decisions_confidence",
+      "variant": "logistic_score",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.733,
+        "accuracy_ci95": [
+          0.7047270990046101,
+          0.7594896315411211
+        ],
+        "macro_f1": 0.7351909517618102,
+        "errors": 267,
+        "brier": 0.14688343343468893,
+        "binary_log_loss": 0.45546554329327793,
+        "ece_10_equal_width": 0.03821657963952601,
+        "error_auroc": 0.8242663927934557,
+        "error_average_precision": 0.5993701886386867,
+        "error_prevalence": 0.267,
+        "aurc": 0.10202327204061164,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "decisions_confidence.logistic_logit": {
+      "arm": "decisions",
+      "stream": "decisions_confidence",
+      "variant": "logistic_logit",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.733,
+        "accuracy_ci95": [
+          0.7047270990046101,
+          0.7594896315411211
+        ],
+        "macro_f1": 0.7351909517618102,
+        "errors": 267,
+        "brier": 0.14401330518197425,
+        "binary_log_loss": 0.4491393807598482,
+        "ece_10_equal_width": 0.025390222918636317,
+        "error_auroc": 0.8242663927934557,
+        "error_average_precision": 0.5993701886386867,
+        "error_prevalence": 0.267,
+        "aurc": 0.10202327204061164,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "decisions_confidence.isotonic": {
+      "arm": "decisions",
+      "stream": "decisions_confidence",
+      "variant": "isotonic",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.733,
+        "accuracy_ci95": [
+          0.7047270990046101,
+          0.7594896315411211
+        ],
+        "macro_f1": 0.7351909517618102,
+        "errors": 267,
+        "brier": 0.14546711632295217,
+        "binary_log_loss": 0.5133531112889768,
+        "ece_10_equal_width": 0.02893493697815876,
+        "error_auroc": 0.8228178283285048,
+        "error_average_precision": 0.5850298971187166,
+        "error_prevalence": 0.267,
+        "aurc": 0.10845279124070342,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "decisions_probability.raw": {
+      "arm": "decisions",
+      "stream": "decisions_probability",
+      "variant": "raw",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.733,
+        "accuracy_ci95": [
+          0.7047270990046101,
+          0.7594896315411211
+        ],
+        "macro_f1": 0.7351909517618102,
+        "errors": 267,
+        "brier": 0.1474115,
+        "binary_log_loss": 0.47073647180440287,
+        "ece_10_equal_width": 0.06010999999999997,
+        "error_auroc": 0.8242663927934557,
+        "error_average_precision": 0.5993701886386867,
+        "error_prevalence": 0.267,
+        "aurc": 0.10202327204061164,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "decisions_probability.logistic_score": {
+      "arm": "decisions",
+      "stream": "decisions_probability",
+      "variant": "logistic_score",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.733,
+        "accuracy_ci95": [
+          0.7047270990046101,
+          0.7594896315411211
+        ],
+        "macro_f1": 0.7351909517618102,
+        "errors": 267,
+        "brier": 0.14683466068515114,
+        "binary_log_loss": 0.45527942265461696,
+        "ece_10_equal_width": 0.04628488785358262,
+        "error_auroc": 0.8242663927934557,
+        "error_average_precision": 0.5993701886386867,
+        "error_prevalence": 0.267,
+        "aurc": 0.10202327204061164,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "decisions_probability.logistic_logit": {
+      "arm": "decisions",
+      "stream": "decisions_probability",
+      "variant": "logistic_logit",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.733,
+        "accuracy_ci95": [
+          0.7047270990046101,
+          0.7594896315411211
+        ],
+        "macro_f1": 0.7351909517618102,
+        "errors": 267,
+        "brier": 0.14400224777107787,
+        "binary_log_loss": 0.4492024431275215,
+        "ece_10_equal_width": 0.025285458909521066,
+        "error_auroc": 0.8242663927934557,
+        "error_average_precision": 0.5993701886386867,
+        "error_prevalence": 0.267,
+        "aurc": 0.10202327204061164,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "decisions_probability.isotonic": {
+      "arm": "decisions",
+      "stream": "decisions_probability",
+      "variant": "isotonic",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.733,
+        "accuracy_ci95": [
+          0.7047270990046101,
+          0.7594896315411211
+        ],
+        "macro_f1": 0.7351909517618102,
+        "errors": 267,
+        "brier": 0.14546711632295217,
+        "binary_log_loss": 0.5133531112889768,
+        "ece_10_equal_width": 0.02893493697815876,
+        "error_auroc": 0.8228178283285048,
+        "error_average_precision": 0.5850298971187166,
+        "error_prevalence": 0.267,
+        "aurc": 0.10845279124070342,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    },
+    "decisions_probability.temperature": {
+      "arm": "decisions",
+      "stream": "decisions_probability",
+      "variant": "temperature",
+      "threshold": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01
+      },
+      "development_metrics": {
+        "n": 1000,
+        "accuracy": 0.733,
+        "accuracy_ci95": [
+          0.7047270990046101,
+          0.7594896315411211
+        ],
+        "macro_f1": 0.7351909517618102,
+        "errors": 267,
+        "brier": 0.19034083011731767,
+        "binary_log_loss": 0.5649089515889757,
+        "ece_10_equal_width": 0.1894484111971669,
+        "error_auroc": 0.8122512275753535,
+        "error_average_precision": 0.5799490683420351,
+        "error_prevalence": 0.267,
+        "aurc": 0.10342500591815476,
+        "acceptance": {
+          "threshold": null,
+          "development_coverage": 0.0,
+          "development_risk": null,
+          "rule": "wilson",
+          "target_error": 0.01,
+          "accepted": 0,
+          "errors": 0,
+          "coverage": 0.0,
+          "risk": null,
+          "risk_ci95": null
+        }
+      }
+    }
+  },
+  "input_sha256": {
+    "data/banking77/calibration.csv": "b6d78cb7fa97b26356db523a7f677cfc647b169eeb412bf1607ac56d7aaccaf7",
+    "data/banking77/development.csv": "e5b055283ad883a785e529acace68fb8dd28c41454a828b00c6405eaac85ed6f",
+    "data/banking77/manifest.json": "65c3f77d0fa3d2184fed2bccf5fc52ca2b686d4dcf0080eafdf01e6ea5aa2adc",
+    "runs/embeddings/frozen_hashes.json": "0667b4df9f965250cd1a728e15447f3aff3c11b37251b7473bd99825ca8f39ed",
+    "runs/embeddings/frozen.joblib": "9313818c56a869d279233b1953d7ec08f652e00f477be32322566331a70bde05",
+    "runs/embeddings/embedding_lr.joblib": "465835848f3a8ca45208c9780f348bfa9aa2b0b9334f6615f7ba2564eb09917b",
+    "runs/embeddings/embedding_mlp.joblib": "82f35c0637a7a77c02902ad3b1e023a45fa5f9260deb3d0c11f68398d212cda4",
+    "runs/embeddings/embedding_model.json": "49f6a541151310aeb4ca2837c529f0c865f7aad2f657c4b056d4b306a47f2c50",
+    "runs/embeddings/supervised.joblib": "08587ee6c1de2e67b976a4e5605e052c3801db5edb0f6ec55e51cd9dea03f194",
+    "runs/embeddings/development/embedding_lr_raw.predictions.csv": "cabe3d567ebc8750d5c149bea004744ee3f27b2c559d6df5b1de020c1d8970ae",
+    "runs/embeddings/development/embedding_lr_temperature.predictions.csv": "77914ef85f92cf1a8dc64c09069542884fb83548604fd7fc244086bbe3675a4c",
+    "runs/embeddings/development/metrics.json": "9e6a31cae13511b142f75ef828fab545cf76d267625769b728d58ef119cee9ce",
+    "runs/embeddings/development/embedding_mlp_raw.predictions.csv": "54360f35718ab44c2ede0e10e9d5c5d8fbcefe62d3b884479d920188fe428d83",
+    "runs/embeddings/development/embedding_mlp_temperature.predictions.csv": "e78382a44fbc0857fac0ebaa3b90e0f17587acb7df2637138a42c866ff8b53a9",
+    "runs/anthropic-batch-v2/frozen_hashes.json": "b0cf0eaf2350680217b12179c11390289ad68b41515d547b428dbe758a586c71",
+    "runs/anthropic-batch-v2/frozen.joblib": "6cad966f12fb6cdec258f403155ae23f0c96de78e494a6696d1285dfb7061d52",
+    "runs/anthropic-batch-v2/tfidf.joblib": "9ffc5d0f0354c08f202c9585cf79ab207fc93e20958814ae626f648f5054b437",
+    "runs/anthropic-batch-v2/supervised.joblib": "8da72bc7001be7db9bed113a6eb995c973dd733c96c2a5618ccf0ec960d1f920",
+    "runs/anthropic-batch-v2/llm_calibration.csv": "36ad7ac30b9415c5d73d96df192519f81c801fde2a424fb950cfdc4688bc040b",
+    "runs/anthropic-batch-v2/llm_development.csv": "1c91bd96d3211c375d784e9b463c0a306f4b288fb01d99e1bd2147ce240d72e0",
+    "runs/anthropic-batch-v2/development/llm_same_raw.predictions.csv": "121621665e78b881ce45eb7da6b764d25bee4e99877f834b7716a9f78872f0a2",
+    "runs/anthropic-batch-v2/development/llm_same_sigmoid.predictions.csv": "e56310e6c241cc789b40187699e93a10f4bab4dd46ad081b302d749761b5e2eb",
+    "runs/anthropic-batch-v2/development/metrics.json": "955a83d355ff6f66f3a3f578133e0de9db6c8889d5b84c0f104407f00f3a3b59",
+    "runs/anthropic-batch-v2/development/llm_verifier_raw.predictions.csv": "d083d9efa97e73c446567e05679036004faf9b2cbc4aed241217f40d60434b1a",
+    "runs/anthropic-batch-v2/development/llm_verifier_sigmoid.predictions.csv": "b37eddc5269676cf1ca683e7e3528c59f258e380f8a2f8ad73fcffdbc7dc3530",
+    "runs/anthropic-batch-v2/development/llm_correctness_raw.predictions.csv": "458418581a023b985d130f36fea2184f931abcd28263120c77a6b8a20ffb2895",
+    "runs/anthropic-batch-v2/development/llm_correctness_sigmoid.predictions.csv": "4e50c92b4d164e3281f0baf0b545a29aa912ea81924c566bdab747d446d71928",
+    "runs/anthropic-batch-v2/development/tfidf_raw.predictions.csv": "2c039ed65a0192e9cf307b38412e4e52b7d7c494c6254e30cc90115f3b3204fd",
+    "runs/anthropic-batch-v2/development/tfidf_temperature.predictions.csv": "a0b9eee5f0c1d341fd002c219e81fbfa0c62c092d999143d384af07d522161af",
+    "runs/anthropic-sonnet-5-5/frozen_hashes.json": "9695ffbf8806205b6ab8b303f742af1f06211df6ac5a23d7793ec25a6ef42b14",
+    "runs/anthropic-sonnet-5-5/frozen.joblib": "ad43199a53ac02fc675803844345ce0d8b5124288e39c8ed9cf709440c4b4701",
+    "runs/anthropic-sonnet-5-5/tfidf.joblib": "9ffc5d0f0354c08f202c9585cf79ab207fc93e20958814ae626f648f5054b437",
+    "runs/anthropic-sonnet-5-5/supervised.joblib": "aedc796967b72548b4130d553e98c619d4bc8fc8539ac9b7bb0236c49a7ef3f9",
+    "runs/anthropic-sonnet-5-5/llm_calibration.csv": "014cfdc471a114f7f2989ac2276855640ab1de8395d7406fa5ee0f30c96790b0",
+    "runs/anthropic-sonnet-5-5/llm_development.csv": "07381d57bdec08377aec990487c26345e167be2d268e3f1123308dea8dc43bc2",
+    "runs/anthropic-sonnet-5-5/development/llm_same_raw.predictions.csv": "229fbc7f0a65324bae4903e44385795a365ae64ed98242b105d708a17c9470dd",
+    "runs/anthropic-sonnet-5-5/development/llm_same_sigmoid.predictions.csv": "b29cc38a45effacd0d30ac2a557d17d5b36e28cc2f3c224f980475509ea5eb90",
+    "runs/anthropic-sonnet-5-5/development/metrics.json": "c1588c7117d339f74bfde4347aa8ee33106c41a33a826d80949ea12ae0b9e0c9",
+    "runs/anthropic-sonnet-5-5/development/llm_verifier_raw.predictions.csv": "603b2dd2c1d0467a8ea00c193c2f22ffc20f7a0c1aa024c3d552c9d325c89cae",
+    "runs/anthropic-sonnet-5-5/development/llm_verifier_sigmoid.predictions.csv": "dc4d2f266fd6d8018c6bedab4f67e834ae57ccb856682c2a6a903344ef0a31ee",
+    "runs/anthropic-sonnet-5-5/development/llm_correctness_raw.predictions.csv": "778523ce1450f69b21c721220b70ccdd3aec720d664e02c00b9e443c95b40441",
+    "runs/anthropic-sonnet-5-5/development/llm_correctness_sigmoid.predictions.csv": "93922b7e5770c1339c174bf13759e5b38870b2aa990e281d1031cb86fee9c232",
+    "runs/anthropic-opus-5-5/frozen_hashes.json": "d11de8506ddbe5905308e2260000e8eaada98ff8e776dc7f13ce8ece764cce28",
+    "runs/anthropic-opus-5-5/frozen.joblib": "b099bff5e055c5d6b87aa763fed0cc922a4a58c631da766c91eebc100cc69ef2",
+    "runs/anthropic-opus-5-5/tfidf.joblib": "9ffc5d0f0354c08f202c9585cf79ab207fc93e20958814ae626f648f5054b437",
+    "runs/anthropic-opus-5-5/supervised.joblib": "f7f390e0052ae5b5d6764fef090fe100194b624a912225260291b4fbcc34685e",
+    "runs/anthropic-opus-5-5/llm_calibration.csv": "555e298e6ea124191600fd599786a6b959818003a5b233fbc3ec07948fb041ef",
+    "runs/anthropic-opus-5-5/llm_development.csv": "057b87a8af814b694b97a40c947d405b2489be69a08d45ca6621935d84397e5f",
+    "runs/anthropic-opus-5-5/development/llm_same_raw.predictions.csv": "88bcaefdff46dd42df28788ad8431dfeb828fa1ea7b128d04984d7195aca2e80",
+    "runs/anthropic-opus-5-5/development/llm_same_sigmoid.predictions.csv": "8f677ca6c32d7f2517d664c92a3301af1fed099b85da2ae881ee9b56ca5a2d67",
+    "runs/anthropic-opus-5-5/development/metrics.json": "0ece7df1fc36f53a90ec0e2fb217a1d589b3b4dacba91e5255750becb1366d2f",
+    "runs/anthropic-opus-5-5/development/llm_verifier_raw.predictions.csv": "e30098bd8addd3f91bb3200d9eb105ad2d4ce51815d02176b23586d7521def4e",
+    "runs/anthropic-opus-5-5/development/llm_verifier_sigmoid.predictions.csv": "3d35c76db7f2e95279f0c955181921ff769e18deadced9fda7c1dd6eddefb11c",
+    "runs/anthropic-opus-5-5/development/llm_correctness_raw.predictions.csv": "448845675c117f6cdc4726aaeb94cc94dcb03ae5d9eff8a8c5c92210dde0ee3f",
+    "runs/anthropic-opus-5-5/development/llm_correctness_sigmoid.predictions.csv": "a2f8c3b38723ce027a06f888ce2d4eadb2b7da5135409ab10a05c48a85a3846b",
+    "runs/openai-decisions-v2/frozen_hashes.json": "d23c8ba00cf2fed2f6eb53a0bd1aa1df5667967545c0a08608c95cc7fe3766e3",
+    "runs/openai-decisions-v2/frozen.joblib": "5e9251d0353c4dbbc0443953ae85a4125520e791e32b42e1583ece30d23b48d9",
+    "runs/openai-decisions-v2/decisions_calibration.csv": "bcf9357cc8efdba5335eef179ebf332dad92fefc9b0bdd80f93b6d4f29f0e20a",
+    "runs/openai-decisions-v2/development/decisions_confidence_raw.predictions.csv": "d5d895c94a038beb2a36de3aecd6f13923452c0e0a9c072fdf3caa59c6860d0b",
+    "runs/openai-decisions-v2/development/decisions_confidence_sigmoid.predictions.csv": "b50fb5a9d1d744733518d00d59fdbacb0d969fc9b0717dc0487dc5a68258b110",
+    "runs/openai-decisions-v2/development/metrics.json": "6e46547ea771e2286f673eaf180a2a252961f0a62a829895f32c4f0d84e24077",
+    "runs/openai-decisions-v2/development/decisions_probability_raw.predictions.csv": "ddc12dc38327ee1654059001852058c8cf6de18b16bfa5fdc4ffb22703a64d0c",
+    "runs/openai-decisions-v2/development/decisions_probability_sigmoid.predictions.csv": "11ed279329bd0dc88207547f2e8bd4542e4ff0b46dc355b7bc6f0573b24f0757",
+    "runs/openai-decisions-v2/development/decisions_probability_temperature.predictions.csv": "7264a5df07124fdc550f7606e16ffbb60462a25fcb23838e76de10617a3eb35d",
+    "reports/calibrator-comparison/analysis.json": "b77b7755b298d8ecd2f935688ea18fb6839380a01ea93c873457ad27137bcf27",
+    "reports/calibrator-comparison/calibrators.joblib": "54349a3aab1892cd01a2cf634fc534db215d4da750fcb3cb546677d8bdc30355",
+    "data/banking77/fit.csv": "424df2b9ba8e82e2681594a93a953ccb96e44a99b4cea1fc0a5e7101c4d2a51d",
+    "data/banking77/correctness.csv": "f224fc20771788679a6ab32b742d48b06e1c8ee197e29a73e5c3b4c012094a5b",
+    "data/banking77/test.csv": "00cdfb38f968b167e2cb4d371eb78e1ffe4d53227b516b7d286272b7878ba76f",
+    "src/confidence_experiment/__init__.py": "9f4450e1d52dbbdb991819b0a707c460e813e8f40cd8f6a4ce738b665a3570d6",
+    "src/confidence_experiment/__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+    "src/confidence_experiment/io.py": "8f88ab3e1b7f585852f4ba8c6c1465a5e6236e039f8b900d7e8aeb7e4c4c433b",
+    "src/confidence_experiment/data.py": "dcee032b31290a61d3022d7514f1220a9874343961408246d347b4338ab4adde",
+    "src/confidence_experiment/metrics.py": "a3e56aec52882b81bef44f2a78a64d72f813f19bf057700138c988921842ae35",
+    "src/confidence_experiment/models.py": "2f59f482df3ab9cfa3e820427b3315cfffd48734e32633d12976e0f422d1287a",
+    "src/confidence_experiment/llm.py": "30dbdd9611dffc33807eb4609751ce46d1c776c93090a9446930c6c4b8dd111d",
+    "src/confidence_experiment/report.py": "6e77664ba5f7a89bcb5681c3011a00596fdb82437b6a9d74a2dca4140cb761cc",
+    "src/confidence_experiment/runner.py": "543fb63668b56ed60b71d2025b67d7cd3177a75a1e776d8d144fc33e5cb9b258",
+    "src/confidence_experiment/cli.py": "f40cda3d4bd5bbeed20761a2a6b626d7155858c026eacc8eeb5cd6ed273b96c6",
+    "scripts/final_protocol.py": "58434abcdf8e7f9e7f269b9c5ba93b3461b81929674a5047599d63861aaf77e0",
+    "scripts/run_anthropic_batch.py": "6f4d880be2e1f124e0954edee72719f5457e4ed87e4607f77f75a46d8ff171b8",
+    "scripts/run_openai_decisions.py": "b08c209b5d530b8d2e37e5a1a1e58357b2d8aa5f243b36a9cae1ef7ec4c516f0",
+    "scripts/final_transport.py": "af928e4dffc1836997776a4f7c307cb9888ad350fab2d3644a0ba7a742e254f7",
+    "configs/embeddings.toml": "1401f9662bb2fab47b48739ae9e581dd6b6f274bdce5e81dbece17972f27cf6b",
+    "configs/anthropic-batch-v2.toml": "8638fe4ca7c8944c7c695576785a1b6b24e23a04e2f08159b05e0b1acbdaaf3f",
+    "configs/anthropic-sonnet-5-5.toml": "d8513f1c8ebf47c35e5ba4f1da762626bc4b58d306ebc4cb160b944bfb2f5aca",
+    "configs/anthropic-opus-5-5.toml": "69119e5d03ad0f90b243b0936038ad8db457a625c1337a4c392f2c689b737289",
+    "configs/openai-decisions.toml": "75f63308d4b0e84126329abe36efd20263a53f0863e023c81f5278f2f7180364",
+    "reports/calibrator-comparison/embedding_lr.raw.predictions.csv": "cabe3d567ebc8750d5c149bea004744ee3f27b2c559d6df5b1de020c1d8970ae",
+    "reports/calibrator-comparison/embedding_lr.logistic_score.predictions.csv": "d336aa34aebd43ee797b88b5980efa673ad87c233524a4bed96b7373a398c7e3",
+    "reports/calibrator-comparison/embedding_lr.logistic_logit.predictions.csv": "f71a4991dc8634117637892d83aa7106d03e01b14cdc936404f5c692cfb2f9b7",
+    "reports/calibrator-comparison/embedding_lr.isotonic.predictions.csv": "d3a2f1f77e1635df9eb0a1f888070dd3e68626d22b7e04eababfebdf1b9d4fe3",
+    "reports/calibrator-comparison/embedding_lr.temperature.predictions.csv": "77914ef85f92cf1a8dc64c09069542884fb83548604fd7fc244086bbe3675a4c",
+    "reports/calibrator-comparison/embedding_mlp.raw.predictions.csv": "54360f35718ab44c2ede0e10e9d5c5d8fbcefe62d3b884479d920188fe428d83",
+    "reports/calibrator-comparison/embedding_mlp.logistic_score.predictions.csv": "2a10a399be21cc65c128d4697b83fbd1038376b89b3e9454d398996c9cb93ab6",
+    "reports/calibrator-comparison/embedding_mlp.logistic_logit.predictions.csv": "0ab18635f8f5d987612562e8a3d2245d4cf21f1f304c47878759ad9fd923b16e",
+    "reports/calibrator-comparison/embedding_mlp.isotonic.predictions.csv": "136e020c03eff46ed137659c9deaa0c89b16518ae8017ef39942af71651cc396",
+    "reports/calibrator-comparison/embedding_mlp.temperature.predictions.csv": "e78382a44fbc0857fac0ebaa3b90e0f17587acb7df2637138a42c866ff8b53a9",
+    "reports/calibrator-comparison/tfidf.raw.predictions.csv": "2c039ed65a0192e9cf307b38412e4e52b7d7c494c6254e30cc90115f3b3204fd",
+    "reports/calibrator-comparison/tfidf.logistic_score.predictions.csv": "5d996789ba2bc56e115f2368b34baab6f27130244f92de9ecaca5e8c2d301c9b",
+    "reports/calibrator-comparison/tfidf.logistic_logit.predictions.csv": "8a591ebcff1e98377f643dd36459c0552375a971651f35ad372850acbc6413f3",
+    "reports/calibrator-comparison/tfidf.isotonic.predictions.csv": "6b16429f5fec3bf90928ffe5b4d51ee8feb053d206e746a548d66215e72cf495",
+    "reports/calibrator-comparison/tfidf.temperature.predictions.csv": "a0b9eee5f0c1d341fd002c219e81fbfa0c62c092d999143d384af07d522161af",
+    "reports/calibrator-comparison/haiku_same.raw.predictions.csv": "121621665e78b881ce45eb7da6b764d25bee4e99877f834b7716a9f78872f0a2",
+    "reports/calibrator-comparison/haiku_same.logistic_score.predictions.csv": "e56310e6c241cc789b40187699e93a10f4bab4dd46ad081b302d749761b5e2eb",
+    "reports/calibrator-comparison/haiku_same.logistic_logit.predictions.csv": "a6eb1081b3fa1b25875649896814c8e3739909d26b8f477240323ab400fd8e0c",
+    "reports/calibrator-comparison/haiku_same.isotonic.predictions.csv": "41803093d46960915e813cb76270086178d5163c99ab9b633b1da6f7ebeec5db",
+    "reports/calibrator-comparison/haiku_verifier.raw.predictions.csv": "d083d9efa97e73c446567e05679036004faf9b2cbc4aed241217f40d60434b1a",
+    "reports/calibrator-comparison/haiku_verifier.logistic_score.predictions.csv": "b37eddc5269676cf1ca683e7e3528c59f258e380f8a2f8ad73fcffdbc7dc3530",
+    "reports/calibrator-comparison/haiku_verifier.logistic_logit.predictions.csv": "1d79299642978623b36971acc891a2d0deabdfa7faaa6b6f43d369e1e48236cf",
+    "reports/calibrator-comparison/haiku_verifier.isotonic.predictions.csv": "27c0b1ed816ca643eda7a12d57cf3b2c27f15129f2638f54eaea94908c6d5f1a",
+    "reports/calibrator-comparison/haiku_correctness.raw.predictions.csv": "458418581a023b985d130f36fea2184f931abcd28263120c77a6b8a20ffb2895",
+    "reports/calibrator-comparison/haiku_correctness.logistic_score.predictions.csv": "4e50c92b4d164e3281f0baf0b545a29aa912ea81924c566bdab747d446d71928",
+    "reports/calibrator-comparison/haiku_correctness.logistic_logit.predictions.csv": "34d3e530353804271f978445564c28b38e3348c3da096082ef0b4ab3226581da",
+    "reports/calibrator-comparison/haiku_correctness.isotonic.predictions.csv": "11b837b40eaabd95e5021111aa0b7c18e52907430e1843d2a8a18ad0a0fcaa89",
+    "reports/calibrator-comparison/sonnet_same.raw.predictions.csv": "229fbc7f0a65324bae4903e44385795a365ae64ed98242b105d708a17c9470dd",
+    "reports/calibrator-comparison/sonnet_same.logistic_score.predictions.csv": "b29cc38a45effacd0d30ac2a557d17d5b36e28cc2f3c224f980475509ea5eb90",
+    "reports/calibrator-comparison/sonnet_same.logistic_logit.predictions.csv": "a922925bd76b44b744d02f91ca2f53b8226d4f95490096d70537c08007619c9a",
+    "reports/calibrator-comparison/sonnet_same.isotonic.predictions.csv": "258ad9da1e2e82606bfbfdb4e9bc8f8530b17b40edffc34cbd53f84bb8d573dd",
+    "reports/calibrator-comparison/sonnet_verifier.raw.predictions.csv": "603b2dd2c1d0467a8ea00c193c2f22ffc20f7a0c1aa024c3d552c9d325c89cae",
+    "reports/calibrator-comparison/sonnet_verifier.logistic_score.predictions.csv": "dc4d2f266fd6d8018c6bedab4f67e834ae57ccb856682c2a6a903344ef0a31ee",
+    "reports/calibrator-comparison/sonnet_verifier.logistic_logit.predictions.csv": "b7d737c4c4d0de80aa1e6efb3035b5309bd2d1094f8c351aaf77341ee4355d0b",
+    "reports/calibrator-comparison/sonnet_verifier.isotonic.predictions.csv": "4fc5178fdfb515caacac3803ba11fb98e44459bb84f8fef8ba8d634104bc0b8b",
+    "reports/calibrator-comparison/sonnet_correctness.raw.predictions.csv": "778523ce1450f69b21c721220b70ccdd3aec720d664e02c00b9e443c95b40441",
+    "reports/calibrator-comparison/sonnet_correctness.logistic_score.predictions.csv": "93922b7e5770c1339c174bf13759e5b38870b2aa990e281d1031cb86fee9c232",
+    "reports/calibrator-comparison/sonnet_correctness.logistic_logit.predictions.csv": "ee24f50a7b4051c1499ff44fe7d255b9a927276d2294e8f7d57308d2e69ebdb5",
+    "reports/calibrator-comparison/sonnet_correctness.isotonic.predictions.csv": "9a5edc24eb735b42d1f860094c3442916442a4b98decc7478d02e1b0095c2519",
+    "reports/calibrator-comparison/opus_same.raw.predictions.csv": "88bcaefdff46dd42df28788ad8431dfeb828fa1ea7b128d04984d7195aca2e80",
+    "reports/calibrator-comparison/opus_same.logistic_score.predictions.csv": "8f677ca6c32d7f2517d664c92a3301af1fed099b85da2ae881ee9b56ca5a2d67",
+    "reports/calibrator-comparison/opus_same.logistic_logit.predictions.csv": "1752da608f11df9f53e734ee8fb0eac6d99cce6521d333c5aa6ea4e9694c8eda",
+    "reports/calibrator-comparison/opus_same.isotonic.predictions.csv": "a31e72b28a3e199c8933f2254a294798a5e3d7214b65d6a3744b7bbff6422609",
+    "reports/calibrator-comparison/opus_verifier.raw.predictions.csv": "e30098bd8addd3f91bb3200d9eb105ad2d4ce51815d02176b23586d7521def4e",
+    "reports/calibrator-comparison/opus_verifier.logistic_score.predictions.csv": "3d35c76db7f2e95279f0c955181921ff769e18deadced9fda7c1dd6eddefb11c",
+    "reports/calibrator-comparison/opus_verifier.logistic_logit.predictions.csv": "e00f98ab7f51891ea70940d161785ec3556dc1666d7e019e839beb49837e0a94",
+    "reports/calibrator-comparison/opus_verifier.isotonic.predictions.csv": "91715a1d2b165ef14ee93e65138637b8ce1abc746ecf4c8f078324660a4373d9",
+    "reports/calibrator-comparison/opus_correctness.raw.predictions.csv": "448845675c117f6cdc4726aaeb94cc94dcb03ae5d9eff8a8c5c92210dde0ee3f",
+    "reports/calibrator-comparison/opus_correctness.logistic_score.predictions.csv": "a2f8c3b38723ce027a06f888ce2d4eadb2b7da5135409ab10a05c48a85a3846b",
+    "reports/calibrator-comparison/opus_correctness.logistic_logit.predictions.csv": "47b21ff84a37a35ce764040f03cc5aaac2c73085b8ddfa158a780f99ef13f8aa",
+    "reports/calibrator-comparison/opus_correctness.isotonic.predictions.csv": "01ed38e579eecfb67d8169128ec2b1b222af5c5eb4ae63d70adf1a3e01152ca5",
+    "reports/calibrator-comparison/decisions_confidence.raw.predictions.csv": "d5d895c94a038beb2a36de3aecd6f13923452c0e0a9c072fdf3caa59c6860d0b",
+    "reports/calibrator-comparison/decisions_confidence.logistic_score.predictions.csv": "b50fb5a9d1d744733518d00d59fdbacb0d969fc9b0717dc0487dc5a68258b110",
+    "reports/calibrator-comparison/decisions_confidence.logistic_logit.predictions.csv": "ebfb0532d47da48004e14e252dacda87f0a4b5066381b9dc6671fb68029f70d9",
+    "reports/calibrator-comparison/decisions_confidence.isotonic.predictions.csv": "56c0dc0a879c068d260227d28aff2c533987fb0ea44debc6b9406091e0efebdb",
+    "reports/calibrator-comparison/decisions_probability.raw.predictions.csv": "ddc12dc38327ee1654059001852058c8cf6de18b16bfa5fdc4ffb22703a64d0c",
+    "reports/calibrator-comparison/decisions_probability.logistic_score.predictions.csv": "11ed279329bd0dc88207547f2e8bd4542e4ff0b46dc355b7bc6f0573b24f0757",
+    "reports/calibrator-comparison/decisions_probability.logistic_logit.predictions.csv": "3a211524a6f78c88b1147daf1a8f94a54aeba92b14be97deac9cc1bd25bcd76d",
+    "reports/calibrator-comparison/decisions_probability.isotonic.predictions.csv": "56c0dc0a879c068d260227d28aff2c533987fb0ea44debc6b9406091e0efebdb",
+    "reports/calibrator-comparison/decisions_probability.temperature.predictions.csv": "7264a5df07124fdc550f7606e16ffbb60462a25fcb23838e76de10617a3eb35d"
+  },
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "torch": "2.14.1",
+    "transformers": "4.57.6",
+    "sentence-transformers": "5.7.0",
+    "anthropic": "1.13.0"
+  },
+  "development_reproduction_atol": 1e-07,
+  "rules": [
+    "No fitting or threshold selection on test outcomes",
+    "All 60 variants evaluated; no test-dependent configuration changes",
+    "Use saved development thresholds, including null thresholds that accept nothing",
+    "Refusals always require review",
+    "Paired bootstrap intervals are nominal and conditional on frozen fits"
+  ],
+  "bootstrap": {
+    "seed": 20261013,
+    "resamples": 5000
+  },
+  "sha256": "9ab1b813dba3d60d9b44c970ee0a2e21aed634c64cdfa5cda879933a3c56921e"
+}

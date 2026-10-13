@@ -1,0 +1,16 @@
+{
+  "state": "active_scope_complete",
+  "completed_utc": "2026-10-13T19:33:21.571784+00:00",
+  "active_arms": [
+    "embeddings",
+    "tfidf",
+    "decisions"
+  ],
+  "deferred_arms": [
+    "haiku",
+    "sonnet",
+    "opus"
+  ],
+  "page_sync_pending": false,
+  "page_sequence": 43
+}

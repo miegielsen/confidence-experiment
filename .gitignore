@@ -14,6 +14,8 @@ venv/
 .git-empty-move-remainder/
 *.tmp
 .lock
+.*.lock
+*.tmp.npy
 *.pid
 
 # Credentials: keep the key setup/loader scripts, never the actual key files.

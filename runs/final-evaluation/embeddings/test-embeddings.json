@@ -1,0 +1,11 @@
+{
+  "model": {
+    "model": "google/embeddinggemma-300m",
+    "revision": "57c266a740f537b4dc058e1b0cda161fd15afa75"
+  },
+  "model_load_seconds": 4.428323400206864,
+  "encoding_seconds": 183.25932119973004,
+  "cpu_threads": 2,
+  "batch_size": 8,
+  "sha256": "aa7ebc233cbe1e2cc0127056b5c442c50b75a2aca0aef3219de643d0f338e011"
+}

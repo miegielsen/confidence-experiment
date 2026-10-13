@@ -1,0 +1,14 @@
+{
+  "arm": "sonnet",
+  "fingerprint": "b4ba9b8fbb34ad15bd04935843b54fe409a6810d0cd46e273eb26e3102a0564e",
+  "provider_http_status": 400,
+  "reason": "insufficient_credits",
+  "request_ids": [
+    "req_011CfzkmXaaxXkA4Gpv8Y7QD"
+  ],
+  "provider_error": "Traceback (most recent call last):\n  File \"H:\\Mijn Drive\\Projects\\confidence-experiment\\scripts\\final_evaluation.py\", line 30, in run_arm\n    decisions() if arm == \"decisions\" else anthropic(arm)\n                                           ^^^^^^^^^^^^^^\n  File \"H:\\Mijn Drive\\Projects\\confidence-experiment\\scripts\\final_transport.py\", line 36, in anthropic\n    batcher.wave(first, \"official_test_classification_and_blind\")\n  File \"H:\\Mijn Drive\\Projects\\confidence-experiment\\scripts\\run_anthropic_batch.py\", line 179, in wave\n    jobs += [self.submit(specs[i:i + size]) for i in range(0, len(specs), size)]\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"H:\\Mijn Drive\\Projects\\confidence-experiment\\scripts\\run_anthropic_batch.py\", line 98, in submit\n    response = self.client.messages.batches.create(requests=requests)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\trowa\\AppData\\Local\\confidence-experiment\\venv\\Lib\\site-packages\\anthropic\\resources\\messages\\batches.py\", line 105, in create\n    return self._post(\n           ^^^^^^^^^^^\n  File \"C:\\Users\\trowa\\AppData\\Local\\confidence-experiment\\venv\\Lib\\site-packages\\anthropic\\_base_client.py\", line 1557, in post\n    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\trowa\\AppData\\Local\\confidence-experiment\\venv\\Lib\\site-packages\\anthropic\\_base_client.py\", line 1222, in request\n    raise self._make_status_error_from_response(response) from None\nanthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfzkmXaaxXkA4Gpv8Y7QD'}\n",
+  "released_reservation_usd": 19.547396,
+  "batch_id": null,
+  "charged_usd": 0,
+  "recorded_utc": "2026-10-13T19:10:33.199963+00:00"
+}

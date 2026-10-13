@@ -1,0 +1,1295 @@
+{
+  "plan_sha256": "9ab1b813dba3d60d9b44c970ee0a2e21aed634c64cdfa5cda879933a3c56921e",
+  "evaluation_role": "official_test",
+  "n": 3080,
+  "test_variants": 24,
+  "active_arms": [
+    "embeddings",
+    "tfidf",
+    "decisions"
+  ],
+  "deferred_arms": [
+    "haiku",
+    "sonnet",
+    "opus"
+  ],
+  "thresholds_refitted": false,
+  "metrics": {
+    "embedding_lr.raw": {
+      "n": 3080,
+      "accuracy": 0.9474025974025974,
+      "accuracy_ci95": [
+        0.9389469483735118,
+        0.9547436115341736
+      ],
+      "macro_f1": 0.9474482701080543,
+      "errors": 162,
+      "brier": 0.04777341614879932,
+      "binary_log_loss": 0.17425817925706574,
+      "ece_10_equal_width": 0.0651976120791265,
+      "error_auroc": 0.8989139356400037,
+      "error_average_precision": 0.38831016303634525,
+      "error_prevalence": 0.052597402597402594,
+      "aurc": 0.007999016912200433,
+      "acceptance": {
+        "threshold": 0.72222257,
+        "development_coverage": 0.892,
+        "development_risk": 0.0033632286995515697,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 2683,
+        "errors": 53,
+        "coverage": 0.8711038961038962,
+        "risk": 0.01975400670890794,
+        "risk_ci95": [
+          0.015134364493949221,
+          0.02574689348280748
+        ]
+      }
+    },
+    "embedding_lr.logistic_score": {
+      "n": 3080,
+      "accuracy": 0.9474025974025974,
+      "accuracy_ci95": [
+        0.9389469483735118,
+        0.9547436115341736
+      ],
+      "macro_f1": 0.9474482701080543,
+      "errors": 162,
+      "brier": 0.04026264875186673,
+      "binary_log_loss": 0.1490349789735815,
+      "ece_10_equal_width": 0.008688709808783434,
+      "error_auroc": 0.8989139356400037,
+      "error_average_precision": 0.38831016303634525,
+      "error_prevalence": 0.052597402597402594,
+      "aurc": 0.007999016912200433,
+      "acceptance": {
+        "threshold": 0.9374575460219,
+        "development_coverage": 0.892,
+        "development_risk": 0.0033632286995515697,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 2683,
+        "errors": 53,
+        "coverage": 0.8711038961038962,
+        "risk": 0.01975400670890794,
+        "risk_ci95": [
+          0.015134364493949221,
+          0.02574689348280748
+        ]
+      }
+    },
+    "embedding_lr.logistic_logit": {
+      "n": 3080,
+      "accuracy": 0.9474025974025974,
+      "accuracy_ci95": [
+        0.9389469483735118,
+        0.9547436115341736
+      ],
+      "macro_f1": 0.9474482701080543,
+      "errors": 162,
+      "brier": 0.040432657788612575,
+      "binary_log_loss": 0.14676405388770355,
+      "ece_10_equal_width": 0.018382057698235876,
+      "error_auroc": 0.8989139356400037,
+      "error_average_precision": 0.38831016303634525,
+      "error_prevalence": 0.052597402597402594,
+      "aurc": 0.007999016912200433,
+      "acceptance": {
+        "threshold": 0.917527848375803,
+        "development_coverage": 0.892,
+        "development_risk": 0.0033632286995515697,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 2683,
+        "errors": 53,
+        "coverage": 0.8711038961038962,
+        "risk": 0.01975400670890794,
+        "risk_ci95": [
+          0.015134364493949221,
+          0.02574689348280748
+        ]
+      }
+    },
+    "embedding_lr.isotonic": {
+      "n": 3080,
+      "accuracy": 0.9474025974025974,
+      "accuracy_ci95": [
+        0.9389469483735118,
+        0.9547436115341736
+      ],
+      "macro_f1": 0.9474482701080543,
+      "errors": 162,
+      "brier": 0.04168091083821148,
+      "binary_log_loss": 0.19073747204286137,
+      "ece_10_equal_width": 0.024738423030757545,
+      "error_auroc": 0.8813367857233518,
+      "error_average_precision": 0.3230283615330174,
+      "error_prevalence": 0.052597402597402594,
+      "aurc": 0.011961184167573762,
+      "acceptance": {
+        "threshold": 0.9947089947089947,
+        "development_coverage": 0.845,
+        "development_risk": 0.001183431952662722,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 2510,
+        "errors": 36,
+        "coverage": 0.814935064935065,
+        "risk": 0.014342629482071713,
+        "risk_ci95": [
+          0.010377999017382483,
+          0.019791548292205308
+        ]
+      }
+    },
+    "embedding_lr.temperature": {
+      "n": 3080,
+      "accuracy": 0.9474025974025974,
+      "accuracy_ci95": [
+        0.9389469483735118,
+        0.9547436115341736
+      ],
+      "macro_f1": 0.9474482701080543,
+      "errors": 162,
+      "brier": 0.03956943391538172,
+      "binary_log_loss": 0.14692624225944215,
+      "ece_10_equal_width": 0.018697961124700402,
+      "error_auroc": 0.903095093036834,
+      "error_average_precision": 0.4079014128263804,
+      "error_prevalence": 0.052597402597402594,
+      "aurc": 0.007651819251010171,
+      "acceptance": {
+        "threshold": 0.9172774,
+        "development_coverage": 0.895,
+        "development_risk": 0.0033519553072625698,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 2715,
+        "errors": 53,
+        "coverage": 0.8814935064935064,
+        "risk": 0.019521178637200737,
+        "risk_ci95": [
+          0.014955625859828441,
+          0.025444471197812495
+        ]
+      }
+    },
+    "embedding_mlp.raw": {
+      "n": 3080,
+      "accuracy": 0.938961038961039,
+      "accuracy_ci95": [
+        0.9299470933481466,
+        0.946881380523545
+      ],
+      "macro_f1": 0.9389383583397841,
+      "errors": 188,
+      "brier": 0.04336346619672119,
+      "binary_log_loss": 0.16510805534843997,
+      "ece_10_equal_width": 0.02375746102302108,
+      "error_auroc": 0.9094834245607839,
+      "error_average_precision": 0.4421701904564702,
+      "error_prevalence": 0.06103896103896104,
+      "aurc": 0.008902499212219977,
+      "acceptance": {
+        "threshold": 0.9615333,
+        "development_coverage": 0.867,
+        "development_risk": 0.002306805074971165,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 2629,
+        "errors": 46,
+        "coverage": 0.8535714285714285,
+        "risk": 0.017497147204260176,
+        "risk_ci95": [
+          0.013143654386035715,
+          0.023258635808689324
+        ]
+      }
+    },
+    "embedding_mlp.logistic_score": {
+      "n": 3080,
+      "accuracy": 0.938961038961039,
+      "accuracy_ci95": [
+        0.9299470933481466,
+        0.946881380523545
+      ],
+      "macro_f1": 0.9389383583397841,
+      "errors": 188,
+      "brier": 0.0517947572841858,
+      "binary_log_loss": 0.19326826831356886,
+      "ece_10_equal_width": 0.029791835056351912,
+      "error_auroc": 0.9094834245607839,
+      "error_average_precision": 0.4421701904564702,
+      "error_prevalence": 0.06103896103896104,
+      "aurc": 0.008902499212219977,
+      "acceptance": {
+        "threshold": 0.9737539236201256,
+        "development_coverage": 0.867,
+        "development_risk": 0.002306805074971165,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 2629,
+        "errors": 46,
+        "coverage": 0.8535714285714285,
+        "risk": 0.017497147204260176,
+        "risk_ci95": [
+          0.013143654386035715,
+          0.023258635808689324
+        ]
+      }
+    },
+    "embedding_mlp.logistic_logit": {
+      "n": 3080,
+      "accuracy": 0.938961038961039,
+      "accuracy_ci95": [
+        0.9299470933481466,
+        0.946881380523545
+      ],
+      "macro_f1": 0.9389383583397841,
+      "errors": 188,
+      "brier": 0.04441800388583862,
+      "binary_log_loss": 0.15960719406159923,
+      "ece_10_equal_width": 0.026337729211819885,
+      "error_auroc": 0.9094834245607839,
+      "error_average_precision": 0.4421701904564702,
+      "error_prevalence": 0.06103896103896104,
+      "aurc": 0.008902499212219977,
+      "acceptance": {
+        "threshold": 0.9504760419242815,
+        "development_coverage": 0.867,
+        "development_risk": 0.002306805074971165,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 2629,
+        "errors": 46,
+        "coverage": 0.8535714285714285,
+        "risk": 0.017497147204260176,
+        "risk_ci95": [
+          0.013143654386035715,
+          0.023258635808689324
+        ]
+      }
+    },
+    "embedding_mlp.isotonic": {
+      "n": 3080,
+      "accuracy": 0.938961038961039,
+      "accuracy_ci95": [
+        0.9299470933481466,
+        0.946881380523545
+      ],
+      "macro_f1": 0.9389383583397841,
+      "errors": 188,
+      "brier": 0.04487244195125875,
+      "binary_log_loss": 0.21083634656194203,
+      "ece_10_equal_width": 0.02717429797409463,
+      "error_auroc": 0.8972615211441689,
+      "error_average_precision": 0.41788249737313204,
+      "error_prevalence": 0.06103896103896104,
+      "aurc": 0.012594630539723903,
+      "acceptance": {
+        "threshold": 0.9680851063829787,
+        "development_coverage": 0.818,
+        "development_risk": 0.0012224938875305623,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 2425,
+        "errors": 28,
+        "coverage": 0.7873376623376623,
+        "risk": 0.01154639175257732,
+        "risk_ci95": [
+          0.008000626922239348,
+          0.016637234311301066
+        ]
+      }
+    },
+    "embedding_mlp.temperature": {
+      "n": 3080,
+      "accuracy": 0.938961038961039,
+      "accuracy_ci95": [
+        0.9299470933481466,
+        0.946881380523545
+      ],
+      "macro_f1": 0.9389383583397841,
+      "errors": 188,
+      "brier": 0.042593200996661994,
+      "binary_log_loss": 0.15599614148434934,
+      "ece_10_equal_width": 0.018587116631014075,
+      "error_auroc": 0.9098172508166328,
+      "error_average_precision": 0.4472367039578772,
+      "error_prevalence": 0.06103896103896104,
+      "aurc": 0.008868564972823876,
+      "acceptance": {
+        "threshold": 0.94742733,
+        "development_coverage": 0.865,
+        "development_risk": 0.0023121387283236996,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 2615,
+        "errors": 44,
+        "coverage": 0.849025974025974,
+        "risk": 0.016826003824091777,
+        "risk_ci95": [
+          0.012557970699353854,
+          0.022511528644089326
+        ]
+      }
+    },
+    "tfidf.raw": {
+      "n": 3080,
+      "accuracy": 0.8707792207792208,
+      "accuracy_ci95": [
+        0.8584691474494968,
+        0.8821655545930118
+      ],
+      "macro_f1": 0.8711752440280445,
+      "errors": 398,
+      "brier": 0.1483793815847179,
+      "binary_log_loss": 0.4480918428086722,
+      "ece_10_equal_width": 0.2146942901635388,
+      "error_auroc": 0.8641304958798467,
+      "error_average_precision": 0.4886477326331318,
+      "error_prevalence": 0.1292207792207792,
+      "aurc": 0.0304797785618067,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "tfidf.logistic_score": {
+      "n": 3080,
+      "accuracy": 0.8707792207792208,
+      "accuracy_ci95": [
+        0.8584691474494968,
+        0.8821655545930118
+      ],
+      "macro_f1": 0.8711752440280445,
+      "errors": 398,
+      "brier": 0.08654473978454727,
+      "binary_log_loss": 0.28044627731565497,
+      "ece_10_equal_width": 0.02248095559101129,
+      "error_auroc": 0.8641304958798467,
+      "error_average_precision": 0.4886477326331318,
+      "error_prevalence": 0.1292207792207792,
+      "aurc": 0.0304797785618067,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "tfidf.logistic_logit": {
+      "n": 3080,
+      "accuracy": 0.8707792207792208,
+      "accuracy_ci95": [
+        0.8584691474494968,
+        0.8821655545930118
+      ],
+      "macro_f1": 0.8711752440280445,
+      "errors": 398,
+      "brier": 0.08549925186454392,
+      "binary_log_loss": 0.2772396285809058,
+      "ece_10_equal_width": 0.01851897101111401,
+      "error_auroc": 0.8641304958798467,
+      "error_average_precision": 0.4886477326331318,
+      "error_prevalence": 0.1292207792207792,
+      "aurc": 0.0304797785618067,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "tfidf.isotonic": {
+      "n": 3080,
+      "accuracy": 0.8707792207792208,
+      "accuracy_ci95": [
+        0.8584691474494968,
+        0.8821655545930118
+      ],
+      "macro_f1": 0.8711752440280445,
+      "errors": 398,
+      "brier": 0.08799276013369563,
+      "binary_log_loss": 0.3384301766296028,
+      "ece_10_equal_width": 0.023335171014894046,
+      "error_auroc": 0.8609804241191041,
+      "error_average_precision": 0.46043484095762993,
+      "error_prevalence": 0.1292207792207792,
+      "aurc": 0.03485432729928622,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "tfidf.temperature": {
+      "n": 3080,
+      "accuracy": 0.8707792207792208,
+      "accuracy_ci95": [
+        0.8584691474494968,
+        0.8821655545930118
+      ],
+      "macro_f1": 0.8711752440280445,
+      "errors": 398,
+      "brier": 0.07719075205886144,
+      "binary_log_loss": 0.2537678300092747,
+      "ece_10_equal_width": 0.01548550269029502,
+      "error_auroc": 0.8963778624666959,
+      "error_average_precision": 0.5612951856528269,
+      "error_prevalence": 0.1292207792207792,
+      "aurc": 0.024970498519404638,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "decisions_confidence.raw": {
+      "n": 3080,
+      "accuracy": 0.7646103896103896,
+      "accuracy_ci95": [
+        0.749303902980219,
+        0.7792576400711336
+      ],
+      "macro_f1": 0.7594486317142183,
+      "errors": 725,
+      "brier": 0.13326344155844153,
+      "binary_log_loss": 0.4270211561778715,
+      "ece_10_equal_width": 0.04142207792207791,
+      "error_auroc": 0.8282606340142031,
+      "error_average_precision": 0.5925041050594579,
+      "error_prevalence": 0.2353896103896104,
+      "aurc": 0.08565302943627412,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "decisions_confidence.logistic_score": {
+      "n": 3080,
+      "accuracy": 0.7646103896103896,
+      "accuracy_ci95": [
+        0.749303902980219,
+        0.7792576400711336
+      ],
+      "macro_f1": 0.7594486317142183,
+      "errors": 725,
+      "brier": 0.1342230548018303,
+      "binary_log_loss": 0.42353835808883666,
+      "ece_10_equal_width": 0.043920398034641824,
+      "error_auroc": 0.8282606340142031,
+      "error_average_precision": 0.5925041050594579,
+      "error_prevalence": 0.2353896103896104,
+      "aurc": 0.08565302943627412,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "decisions_confidence.logistic_logit": {
+      "n": 3080,
+      "accuracy": 0.7646103896103896,
+      "accuracy_ci95": [
+        0.749303902980219,
+        0.7792576400711336
+      ],
+      "macro_f1": 0.7594486317142183,
+      "errors": 725,
+      "brier": 0.132012967061878,
+      "binary_log_loss": 0.4161784187699103,
+      "ece_10_equal_width": 0.018879499692674172,
+      "error_auroc": 0.8282606340142031,
+      "error_average_precision": 0.5925041050594579,
+      "error_prevalence": 0.2353896103896104,
+      "aurc": 0.08565302943627412,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "decisions_confidence.isotonic": {
+      "n": 3080,
+      "accuracy": 0.7646103896103896,
+      "accuracy_ci95": [
+        0.749303902980219,
+        0.7792576400711336
+      ],
+      "macro_f1": 0.7594486317142183,
+      "errors": 725,
+      "brier": 0.1338344019183672,
+      "binary_log_loss": 0.46023757608688687,
+      "ece_10_equal_width": 0.019971112548637628,
+      "error_auroc": 0.8248882055787392,
+      "error_average_precision": 0.5630891373260039,
+      "error_prevalence": 0.2353896103896104,
+      "aurc": 0.09228211223436937,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "decisions_probability.raw": {
+      "n": 3080,
+      "accuracy": 0.7646103896103896,
+      "accuracy_ci95": [
+        0.749303902980219,
+        0.7792576400711336
+      ],
+      "macro_f1": 0.7594486317142183,
+      "errors": 725,
+      "brier": 0.13326435064935066,
+      "binary_log_loss": 0.42695909849367253,
+      "ece_10_equal_width": 0.040246753246753225,
+      "error_auroc": 0.8282606340142031,
+      "error_average_precision": 0.5925041050594579,
+      "error_prevalence": 0.2353896103896104,
+      "aurc": 0.08565302943627412,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "decisions_probability.logistic_score": {
+      "n": 3080,
+      "accuracy": 0.7646103896103896,
+      "accuracy_ci95": [
+        0.749303902980219,
+        0.7792576400711336
+      ],
+      "macro_f1": 0.7594486317142183,
+      "errors": 725,
+      "brier": 0.134190773624672,
+      "binary_log_loss": 0.42338540652415363,
+      "ece_10_equal_width": 0.046976731936388315,
+      "error_auroc": 0.8282606340142031,
+      "error_average_precision": 0.5925041050594579,
+      "error_prevalence": 0.2353896103896104,
+      "aurc": 0.08565302943627412,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "decisions_probability.logistic_logit": {
+      "n": 3080,
+      "accuracy": 0.7646103896103896,
+      "accuracy_ci95": [
+        0.749303902980219,
+        0.7792576400711336
+      ],
+      "macro_f1": 0.7594486317142183,
+      "errors": 725,
+      "brier": 0.13203430069921385,
+      "binary_log_loss": 0.41629351488419536,
+      "ece_10_equal_width": 0.018027910448012947,
+      "error_auroc": 0.8282606340142031,
+      "error_average_precision": 0.5925041050594579,
+      "error_prevalence": 0.2353896103896104,
+      "aurc": 0.08565302943627412,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "decisions_probability.isotonic": {
+      "n": 3080,
+      "accuracy": 0.7646103896103896,
+      "accuracy_ci95": [
+        0.749303902980219,
+        0.7792576400711336
+      ],
+      "macro_f1": 0.7594486317142183,
+      "errors": 725,
+      "brier": 0.1338344019183672,
+      "binary_log_loss": 0.46023757608688687,
+      "ece_10_equal_width": 0.019971112548637628,
+      "error_auroc": 0.8248882055787392,
+      "error_average_precision": 0.5630891373260039,
+      "error_prevalence": 0.2353896103896104,
+      "aurc": 0.09228211223436937,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "decisions_probability.temperature": {
+      "n": 3080,
+      "accuracy": 0.7646103896103896,
+      "accuracy_ci95": [
+        0.749303902980219,
+        0.7792576400711336
+      ],
+      "macro_f1": 0.7594486317142183,
+      "errors": 725,
+      "brier": 0.19125775223968608,
+      "binary_log_loss": 0.5640729045790565,
+      "ece_10_equal_width": 0.21314653502317593,
+      "error_auroc": 0.8144733875100666,
+      "error_average_precision": 0.5710114159121982,
+      "error_prevalence": 0.2353896103896104,
+      "aurc": 0.08803185802918784,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    }
+  },
+  "paired_comparisons": {
+    "lr_minus_mlp_accuracy": {
+      "metric": "accuracy",
+      "first": "embedding_lr.temperature",
+      "second": "embedding_mlp.temperature",
+      "difference": 0.008441558441558441,
+      "ci95": [
+        0.0042207792207792205,
+        0.012987012987012988
+      ]
+    },
+    "lr_minus_tfidf_accuracy": {
+      "metric": "accuracy",
+      "first": "embedding_lr.temperature",
+      "second": "tfidf.temperature",
+      "difference": 0.07662337662337662,
+      "ci95": [
+        0.0659090909090909,
+        0.08766233766233766
+      ]
+    },
+    "lr_minus_openai_accuracy": {
+      "metric": "accuracy",
+      "first": "embedding_lr.temperature",
+      "second": "decisions_probability.logistic_logit",
+      "difference": 0.18279220779220778,
+      "ci95": [
+        0.16818181818181818,
+        0.1974107142857142
+      ]
+    },
+    "lr_isotonic_minus_temperature_brier": {
+      "metric": "brier",
+      "first": "embedding_lr.isotonic",
+      "second": "embedding_lr.temperature",
+      "difference": 0.0021114769228297637,
+      "ci95": [
+        0.0009575978796291058,
+        0.0032689182134281523
+      ]
+    },
+    "lr_logistic_score_minus_temperature_brier": {
+      "metric": "brier",
+      "first": "embedding_lr.logistic_score",
+      "second": "embedding_lr.temperature",
+      "difference": 0.0006932148364850071,
+      "ci95": [
+        -0.0005749244264590701,
+        0.0019631034444487
+      ]
+    },
+    "openai_isotonic_minus_logit_brier": {
+      "metric": "brier",
+      "first": "decisions_probability.isotonic",
+      "second": "decisions_probability.logistic_logit",
+      "difference": 0.0018001012191533534,
+      "ci95": [
+        0.0006771610525844221,
+        0.0029825213334487514
+      ]
+    }
+  },
+  "pipelines": [
+    {
+      "id": "embedding_lr.raw",
+      "stream": "embedding_lr",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.9474025974025974,
+      "brier": 0.04777341614879932,
+      "error_auroc": 0.8989139356400037,
+      "coverage": 0.8711038961038962
+    },
+    {
+      "id": "embedding_lr.logistic_score",
+      "stream": "embedding_lr",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.9474025974025974,
+      "brier": 0.04026264875186673,
+      "error_auroc": 0.8989139356400037,
+      "coverage": 0.8711038961038962
+    },
+    {
+      "id": "embedding_lr.logistic_logit",
+      "stream": "embedding_lr",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.9474025974025974,
+      "brier": 0.040432657788612575,
+      "error_auroc": 0.8989139356400037,
+      "coverage": 0.8711038961038962
+    },
+    {
+      "id": "embedding_lr.isotonic",
+      "stream": "embedding_lr",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.9474025974025974,
+      "brier": 0.04168091083821148,
+      "error_auroc": 0.8813367857233518,
+      "coverage": 0.814935064935065
+    },
+    {
+      "id": "embedding_lr.temperature",
+      "stream": "embedding_lr",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.9474025974025974,
+      "brier": 0.03956943391538172,
+      "error_auroc": 0.903095093036834,
+      "coverage": 0.8814935064935064
+    },
+    {
+      "id": "embedding_mlp.raw",
+      "stream": "embedding_mlp",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.938961038961039,
+      "brier": 0.04336346619672119,
+      "error_auroc": 0.9094834245607839,
+      "coverage": 0.8535714285714285
+    },
+    {
+      "id": "embedding_mlp.logistic_score",
+      "stream": "embedding_mlp",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.938961038961039,
+      "brier": 0.0517947572841858,
+      "error_auroc": 0.9094834245607839,
+      "coverage": 0.8535714285714285
+    },
+    {
+      "id": "embedding_mlp.logistic_logit",
+      "stream": "embedding_mlp",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.938961038961039,
+      "brier": 0.04441800388583862,
+      "error_auroc": 0.9094834245607839,
+      "coverage": 0.8535714285714285
+    },
+    {
+      "id": "embedding_mlp.isotonic",
+      "stream": "embedding_mlp",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.938961038961039,
+      "brier": 0.04487244195125875,
+      "error_auroc": 0.8972615211441689,
+      "coverage": 0.7873376623376623
+    },
+    {
+      "id": "embedding_mlp.temperature",
+      "stream": "embedding_mlp",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.938961038961039,
+      "brier": 0.042593200996661994,
+      "error_auroc": 0.9098172508166328,
+      "coverage": 0.849025974025974
+    },
+    {
+      "id": "tfidf.raw",
+      "stream": "tfidf",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.8707792207792208,
+      "brier": 0.1483793815847179,
+      "error_auroc": 0.8641304958798467,
+      "coverage": 0.0
+    },
+    {
+      "id": "tfidf.logistic_score",
+      "stream": "tfidf",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.8707792207792208,
+      "brier": 0.08654473978454727,
+      "error_auroc": 0.8641304958798467,
+      "coverage": 0.0
+    },
+    {
+      "id": "tfidf.logistic_logit",
+      "stream": "tfidf",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.8707792207792208,
+      "brier": 0.08549925186454392,
+      "error_auroc": 0.8641304958798467,
+      "coverage": 0.0
+    },
+    {
+      "id": "tfidf.isotonic",
+      "stream": "tfidf",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.8707792207792208,
+      "brier": 0.08799276013369563,
+      "error_auroc": 0.8609804241191041,
+      "coverage": 0.0
+    },
+    {
+      "id": "tfidf.temperature",
+      "stream": "tfidf",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.8707792207792208,
+      "brier": 0.07719075205886144,
+      "error_auroc": 0.8963778624666959,
+      "coverage": 0.0
+    },
+    {
+      "id": "decisions_confidence.raw",
+      "stream": "decisions_confidence",
+      "api_usd_per_1000": 0.06898237012987014,
+      "accuracy": 0.7646103896103896,
+      "brier": 0.13326344155844153,
+      "error_auroc": 0.8282606340142031,
+      "coverage": 0.0
+    },
+    {
+      "id": "decisions_confidence.logistic_score",
+      "stream": "decisions_confidence",
+      "api_usd_per_1000": 0.06898237012987014,
+      "accuracy": 0.7646103896103896,
+      "brier": 0.1342230548018303,
+      "error_auroc": 0.8282606340142031,
+      "coverage": 0.0
+    },
+    {
+      "id": "decisions_confidence.logistic_logit",
+      "stream": "decisions_confidence",
+      "api_usd_per_1000": 0.06898237012987014,
+      "accuracy": 0.7646103896103896,
+      "brier": 0.132012967061878,
+      "error_auroc": 0.8282606340142031,
+      "coverage": 0.0
+    },
+    {
+      "id": "decisions_confidence.isotonic",
+      "stream": "decisions_confidence",
+      "api_usd_per_1000": 0.06898237012987014,
+      "accuracy": 0.7646103896103896,
+      "brier": 0.1338344019183672,
+      "error_auroc": 0.8248882055787392,
+      "coverage": 0.0
+    },
+    {
+      "id": "decisions_probability.raw",
+      "stream": "decisions_probability",
+      "api_usd_per_1000": 0.06898237012987014,
+      "accuracy": 0.7646103896103896,
+      "brier": 0.13326435064935066,
+      "error_auroc": 0.8282606340142031,
+      "coverage": 0.0
+    },
+    {
+      "id": "decisions_probability.logistic_score",
+      "stream": "decisions_probability",
+      "api_usd_per_1000": 0.06898237012987014,
+      "accuracy": 0.7646103896103896,
+      "brier": 0.134190773624672,
+      "error_auroc": 0.8282606340142031,
+      "coverage": 0.0
+    },
+    {
+      "id": "decisions_probability.logistic_logit",
+      "stream": "decisions_probability",
+      "api_usd_per_1000": 0.06898237012987014,
+      "accuracy": 0.7646103896103896,
+      "brier": 0.13203430069921385,
+      "error_auroc": 0.8282606340142031,
+      "coverage": 0.0
+    },
+    {
+      "id": "decisions_probability.isotonic",
+      "stream": "decisions_probability",
+      "api_usd_per_1000": 0.06898237012987014,
+      "accuracy": 0.7646103896103896,
+      "brier": 0.1338344019183672,
+      "error_auroc": 0.8248882055787392,
+      "coverage": 0.0
+    },
+    {
+      "id": "decisions_probability.temperature",
+      "stream": "decisions_probability",
+      "api_usd_per_1000": 0.06898237012987014,
+      "accuracy": 0.7646103896103896,
+      "brier": 0.19125775223968608,
+      "error_auroc": 0.8144733875100666,
+      "coverage": 0.0
+    }
+  ],
+  "frontiers": {
+    "accuracy": [
+      "embedding_lr.raw",
+      "embedding_lr.logistic_score",
+      "embedding_lr.logistic_logit",
+      "embedding_lr.isotonic",
+      "embedding_lr.temperature"
+    ],
+    "brier": [
+      "embedding_lr.temperature"
+    ],
+    "error_auroc": [
+      "embedding_mlp.temperature"
+    ],
+    "coverage": [
+      "embedding_lr.temperature"
+    ]
+  },
+  "test_api_cost_usd": 0.2124657,
+  "source_sha256": {
+    "data/banking77/calibration.csv": "b6d78cb7fa97b26356db523a7f677cfc647b169eeb412bf1607ac56d7aaccaf7",
+    "data/banking77/development.csv": "e5b055283ad883a785e529acace68fb8dd28c41454a828b00c6405eaac85ed6f",
+    "data/banking77/manifest.json": "65c3f77d0fa3d2184fed2bccf5fc52ca2b686d4dcf0080eafdf01e6ea5aa2adc",
+    "runs/embeddings/frozen_hashes.json": "0667b4df9f965250cd1a728e15447f3aff3c11b37251b7473bd99825ca8f39ed",
+    "runs/embeddings/frozen.joblib": "9313818c56a869d279233b1953d7ec08f652e00f477be32322566331a70bde05",
+    "runs/embeddings/embedding_lr.joblib": "465835848f3a8ca45208c9780f348bfa9aa2b0b9334f6615f7ba2564eb09917b",
+    "runs/embeddings/embedding_mlp.joblib": "82f35c0637a7a77c02902ad3b1e023a45fa5f9260deb3d0c11f68398d212cda4",
+    "runs/embeddings/embedding_model.json": "49f6a541151310aeb4ca2837c529f0c865f7aad2f657c4b056d4b306a47f2c50",
+    "runs/embeddings/supervised.joblib": "08587ee6c1de2e67b976a4e5605e052c3801db5edb0f6ec55e51cd9dea03f194",
+    "runs/embeddings/development/embedding_lr_raw.predictions.csv": "cabe3d567ebc8750d5c149bea004744ee3f27b2c559d6df5b1de020c1d8970ae",
+    "runs/embeddings/development/embedding_lr_temperature.predictions.csv": "77914ef85f92cf1a8dc64c09069542884fb83548604fd7fc244086bbe3675a4c",
+    "runs/embeddings/development/metrics.json": "9e6a31cae13511b142f75ef828fab545cf76d267625769b728d58ef119cee9ce",
+    "runs/embeddings/development/embedding_mlp_raw.predictions.csv": "54360f35718ab44c2ede0e10e9d5c5d8fbcefe62d3b884479d920188fe428d83",
+    "runs/embeddings/development/embedding_mlp_temperature.predictions.csv": "e78382a44fbc0857fac0ebaa3b90e0f17587acb7df2637138a42c866ff8b53a9",
+    "runs/anthropic-batch-v2/frozen_hashes.json": "b0cf0eaf2350680217b12179c11390289ad68b41515d547b428dbe758a586c71",
+    "runs/anthropic-batch-v2/frozen.joblib": "6cad966f12fb6cdec258f403155ae23f0c96de78e494a6696d1285dfb7061d52",
+    "runs/anthropic-batch-v2/tfidf.joblib": "9ffc5d0f0354c08f202c9585cf79ab207fc93e20958814ae626f648f5054b437",
+    "runs/anthropic-batch-v2/supervised.joblib": "8da72bc7001be7db9bed113a6eb995c973dd733c96c2a5618ccf0ec960d1f920",
+    "runs/anthropic-batch-v2/llm_calibration.csv": "36ad7ac30b9415c5d73d96df192519f81c801fde2a424fb950cfdc4688bc040b",
+    "runs/anthropic-batch-v2/llm_development.csv": "1c91bd96d3211c375d784e9b463c0a306f4b288fb01d99e1bd2147ce240d72e0",
+    "runs/anthropic-batch-v2/development/llm_same_raw.predictions.csv": "121621665e78b881ce45eb7da6b764d25bee4e99877f834b7716a9f78872f0a2",
+    "runs/anthropic-batch-v2/development/llm_same_sigmoid.predictions.csv": "e56310e6c241cc789b40187699e93a10f4bab4dd46ad081b302d749761b5e2eb",
+    "runs/anthropic-batch-v2/development/metrics.json": "955a83d355ff6f66f3a3f578133e0de9db6c8889d5b84c0f104407f00f3a3b59",
+    "runs/anthropic-batch-v2/development/llm_verifier_raw.predictions.csv": "d083d9efa97e73c446567e05679036004faf9b2cbc4aed241217f40d60434b1a",
+    "runs/anthropic-batch-v2/development/llm_verifier_sigmoid.predictions.csv": "b37eddc5269676cf1ca683e7e3528c59f258e380f8a2f8ad73fcffdbc7dc3530",
+    "runs/anthropic-batch-v2/development/llm_correctness_raw.predictions.csv": "458418581a023b985d130f36fea2184f931abcd28263120c77a6b8a20ffb2895",
+    "runs/anthropic-batch-v2/development/llm_correctness_sigmoid.predictions.csv": "4e50c92b4d164e3281f0baf0b545a29aa912ea81924c566bdab747d446d71928",
+    "runs/anthropic-batch-v2/development/tfidf_raw.predictions.csv": "2c039ed65a0192e9cf307b38412e4e52b7d7c494c6254e30cc90115f3b3204fd",
+    "runs/anthropic-batch-v2/development/tfidf_temperature.predictions.csv": "a0b9eee5f0c1d341fd002c219e81fbfa0c62c092d999143d384af07d522161af",
+    "runs/anthropic-sonnet-5-5/frozen_hashes.json": "9695ffbf8806205b6ab8b303f742af1f06211df6ac5a23d7793ec25a6ef42b14",
+    "runs/anthropic-sonnet-5-5/frozen.joblib": "ad43199a53ac02fc675803844345ce0d8b5124288e39c8ed9cf709440c4b4701",
+    "runs/anthropic-sonnet-5-5/tfidf.joblib": "9ffc5d0f0354c08f202c9585cf79ab207fc93e20958814ae626f648f5054b437",
+    "runs/anthropic-sonnet-5-5/supervised.joblib": "aedc796967b72548b4130d553e98c619d4bc8fc8539ac9b7bb0236c49a7ef3f9",
+    "runs/anthropic-sonnet-5-5/llm_calibration.csv": "014cfdc471a114f7f2989ac2276855640ab1de8395d7406fa5ee0f30c96790b0",
+    "runs/anthropic-sonnet-5-5/llm_development.csv": "07381d57bdec08377aec990487c26345e167be2d268e3f1123308dea8dc43bc2",
+    "runs/anthropic-sonnet-5-5/development/llm_same_raw.predictions.csv": "229fbc7f0a65324bae4903e44385795a365ae64ed98242b105d708a17c9470dd",
+    "runs/anthropic-sonnet-5-5/development/llm_same_sigmoid.predictions.csv": "b29cc38a45effacd0d30ac2a557d17d5b36e28cc2f3c224f980475509ea5eb90",
+    "runs/anthropic-sonnet-5-5/development/metrics.json": "c1588c7117d339f74bfde4347aa8ee33106c41a33a826d80949ea12ae0b9e0c9",
+    "runs/anthropic-sonnet-5-5/development/llm_verifier_raw.predictions.csv": "603b2dd2c1d0467a8ea00c193c2f22ffc20f7a0c1aa024c3d552c9d325c89cae",
+    "runs/anthropic-sonnet-5-5/development/llm_verifier_sigmoid.predictions.csv": "dc4d2f266fd6d8018c6bedab4f67e834ae57ccb856682c2a6a903344ef0a31ee",
+    "runs/anthropic-sonnet-5-5/development/llm_correctness_raw.predictions.csv": "778523ce1450f69b21c721220b70ccdd3aec720d664e02c00b9e443c95b40441",
+    "runs/anthropic-sonnet-5-5/development/llm_correctness_sigmoid.predictions.csv": "93922b7e5770c1339c174bf13759e5b38870b2aa990e281d1031cb86fee9c232",
+    "runs/anthropic-opus-5-5/frozen_hashes.json": "d11de8506ddbe5905308e2260000e8eaada98ff8e776dc7f13ce8ece764cce28",
+    "runs/anthropic-opus-5-5/frozen.joblib": "b099bff5e055c5d6b87aa763fed0cc922a4a58c631da766c91eebc100cc69ef2",
+    "runs/anthropic-opus-5-5/tfidf.joblib": "9ffc5d0f0354c08f202c9585cf79ab207fc93e20958814ae626f648f5054b437",
+    "runs/anthropic-opus-5-5/supervised.joblib": "f7f390e0052ae5b5d6764fef090fe100194b624a912225260291b4fbcc34685e",
+    "runs/anthropic-opus-5-5/llm_calibration.csv": "555e298e6ea124191600fd599786a6b959818003a5b233fbc3ec07948fb041ef",
+    "runs/anthropic-opus-5-5/llm_development.csv": "057b87a8af814b694b97a40c947d405b2489be69a08d45ca6621935d84397e5f",
+    "runs/anthropic-opus-5-5/development/llm_same_raw.predictions.csv": "88bcaefdff46dd42df28788ad8431dfeb828fa1ea7b128d04984d7195aca2e80",
+    "runs/anthropic-opus-5-5/development/llm_same_sigmoid.predictions.csv": "8f677ca6c32d7f2517d664c92a3301af1fed099b85da2ae881ee9b56ca5a2d67",
+    "runs/anthropic-opus-5-5/development/metrics.json": "0ece7df1fc36f53a90ec0e2fb217a1d589b3b4dacba91e5255750becb1366d2f",
+    "runs/anthropic-opus-5-5/development/llm_verifier_raw.predictions.csv": "e30098bd8addd3f91bb3200d9eb105ad2d4ce51815d02176b23586d7521def4e",
+    "runs/anthropic-opus-5-5/development/llm_verifier_sigmoid.predictions.csv": "3d35c76db7f2e95279f0c955181921ff769e18deadced9fda7c1dd6eddefb11c",
+    "runs/anthropic-opus-5-5/development/llm_correctness_raw.predictions.csv": "448845675c117f6cdc4726aaeb94cc94dcb03ae5d9eff8a8c5c92210dde0ee3f",
+    "runs/anthropic-opus-5-5/development/llm_correctness_sigmoid.predictions.csv": "a2f8c3b38723ce027a06f888ce2d4eadb2b7da5135409ab10a05c48a85a3846b",
+    "runs/openai-decisions-v2/frozen_hashes.json": "d23c8ba00cf2fed2f6eb53a0bd1aa1df5667967545c0a08608c95cc7fe3766e3",
+    "runs/openai-decisions-v2/frozen.joblib": "5e9251d0353c4dbbc0443953ae85a4125520e791e32b42e1583ece30d23b48d9",
+    "runs/openai-decisions-v2/decisions_calibration.csv": "bcf9357cc8efdba5335eef179ebf332dad92fefc9b0bdd80f93b6d4f29f0e20a",
+    "runs/openai-decisions-v2/development/decisions_confidence_raw.predictions.csv": "d5d895c94a038beb2a36de3aecd6f13923452c0e0a9c072fdf3caa59c6860d0b",
+    "runs/openai-decisions-v2/development/decisions_confidence_sigmoid.predictions.csv": "b50fb5a9d1d744733518d00d59fdbacb0d969fc9b0717dc0487dc5a68258b110",
+    "runs/openai-decisions-v2/development/metrics.json": "6e46547ea771e2286f673eaf180a2a252961f0a62a829895f32c4f0d84e24077",
+    "runs/openai-decisions-v2/development/decisions_probability_raw.predictions.csv": "ddc12dc38327ee1654059001852058c8cf6de18b16bfa5fdc4ffb22703a64d0c",
+    "runs/openai-decisions-v2/development/decisions_probability_sigmoid.predictions.csv": "11ed279329bd0dc88207547f2e8bd4542e4ff0b46dc355b7bc6f0573b24f0757",
+    "runs/openai-decisions-v2/development/decisions_probability_temperature.predictions.csv": "7264a5df07124fdc550f7606e16ffbb60462a25fcb23838e76de10617a3eb35d",
+    "reports/calibrator-comparison/analysis.json": "b77b7755b298d8ecd2f935688ea18fb6839380a01ea93c873457ad27137bcf27",
+    "reports/calibrator-comparison/calibrators.joblib": "54349a3aab1892cd01a2cf634fc534db215d4da750fcb3cb546677d8bdc30355",
+    "data/banking77/fit.csv": "424df2b9ba8e82e2681594a93a953ccb96e44a99b4cea1fc0a5e7101c4d2a51d",
+    "data/banking77/correctness.csv": "f224fc20771788679a6ab32b742d48b06e1c8ee197e29a73e5c3b4c012094a5b",
+    "data/banking77/test.csv": "00cdfb38f968b167e2cb4d371eb78e1ffe4d53227b516b7d286272b7878ba76f",
+    "src/confidence_experiment/__init__.py": "9f4450e1d52dbbdb991819b0a707c460e813e8f40cd8f6a4ce738b665a3570d6",
+    "src/confidence_experiment/__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+    "src/confidence_experiment/io.py": "8f88ab3e1b7f585852f4ba8c6c1465a5e6236e039f8b900d7e8aeb7e4c4c433b",
+    "src/confidence_experiment/data.py": "dcee032b31290a61d3022d7514f1220a9874343961408246d347b4338ab4adde",
+    "src/confidence_experiment/metrics.py": "a3e56aec52882b81bef44f2a78a64d72f813f19bf057700138c988921842ae35",
+    "src/confidence_experiment/models.py": "2f59f482df3ab9cfa3e820427b3315cfffd48734e32633d12976e0f422d1287a",
+    "src/confidence_experiment/llm.py": "30dbdd9611dffc33807eb4609751ce46d1c776c93090a9446930c6c4b8dd111d",
+    "src/confidence_experiment/report.py": "6e77664ba5f7a89bcb5681c3011a00596fdb82437b6a9d74a2dca4140cb761cc",
+    "src/confidence_experiment/runner.py": "543fb63668b56ed60b71d2025b67d7cd3177a75a1e776d8d144fc33e5cb9b258",
+    "src/confidence_experiment/cli.py": "f40cda3d4bd5bbeed20761a2a6b626d7155858c026eacc8eeb5cd6ed273b96c6",
+    "scripts/final_protocol.py": "58434abcdf8e7f9e7f269b9c5ba93b3461b81929674a5047599d63861aaf77e0",
+    "scripts/run_anthropic_batch.py": "6f4d880be2e1f124e0954edee72719f5457e4ed87e4607f77f75a46d8ff171b8",
+    "scripts/run_openai_decisions.py": "b08c209b5d530b8d2e37e5a1a1e58357b2d8aa5f243b36a9cae1ef7ec4c516f0",
+    "scripts/final_transport.py": "af928e4dffc1836997776a4f7c307cb9888ad350fab2d3644a0ba7a742e254f7",
+    "configs/embeddings.toml": "1401f9662bb2fab47b48739ae9e581dd6b6f274bdce5e81dbece17972f27cf6b",
+    "configs/anthropic-batch-v2.toml": "8638fe4ca7c8944c7c695576785a1b6b24e23a04e2f08159b05e0b1acbdaaf3f",
+    "configs/anthropic-sonnet-5-5.toml": "d8513f1c8ebf47c35e5ba4f1da762626bc4b58d306ebc4cb160b944bfb2f5aca",
+    "configs/anthropic-opus-5-5.toml": "69119e5d03ad0f90b243b0936038ad8db457a625c1337a4c392f2c689b737289",
+    "configs/openai-decisions.toml": "75f63308d4b0e84126329abe36efd20263a53f0863e023c81f5278f2f7180364",
+    "reports/calibrator-comparison/embedding_lr.raw.predictions.csv": "cabe3d567ebc8750d5c149bea004744ee3f27b2c559d6df5b1de020c1d8970ae",
+    "reports/calibrator-comparison/embedding_lr.logistic_score.predictions.csv": "d336aa34aebd43ee797b88b5980efa673ad87c233524a4bed96b7373a398c7e3",
+    "reports/calibrator-comparison/embedding_lr.logistic_logit.predictions.csv": "f71a4991dc8634117637892d83aa7106d03e01b14cdc936404f5c692cfb2f9b7",
+    "reports/calibrator-comparison/embedding_lr.isotonic.predictions.csv": "d3a2f1f77e1635df9eb0a1f888070dd3e68626d22b7e04eababfebdf1b9d4fe3",
+    "reports/calibrator-comparison/embedding_lr.temperature.predictions.csv": "77914ef85f92cf1a8dc64c09069542884fb83548604fd7fc244086bbe3675a4c",
+    "reports/calibrator-comparison/embedding_mlp.raw.predictions.csv": "54360f35718ab44c2ede0e10e9d5c5d8fbcefe62d3b884479d920188fe428d83",
+    "reports/calibrator-comparison/embedding_mlp.logistic_score.predictions.csv": "2a10a399be21cc65c128d4697b83fbd1038376b89b3e9454d398996c9cb93ab6",
+    "reports/calibrator-comparison/embedding_mlp.logistic_logit.predictions.csv": "0ab18635f8f5d987612562e8a3d2245d4cf21f1f304c47878759ad9fd923b16e",
+    "reports/calibrator-comparison/embedding_mlp.isotonic.predictions.csv": "136e020c03eff46ed137659c9deaa0c89b16518ae8017ef39942af71651cc396",
+    "reports/calibrator-comparison/embedding_mlp.temperature.predictions.csv": "e78382a44fbc0857fac0ebaa3b90e0f17587acb7df2637138a42c866ff8b53a9",
+    "reports/calibrator-comparison/tfidf.raw.predictions.csv": "2c039ed65a0192e9cf307b38412e4e52b7d7c494c6254e30cc90115f3b3204fd",
+    "reports/calibrator-comparison/tfidf.logistic_score.predictions.csv": "5d996789ba2bc56e115f2368b34baab6f27130244f92de9ecaca5e8c2d301c9b",
+    "reports/calibrator-comparison/tfidf.logistic_logit.predictions.csv": "8a591ebcff1e98377f643dd36459c0552375a971651f35ad372850acbc6413f3",
+    "reports/calibrator-comparison/tfidf.isotonic.predictions.csv": "6b16429f5fec3bf90928ffe5b4d51ee8feb053d206e746a548d66215e72cf495",
+    "reports/calibrator-comparison/tfidf.temperature.predictions.csv": "a0b9eee5f0c1d341fd002c219e81fbfa0c62c092d999143d384af07d522161af",
+    "reports/calibrator-comparison/haiku_same.raw.predictions.csv": "121621665e78b881ce45eb7da6b764d25bee4e99877f834b7716a9f78872f0a2",
+    "reports/calibrator-comparison/haiku_same.logistic_score.predictions.csv": "e56310e6c241cc789b40187699e93a10f4bab4dd46ad081b302d749761b5e2eb",
+    "reports/calibrator-comparison/haiku_same.logistic_logit.predictions.csv": "a6eb1081b3fa1b25875649896814c8e3739909d26b8f477240323ab400fd8e0c",
+    "reports/calibrator-comparison/haiku_same.isotonic.predictions.csv": "41803093d46960915e813cb76270086178d5163c99ab9b633b1da6f7ebeec5db",
+    "reports/calibrator-comparison/haiku_verifier.raw.predictions.csv": "d083d9efa97e73c446567e05679036004faf9b2cbc4aed241217f40d60434b1a",
+    "reports/calibrator-comparison/haiku_verifier.logistic_score.predictions.csv": "b37eddc5269676cf1ca683e7e3528c59f258e380f8a2f8ad73fcffdbc7dc3530",
+    "reports/calibrator-comparison/haiku_verifier.logistic_logit.predictions.csv": "1d79299642978623b36971acc891a2d0deabdfa7faaa6b6f43d369e1e48236cf",
+    "reports/calibrator-comparison/haiku_verifier.isotonic.predictions.csv": "27c0b1ed816ca643eda7a12d57cf3b2c27f15129f2638f54eaea94908c6d5f1a",
+    "reports/calibrator-comparison/haiku_correctness.raw.predictions.csv": "458418581a023b985d130f36fea2184f931abcd28263120c77a6b8a20ffb2895",
+    "reports/calibrator-comparison/haiku_correctness.logistic_score.predictions.csv": "4e50c92b4d164e3281f0baf0b545a29aa912ea81924c566bdab747d446d71928",
+    "reports/calibrator-comparison/haiku_correctness.logistic_logit.predictions.csv": "34d3e530353804271f978445564c28b38e3348c3da096082ef0b4ab3226581da",
+    "reports/calibrator-comparison/haiku_correctness.isotonic.predictions.csv": "11b837b40eaabd95e5021111aa0b7c18e52907430e1843d2a8a18ad0a0fcaa89",
+    "reports/calibrator-comparison/sonnet_same.raw.predictions.csv": "229fbc7f0a65324bae4903e44385795a365ae64ed98242b105d708a17c9470dd",
+    "reports/calibrator-comparison/sonnet_same.logistic_score.predictions.csv": "b29cc38a45effacd0d30ac2a557d17d5b36e28cc2f3c224f980475509ea5eb90",
+    "reports/calibrator-comparison/sonnet_same.logistic_logit.predictions.csv": "a922925bd76b44b744d02f91ca2f53b8226d4f95490096d70537c08007619c9a",
+    "reports/calibrator-comparison/sonnet_same.isotonic.predictions.csv": "258ad9da1e2e82606bfbfdb4e9bc8f8530b17b40edffc34cbd53f84bb8d573dd",
+    "reports/calibrator-comparison/sonnet_verifier.raw.predictions.csv": "603b2dd2c1d0467a8ea00c193c2f22ffc20f7a0c1aa024c3d552c9d325c89cae",
+    "reports/calibrator-comparison/sonnet_verifier.logistic_score.predictions.csv": "dc4d2f266fd6d8018c6bedab4f67e834ae57ccb856682c2a6a903344ef0a31ee",
+    "reports/calibrator-comparison/sonnet_verifier.logistic_logit.predictions.csv": "b7d737c4c4d0de80aa1e6efb3035b5309bd2d1094f8c351aaf77341ee4355d0b",
+    "reports/calibrator-comparison/sonnet_verifier.isotonic.predictions.csv": "4fc5178fdfb515caacac3803ba11fb98e44459bb84f8fef8ba8d634104bc0b8b",
+    "reports/calibrator-comparison/sonnet_correctness.raw.predictions.csv": "778523ce1450f69b21c721220b70ccdd3aec720d664e02c00b9e443c95b40441",
+    "reports/calibrator-comparison/sonnet_correctness.logistic_score.predictions.csv": "93922b7e5770c1339c174bf13759e5b38870b2aa990e281d1031cb86fee9c232",
+    "reports/calibrator-comparison/sonnet_correctness.logistic_logit.predictions.csv": "ee24f50a7b4051c1499ff44fe7d255b9a927276d2294e8f7d57308d2e69ebdb5",
+    "reports/calibrator-comparison/sonnet_correctness.isotonic.predictions.csv": "9a5edc24eb735b42d1f860094c3442916442a4b98decc7478d02e1b0095c2519",
+    "reports/calibrator-comparison/opus_same.raw.predictions.csv": "88bcaefdff46dd42df28788ad8431dfeb828fa1ea7b128d04984d7195aca2e80",
+    "reports/calibrator-comparison/opus_same.logistic_score.predictions.csv": "8f677ca6c32d7f2517d664c92a3301af1fed099b85da2ae881ee9b56ca5a2d67",
+    "reports/calibrator-comparison/opus_same.logistic_logit.predictions.csv": "1752da608f11df9f53e734ee8fb0eac6d99cce6521d333c5aa6ea4e9694c8eda",
+    "reports/calibrator-comparison/opus_same.isotonic.predictions.csv": "a31e72b28a3e199c8933f2254a294798a5e3d7214b65d6a3744b7bbff6422609",
+    "reports/calibrator-comparison/opus_verifier.raw.predictions.csv": "e30098bd8addd3f91bb3200d9eb105ad2d4ce51815d02176b23586d7521def4e",
+    "reports/calibrator-comparison/opus_verifier.logistic_score.predictions.csv": "3d35c76db7f2e95279f0c955181921ff769e18deadced9fda7c1dd6eddefb11c",
+    "reports/calibrator-comparison/opus_verifier.logistic_logit.predictions.csv": "e00f98ab7f51891ea70940d161785ec3556dc1666d7e019e839beb49837e0a94",
+    "reports/calibrator-comparison/opus_verifier.isotonic.predictions.csv": "91715a1d2b165ef14ee93e65138637b8ce1abc746ecf4c8f078324660a4373d9",
+    "reports/calibrator-comparison/opus_correctness.raw.predictions.csv": "448845675c117f6cdc4726aaeb94cc94dcb03ae5d9eff8a8c5c92210dde0ee3f",
+    "reports/calibrator-comparison/opus_correctness.logistic_score.predictions.csv": "a2f8c3b38723ce027a06f888ce2d4eadb2b7da5135409ab10a05c48a85a3846b",
+    "reports/calibrator-comparison/opus_correctness.logistic_logit.predictions.csv": "47b21ff84a37a35ce764040f03cc5aaac2c73085b8ddfa158a780f99ef13f8aa",
+    "reports/calibrator-comparison/opus_correctness.isotonic.predictions.csv": "01ed38e579eecfb67d8169128ec2b1b222af5c5eb4ae63d70adf1a3e01152ca5",
+    "reports/calibrator-comparison/decisions_confidence.raw.predictions.csv": "d5d895c94a038beb2a36de3aecd6f13923452c0e0a9c072fdf3caa59c6860d0b",
+    "reports/calibrator-comparison/decisions_confidence.logistic_score.predictions.csv": "b50fb5a9d1d744733518d00d59fdbacb0d969fc9b0717dc0487dc5a68258b110",
+    "reports/calibrator-comparison/decisions_confidence.logistic_logit.predictions.csv": "ebfb0532d47da48004e14e252dacda87f0a4b5066381b9dc6671fb68029f70d9",
+    "reports/calibrator-comparison/decisions_confidence.isotonic.predictions.csv": "56c0dc0a879c068d260227d28aff2c533987fb0ea44debc6b9406091e0efebdb",
+    "reports/calibrator-comparison/decisions_probability.raw.predictions.csv": "ddc12dc38327ee1654059001852058c8cf6de18b16bfa5fdc4ffb22703a64d0c",
+    "reports/calibrator-comparison/decisions_probability.logistic_score.predictions.csv": "11ed279329bd0dc88207547f2e8bd4542e4ff0b46dc355b7bc6f0573b24f0757",
+    "reports/calibrator-comparison/decisions_probability.logistic_logit.predictions.csv": "3a211524a6f78c88b1147daf1a8f94a54aeba92b14be97deac9cc1bd25bcd76d",
+    "reports/calibrator-comparison/decisions_probability.isotonic.predictions.csv": "56c0dc0a879c068d260227d28aff2c533987fb0ea44debc6b9406091e0efebdb",
+    "reports/calibrator-comparison/decisions_probability.temperature.predictions.csv": "7264a5df07124fdc550f7606e16ffbb60462a25fcb23838e76de10617a3eb35d",
+    "runs/final-evaluation/embeddings/test-embeddings.npy": "aa7ebc233cbe1e2cc0127056b5c442c50b75a2aca0aef3219de643d0f338e011",
+    "runs/final-evaluation/embeddings/test-embeddings.json": "5bbd59e8b9dd12c9e26ce60609180ecc9f2584f958a7099639f1835af015496b",
+    "runs/final-evaluation/embeddings/embedding_lr.raw.predictions.csv": "b719d15cfa5d316cec320bbbc30998698fb461ffca01682e0a08464341f3b3c0",
+    "runs/final-evaluation/embeddings/embedding_lr.raw.reliability.csv": "b00007aa912af53ee9684bf3ee1bea9d704085bc9a6fb082e6de15e28cd96667",
+    "runs/final-evaluation/embeddings/embedding_lr.raw.risk_coverage.csv": "38c1c6410edf53a630f3d4d8eb177a5e65180b91b9eb76aa264d70f3a59c693d",
+    "runs/final-evaluation/embeddings/embedding_lr.logistic_score.predictions.csv": "64dca77b0353b2cda3aa27a213211c65539f02621d17fd25581510d8966d6c48",
+    "runs/final-evaluation/embeddings/embedding_lr.logistic_score.reliability.csv": "13bb37c473150294fc6653b837928ec4da900a51c67adcd0b9bb5e8ff27ac39f",
+    "runs/final-evaluation/embeddings/embedding_lr.logistic_score.risk_coverage.csv": "c56a1065e6223289e05426c50e4a56c99c51966bd74b54d2df0e4d70856f86ec",
+    "runs/final-evaluation/embeddings/embedding_lr.logistic_logit.predictions.csv": "3da5acf99e7cab9276821b16881ca3e6f4302430a331edad56d27c1584ca70f1",
+    "runs/final-evaluation/embeddings/embedding_lr.logistic_logit.reliability.csv": "921de56240b377a22bb4e7aa4248e7cd2a2bc4d898da45bdee689e35543dd563",
+    "runs/final-evaluation/embeddings/embedding_lr.logistic_logit.risk_coverage.csv": "470db5df432eb26bf3c167e5487d98e86eb288f801e489b52eba0ea3eeb34637",
+    "runs/final-evaluation/embeddings/embedding_lr.isotonic.predictions.csv": "1c9badfff97f7a03f22af8c80c2b16a4e6044da69e57bc257d8c28f191602ed3",
+    "runs/final-evaluation/embeddings/embedding_lr.isotonic.reliability.csv": "52b9b709f3f7d8e6d1e824f231ff63374e6c40c54da97c714613d12e91bfd318",
+    "runs/final-evaluation/embeddings/embedding_lr.isotonic.risk_coverage.csv": "fe580f4924fd7303ab18291ced2ca44ef4acb68a5db13e57b16abe37edc34d95",
+    "runs/final-evaluation/embeddings/embedding_lr.temperature.predictions.csv": "56e7e4bd4e274a37ad2cc9bb67d8203e3a883ad34f6f62188e23b1e8885fdbda",
+    "runs/final-evaluation/embeddings/embedding_lr.temperature.reliability.csv": "1a148c4caadf60c528822c94dd7d018ac1e28f5b7aa0d68d996816f7c0d6c4f4",
+    "runs/final-evaluation/embeddings/embedding_lr.temperature.risk_coverage.csv": "471a35f8f3c37abc6aa42a3fecb0611d07aef8c2b332b8a418562b957567ae90",
+    "runs/final-evaluation/embeddings/embedding_mlp.raw.predictions.csv": "6a1b8a6141cc8b2385c797898a90f37741fd43c99458130b1428dfa4a36afb49",
+    "runs/final-evaluation/embeddings/embedding_mlp.raw.reliability.csv": "c3f046142c5c982028882788f083061518fbe70e84ae5838d962ab489f7ee25e",
+    "runs/final-evaluation/embeddings/embedding_mlp.raw.risk_coverage.csv": "4547ab88cafcc61e412b6ffd93fc5a7f959270dd6624bd71378918aa7c984556",
+    "runs/final-evaluation/embeddings/embedding_mlp.logistic_score.predictions.csv": "4151b3f5f21196ed7e099a59b95d6fcda75aea0befdd9c10e3cdafea9a79b972",
+    "runs/final-evaluation/embeddings/embedding_mlp.logistic_score.reliability.csv": "2cb4c2b0e864702afe82c968c896576ad82951399bc709c8ee6839816fd7d34d",
+    "runs/final-evaluation/embeddings/embedding_mlp.logistic_score.risk_coverage.csv": "e72ed80a757ec756bad1703de825933efeeb51b123bc14e329e25bcab0a4a3e2",
+    "runs/final-evaluation/embeddings/embedding_mlp.logistic_logit.predictions.csv": "b8f12581e0fbc62f4e655820b2e29d1cc1e646c22bf195a591ed94ed3f0826f2",
+    "runs/final-evaluation/embeddings/embedding_mlp.logistic_logit.reliability.csv": "faf7af409b1a1402bb8e6f2f73df33935205c9632569593d50c5843dc760c39a",
+    "runs/final-evaluation/embeddings/embedding_mlp.logistic_logit.risk_coverage.csv": "b02a07fac6b741d296a4eefa02358d6e338e0f7de3eaba181ee262a69ef9fcf2",
+    "runs/final-evaluation/embeddings/embedding_mlp.isotonic.predictions.csv": "9daaaddde438f45dbad84160a74baca57d0f7233d961549db902e5209fcbc571",
+    "runs/final-evaluation/embeddings/embedding_mlp.isotonic.reliability.csv": "e9f16c9f0036121ecb4c96e2e01ed3f1f015265f549abf0742f07072d34744da",
+    "runs/final-evaluation/embeddings/embedding_mlp.isotonic.risk_coverage.csv": "2b221975f21269fd1dab9d852827cb79ff4c7ae42ef8e5c10fce2e1c7ae86fb0",
+    "runs/final-evaluation/embeddings/embedding_mlp.temperature.predictions.csv": "4fe44a62b701b2ccd715684f1966d131fa4edfe620d3ebed35d6374d143d5f6b",
+    "runs/final-evaluation/embeddings/embedding_mlp.temperature.reliability.csv": "4ba2a6cf9d66839ae4f4def870d931b18ac9bfb9521c2c9f67e48c678e47fd0a",
+    "runs/final-evaluation/embeddings/embedding_mlp.temperature.risk_coverage.csv": "a01e3bd2e4a3916cd996019c634ea46b8cc7d1fa76d8c0e28cb342b72fbad610",
+    "runs/final-evaluation/embeddings/metrics.json": "53c8fb59ec58f44c5c8d6e177a5990e05c52af7c24b06a03a374211702f0c7f7",
+    "runs/final-evaluation/embeddings/metadata.json": "2e90e7addf583e8574d5583f339ec218318373945289ec05e4b57db534f2546f",
+    "runs/final-evaluation/embeddings/complete.json": "632e3d34b8c64525d9aea240dacfab96a8d0265648eded5a84953e67fe64a5ba",
+    "runs/final-evaluation/tfidf/tfidf.raw.predictions.csv": "58fbab806afb833f24d8c07d0fd93efef7940841eb1486a049520f7d74e8eab6",
+    "runs/final-evaluation/tfidf/tfidf.raw.reliability.csv": "1cd65931396d4fd2734b449f4fa61b8fa0ae105641bec6b5135eaf028852b6a1",
+    "runs/final-evaluation/tfidf/tfidf.raw.risk_coverage.csv": "9fb535bf49091da0800a766397f75a18b620121839180f4cd9aabe5234630c4a",
+    "runs/final-evaluation/tfidf/tfidf.logistic_score.predictions.csv": "393d2287b6083026b8c2cd116a2d2df9da5ae3bde8916a91c74220f18299d38e",
+    "runs/final-evaluation/tfidf/tfidf.logistic_score.reliability.csv": "2efef77de6f5a82632fe219423544ebdf4d04ab81fe6de07621f1ad5aec9dedc",
+    "runs/final-evaluation/tfidf/tfidf.logistic_score.risk_coverage.csv": "f5f9ab41bc5f3e53d94e575a2c72d72b3bc7e10e0de9eb8fc933b68f728c2386",
+    "runs/final-evaluation/tfidf/tfidf.logistic_logit.predictions.csv": "458e78ca0c609d7d5a866e5b0f0858f52511f0d53529b1fd31beba31156e43fb",
+    "runs/final-evaluation/tfidf/tfidf.logistic_logit.reliability.csv": "7453d08b3d6ec9916a2dbfe3894c287def472e6ffccfcf1d6e94fa0ff5a25747",
+    "runs/final-evaluation/tfidf/tfidf.logistic_logit.risk_coverage.csv": "53572f4d261b551d718248d03cb362ac033d41795b09cc438a256455a498f102",
+    "runs/final-evaluation/tfidf/tfidf.isotonic.predictions.csv": "765761ba0fb1c1dc246b809ead50c0c04ded3033900b52d988649100393ab9bc",
+    "runs/final-evaluation/tfidf/tfidf.isotonic.reliability.csv": "5c2b5f4751087a25e5642ca1ba8f255ea0d2d94c4e2fc02e2a4b8d450dcc2209",
+    "runs/final-evaluation/tfidf/tfidf.isotonic.risk_coverage.csv": "3960ee76aa3fa4df66128cc19c3c4fe5ff714f5544f20a231191baa4b77773f4",
+    "runs/final-evaluation/tfidf/tfidf.temperature.predictions.csv": "c74288d8694145fe208d1b914667e5d734dd2c2c3032332be1ec33e1034db182",
+    "runs/final-evaluation/tfidf/tfidf.temperature.reliability.csv": "b96f760b68f66680fb01711bacc4750b0bf70b37391275b7429344c339dba4dc",
+    "runs/final-evaluation/tfidf/tfidf.temperature.risk_coverage.csv": "a3cef8f692f4ef66228ab9e347faf18748670afecbcf64c84c63b5db0bc09e53",
+    "runs/final-evaluation/tfidf/metrics.json": "eb8ae1a9accc6702e22720854a6d106e375311c5af0da99b0d03ab8ab0d6932f",
+    "runs/final-evaluation/tfidf/metadata.json": "87a09c27e74dd69f961fe650a8dde975fd38f03cb1cbcdb9e8759cf276c5087e",
+    "runs/final-evaluation/tfidf/complete.json": "f50c8aec534b796e04da32d92c38a8cfcf9ffbdc8ab86775a1420d263c1912e9",
+    "runs/final-evaluation/decisions/decisions_test.csv": "84f42fd96b8e6f8a2c1f943406d2042abedbe2bcef4cd353796a5ad0dd245e99",
+    "runs/final-evaluation/decisions/decisions_confidence.raw.predictions.csv": "ea4c4125644fd6e38868070a180e075c0a1e9b92d79bde9a259199e92ef099e4",
+    "runs/final-evaluation/decisions/decisions_confidence.raw.reliability.csv": "be4e627527d4832d0ce5943d56aedf39ad1babcb0c5c5b76ec03bb183cb2c012",
+    "runs/final-evaluation/decisions/decisions_confidence.raw.risk_coverage.csv": "30de21c239509ffb474abc5d2d33e863935264fa2e8e99c0b22be1727fce452a",
+    "runs/final-evaluation/decisions/decisions_confidence.logistic_score.predictions.csv": "29ebe7863244746e96f2d31914e29d3ea6d219466dbd8c8457009f08df83bc89",
+    "runs/final-evaluation/decisions/decisions_confidence.logistic_score.reliability.csv": "87fdff1caddc31e0a0450aad7acfce51b9ab7f819c6a0151c46d4a4c86ed8096",
+    "runs/final-evaluation/decisions/decisions_confidence.logistic_score.risk_coverage.csv": "474b37276be705e6605f5f3d9508df9ce011e93ef35bbfbb9b98f55e8eec65cf",
+    "runs/final-evaluation/decisions/decisions_confidence.logistic_logit.predictions.csv": "b1766b1d3a3f1cc7d57e011de8ec77a3784108477bc6493c6348e8c4caa6df3b",
+    "runs/final-evaluation/decisions/decisions_confidence.logistic_logit.reliability.csv": "236037ef935185f2299758d15feff313f76579d979a6fd42c159c1102c8c3eda",
+    "runs/final-evaluation/decisions/decisions_confidence.logistic_logit.risk_coverage.csv": "1fe39f07023725df51b8d0efc6ae3b7a06a42ef98251c8d64c3217663c4ed402",
+    "runs/final-evaluation/decisions/decisions_confidence.isotonic.predictions.csv": "d500e54fa027611e1f2cec4a7a5cff8fcd346aebb717b096b22b2f85b2d0238d",
+    "runs/final-evaluation/decisions/decisions_confidence.isotonic.reliability.csv": "3f676ad2ed73ad0658c578bd68781699a4695d6d5cfb3fba171dbd4ad31923d9",
+    "runs/final-evaluation/decisions/decisions_confidence.isotonic.risk_coverage.csv": "f923e9f21708529fbd61eda2b70af786c72a07c6608981c480e877ba5014d5e3",
+    "runs/final-evaluation/decisions/decisions_probability.raw.predictions.csv": "b6f368f551480be8f56365602942b5475df6b26b1b060c79d2538d359769565d",
+    "runs/final-evaluation/decisions/decisions_probability.raw.reliability.csv": "8673addbc1f92af96569c8bb0a1dff8adf7bbe2182047bda87f145f41a76c222",
+    "runs/final-evaluation/decisions/decisions_probability.raw.risk_coverage.csv": "62908961b612030e5ffed1ac6c69237bcc6e3d874d894b57accd36f1101357ca",
+    "runs/final-evaluation/decisions/decisions_probability.logistic_score.predictions.csv": "951f3d2e79c4c133d8e745e5def00000fd37ba5ba5db911615ff79a4eecad658",
+    "runs/final-evaluation/decisions/decisions_probability.logistic_score.reliability.csv": "9904e6b320f60e9c944e5ad22f9537d4fd8c2d45599f4ace3e0892f1ab053a19",
+    "runs/final-evaluation/decisions/decisions_probability.logistic_score.risk_coverage.csv": "d4701c14807f9a8252233837af71bb0eac2dcfe2f01cf43fd149ac1528a479c8",
+    "runs/final-evaluation/decisions/decisions_probability.logistic_logit.predictions.csv": "8234645bbea05201783a7d74fc2a7440e3a32032e92d24b51b20734736c653da",
+    "runs/final-evaluation/decisions/decisions_probability.logistic_logit.reliability.csv": "b83b8ce58e34e6dee9b32daa80c34052cd3adac139dd791736192ac4caf2eea3",
+    "runs/final-evaluation/decisions/decisions_probability.logistic_logit.risk_coverage.csv": "08ac958589c026c2767e5fd4b220ee42452150ea0a264edfefb28a60b7f9c3d2",
+    "runs/final-evaluation/decisions/decisions_probability.isotonic.predictions.csv": "d500e54fa027611e1f2cec4a7a5cff8fcd346aebb717b096b22b2f85b2d0238d",
+    "runs/final-evaluation/decisions/decisions_probability.isotonic.reliability.csv": "3f676ad2ed73ad0658c578bd68781699a4695d6d5cfb3fba171dbd4ad31923d9",
+    "runs/final-evaluation/decisions/decisions_probability.isotonic.risk_coverage.csv": "f923e9f21708529fbd61eda2b70af786c72a07c6608981c480e877ba5014d5e3",
+    "runs/final-evaluation/decisions/decisions_probability.temperature.predictions.csv": "e267b96dcc7e0c8c2594cd1f82028c1bb6569828540f82da9476a76ac293525f",
+    "runs/final-evaluation/decisions/decisions_probability.temperature.reliability.csv": "7d66773be063ae15663c918e58db7e2220a0dfc685088a5816a9c2997dfef620",
+    "runs/final-evaluation/decisions/decisions_probability.temperature.risk_coverage.csv": "488ce5782177453221e6e141df893751b500cc04c35e44a187c26310a720e477",
+    "runs/final-evaluation/decisions/metrics.json": "beda5af180fe029285b1fd64a07e1bc1fe8cec24f0b1f3aee8cf28812143053e",
+    "runs/final-evaluation/decisions/metadata.json": "bbd32b8b190dd34240b28ca6bad80d880fe2560db4f71f4cb7a8bfdeae337b23",
+    "runs/final-evaluation/decisions/complete.json": "a113e9eef721615f75e829c54f11d20bd16878a7cad98d0106325ff10d10f41a",
+    "scripts/build_final_report.py": "544d5846a8dd585f9ddb21e508a55931f3292e6a72a9054e392c55c31dcc182d",
+    "scripts/analyze_cost_frontiers.py": "d12f59776a18d550e482e8c19ba30f5854fe0489b9092ebdf163551e985ee1ee",
+    "reports/banking77-findings/cost-frontiers.json": "931282347982a07e7b0968a91dcd525e6848fd63b924ac1825510c3f8b9a6428"
+  },
+  "report_sha256": "fe5475fa3c81675a738ec229e1718f12ce2705c324ebf3b8abd12a172829b8df",
+  "primary_target_met": false,
+  "created_utc": "2026-10-13T19:39:29.858323+00:00",
+  "figures_sha256": {
+    "classification_accuracy": "cd36e435a79b6cb77987e86eaece1737a02aed1f2e88d34861e637f9aae0eb2a",
+    "risk_coverage": "b46bb164cc7953729e52238d2b421c301098cad3060bbc034139d0c44f15c6ad",
+    "calibration_mappings": "4ae4fdb3c132368177701bd855974a32fd5abe11bebf993b53579db95ecd2096",
+    "calibration_reliability": "bf05c49e77fe051a00911fe60a8154bef1e5de77515c2e2d42546d6146769a08",
+    "probability_reliability": "bed51ac8597f808ea72d94191881ef642f5b2c986dae5bec47348e3a9fc3fa3b",
+    "probability_outcomes": "626377e2512d420e918754d13a9adc72ea8b021a7afa1924a86474ec4be19f7c",
+    "cost_pareto": "029e8a517090f0bf3afce908f17fd288d291e68d45be097dc9ce4118a4d2d17b",
+    "cost_sensitivity": "385cd5f609b867b9b740b299817e93039b7a0e747947d3539b17aa1e1d680466",
+    "llm_confidence": "f7ed6f5dacbb53c54b50a9b789bd767f0803fc152af52812f45e17136d9df6a5"
+  }
+}

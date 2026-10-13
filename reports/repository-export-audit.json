@@ -1,8 +1,8 @@
 {
   "scope": "staged files, excluding this generated audit report",
-  "staged_file_count": 48721,
-  "staged_bytes": 449613487,
-  "text_files_scanned": 48655,
+  "staged_file_count": 55014,
+  "staged_bytes": 567711578,
+  "text_files_scanned": 54945,
   "checks": [
     "provider_api_key",
     "huggingface_token",
@@ -20,23 +20,23 @@
   "directories": {
     ".gitignore": {
       "files": 1,
-      "bytes": 751
+      "bytes": 769
     },
     "README.md": {
       "files": 1,
-      "bytes": 24538
+      "bytes": 26173
     },
     "REPOSITORY_CONTENTS.md": {
       "files": 1,
-      "bytes": 2510
+      "bytes": 2628
     },
     "configs": {
       "files": 10,
       "bytes": 6231
     },
     "data": {
-      "files": 48076,
-      "bytes": 379986847
+      "files": 54242,
+      "bytes": 471307427
     },
     "experiment.md": {
       "files": 1,
@@ -47,8 +47,8 @@
       "bytes": 803
     },
     "reports": {
-      "files": 301,
-      "bytes": 26043746
+      "files": 318,
+      "bytes": 27848949
     },
     "requirements-cpu.lock": {
       "files": 1,
@@ -59,20 +59,20 @@
       "bytes": 1159
     },
     "runs": {
-      "files": 280,
-      "bytes": 43214966
+      "files": 382,
+      "bytes": 68104242
     },
     "scripts": {
-      "files": 29,
-      "bytes": 249889
+      "files": 36,
+      "bytes": 327567
     },
     "src": {
       "files": 10,
       "bytes": 43490
     },
     "tests": {
-      "files": 8,
-      "bytes": 26894
+      "files": 9,
+      "bytes": 30477
     }
   },
   "largest_files": [
@@ -101,6 +101,10 @@
       "bytes": 13135873
     },
     {
+      "path": "data/anthropic_sonnet_cache/batches/b4ba9b8fbb34ad15bd04935843b54fe409a6810d0cd46e273eb26e3102a0564e.requests.json",
+      "bytes": 13131399
+    },
+    {
       "path": "data/anthropic_opus_cache/batches/8ea167b4e4dbd737b9ecec4498fdc8f36364fc24b94e8da8547cd5e2235e940c.requests.json",
       "bytes": 13126949
     },
@@ -111,10 +115,6 @@
     {
       "path": "data/anthropic_cache/batches/170d41f84e052a0130ce7d6b7a52da1dab7819a8c92e615de875cfe111b8778b.requests.json",
       "bytes": 13125537
-    },
-    {
-      "path": "data/anthropic_opus_cache/batches/748252c0cf424ce0d8bcf067daea556b5ed976a1df2ef470c6961681a0a8faf3.requests.json",
-      "bytes": 13125457
     }
   ],
   "limitations": "Pattern-based credential checks cannot recognize every possible secret."

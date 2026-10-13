@@ -1,0 +1,710 @@
+{
+  "metadata": {
+    "page_id": "page_8d6b5f224fe88191a0ee1a19d013497b",
+    "layout": "document",
+    "namespace": "data_reports",
+    "symbol": null,
+    "title": "Learning When to Trust a Classifier",
+    "preview": "**BANKING77 findings · 13 October 2026 · Independent test validation for local models and OpenAI**\n\nThe independent test set changed the most important conclusion. The primary EmbeddingGemma classifier retained high accuracy, **94.74%**, bu",
+    "creator_account_user_id": "user-hG8rZPZIQmYhyRaxGi2gwiyz",
+    "owner_workspace_id": null,
+    "parent": null,
+    "drive_scope": "personal",
+    "drive_space_id": null,
+    "library_container_id": "fde3_cGFnZV84ZDZiNWYyMjRmZTg4MTkxYTBlZTFhMTlkMDEzNDk3Yg_3ce54b7abbec8191a98bc6938d222787",
+    "file_upload_page_id": "page_8d6b5f224fe88191a0ee1a19d013497b",
+    "position": 1834575232526336,
+    "created_at": "2026-10-09T20:22:55.749814Z",
+    "updated_at": "2026-10-13T19:49:23.292651Z",
+    "deleted_at": null,
+    "current_sequence": 43,
+    "projection_through_sequence": 43,
+    "access": {
+      "can_read": true,
+      "can_comment": true,
+      "can_write": true,
+      "can_share": true,
+      "can_delete": true,
+      "sources": [
+        "library"
+      ]
+    },
+    "url": "https://chatgpt.com/space/page_8d6b5f224fe88191a0ee1a19d013497b"
+  },
+  "content": {
+    "schema_version": 2,
+    "symbol": null,
+    "title": "Learning When to Trust a Classifier",
+    "title_hash": "c6590b83f05d0835ab71abad14d9df4e23e2d320b40dbc5dcaed00d3c22bea99",
+    "blocks": [
+      {
+        "id": "b1ed7ebd-5370-4f7d-9e77-6b45eb16e449",
+        "kind": "markdown",
+        "markdown": "**BANKING77 findings · 13 October 2026 · Independent test validation for local models and OpenAI**",
+        "hash": "106b9db8c6efbd982f2494d318e876fffbbd85b6260a9a22d549defb396bf8bd",
+        "metadata": {}
+      },
+      {
+        "id": "c5faf019-e5dc-4b40-b861-9299c2feecef",
+        "kind": "markdown",
+        "markdown": "The independent test set changed the most important conclusion. The primary EmbeddingGemma classifier retained high accuracy, **94.74%**, but its frozen automation policy accepted **2,715 messages with 53 errors**. That is **1.95% error**, with a nominal 95% interval of **1.50–2.54%**. The intended maximum was 1%. **The policy failed independent validation.**",
+        "hash": "e5a433e68f07b12cb1c546c24a4051ea7a06047c8c8c882bc940fe341fb4c1b0",
+        "metadata": {}
+      },
+      {
+        "id": "931ea83c-d0fb-4415-86ef-28b3bb64c0a9",
+        "kind": "markdown",
+        "markdown": "Development had suggested that temperature-scaled embedding LR could accept 89.5% of messages with 3 errors in 895 accepted predictions. On the official test set, coverage was **88.15%**, with substantially more accepted errors. The development result was useful for choosing a candidate; it overstated the evidence for dependable 1% automation.",
+        "hash": "fbbdb1b08b65d2f9f2789e3f5b89127aa7b06c716ab106a6b347e8c59287521e",
+        "metadata": {}
+      },
+      {
+        "id": "58e5ef5a-0dd8-4ead-86b3-c165ca3af9ef",
+        "kind": "markdown",
+        "markdown": "All **24 local and OpenAI score variants** were evaluated on the same **3,080 official test messages**, using the existing fitted models, calibrators, and development-selected thresholds. No test outcomes were used to refit a calibrator or choose a replacement threshold. Claude test evaluation is deferred; Haiku, Sonnet, and Opus findings below remain development-only.",
+        "hash": "edf2aa50956a5ac4915ce6ec7e305193191f4dfa994056100fced0d0ec9118eb",
+        "metadata": {}
+      },
+      {
+        "id": "8a560afe-1dbf-46d4-be77-4b8493a57fac",
+        "kind": "markdown",
+        "markdown": "## The experiment in brief",
+        "hash": "5bfb238c0dc3b937c969241c830ba09472b534e522ead377af138e97d7d87c7a",
+        "metadata": {}
+      },
+      {
+        "id": "af4ef2f6-a7a5-4dd6-9f5b-5b5f0aeac175",
+        "kind": "markdown",
+        "markdown": "BANKING77 asks a classifier to assign short banking messages to 77 closely related intents. It is useful for studying confidence because a fluent, plausible interpretation can still select the wrong category. The original dataset contains 13,083 annotated examples. [Casanueva and colleagues, 2020](https://aclanthology.org/2020.nlp4convai-1.5/)",
+        "hash": "3c2a9c3df17b2fa4bf32800efd968fcf8950fa39f50656faf98f4385ce368574",
+        "metadata": {}
+      },
+      {
+        "id": "ea9f211f-1583-40bd-b912-93298fe2410c",
+        "kind": "markdown",
+        "markdown": "The data audit removed seven normalized training examples overlapping the official test text and four duplicate training rows. The remaining 9,992 non-test examples were divided into separate roles, using stratified splits and seed 42.",
+        "hash": "b8178e10f879626a380bd766a595b810aeba0e1731d25545bb3e079ca4158280",
+        "metadata": {}
+      },
+      {
+        "id": "b3624440-4f00-46c4-98dc-ef28b0ba8a24",
+        "kind": "markdown",
+        "markdown": "The official test retains one normalized duplicate pair; independence-based uncertainty intervals are approximate. Test labels first entered model evaluation during this final stage.",
+        "hash": "89fc68810f7d528c829aad4de3c228a56b4e1119fa61d0f8f51e91b0576ce45c",
+        "metadata": {}
+      },
+      {
+        "id": "0a21393c-14ba-4189-81bb-852a44f84f4a",
+        "kind": "markdown",
+        "markdown": "| Data role | Examples | Use |\n|---|---|---|\n| Classifier fitting | 5992 | Fit TF-IDF and embedding heads |\n| Correctness training | 2000 | Fit the historical Claude correctness estimators |\n| Calibration | 1000 | Fit temperature, logistic and isotonic calibrators |\n| Development | 1000 | Compare candidates and select thresholds |\n| Official test | 3080 | Independent evaluation with all choices fixed |",
+        "hash": "5af204796fe479efd5a8ab99f03dca8554c2d8490f30fa01c40bdcb8d06d9252",
+        "metadata": {
+          "layout": "flexible",
+          "tableWidths": [
+            [
+              280,
+              145,
+              145
+            ]
+          ]
+        }
+      },
+      {
+        "id": "002ffdbd-9978-4141-84ad-1953ff400b42",
+        "kind": "markdown",
+        "markdown": "The final plan sealed 60 variants before test inference. At the user's request, execution was restricted to the local models and OpenAI: 24 variants across five confidence streams. The remaining 36 Claude variants retain their frozen specifications but have no test results. This execution change did not alter any fitted model, calibrator, or threshold.",
+        "hash": "c75a8a6b61e94fd5fce5462016892b5d700e9a9524635511b95229fc621c8d58",
+        "metadata": {}
+      },
+      {
+        "id": "8c16528d-998a-482a-b73f-185aeab20d4e",
+        "kind": "markdown",
+        "markdown": "![Official test classification accuracy](visualize:fde1_bGliZmlsZV8zMFpLcmV6dXJCT1BIZVQxZktiUUNB_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+        "hash": "2ea509b1ecbdcdf806f0ee8cf6dcf7913c9d9d5798af2b99fe728be54dc19a06",
+        "metadata": {
+          "layout": "flexible"
+        }
+      },
+      {
+        "id": "57f3e2f9-a40c-4732-acf5-aa2ce6d91b64",
+        "kind": "markdown",
+        "markdown": "The same frozen classifiers on development (1,000 messages) and official test (3,080 messages). Whiskers are marginal 95% Wilson intervals. The two splits contain different messages; changes between splits are not paired comparisons. Local models used 5,992 fitting labels; OpenAI used zero-shot intent names.",
+        "hash": "62f39d5d2eab9901e39545d51d8488dc85d7d28f82ef823f1e0cedcd090d3017",
+        "metadata": {}
+      },
+      {
+        "id": "ceecc655-23f8-46dd-836e-2716bcf14a4d",
+        "kind": "markdown",
+        "markdown": "## Classification on independent data",
+        "hash": "b385ec2e2df86168e103344ae7099601e1bf02587b8e3a891f4d9320be57845a",
+        "metadata": {}
+      },
+      {
+        "id": "379315f1-5a28-46d9-b041-91d0b44335d4",
+        "kind": "markdown",
+        "markdown": "| Classifier | Development accuracy | Test accuracy | Test accuracy 95% interval | Test errors | Test macro F1 |\n|---|---|---|---|---|---|\n| EmbeddingGemma LR | 97.10% | 94.74% | 93.89–95.47% | 162 | 0.947 |\n| EmbeddingGemma MLP | 96.90% | 93.90% | 92.99–94.69% | 188 | 0.939 |\n| TF-IDF LR | 87.10% | 87.08% | 85.85–88.22% | 398 | 0.871 |\n| OpenAI probability | 73.30% | 76.46% | 74.93–77.93% | 725 | 0.759 |",
+        "hash": "137f5e12c3c5eaafaeba9c1f5cce0fd1992513b0d05a27786d6cf6ac8e7c2328",
+        "metadata": {
+          "layout": "flexible",
+          "tableWidths": [
+            [
+              280,
+              145,
+              145,
+              145,
+              145,
+              145
+            ]
+          ]
+        }
+      },
+      {
+        "id": "70ba7c9c-8972-4b2d-b905-6d74dfed9c9e",
+        "kind": "markdown",
+        "markdown": "Embedding LR remained more accurate than the tested alternatives. Its paired test accuracy difference from the MLP was **+0.84 percentage points**, with a nominal 95% interval of **0.42–1.30%**. These models use the same fixed embedding representation, so this is a comparison of the fitted classifier heads, not evidence that nonlinear heads cannot help with other settings or seeds.",
+        "hash": "d6979a60deb85a242e28cd6a821b25016e13082bebeba780ee982dbe4ca1047b",
+        "metadata": {}
+      },
+      {
+        "id": "ed6f5186-f21f-4333-8b05-9d7747b551f5",
+        "kind": "markdown",
+        "markdown": "The embedding LR made **162 test errors**, compared with 29 development errors. The two datasets differ in size and difficulty: the error rate rose from 2.9% to 5.26%. TF-IDF remained near its earlier 87.1% accuracy. The official test results therefore make the earlier embedding advantage smaller without eliminating it.",
+        "hash": "910a885c1e8d319d959dabac4dfc13d52273751dd91efc200e49fb4aab00661e",
+        "metadata": {}
+      },
+      {
+        "id": "71dc60b3-24d0-499e-9b72-e232b8dd48ce",
+        "kind": "markdown",
+        "markdown": "OpenAI Decisions correctly classified **2,355 of 3,080 messages (76.46%)**. Its **7 refusals** remain in the denominator as unsuccessful classifications and always require review. API-selected labels are preserved even when a returned probability distribution has a different argmax. The local classifiers received 5,992 fitting labels; OpenAI received zero-shot intent names, so cross-family accuracy differences combine model choice and access to supervision.",
+        "hash": "f529fa1ee69fb79aaf13aa6e7e38de00c155ac258166018711ae23047e68d276",
+        "metadata": {}
+      },
+      {
+        "id": "e793b23e-08e0-4030-9f2b-fd6b317d4b36",
+        "kind": "markdown",
+        "markdown": "## The frozen automation policy failed its target",
+        "hash": "38a77e60ece19b40f1312a70d7ff55a5702b0778284d69c160cf77cb42ac3a35",
+        "metadata": {}
+      },
+      {
+        "id": "3abbaf52-e673-4992-9b45-9caeed899101",
+        "kind": "markdown",
+        "markdown": "| Frozen policy | Accepted | Errors | Test coverage | Accepted error rate | 95% error interval |\n|---|---|---|---|---|---|\n| EmbeddingGemma LR Raw | 2683 | 53 | 87.11% | 1.98% | 1.51–2.57% |\n| EmbeddingGemma LR Temperature | 2715 | 53 | 88.15% | 1.95% | 1.50–2.54% |\n| EmbeddingGemma LR Logistic log-odds | 2683 | 53 | 87.11% | 1.98% | 1.51–2.57% |\n| EmbeddingGemma LR Isotonic | 2510 | 36 | 81.49% | 1.43% | 1.04–1.98% |\n| EmbeddingGemma MLP Raw | 2629 | 46 | 85.36% | 1.75% | 1.31–2.33% |\n| EmbeddingGemma MLP Temperature | 2615 | 44 | 84.90% | 1.68% | 1.26–2.25% |\n| EmbeddingGemma MLP Isotonic | 2425 | 28 | 78.73% | 1.15% | 0.80–1.66% |\n| TF-IDF LR Temperature | 0 | 0 | 0.00% | — | — |\n| OpenAI probability Logistic log-odds | 0 | 0 | 0.00% | — | — |",
+        "hash": "70a5534482d1a713d48f6ac60f76218acf3fdb0c0252065ea034cc9cae7720d0",
+        "metadata": {
+          "layout": "flexible",
+          "tableWidths": [
+            [
+              280,
+              145,
+              145,
+              145,
+              145,
+              145
+            ]
+          ]
+        }
+      },
+      {
+        "id": "31095086-9058-458c-bdd0-c77dedd16d59",
+        "kind": "markdown",
+        "markdown": "The primary temperature threshold was fixed at **0.91727740** before any test prediction was scored. Its error interval lies entirely above 1%, so this failure is more than an upper interval merely crossing the target. The system would send 365 of 3,080 messages to review while leaving 53 incorrect classifications among the automatically accepted messages.",
+        "hash": "c3c01e279b9569ed9abf8e7c597958c2ef539b6e15ef409cfefbd814d9a4a354",
+        "metadata": {}
+      },
+      {
+        "id": "71f3e9c1-9c7d-4da4-a2ce-5270c343fb65",
+        "kind": "markdown",
+        "markdown": "Isotonic embedding LR accepted fewer messages, **2,510**, but still made **36 errors (1.43%)**. Every tested embedding policy had a 95% upper error endpoint above 1%. A more flexible calibrator did not rescue the existing automation rule.",
+        "hash": "5c09f1d52159cfd56075a6e7b4be18baf287fd3f72502eb847c9d07af4a33e10",
+        "metadata": {}
+      },
+      {
+        "id": "8755f8f4-8d67-4f33-81c8-47901443eaf9",
+        "kind": "markdown",
+        "markdown": "TF-IDF and all OpenAI variants retained null acceptance thresholds because no threshold met the development criterion. Their zero test coverage follows that frozen policy. It does not establish that every possible test threshold would fail; searching the test curves for a new threshold would turn this final set into tuning data.",
+        "hash": "f390cce92decf4bc6cffb2857b1c098bcf846162ee0e644eeafe6c479cb8b6e8",
+        "metadata": {}
+      },
+      {
+        "id": "0b0c8d60-6c02-4040-881d-da920c2bae2f",
+        "kind": "markdown",
+        "markdown": "The original selection rule searched development thresholds for the largest acceptance set whose upper 95% Wilson error endpoint was at most 1%. A nominal interval at a threshold chosen using the same outcomes does not account for that search. The independent test exposed the gap between a promising development operating point and a validated operational policy.",
+        "hash": "2b4d811dc372252cfa48c67bcc677cd7f4c3b2487a2f5ac2fb6dcef26ccdf505",
+        "metadata": {}
+      },
+      {
+        "id": "3ef91ca7-5937-468f-a81e-b9d1169fbf1c",
+        "kind": "markdown",
+        "markdown": "![Official test risk coverage](visualize:fde1_bGliZmlsZV9TSWRXR2xGWkhUZWRUTXRLVVJ0X0ln_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+        "hash": "57fa653e3a65641aa49695aaeb3a35a14f8cfb9d778e6cf4c9c42ce9cfe7576a",
+        "metadata": {
+          "layout": "flexible"
+        }
+      },
+      {
+        "id": "6758da78-b726-4338-98cb-27b46448eeba",
+        "kind": "markdown",
+        "markdown": "Descriptive official-test risk curves with score ties preserved. The highlighted point uses the primary threshold fixed on development. The 1% line is the intended error target. Curves do not authorize selecting a replacement threshold from test outcomes.",
+        "hash": "947a7d2fc261c0b2c5d10f2d9ce4952c02f836755c861dbc10a82343f85bd2d0",
+        "metadata": {}
+      },
+      {
+        "id": "3f540bef-e5da-420b-919f-ede3d9487e91",
+        "kind": "markdown",
+        "markdown": "## Temperature logistic and isotonic calibration",
+        "hash": "96f570a5ac615f50399af3f6d8ddaea7831325b4e1944d0b54c55cca331c2ac1",
+        "metadata": {}
+      },
+      {
+        "id": "2d887f57-5401-4fea-acfb-32396dd20a2c",
+        "kind": "markdown",
+        "markdown": "Brier error is the average squared difference between estimated correctness probability and the observed correct/incorrect outcome. Lower is better. Error AUROC measures how well low confidence ranks incorrect predictions above correct predictions; 0.5 is chance ranking and 1.0 is perfect ranking. Brier error and log loss capture both calibration and discrimination, so they should be read alongside reliability plots. [Scikit-learn calibration documentation](https://scikit-learn.org/stable/modules/calibration.html)",
+        "hash": "a889d39581d2f2d3a8f2ad3944f982fc76d3a3836c789ff2b7268ac239a3062d",
+        "metadata": {}
+      },
+      {
+        "id": "a090d378-ea05-44c3-868b-134cd9b9dd72",
+        "kind": "markdown",
+        "markdown": "The scalar comparison adds two logistic calibrators and isotonic regression. Logistic on score learns a slope and intercept for the original confidence; it is the sigmoid calibration already used in the LLM runs. Logistic on log-odds instead uses logit(p) as its feature. Both use regularization C=1. Isotonic learns a flexible non-decreasing mapping, with greater risk of overfitting when evidence is sparse. It can introduce tied scores and change ranking metrics. [Scikit-learn calibration documentation](https://scikit-learn.org/stable/modules/calibration.html)",
+        "hash": "931f84881741fc7c6cf051f24440be7991eda8d73843f0b87b3149eff9ded3e2",
+        "metadata": {}
+      },
+      {
+        "id": "9fb74e47-ae3e-4673-8f49-74f683abacf7",
+        "kind": "markdown",
+        "markdown": "The table compares binary correctness Brier error on official test data. Within each row, every variant retains the same predicted labels. Smaller values are better. Temperature optimizes multiclass calibration loss; the scalar methods target selected-label correctness. Their objectives differ, so a binary Brier result does not establish superiority of the full class distribution.",
+        "hash": "191fc287b36fc6f2e259c3559bdbe69b1e3fb987042b8670e2f12f16697e07a0",
+        "metadata": {}
+      },
+      {
+        "id": "215a0775-63e2-4ee4-bf55-c0e066fb40b9",
+        "kind": "markdown",
+        "markdown": "| Confidence source | Raw | Temperature | Logistic score | Logistic log-odds | Isotonic |\n|---|---|---|---|---|---|\n| EmbeddingGemma LR | 0.04777 | 0.03957 | 0.04026 | 0.04043 | 0.04168 |\n| EmbeddingGemma MLP | 0.04336 | 0.04259 | 0.05179 | 0.04442 | 0.04487 |\n| TF-IDF LR | 0.14838 | 0.07719 | 0.08654 | 0.08550 | 0.08799 |\n| OpenAI confidence | 0.13326 | — | 0.13422 | 0.13201 | 0.13383 |\n| OpenAI probability | 0.13326 | 0.19126 | 0.13419 | 0.13203 | 0.13383 |",
+        "hash": "13955468d581eb204a309b3461986ccfec4cca3e9ad6f9e6ef38587d443dbe70",
+        "metadata": {
+          "layout": "flexible",
+          "tableWidths": [
+            [
+              280,
+              145,
+              145,
+              145,
+              145,
+              145
+            ]
+          ]
+        }
+      },
+      {
+        "id": "9c200bf7-c017-4c3a-88a9-cf5325202dec",
+        "kind": "markdown",
+        "markdown": "For embedding LR, temperature reduced Brier error from **0.04777 to 0.03957**. Its test binary log loss was **0.14693**. Isotonic minus temperature Brier was **+0.00211**, with a paired nominal 95% interval of **[+0.00096, +0.00327]**. Positive differences favor temperature. This comparison uses frozen fits and provides no license to choose a new deployment configuration after looking at test outcomes.",
+        "hash": "fe8956f4c9c9cc3e955a33465781a75194fb2da7068c059469524555b4c33691",
+        "metadata": {}
+      },
+      {
+        "id": "e1095846-ffbc-4c95-adb2-b74c137fd918",
+        "kind": "markdown",
+        "markdown": "The result supports the usefulness of simple scaling while showing its limit: improved average probability quality did not ensure that a high-confidence subset had less than 1% error. Temperature cannot repair missing information or guarantee that mistakes will be ranked below every accepted case. Logistic maps can adjust slope and intercept; positive slopes preserve raw score ranking. Isotonic can introduce tied groups and exact zero/one probabilities. Log loss clips at 10⁻⁷ consistently with the earlier analyses.",
+        "hash": "f1302b4f03d83e18c2207dcca6a19dc271a1177306004b0e0f3f94150ddaf57f",
+        "metadata": {}
+      },
+      {
+        "id": "b2bab0f2-aa12-488d-9db0-43c2fe43ee09",
+        "kind": "markdown",
+        "markdown": "All calibrators still learned from only 1,000 calibration examples. More test mistakes improve evaluation precision, but they do not add training evidence to an already fitted isotonic model. The calibration partition contained only 39 embedding LR errors, which remains a constraint on flexible fitted mappings.",
+        "hash": "c70c8bd7c782a63a1e807c02984a05eccfa8c3d993b4a24ecedd57725fea258d",
+        "metadata": {}
+      },
+      {
+        "id": "5e07fa01-48ff-4b4b-b8e2-33ff6c20d727",
+        "kind": "markdown",
+        "markdown": "![Frozen calibration mappings](visualize:fde1_bGliZmlsZV80VmFHSHF4aWdWUDBLZXZOSkxzd213_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+        "hash": "ecedebdd20a629ca299942d62dddb31ec12648c8978dd7b0fd42bf4330024941",
+        "metadata": {
+          "layout": "flexible"
+        }
+      },
+      {
+        "id": "533cd1c2-5dd7-4147-80b6-0f8188e277f4",
+        "kind": "markdown",
+        "markdown": "Scalar mappings fitted only on the 1,000 calibration examples. Logistic on score and on log-odds learn slope and intercept with C=1. Isotonic fits a non-decreasing map with clipped out-of-range inputs. Temperature cannot be drawn as one universal map of top confidence because it transforms the full class distribution.",
+        "hash": "7fbcdd7b280531839ae2c5a1717dabeb9b7323cf573a7628906e292bff501ec1",
+        "metadata": {}
+      },
+      {
+        "id": "58a10e2d-a291-405c-b606-9cd92cea97bd",
+        "kind": "markdown",
+        "markdown": "![Official test calibration reliability](visualize:fde1_bGliZmlsZV9XbjVzNkZIVXRNMDFRaUxlNHpSdHJn_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+        "hash": "424f2b653014c91b6b622180265c55913b1664a3cea1b92604b8c669118e5d35",
+        "metadata": {
+          "layout": "flexible"
+        }
+      },
+      {
+        "id": "84ebc930-4d03-4180-a253-ca79d8d67f21",
+        "kind": "markdown",
+        "markdown": "Every calibration variant on the official test set, using the original fitted objects. Panels hold selected labels fixed; marker sizes reflect bin counts. Thin whiskers are nominal pointwise 95% Wilson intervals. Shared equal-width bins expose sparse regions without smoothing.",
+        "hash": "28b97f85d865f76c43be10307a6a4e7b1d29eab4922c3386857011b86fed1238",
+        "metadata": {}
+      },
+      {
+        "id": "b1011d60-5ee6-4273-8fbc-dc38b7b5379a",
+        "kind": "markdown",
+        "markdown": "## Comparing the probability curves",
+        "hash": "ab79ed88ee9d9dae9cbe6d8de57711c05563a2b5b75b551d028a375c1ac6de56",
+        "metadata": {}
+      },
+      {
+        "id": "c0a700dd-b080-4b0e-83a2-33e0013bcda7",
+        "kind": "markdown",
+        "markdown": "Reliability plots answer whether a reported probability matches observed correctness. A point below the diagonal indicates overconfidence in that bin; a point above it indicates underconfidence. Each comparison holds the classifier's selected labels fixed. The histogram beneath each panel shows how much evidence supports its points, and nominal Wilson intervals show sampling uncertainty. The plots use shared equal-width bins without smoothing or connecting sparse estimates.",
+        "hash": "155f2f383ff16930d179e6296f8b44f7bf227839f009d38e895266ee521d6b8b",
+        "metadata": {}
+      },
+      {
+        "id": "0e274b86-bc00-4bf6-bb9b-befbd8ef1627",
+        "kind": "markdown",
+        "markdown": "The second figure separates scores assigned to correct and incorrect predictions. Greater separation helps prioritize review, but does not by itself establish calibrated probabilities. Each outcome distribution is normalized separately; its legend reports the actual number of cases. Cross-classifier comparisons also change which examples are errors, so the within-classifier comparisons are the stronger method comparison.",
+        "hash": "def1d1176c2ccfb3ab3948630f5c60b063b75a9af6bc69bc4f7a9e7e9fca8b69",
+        "metadata": {}
+      },
+      {
+        "id": "07b1d258-0051-4459-8ef2-3e193a241712",
+        "kind": "markdown",
+        "markdown": "## Why the embedding curves looked volatile",
+        "hash": "3e3b6998f81c0e77637e533467a1f89bce1a9e9052d7f35154a9fb4148297878",
+        "metadata": {}
+      },
+      {
+        "id": "58d0d919-bcac-404a-a81d-39fa01f66b93",
+        "kind": "markdown",
+        "markdown": "Connecting these estimates can make the curve look erratic even when the underlying score is useful. The immediate cause is sparse bin counts and concentrated confidence. High accuracy contributes by leaving only 29 errors, but high accuracy alone does not imply volatile calibration. The same small error count also makes risk–coverage curves advance in visible steps.",
+        "hash": "c7078f7f69e63b4561ef8b5df5fa5f6264a4203e6da3d7b86567b0517b1e44ae",
+        "metadata": {}
+      },
+      {
+        "id": "3ca15991-e342-4741-b970-bade545e4103",
+        "kind": "markdown",
+        "markdown": "The appropriate response is to show counts and uncertainty, avoid smoothing away the scarcity of evidence, and obtain a larger representative evaluation sample. A harder representative task may generate more errors and reveal differences between confidence methods, but increasing evaluation size can improve precision without deliberately weakening classification. A representative document task would also test whether these findings transfer beyond short banking messages.",
+        "hash": "2be1165013aadc2c839474e83117d3f71fd1db02b135166057c4e611bae43c24",
+        "metadata": {}
+      },
+      {
+        "id": "07403e12-bf22-4b96-8307-6e61afcfc051",
+        "kind": "markdown",
+        "markdown": "For embedding LR it was **0.903** after temperature scaling; for embedding MLP temperature it was **0.910**. Ranking, average probability accuracy, and performance at the frozen acceptance threshold should be assessed separately.",
+        "hash": "2352a0ed6a8608ce5f486ec9b2b9579b3e1ee2cec8e4ac4c7787c60743226083",
+        "metadata": {}
+      },
+      {
+        "id": "8282eda5-1dd9-40db-a2ff-c511a52a2dae",
+        "kind": "markdown",
+        "markdown": "![Official test probability reliability](visualize:fde1_bGliZmlsZV9qZjBfcDk0M3o4WFFUQU9zSjNwVUpB_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+        "hash": "6f0f3556896787fe9414df7965544c30d4ea2ed54f60b471613c628adbf3d111",
+        "metadata": {
+          "layout": "flexible"
+        }
+      },
+      {
+        "id": "461d11c6-c8b0-4c13-a936-76fb8a1d5dfd",
+        "kind": "markdown",
+        "markdown": "Raw versus frozen calibrated correctness probabilities on the same 3,080 test messages. Bin counts and nominal 95% Wilson intervals show the evidence behind each point. Empty bins are omitted. All transformations preserve classifier-selected labels.",
+        "hash": "155b04a74f5bdb6cfe5e4d27f3cf2aae43c2dc6f265624138d3cc7925f86f9e1",
+        "metadata": {}
+      },
+      {
+        "id": "43699b5e-45fd-4881-bd5e-2efe0570a0b0",
+        "kind": "markdown",
+        "markdown": "![Official test probability outcomes](visualize:fde1_bGliZmlsZV8ybHZLUjVlUFlfM1JiNEhKNWRnSDF3_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+        "hash": "b19bf3d9447e92838c0a4e78e398e7d2423ad5847fc9003726685963ed6d0920",
+        "metadata": {
+          "layout": "flexible"
+        }
+      },
+      {
+        "id": "3c32f2b8-e1b8-4ddb-a13b-d48af39265a5",
+        "kind": "markdown",
+        "markdown": "Test confidence split by correct and incorrect outcomes, normalized separately within each outcome group. Legend counts show the denominators. Separation describes error-ranking ability; the two curves do not represent overall error prevalence.",
+        "hash": "28c60e58b49aaab5896db7d5b949a01860093bf0858cd8d78dd831309feab573",
+        "metadata": {}
+      },
+      {
+        "id": "c764d653-8642-4bbd-be37-152136bc294e",
+        "kind": "markdown",
+        "markdown": "## Cost and Pareto frontiers",
+        "hash": "a988d4f21213b48f701248db42c9b68f3e65fab051feb6fa690b702b22172cdf",
+        "metadata": {}
+      },
+      {
+        "id": "cc3ccb24-a3d6-4bac-b212-676e1edeb4f8",
+        "kind": "markdown",
+        "markdown": "| Fixed representative pipeline | API USD per 1,000 | Test accuracy | Test Brier | Test error AUROC |\n|---|---|---|---|---|\n| EmbeddingGemma LR | $0.0000 | 94.74% | 0.03957 | 0.903 |\n| EmbeddingGemma MLP | $0.0000 | 93.90% | 0.04259 | 0.910 |\n| TF-IDF LR | $0.0000 | 87.08% | 0.07719 | 0.896 |\n| OpenAI probability | $0.0690 | 76.46% | 0.13203 | 0.828 |",
+        "hash": "f108247991652b8ceffe971c75e98269eb0b3204a5d25664ed79bf47bf65e9f6",
+        "metadata": {
+          "layout": "flexible",
+          "tableWidths": [
+            [
+              280,
+              145,
+              145,
+              145,
+              145
+            ]
+          ]
+        }
+      },
+      {
+        "id": "6a43f3f1-622a-4b7f-8e49-0450e23f18c7",
+        "kind": "markdown",
+        "markdown": "The OpenAI test cohort used **3,080 distinct requests** and recorded **$0.2125** in API fees. Duplicate-message cache reuse is counted once for cohort costs. The per-1,000 figure divides those unique recorded fees by all 3,080 evaluated messages. All OpenAI calibrators reuse the same predictions and add no API requests. Fee amounts are client-ledger estimates computed from returned token usage at the configured rate; they are not invoice totals. No Claude test batch was accepted or charged.",
+        "hash": "970dda0ff3d79334650a40f788e70cbf48c4134433464736c38533f51fbb127f",
+        "metadata": {
+          "layout": "normal",
+          "tableWidths": [
+            [
+              180,
+              90,
+              140,
+              130,
+              80,
+              90
+            ]
+          ]
+        }
+      },
+      {
+        "id": "d7c358b5-1593-4f5d-839c-6ce3e40a7abb",
+        "kind": "markdown",
+        "markdown": "Local provider fees are zero; local computation, labeling, setup, and human review are not free. On this CPU, encoding the 3,080 test messages took **183.3 seconds** with two threads and batch size eight, excluding **4.4 seconds** to load the pinned encoder. This is one observed batch-throughput measurement, not a service-latency or electricity-cost estimate. The embedding heads reuse those encodings.",
+        "hash": "fb5d4b6bbea66c527d1e21dbc14da7afedee625017f9ba1f717ea1c9e27af13d",
+        "metadata": {}
+      },
+      {
+        "id": "a95e1ea8-02ad-4a67-81d1-31f24cd6f7c2",
+        "kind": "markdown",
+        "markdown": "The test Pareto sets include the 24 completed variants only. A point is dominated when another costs no more, performs at least as well, and improves at least one selected objective. Accuracy, Brier, error ranking, and coverage have separate frontiers. Exact equivalents remain together; small differences are descriptive point estimates. Claude development points are excluded from test frontiers because mixing evaluation datasets would create a misleading comparison.",
+        "hash": "564c464a8cf9d4fbb004521fd9b9d30306d437d91a346156958fb970108679b9",
+        "metadata": {}
+      },
+      {
+        "id": "b64298ad-59ec-4057-9818-16667bcb6f29",
+        "kind": "markdown",
+        "markdown": "For a deployment of N messages, let F be fixed setup and annotation cost in USD, v local variable cost per message, A API fees per 1,000, r the fraction sent to human review, and R the cost of reviewing one message. Then **total USD per 1,000 = A + 1,000v + 1,000F/N + 1,000rR**. No measured values for F, v or R are available here. The calibrated supervised classifiers used 5,992 fitting labels and 1,000 calibration labels. Learned LLM correctness used the same TF-IDF fitting labels plus 2,000 correctness and 1,000 calibration labels; calibrating native LLM scores required 1,000 labeled outcomes. Those requirements matter when applying the experiment to a new task.",
+        "hash": "f56b66efd207009eaad2465c98085f3f9813c43daa8b7a443005215316fc77f6",
+        "metadata": {}
+      },
+      {
+        "id": "5c0c4e25-2a0b-439b-8163-650a07ad7c45",
+        "kind": "markdown",
+        "markdown": "A policy's review savings cannot justify claiming a 1% quality target that failed independent validation.",
+        "hash": "ba5faa989700d33540352fd4576c7de0509ce460b60e130416820f19e2a6a408",
+        "metadata": {}
+      },
+      {
+        "id": "9c8bae7a-f4ca-47ad-8361-38ee270cc1a8",
+        "kind": "markdown",
+        "markdown": "![Official test cost pareto](visualize:fde1_bGliZmlsZV9ucVIybmJIWFVZYlBEQ0h2SldacUVB_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+        "hash": "a10a7ffac42650b241661f11c81c10c652109962c40a60b98036a0510b2b426b",
+        "metadata": {
+          "layout": "flexible"
+        }
+      },
+      {
+        "id": "68868b87-30e0-4000-bc37-654b6303f0bd",
+        "kind": "markdown",
+        "markdown": "Official-test Pareto frontiers for the 24 completed local/OpenAI variants only. Prices count unique recorded API requests per 1,000 messages; local compute and labeling are unpriced. Rings indicate nondominated point estimates. Claude development results are excluded from these test frontiers.",
+        "hash": "4564c69ac8df5c81334903adb8ef05078ab02ccc2a959d00333bdc22d0834d94",
+        "metadata": {}
+      },
+      {
+        "id": "1111d6af-9c6e-452c-87be-9722bbef9911",
+        "kind": "markdown",
+        "markdown": "![Official test cost sensitivity](visualize:fde1_bGliZmlsZV9nRmF4VHFNQ2dZZDRVMURWeHZTUUlB_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+        "hash": "3ff403c482af8fd53b55233bc085ddd38f4a4e115fdcbca82d535ba4fc44deaf",
+        "metadata": {
+          "layout": "flexible"
+        }
+      },
+      {
+        "id": "3d33e896-b215-42bb-b079-c71192add49e",
+        "kind": "markdown",
+        "markdown": "Illustrative accuracy frontiers with assumed all-in local embedding costs of $0, $0.10, $1, or $3 per 1,000 messages. These are assumptions rather than electricity or deployment-cost measurements. TF-IDF local cost is also unpriced and is omitted from this sensitivity projection.",
+        "hash": "539e9f43786350afa3ef563c3cd4ef9c0d6e11bf0c9cb8eae54b0a7c1edf18a6",
+        "metadata": {}
+      },
+      {
+        "id": "d1e683f4-0e5c-460c-ab6c-9939d25052e7",
+        "kind": "markdown",
+        "markdown": "## Claude findings remain development only",
+        "hash": "02284c1e2fe073eceb9344110f2a82a3bc013742a714c9024700db1e4c0a097e",
+        "metadata": {}
+      },
+      {
+        "id": "52987c29-e42a-4d15-9781-28ced20b169d",
+        "kind": "markdown",
+        "markdown": "| Claude model | Development accuracy | Native Brier | Learned Brier | Learned plus logistic Brier | Learned API USD per 1,000 |\n|---|---|---|---|---|---|\n| Haiku 5.5 | 75.70% | 0.14536 | 0.05958 | 0.05780 | $0.28 |\n| Sonnet 5.5 | 83.00% | 0.12007 | 0.05314 | 0.05052 | $5.63 |\n| Opus 5.5 | 87.60% | 0.09720 | 0.05092 | 0.04991 | $12.34 |",
+        "hash": "873eb02495f843aa57e1bea05299915eaf79fea0b871c750b8b6c9a7e9777b30",
+        "metadata": {
+          "layout": "flexible",
+          "tableWidths": [
+            [
+              280,
+              145,
+              145,
+              145,
+              145,
+              145
+            ]
+          ]
+        }
+      },
+      {
+        "id": "d06aef2a-1245-4f55-8170-216cdd351830",
+        "kind": "markdown",
+        "markdown": "Learned correctness improved the development confidence scores for Haiku, Sonnet, and Opus while keeping their selected labels unchanged. It combined original confidence, verifier confidence, blind-classification agreement, length/missing-content signals, and supervised TF-IDF support. Those gains cannot be attributed to learning alone because extra calls and supervised features were added together, with no feature ablation.",
+        "hash": "01acb1672ce58898d1267859ab1169a64cf73378f7327a6674db21134183111e",
+        "metadata": {}
+      },
+      {
+        "id": "5cbc49ba-54c0-4269-b33e-915dc053e483",
+        "kind": "markdown",
+        "markdown": "The historical Opus configuration used adaptive thinking and a 2,048-token output allowance; Sonnet and Haiku used their supported thinking settings and 256 tokens. These are comparisons of implemented configurations. The learned pipeline requires three calls per message; full Claude test replication was estimated near $56 for all three models combined, predominantly Opus. These development findings have not yet been tested on the official test messages and should not be compared directly with local/OpenAI test metrics as a provider ranking.",
+        "hash": "231999f41acbc17cf8a3c3e00dbba648111b31509ab32f272d8402909e68742c",
+        "metadata": {}
+      },
+      {
+        "id": "3930ecb4-be0b-4f4c-b60e-9645845b9c6a",
+        "kind": "markdown",
+        "markdown": "The full illustrated development study is preserved as [HTML](https://github.com/miegielsen/confidence-experiment/blob/main/reports/banking77-findings/report.development.html), [PDF](https://github.com/miegielsen/confidence-experiment/blob/main/reports/banking77-findings/report.development.pdf), and [Markdown](https://github.com/miegielsen/confidence-experiment/blob/main/reports/banking77-findings/report.development.md), including all 60 calibration variants, Opus, Sonnet, probability diagnostics, and the separate development cost frontier. The historical observations remain useful; the independent test changes the automation recommendation.",
+        "hash": "aaa9e3643f0e4ac91e3c7498fc25397cbe2e46bf3aba6cef8d683f2b265e12fd",
+        "metadata": {}
+      },
+      {
+        "id": "e73b1d89-f68d-4d22-945a-8d98b547375b",
+        "kind": "markdown",
+        "markdown": "![llm confidence](visualize:fde1_bGliZmlsZV9FZG1lc1NuSHBhR1RGSjNpZTdyUmFB_FileDrive_3ce54b7abbec8191a98bc6938d222787)",
+        "hash": "a1a441a255a09dc3bd1988031221f677c08794c4b1c8deaecad7d0e034d9a37f",
+        "metadata": {
+          "layout": "flexible"
+        }
+      },
+      {
+        "id": "102fe5df-375c-4be0-b47b-cc981a7f86cd",
+        "kind": "markdown",
+        "markdown": "Historical development results only: Haiku, Sonnet and Opus on 1,000 messages, with original, verifier and learned confidence retaining identical selected labels within each model. Learned confidence combines additional API calls and supervised TF-IDF evidence. Claude official-test replication is deferred.",
+        "hash": "4a88da48ee1047c6ee08c417f66793485f4eb1ce6364ac17f92920fbd3263bd1",
+        "metadata": {}
+      },
+      {
+        "id": "974d2e8f-333a-4efb-a06c-b625d3376b59",
+        "kind": "markdown",
+        "markdown": "## What the findings justify next",
+        "hash": "e02ac9a19bb7f1907c71bd8a654d7ed0f682033ccf81744940ba859f1b976e00",
+        "metadata": {}
+      },
+      {
+        "id": "0d684bbe-de13-4c82-9a75-0ce55b72ff93",
+        "kind": "markdown",
+        "markdown": "EmbeddingGemma LR remains the strongest tested classifier by accuracy in this implementation. Temperature scaling remains useful for average probability quality. **The existing high-coverage policy should not be deployed as a validated 1% error system.** Improving classification, gathering more representative calibration/threshold-selection data, or using a selection procedure with explicit risk-control assumptions are reasonable next experiments. Any revised policy requires new independent validation data; the official test outcomes are now known for the completed arms.",
+        "hash": "02978fd2a8546c1996a769740bc2092502b109d3e4d44afc2425212c2c181633",
+        "metadata": {}
+      },
+      {
+        "id": "88507c1e-cba8-4223-9f39-45d504c158c4",
+        "kind": "markdown",
+        "markdown": "**Expand the evaluation around the intended deployment population.** Repeat the strongest methods on a larger document-classification task, audit ambiguous disagreements, and evaluate unsupported inputs separately. Confidence on known banking intents does not establish out-of-scope detection or calibration under distribution shift. Full encoder fine-tuning can remain deferred until there is a clear unresolved question that warrants its resource cost.",
+        "hash": "9db5e7414910568fc49a956ce05f7c8f4210187ff370ea1bd509e5336ced6a3a",
+        "metadata": {}
+      },
+      {
+        "id": "91cbeb9d-3ecc-46b5-9e6b-31813c0f9ba1",
+        "kind": "markdown",
+        "markdown": "Multiple training/split seeds and feature ablations would separate stable effects from one fitted configuration. Full encoder fine-tuning remains deferred; this experiment supplies no evidence about its benefit.",
+        "hash": "63ef34d1487227b92c22259f29f831aac0e3d9d25ea646bbdf9b324d8191e725",
+        "metadata": {}
+      },
+      {
+        "id": "eeb71838-d76e-402a-b363-590db0ca2a9e",
+        "kind": "markdown",
+        "markdown": "## Scope and reproducibility",
+        "hash": "3ff1754e29b86d1dbe32eda0d5219e348795a941dc9c89a3578e9e63dc6c8cd9",
+        "metadata": {}
+      },
+      {
+        "id": "c9703101-df29-4503-84b0-2b1626ef7911",
+        "kind": "markdown",
+        "markdown": "The paired intervals use 5,000 shared test-example resamples and condition on the frozen fits. They omit retraining/calibration-training variability and are not adjusted for all comparisons. The primary policy was declared before testing; the remaining tables and Pareto frontiers describe the prespecified variants rather than establishing universal winners. Public benchmark exposure, ambiguous intent labels, and differences in supervision constrain transfer to enterprise documents.",
+        "hash": "420e96cc669cf3fa3b73e1f1a19b9abc7ae4c5d56749262029615525f3118e38",
+        "metadata": {}
+      },
+      {
+        "id": "f8f85bdb-8f92-46ca-8974-5f216514415c",
+        "kind": "markdown",
+        "markdown": "The final runner validates model, calibrator, dataset, dependency, and scientific-code hashes before API work. It records completion only after result artifacts are written; report generation is separate and can be repeated without inference or paid requests. All results retain per-example predictions, reliability bins, risk curves, fixed thresholds, source hashes, and the sealed plan.",
+        "hash": "70281bad1eec8fa3f729530c597ee2355e27ca8a8ac54d796d2a658a7065dac4",
+        "metadata": {}
+      }
+    ],
+    "markdown": "**BANKING77 findings · 13 October 2026 · Independent test validation for local models and OpenAI**\n\nThe independent test set changed the most important conclusion. The primary EmbeddingGemma classifier retained high accuracy, **94.74%**, but its frozen automation policy accepted **2,715 messages with 53 errors**. That is **1.95% error**, with a nominal 95% interval of **1.50–2.54%**. The intended maximum was 1%. **The policy failed independent validation.**\n\nDevelopment had suggested that temperature-scaled embedding LR could accept 89.5% of messages with 3 errors in 895 accepted predictions. On the official test set, coverage was **88.15%**, with substantially more accepted errors. The development result was useful for choosing a candidate; it overstated the evidence for dependable 1% automation.\n\nAll **24 local and OpenAI score variants** were evaluated on the same **3,080 official test messages**, using the existing fitted models, calibrators, and development-selected thresholds. No test outcomes were used to refit a calibrator or choose a replacement threshold. Claude test evaluation is deferred; Haiku, Sonnet, and Opus findings below remain development-only.\n\n## The experiment in brief\n\nBANKING77 asks a classifier to assign short banking messages to 77 closely related intents. It is useful for studying confidence because a fluent, plausible interpretation can still select the wrong category. The original dataset contains 13,083 annotated examples. [Casanueva and colleagues, 2020](https://aclanthology.org/2020.nlp4convai-1.5/)\n\nThe data audit removed seven normalized training examples overlapping the official test text and four duplicate training rows. The remaining 9,992 non-test examples were divided into separate roles, using stratified splits and seed 42.\n\nThe official test retains one normalized duplicate pair; independence-based uncertainty intervals are approximate. Test labels first entered model evaluation during this final stage.\n\n| Data role | Examples | Use |\n|---|---|---|\n| Classifier fitting | 5992 | Fit TF-IDF and embedding heads |\n| Correctness training | 2000 | Fit the historical Claude correctness estimators |\n| Calibration | 1000 | Fit temperature, logistic and isotonic calibrators |\n| Development | 1000 | Compare candidates and select thresholds |\n| Official test | 3080 | Independent evaluation with all choices fixed |\n\nThe final plan sealed 60 variants before test inference. At the user's request, execution was restricted to the local models and OpenAI: 24 variants across five confidence streams. The remaining 36 Claude variants retain their frozen specifications but have no test results. This execution change did not alter any fitted model, calibrator, or threshold.\n\n![Official test classification accuracy](visualize:fde1_bGliZmlsZV8zMFpLcmV6dXJCT1BIZVQxZktiUUNB_FileDrive_3ce54b7abbec8191a98bc6938d222787)\n\nThe same frozen classifiers on development (1,000 messages) and official test (3,080 messages). Whiskers are marginal 95% Wilson intervals. The two splits contain different messages; changes between splits are not paired comparisons. Local models used 5,992 fitting labels; OpenAI used zero-shot intent names.\n\n## Classification on independent data\n\n| Classifier | Development accuracy | Test accuracy | Test accuracy 95% interval | Test errors | Test macro F1 |\n|---|---|---|---|---|---|\n| EmbeddingGemma LR | 97.10% | 94.74% | 93.89–95.47% | 162 | 0.947 |\n| EmbeddingGemma MLP | 96.90% | 93.90% | 92.99–94.69% | 188 | 0.939 |\n| TF-IDF LR | 87.10% | 87.08% | 85.85–88.22% | 398 | 0.871 |\n| OpenAI probability | 73.30% | 76.46% | 74.93–77.93% | 725 | 0.759 |\n\nEmbedding LR remained more accurate than the tested alternatives. Its paired test accuracy difference from the MLP was **+0.84 percentage points**, with a nominal 95% interval of **0.42–1.30%**. These models use the same fixed embedding representation, so this is a comparison of the fitted classifier heads, not evidence that nonlinear heads cannot help with other settings or seeds.\n\nThe embedding LR made **162 test errors**, compared with 29 development errors. The two datasets differ in size and difficulty: the error rate rose from 2.9% to 5.26%. TF-IDF remained near its earlier 87.1% accuracy. The official test results therefore make the earlier embedding advantage smaller without eliminating it.\n\nOpenAI Decisions correctly classified **2,355 of 3,080 messages (76.46%)**. Its **7 refusals** remain in the denominator as unsuccessful classifications and always require review. API-selected labels are preserved even when a returned probability distribution has a different argmax. The local classifiers received 5,992 fitting labels; OpenAI received zero-shot intent names, so cross-family accuracy differences combine model choice and access to supervision.\n\n## The frozen automation policy failed its target\n\n| Frozen policy | Accepted | Errors | Test coverage | Accepted error rate | 95% error interval |\n|---|---|---|---|---|---|\n| EmbeddingGemma LR Raw | 2683 | 53 | 87.11% | 1.98% | 1.51–2.57% |\n| EmbeddingGemma LR Temperature | 2715 | 53 | 88.15% | 1.95% | 1.50–2.54% |\n| EmbeddingGemma LR Logistic log-odds | 2683 | 53 | 87.11% | 1.98% | 1.51–2.57% |\n| EmbeddingGemma LR Isotonic | 2510 | 36 | 81.49% | 1.43% | 1.04–1.98% |\n| EmbeddingGemma MLP Raw | 2629 | 46 | 85.36% | 1.75% | 1.31–2.33% |\n| EmbeddingGemma MLP Temperature | 2615 | 44 | 84.90% | 1.68% | 1.26–2.25% |\n| EmbeddingGemma MLP Isotonic | 2425 | 28 | 78.73% | 1.15% | 0.80–1.66% |\n| TF-IDF LR Temperature | 0 | 0 | 0.00% | — | — |\n| OpenAI probability Logistic log-odds | 0 | 0 | 0.00% | — | — |\n\nThe primary temperature threshold was fixed at **0.91727740** before any test prediction was scored. Its error interval lies entirely above 1%, so this failure is more than an upper interval merely crossing the target. The system would send 365 of 3,080 messages to review while leaving 53 incorrect classifications among the automatically accepted messages.\n\nIsotonic embedding LR accepted fewer messages, **2,510**, but still made **36 errors (1.43%)**. Every tested embedding policy had a 95% upper error endpoint above 1%. A more flexible calibrator did not rescue the existing automation rule.\n\nTF-IDF and all OpenAI variants retained null acceptance thresholds because no threshold met the development criterion. Their zero test coverage follows that frozen policy. It does not establish that every possible test threshold would fail; searching the test curves for a new threshold would turn this final set into tuning data.\n\nThe original selection rule searched development thresholds for the largest acceptance set whose upper 95% Wilson error endpoint was at most 1%. A nominal interval at a threshold chosen using the same outcomes does not account for that search. The independent test exposed the gap between a promising development operating point and a validated operational policy.\n\n![Official test risk coverage](visualize:fde1_bGliZmlsZV9TSWRXR2xGWkhUZWRUTXRLVVJ0X0ln_FileDrive_3ce54b7abbec8191a98bc6938d222787)\n\nDescriptive official-test risk curves with score ties preserved. The highlighted point uses the primary threshold fixed on development. The 1% line is the intended error target. Curves do not authorize selecting a replacement threshold from test outcomes.\n\n## Temperature logistic and isotonic calibration\n\nBrier error is the average squared difference between estimated correctness probability and the observed correct/incorrect outcome. Lower is better. Error AUROC measures how well low confidence ranks incorrect predictions above correct predictions; 0.5 is chance ranking and 1.0 is perfect ranking. Brier error and log loss capture both calibration and discrimination, so they should be read alongside reliability plots. [Scikit-learn calibration documentation](https://scikit-learn.org/stable/modules/calibration.html)\n\nThe scalar comparison adds two logistic calibrators and isotonic regression. Logistic on score learns a slope and intercept for the original confidence; it is the sigmoid calibration already used in the LLM runs. Logistic on log-odds instead uses logit(p) as its feature. Both use regularization C=1. Isotonic learns a flexible non-decreasing mapping, with greater risk of overfitting when evidence is sparse. It can introduce tied scores and change ranking metrics. [Scikit-learn calibration documentation](https://scikit-learn.org/stable/modules/calibration.html)\n\nThe table compares binary correctness Brier error on official test data. Within each row, every variant retains the same predicted labels. Smaller values are better. Temperature optimizes multiclass calibration loss; the scalar methods target selected-label correctness. Their objectives differ, so a binary Brier result does not establish superiority of the full class distribution.\n\n| Confidence source | Raw | Temperature | Logistic score | Logistic log-odds | Isotonic |\n|---|---|---|---|---|---|\n| EmbeddingGemma LR | 0.04777 | 0.03957 | 0.04026 | 0.04043 | 0.04168 |\n| EmbeddingGemma MLP | 0.04336 | 0.04259 | 0.05179 | 0.04442 | 0.04487 |\n| TF-IDF LR | 0.14838 | 0.07719 | 0.08654 | 0.08550 | 0.08799 |\n| OpenAI confidence | 0.13326 | — | 0.13422 | 0.13201 | 0.13383 |\n| OpenAI probability | 0.13326 | 0.19126 | 0.13419 | 0.13203 | 0.13383 |\n\nFor embedding LR, temperature reduced Brier error from **0.04777 to 0.03957**. Its test binary log loss was **0.14693**. Isotonic minus temperature Brier was **+0.00211**, with a paired nominal 95% interval of **[+0.00096, +0.00327]**. Positive differences favor temperature. This comparison uses frozen fits and provides no license to choose a new deployment configuration after looking at test outcomes.\n\nThe result supports the usefulness of simple scaling while showing its limit: improved average probability quality did not ensure that a high-confidence subset had less than 1% error. Temperature cannot repair missing information or guarantee that mistakes will be ranked below every accepted case. Logistic maps can adjust slope and intercept; positive slopes preserve raw score ranking. Isotonic can introduce tied groups and exact zero/one probabilities. Log loss clips at 10⁻⁷ consistently with the earlier analyses.\n\nAll calibrators still learned from only 1,000 calibration examples. More test mistakes improve evaluation precision, but they do not add training evidence to an already fitted isotonic model. The calibration partition contained only 39 embedding LR errors, which remains a constraint on flexible fitted mappings.\n\n![Frozen calibration mappings](visualize:fde1_bGliZmlsZV80VmFHSHF4aWdWUDBLZXZOSkxzd213_FileDrive_3ce54b7abbec8191a98bc6938d222787)\n\nScalar mappings fitted only on the 1,000 calibration examples. Logistic on score and on log-odds learn slope and intercept with C=1. Isotonic fits a non-decreasing map with clipped out-of-range inputs. Temperature cannot be drawn as one universal map of top confidence because it transforms the full class distribution.\n\n![Official test calibration reliability](visualize:fde1_bGliZmlsZV9XbjVzNkZIVXRNMDFRaUxlNHpSdHJn_FileDrive_3ce54b7abbec8191a98bc6938d222787)\n\nEvery calibration variant on the official test set, using the original fitted objects. Panels hold selected labels fixed; marker sizes reflect bin counts. Thin whiskers are nominal pointwise 95% Wilson intervals. Shared equal-width bins expose sparse regions without smoothing.\n\n## Comparing the probability curves\n\nReliability plots answer whether a reported probability matches observed correctness. A point below the diagonal indicates overconfidence in that bin; a point above it indicates underconfidence. Each comparison holds the classifier's selected labels fixed. The histogram beneath each panel shows how much evidence supports its points, and nominal Wilson intervals show sampling uncertainty. The plots use shared equal-width bins without smoothing or connecting sparse estimates.\n\nThe second figure separates scores assigned to correct and incorrect predictions. Greater separation helps prioritize review, but does not by itself establish calibrated probabilities. Each outcome distribution is normalized separately; its legend reports the actual number of cases. Cross-classifier comparisons also change which examples are errors, so the within-classifier comparisons are the stronger method comparison.\n\n## Why the embedding curves looked volatile\n\nConnecting these estimates can make the curve look erratic even when the underlying score is useful. The immediate cause is sparse bin counts and concentrated confidence. High accuracy contributes by leaving only 29 errors, but high accuracy alone does not imply volatile calibration. The same small error count also makes risk–coverage curves advance in visible steps.\n\nThe appropriate response is to show counts and uncertainty, avoid smoothing away the scarcity of evidence, and obtain a larger representative evaluation sample. A harder representative task may generate more errors and reveal differences between confidence methods, but increasing evaluation size can improve precision without deliberately weakening classification. A representative document task would also test whether these findings transfer beyond short banking messages.\n\nFor embedding LR it was **0.903** after temperature scaling; for embedding MLP temperature it was **0.910**. Ranking, average probability accuracy, and performance at the frozen acceptance threshold should be assessed separately.\n\n![Official test probability reliability](visualize:fde1_bGliZmlsZV9qZjBfcDk0M3o4WFFUQU9zSjNwVUpB_FileDrive_3ce54b7abbec8191a98bc6938d222787)\n\nRaw versus frozen calibrated correctness probabilities on the same 3,080 test messages. Bin counts and nominal 95% Wilson intervals show the evidence behind each point. Empty bins are omitted. All transformations preserve classifier-selected labels.\n\n![Official test probability outcomes](visualize:fde1_bGliZmlsZV8ybHZLUjVlUFlfM1JiNEhKNWRnSDF3_FileDrive_3ce54b7abbec8191a98bc6938d222787)\n\nTest confidence split by correct and incorrect outcomes, normalized separately within each outcome group. Legend counts show the denominators. Separation describes error-ranking ability; the two curves do not represent overall error prevalence.\n\n## Cost and Pareto frontiers\n\n| Fixed representative pipeline | API USD per 1,000 | Test accuracy | Test Brier | Test error AUROC |\n|---|---|---|---|---|\n| EmbeddingGemma LR | $0.0000 | 94.74% | 0.03957 | 0.903 |\n| EmbeddingGemma MLP | $0.0000 | 93.90% | 0.04259 | 0.910 |\n| TF-IDF LR | $0.0000 | 87.08% | 0.07719 | 0.896 |\n| OpenAI probability | $0.0690 | 76.46% | 0.13203 | 0.828 |\n\nThe OpenAI test cohort used **3,080 distinct requests** and recorded **$0.2125** in API fees. Duplicate-message cache reuse is counted once for cohort costs. The per-1,000 figure divides those unique recorded fees by all 3,080 evaluated messages. All OpenAI calibrators reuse the same predictions and add no API requests. Fee amounts are client-ledger estimates computed from returned token usage at the configured rate; they are not invoice totals. No Claude test batch was accepted or charged.\n\nLocal provider fees are zero; local computation, labeling, setup, and human review are not free. On this CPU, encoding the 3,080 test messages took **183.3 seconds** with two threads and batch size eight, excluding **4.4 seconds** to load the pinned encoder. This is one observed batch-throughput measurement, not a service-latency or electricity-cost estimate. The embedding heads reuse those encodings.\n\nThe test Pareto sets include the 24 completed variants only. A point is dominated when another costs no more, performs at least as well, and improves at least one selected objective. Accuracy, Brier, error ranking, and coverage have separate frontiers. Exact equivalents remain together; small differences are descriptive point estimates. Claude development points are excluded from test frontiers because mixing evaluation datasets would create a misleading comparison.\n\nFor a deployment of N messages, let F be fixed setup and annotation cost in USD, v local variable cost per message, A API fees per 1,000, r the fraction sent to human review, and R the cost of reviewing one message. Then **total USD per 1,000 = A + 1,000v + 1,000F/N + 1,000rR**. No measured values for F, v or R are available here. The calibrated supervised classifiers used 5,992 fitting labels and 1,000 calibration labels. Learned LLM correctness used the same TF-IDF fitting labels plus 2,000 correctness and 1,000 calibration labels; calibrating native LLM scores required 1,000 labeled outcomes. Those requirements matter when applying the experiment to a new task.\n\nA policy's review savings cannot justify claiming a 1% quality target that failed independent validation.\n\n![Official test cost pareto](visualize:fde1_bGliZmlsZV9ucVIybmJIWFVZYlBEQ0h2SldacUVB_FileDrive_3ce54b7abbec8191a98bc6938d222787)\n\nOfficial-test Pareto frontiers for the 24 completed local/OpenAI variants only. Prices count unique recorded API requests per 1,000 messages; local compute and labeling are unpriced. Rings indicate nondominated point estimates. Claude development results are excluded from these test frontiers.\n\n![Official test cost sensitivity](visualize:fde1_bGliZmlsZV9nRmF4VHFNQ2dZZDRVMURWeHZTUUlB_FileDrive_3ce54b7abbec8191a98bc6938d222787)\n\nIllustrative accuracy frontiers with assumed all-in local embedding costs of $0, $0.10, $1, or $3 per 1,000 messages. These are assumptions rather than electricity or deployment-cost measurements. TF-IDF local cost is also unpriced and is omitted from this sensitivity projection.\n\n## Claude findings remain development only\n\n| Claude model | Development accuracy | Native Brier | Learned Brier | Learned plus logistic Brier | Learned API USD per 1,000 |\n|---|---|---|---|---|---|\n| Haiku 5.5 | 75.70% | 0.14536 | 0.05958 | 0.05780 | $0.28 |\n| Sonnet 5.5 | 83.00% | 0.12007 | 0.05314 | 0.05052 | $5.63 |\n| Opus 5.5 | 87.60% | 0.09720 | 0.05092 | 0.04991 | $12.34 |\n\nLearned correctness improved the development confidence scores for Haiku, Sonnet, and Opus while keeping their selected labels unchanged. It combined original confidence, verifier confidence, blind-classification agreement, length/missing-content signals, and supervised TF-IDF support. Those gains cannot be attributed to learning alone because extra calls and supervised features were added together, with no feature ablation.\n\nThe historical Opus configuration used adaptive thinking and a 2,048-token output allowance; Sonnet and Haiku used their supported thinking settings and 256 tokens. These are comparisons of implemented configurations. The learned pipeline requires three calls per message; full Claude test replication was estimated near $56 for all three models combined, predominantly Opus. These development findings have not yet been tested on the official test messages and should not be compared directly with local/OpenAI test metrics as a provider ranking.\n\nThe full illustrated development study is preserved as [HTML](https://github.com/miegielsen/confidence-experiment/blob/main/reports/banking77-findings/report.development.html), [PDF](https://github.com/miegielsen/confidence-experiment/blob/main/reports/banking77-findings/report.development.pdf), and [Markdown](https://github.com/miegielsen/confidence-experiment/blob/main/reports/banking77-findings/report.development.md), including all 60 calibration variants, Opus, Sonnet, probability diagnostics, and the separate development cost frontier. The historical observations remain useful; the independent test changes the automation recommendation.\n\n![llm confidence](visualize:fde1_bGliZmlsZV9FZG1lc1NuSHBhR1RGSjNpZTdyUmFB_FileDrive_3ce54b7abbec8191a98bc6938d222787)\n\nHistorical development results only: Haiku, Sonnet and Opus on 1,000 messages, with original, verifier and learned confidence retaining identical selected labels within each model. Learned confidence combines additional API calls and supervised TF-IDF evidence. Claude official-test replication is deferred.\n\n## What the findings justify next\n\nEmbeddingGemma LR remains the strongest tested classifier by accuracy in this implementation. Temperature scaling remains useful for average probability quality. **The existing high-coverage policy should not be deployed as a validated 1% error system.** Improving classification, gathering more representative calibration/threshold-selection data, or using a selection procedure with explicit risk-control assumptions are reasonable next experiments. Any revised policy requires new independent validation data; the official test outcomes are now known for the completed arms.\n\n**Expand the evaluation around the intended deployment population.** Repeat the strongest methods on a larger document-classification task, audit ambiguous disagreements, and evaluate unsupported inputs separately. Confidence on known banking intents does not establish out-of-scope detection or calibration under distribution shift. Full encoder fine-tuning can remain deferred until there is a clear unresolved question that warrants its resource cost.\n\nMultiple training/split seeds and feature ablations would separate stable effects from one fitted configuration. Full encoder fine-tuning remains deferred; this experiment supplies no evidence about its benefit.\n\n## Scope and reproducibility\n\nThe paired intervals use 5,000 shared test-example resamples and condition on the frozen fits. They omit retraining/calibration-training variability and are not adjusted for all comparisons. The primary policy was declared before testing; the remaining tables and Pareto frontiers describe the prespecified variants rather than establishing universal winners. Public benchmark exposure, ambiguous intent labels, and differences in supervision constrain transfer to enterprise documents.\n\nThe final runner validates model, calibrator, dataset, dependency, and scientific-code hashes before API work. It records completion only after result artifacts are written; report generation is separate and can be repeated without inference or paid requests. All results retain per-example predictions, reliability bins, risk curves, fixed thresholds, source hashes, and the sealed plan.",
+    "page_id": "page_8d6b5f224fe88191a0ee1a19d013497b"
+  },
+  "references": [
+    {
+      "reference": "visualize:fde1_bGliZmlsZV8zMFpLcmV6dXJCT1BIZVQxZktiUUNB_FileDrive_3ce54b7abbec8191a98bc6938d222787",
+      "metadata_available": true,
+      "mime_type": "text/html",
+      "byte_size": 23110
+    },
+    {
+      "reference": "visualize:fde1_bGliZmlsZV9TSWRXR2xGWkhUZWRUTXRLVVJ0X0ln_FileDrive_3ce54b7abbec8191a98bc6938d222787",
+      "metadata_available": true,
+      "mime_type": "text/html",
+      "byte_size": 78450
+    },
+    {
+      "reference": "visualize:fde1_bGliZmlsZV80VmFHSHF4aWdWUDBLZXZOSkxzd213_FileDrive_3ce54b7abbec8191a98bc6938d222787",
+      "metadata_available": true,
+      "mime_type": "text/html",
+      "byte_size": 65999
+    },
+    {
+      "reference": "visualize:fde1_bGliZmlsZV9XbjVzNkZIVXRNMDFRaUxlNHpSdHJn_FileDrive_3ce54b7abbec8191a98bc6938d222787",
+      "metadata_available": true,
+      "mime_type": "text/html",
+      "byte_size": 260304
+    },
+    {
+      "reference": "visualize:fde1_bGliZmlsZV9qZjBfcDk0M3o4WFFUQU9zSjNwVUpB_FileDrive_3ce54b7abbec8191a98bc6938d222787",
+      "metadata_available": true,
+      "mime_type": "text/html",
+      "byte_size": 107240
+    },
+    {
+      "reference": "visualize:fde1_bGliZmlsZV8ybHZLUjVlUFlfM1JiNEhKNWRnSDF3_FileDrive_3ce54b7abbec8191a98bc6938d222787",
+      "metadata_available": true,
+      "mime_type": "text/html",
+      "byte_size": 61303
+    },
+    {
+      "reference": "visualize:fde1_bGliZmlsZV9ucVIybmJIWFVZYlBEQ0h2SldacUVB_FileDrive_3ce54b7abbec8191a98bc6938d222787",
+      "metadata_available": true,
+      "mime_type": "text/html",
+      "byte_size": 63053
+    },
+    {
+      "reference": "visualize:fde1_bGliZmlsZV9nRmF4VHFNQ2dZZDRVMURWeHZTUUlB_FileDrive_3ce54b7abbec8191a98bc6938d222787",
+      "metadata_available": true,
+      "mime_type": "text/html",
+      "byte_size": 52502
+    },
+    {
+      "reference": "visualize:fde1_bGliZmlsZV9FZG1lc1NuSHBhR1RGSjNpZTdyUmFB_FileDrive_3ce54b7abbec8191a98bc6938d222787",
+      "metadata_available": true,
+      "mime_type": "text/html",
+      "byte_size": 65484
+    }
+  ],
+  "references_truncated": false
+}

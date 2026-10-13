@@ -1,0 +1,147 @@
+{
+  "tfidf.raw": {
+    "n": 3080,
+    "accuracy": 0.8707792207792208,
+    "accuracy_ci95": [
+      0.8584691474494968,
+      0.8821655545930118
+    ],
+    "macro_f1": 0.8711752440280445,
+    "errors": 398,
+    "brier": 0.1483793815847179,
+    "binary_log_loss": 0.4480918428086722,
+    "ece_10_equal_width": 0.2146942901635388,
+    "error_auroc": 0.8641304958798467,
+    "error_average_precision": 0.4886477326331318,
+    "error_prevalence": 0.1292207792207792,
+    "aurc": 0.0304797785618067,
+    "acceptance": {
+      "threshold": null,
+      "development_coverage": 0.0,
+      "development_risk": null,
+      "rule": "wilson",
+      "target_error": 0.01,
+      "accepted": 0,
+      "errors": 0,
+      "coverage": 0.0,
+      "risk": null,
+      "risk_ci95": null
+    }
+  },
+  "tfidf.logistic_score": {
+    "n": 3080,
+    "accuracy": 0.8707792207792208,
+    "accuracy_ci95": [
+      0.8584691474494968,
+      0.8821655545930118
+    ],
+    "macro_f1": 0.8711752440280445,
+    "errors": 398,
+    "brier": 0.08654473978454727,
+    "binary_log_loss": 0.28044627731565497,
+    "ece_10_equal_width": 0.02248095559101129,
+    "error_auroc": 0.8641304958798467,
+    "error_average_precision": 0.4886477326331318,
+    "error_prevalence": 0.1292207792207792,
+    "aurc": 0.0304797785618067,
+    "acceptance": {
+      "threshold": null,
+      "development_coverage": 0.0,
+      "development_risk": null,
+      "rule": "wilson",
+      "target_error": 0.01,
+      "accepted": 0,
+      "errors": 0,
+      "coverage": 0.0,
+      "risk": null,
+      "risk_ci95": null
+    }
+  },
+  "tfidf.logistic_logit": {
+    "n": 3080,
+    "accuracy": 0.8707792207792208,
+    "accuracy_ci95": [
+      0.8584691474494968,
+      0.8821655545930118
+    ],
+    "macro_f1": 0.8711752440280445,
+    "errors": 398,
+    "brier": 0.08549925186454392,
+    "binary_log_loss": 0.2772396285809058,
+    "ece_10_equal_width": 0.01851897101111401,
+    "error_auroc": 0.8641304958798467,
+    "error_average_precision": 0.4886477326331318,
+    "error_prevalence": 0.1292207792207792,
+    "aurc": 0.0304797785618067,
+    "acceptance": {
+      "threshold": null,
+      "development_coverage": 0.0,
+      "development_risk": null,
+      "rule": "wilson",
+      "target_error": 0.01,
+      "accepted": 0,
+      "errors": 0,
+      "coverage": 0.0,
+      "risk": null,
+      "risk_ci95": null
+    }
+  },
+  "tfidf.isotonic": {
+    "n": 3080,
+    "accuracy": 0.8707792207792208,
+    "accuracy_ci95": [
+      0.8584691474494968,
+      0.8821655545930118
+    ],
+    "macro_f1": 0.8711752440280445,
+    "errors": 398,
+    "brier": 0.08799276013369563,
+    "binary_log_loss": 0.3384301766296028,
+    "ece_10_equal_width": 0.023335171014894046,
+    "error_auroc": 0.8609804241191041,
+    "error_average_precision": 0.46043484095762993,
+    "error_prevalence": 0.1292207792207792,
+    "aurc": 0.03485432729928622,
+    "acceptance": {
+      "threshold": null,
+      "development_coverage": 0.0,
+      "development_risk": null,
+      "rule": "wilson",
+      "target_error": 0.01,
+      "accepted": 0,
+      "errors": 0,
+      "coverage": 0.0,
+      "risk": null,
+      "risk_ci95": null
+    }
+  },
+  "tfidf.temperature": {
+    "n": 3080,
+    "accuracy": 0.8707792207792208,
+    "accuracy_ci95": [
+      0.8584691474494968,
+      0.8821655545930118
+    ],
+    "macro_f1": 0.8711752440280445,
+    "errors": 398,
+    "brier": 0.07719075205886144,
+    "binary_log_loss": 0.2537678300092747,
+    "ece_10_equal_width": 0.01548550269029502,
+    "error_auroc": 0.8963778624666959,
+    "error_average_precision": 0.5612951856528269,
+    "error_prevalence": 0.1292207792207792,
+    "aurc": 0.024970498519404638,
+    "acceptance": {
+      "threshold": null,
+      "development_coverage": 0.0,
+      "development_risk": null,
+      "rule": "wilson",
+      "target_error": 0.01,
+      "accepted": 0,
+      "errors": 0,
+      "coverage": 0.0,
+      "risk": null,
+      "risk_ci95": null
+    }
+  }
+}

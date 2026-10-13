@@ -37,8 +37,10 @@ artifacts or a matching reconstruction. Rebuilding fitted artifacts can depend o
 the pinned package versions and model revisions; compare hashes before treating a
 reconstruction as identical. Do not rerun paid API requests merely to view results.
 
-The official BANKING77 test partition is retained as data and has not been used
-for the reported development comparisons. Archived interrupted and superseded
+The official BANKING77 test partition is retained as data. Independent test
+evaluation now covers local models and OpenAI Decisions; Claude test arms are
+deferred. The test outcomes never enter fitting, calibration, or threshold
+selection. Archived interrupted and superseded
 runs are retained with their status so their outputs are not mistaken for the
 active comparison.
 
