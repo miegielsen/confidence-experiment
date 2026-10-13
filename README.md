@@ -11,8 +11,11 @@ analyses. Independent test validation is described below.
 The official-test phase now uses `scripts/final_evaluation.py`. Its sealed plan
 includes all 60 development variants and their already selected thresholds.
 Execution currently includes the local classifiers and OpenAI Decisions only
-(24 variants on all 3,080 official test messages); Claude test arms are deferred
-at the user's request. See `runs/final-evaluation/execution-scope.json`.
+(24 variants on all 3,080 official test messages). A subsequently authorized
+smaller sweep evaluates Haiku alone (12 additional frozen variants); Sonnet and
+Opus remain deferred. The original report scope is recorded in
+`runs/final-evaluation/execution-scope.json`; the supplemental sweep is recorded
+in `runs/final-evaluation/haiku-sweep.json`.
 
 ```powershell
 . ./scripts/load-openai-key.ps1
@@ -34,6 +37,24 @@ The primary local test policy failed the 1% error target: it accepted
 includes the complete requested test comparison. OpenAI test accuracy was 76.46%;
 the test cohort's estimated API fees were $0.2125. The development study is
 preserved separately as `reports/banking77-findings/report.development.*`.
+
+The Haiku test sweep uses the same sealed plan and existing fitted objects:
+
+```powershell
+. ./scripts/load-anthropic-key.ps1
+& "$env:LOCALAPPDATA/confidence-experiment/venv/Scripts/python.exe" scripts/final_evaluation.py arm --arm haiku
+& "$env:LOCALAPPDATA/confidence-experiment/venv/Scripts/python.exe" scripts/report_haiku_test.py
+```
+
+While accepted batches are processing, a separate `scripts/report_haiku_test.py
+--wait` process generates the results addendum automatically when the arm is
+verified complete. It never submits requests or retries failed inference. The
+addendum is written to `reports/haiku-test/`, including development/test metrics,
+paired Brier comparisons, costs, and a combined 36-variant test Pareto analysis.
+Batch progress is under `runs/final-evaluation/haiku/batch_status.json`; reporting
+status is under `runs/final-evaluation/haiku-report/status.json`. The existing main
+report and ChatGPT Page remain separately versioned and are not rewritten by
+this supplemental runner.
 
 This GitHub archive includes data, API response caches, results, and reports, but
 excludes model objects and credentials. See [repository contents and reproduction

@@ -1,0 +1,53 @@
+{
+  "phase": "official_test_classification_and_blind",
+  "batches": [
+    {
+      "id": "msgbatch_01K3ntuBBbVhx2ERgg8zf1EX",
+      "state": "in_progress",
+      "counts": {
+        "canceled": 0,
+        "errored": 0,
+        "expired": 0,
+        "processing": 2000,
+        "succeeded": 0
+      }
+    },
+    {
+      "id": "msgbatch_01SzgBuqNo5iCAmDXVcehq5e",
+      "state": "in_progress",
+      "counts": {
+        "canceled": 0,
+        "errored": 0,
+        "expired": 0,
+        "processing": 2000,
+        "succeeded": 0
+      }
+    },
+    {
+      "id": "msgbatch_01BoQpwB1twS5VihX47woFLo",
+      "state": "in_progress",
+      "counts": {
+        "canceled": 0,
+        "errored": 0,
+        "expired": 0,
+        "processing": 2000,
+        "succeeded": 0
+      }
+    },
+    {
+      "id": "msgbatch_019VRfm7hYZKnDdRcQbWsVER",
+      "state": "in_progress",
+      "counts": {
+        "canceled": 0,
+        "errored": 0,
+        "expired": 0,
+        "processing": 160,
+        "succeeded": 0
+      }
+    }
+  ],
+  "pending_batches": 4,
+  "spent_usd": 1.1233781499999997,
+  "reserved_usd": 3.008157,
+  "updated_utc": "2026-10-13T20:15:55.222082+00:00"
+}

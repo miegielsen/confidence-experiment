@@ -1,7 +1,11 @@
 {
-  "usd": 1.1233781499999997,
-  "calls": 11995,
-  "reservations": {},
+  "usd": 1.3452995999999997,
+  "calls": 13995,
+  "reservations": {
+    "batch:94109c28965bd8084afda6cfdd4f2e3dfc10379f86a48c38fd992470d6975435": 0.9769547000000001,
+    "batch:8e4a88d7a6823b0e2f281935c2e20127b3906a390576c34e78c3e21a9486b782": 0.9764363,
+    "batch:f723eb30c298bc35d039d4a4f3af60ae4dc166ca4ab8a16e9b0142f3b5453143": 0.0779962
+  },
   "accounted_batches": {
     "msgbatch_01VL9GLKf1hVnwDuXAr7LYh3": {
       "usd": 0.22200420000000018,
@@ -25,6 +29,10 @@
     },
     "msgbatch_01AcfYd4xZLo1fLZiBaBnypj": {
       "usd": 0.11794139999999993,
+      "successful_requests": 2000
+    },
+    "msgbatch_01K3ntuBBbVhx2ERgg8zf1EX": {
+      "usd": 0.22192144999999988,
       "successful_requests": 2000
     }
   }

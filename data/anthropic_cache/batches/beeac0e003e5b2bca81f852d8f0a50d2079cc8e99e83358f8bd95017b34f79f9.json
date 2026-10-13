@@ -1,7 +1,7 @@
 {
   "fingerprint": "beeac0e003e5b2bca81f852d8f0a50d2079cc8e99e83358f8bd95017b34f79f9",
-  "batch_id": null,
-  "state": "prepared",
+  "batch_id": "msgbatch_01K3ntuBBbVhx2ERgg8zf1EX",
+  "state": "in_progress",
   "reserved_usd": 0.9767698,
   "keys": [
     "29a0a3bcc01151e9227cd8bce9f9a221857a9011afa53317494e3a8f8c3ad5f7",
