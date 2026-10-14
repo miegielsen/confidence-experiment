@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "label": "getting_virtual_card",
+    "confidence": 0.3
+  },
+  "model": "claude-haiku-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2083,
+    "output_tokens": 23,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "batch"
+  },
+  "usd": 0.0001099,
+  "latency_seconds": null,
+  "transport": "batch",
+  "batch_id": "msgbatch_01SzgBuqNo5iCAmDXVcehq5e",
+  "request_sha256": "445da657e0d6ba0872ad1e59e2386e03e8102f39847f239a2b4eb6f7e0661735"
+}

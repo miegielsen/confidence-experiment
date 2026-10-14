@@ -1,0 +1,785 @@
+{
+  "plan_sha256": "9ab1b813dba3d60d9b44c970ee0a2e21aed634c64cdfa5cda879933a3c56921e",
+  "n": 3080,
+  "test_variants": 12,
+  "metrics": {
+    "haiku_same.raw": {
+      "n": 3080,
+      "accuracy": 0.7818181818181819,
+      "accuracy_ci95": [
+        0.7668860335347166,
+        0.7960482233592393
+      ],
+      "macro_f1": 0.7762002399329309,
+      "errors": 672,
+      "brier": 0.13206837662337662,
+      "binary_log_loss": 0.410627345234418,
+      "ece_10_equal_width": 0.036038961038961016,
+      "error_auroc": 0.8230532401914253,
+      "error_average_precision": 0.535748161636945,
+      "error_prevalence": 0.21818181818181817,
+      "aurc": 0.08364538107130923,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "haiku_same.logistic_score": {
+      "n": 3080,
+      "accuracy": 0.7818181818181819,
+      "accuracy_ci95": [
+        0.7668860335347166,
+        0.7960482233592393
+      ],
+      "macro_f1": 0.7762002399329309,
+      "errors": 672,
+      "brier": 0.13269013882907,
+      "binary_log_loss": 0.4226301269226898,
+      "ece_10_equal_width": 0.04663866236177675,
+      "error_auroc": 0.8230532401914253,
+      "error_average_precision": 0.535748161636945,
+      "error_prevalence": 0.21818181818181817,
+      "aurc": 0.08364538107130923,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "haiku_same.logistic_logit": {
+      "n": 3080,
+      "accuracy": 0.7818181818181819,
+      "accuracy_ci95": [
+        0.7668860335347166,
+        0.7960482233592393
+      ],
+      "macro_f1": 0.7762002399329309,
+      "errors": 672,
+      "brier": 0.1312236093052257,
+      "binary_log_loss": 0.40818837029129507,
+      "ece_10_equal_width": 0.03284575597197422,
+      "error_auroc": 0.8230532401914253,
+      "error_average_precision": 0.535748161636945,
+      "error_prevalence": 0.21818181818181817,
+      "aurc": 0.08364538107130923,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "haiku_same.isotonic": {
+      "n": 3080,
+      "accuracy": 0.7818181818181819,
+      "accuracy_ci95": [
+        0.7668860335347166,
+        0.7960482233592393
+      ],
+      "macro_f1": 0.7762002399329309,
+      "errors": 672,
+      "brier": 0.1309555562609915,
+      "binary_log_loss": 0.4068019731678696,
+      "ece_10_equal_width": 0.028675845297202435,
+      "error_auroc": 0.8231879597769342,
+      "error_average_precision": 0.5272588498317214,
+      "error_prevalence": 0.21818181818181817,
+      "aurc": 0.08463413720347232,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "haiku_verifier.raw": {
+      "n": 3080,
+      "accuracy": 0.7818181818181819,
+      "accuracy_ci95": [
+        0.7668860335347166,
+        0.7960482233592393
+      ],
+      "macro_f1": 0.7762002399329309,
+      "errors": 672,
+      "brier": 0.13805454545454546,
+      "binary_log_loss": 0.4271761053456935,
+      "ece_10_equal_width": 0.03903246753246749,
+      "error_auroc": 0.8108620446725202,
+      "error_average_precision": 0.5156937573448963,
+      "error_prevalence": 0.21818181818181817,
+      "aurc": 0.08527575668489286,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "haiku_verifier.logistic_score": {
+      "n": 3080,
+      "accuracy": 0.7818181818181819,
+      "accuracy_ci95": [
+        0.7668860335347166,
+        0.7960482233592393
+      ],
+      "macro_f1": 0.7762002399329309,
+      "errors": 672,
+      "brier": 0.13726928388388887,
+      "binary_log_loss": 0.4326145737306872,
+      "ece_10_equal_width": 0.04707609379829048,
+      "error_auroc": 0.8108620446725202,
+      "error_average_precision": 0.5156937573448963,
+      "error_prevalence": 0.21818181818181817,
+      "aurc": 0.08527575668489286,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "haiku_verifier.logistic_logit": {
+      "n": 3080,
+      "accuracy": 0.7818181818181819,
+      "accuracy_ci95": [
+        0.7668860335347166,
+        0.7960482233592393
+      ],
+      "macro_f1": 0.7762002399329309,
+      "errors": 672,
+      "brier": 0.13569335143946626,
+      "binary_log_loss": 0.4223541726690663,
+      "ece_10_equal_width": 0.04217687715516202,
+      "error_auroc": 0.8108620446725202,
+      "error_average_precision": 0.5156937573448963,
+      "error_prevalence": 0.21818181818181817,
+      "aurc": 0.08527575668489286,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "haiku_verifier.isotonic": {
+      "n": 3080,
+      "accuracy": 0.7818181818181819,
+      "accuracy_ci95": [
+        0.7668860335347166,
+        0.7960482233592393
+      ],
+      "macro_f1": 0.7762002399329309,
+      "errors": 672,
+      "brier": 0.1357392744693858,
+      "binary_log_loss": 0.42383706074265554,
+      "ece_10_equal_width": 0.036696650583038434,
+      "error_auroc": 0.8096350458788167,
+      "error_average_precision": 0.4955881332270324,
+      "error_prevalence": 0.21818181818181817,
+      "aurc": 0.0893273931096476,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "haiku_correctness.raw": {
+      "n": 3080,
+      "accuracy": 0.7818181818181819,
+      "accuracy_ci95": [
+        0.7668860335347166,
+        0.7960482233592393
+      ],
+      "macro_f1": 0.7762002399329309,
+      "errors": 672,
+      "brier": 0.06098812399056735,
+      "binary_log_loss": 0.21041381075381285,
+      "ece_10_equal_width": 0.03356159829106595,
+      "error_auroc": 0.9567265859832305,
+      "error_average_precision": 0.9000567694525367,
+      "error_prevalence": 0.21818181818181817,
+      "aurc": 0.03831577508482088,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "haiku_correctness.logistic_score": {
+      "n": 3080,
+      "accuracy": 0.7818181818181819,
+      "accuracy_ci95": [
+        0.7668860335347166,
+        0.7960482233592393
+      ],
+      "macro_f1": 0.7762002399329309,
+      "errors": 672,
+      "brier": 0.05948231275866772,
+      "binary_log_loss": 0.21140370990212728,
+      "ece_10_equal_width": 0.024870445363354168,
+      "error_auroc": 0.9567265859832305,
+      "error_average_precision": 0.9000567694525367,
+      "error_prevalence": 0.21818181818181817,
+      "aurc": 0.03831577508482088,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "haiku_correctness.logistic_logit": {
+      "n": 3080,
+      "accuracy": 0.7818181818181819,
+      "accuracy_ci95": [
+        0.7668860335347166,
+        0.7960482233592393
+      ],
+      "macro_f1": 0.7762002399329309,
+      "errors": 672,
+      "brier": 0.0600387177452583,
+      "binary_log_loss": 0.2064008413664515,
+      "ece_10_equal_width": 0.02276191111596808,
+      "error_auroc": 0.9567265859832305,
+      "error_average_precision": 0.9000567694525367,
+      "error_prevalence": 0.21818181818181817,
+      "aurc": 0.03831577508482088,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    },
+    "haiku_correctness.isotonic": {
+      "n": 3080,
+      "accuracy": 0.7818181818181819,
+      "accuracy_ci95": [
+        0.7668860335347166,
+        0.7960482233592393
+      ],
+      "macro_f1": 0.7762002399329309,
+      "errors": 672,
+      "brier": 0.05992123074033486,
+      "binary_log_loss": 0.22475006545033124,
+      "ece_10_equal_width": 0.019461357553806395,
+      "error_auroc": 0.9569224855639931,
+      "error_average_precision": 0.8837055392497336,
+      "error_prevalence": 0.21818181818181817,
+      "aurc": 0.04281405820773415,
+      "acceptance": {
+        "threshold": null,
+        "development_coverage": 0.0,
+        "development_risk": null,
+        "rule": "wilson",
+        "target_error": 0.01,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "risk": null,
+        "risk_ci95": null
+      }
+    }
+  },
+  "paired_comparisons": {
+    "haiku_correctness.raw_minus_native_brier": {
+      "difference": -0.07108025263280927,
+      "ci95": [
+        -0.07847645748464704,
+        -0.06368659815123234
+      ]
+    },
+    "haiku_correctness.logistic_score_minus_native_brier": {
+      "difference": -0.0725860638647089,
+      "ci95": [
+        -0.07993190489565713,
+        -0.06502399420237022
+      ]
+    },
+    "haiku_correctness.logistic_logit_minus_native_brier": {
+      "difference": -0.07202965887811832,
+      "ci95": [
+        -0.0794996112745525,
+        -0.06438826637314932
+      ]
+    },
+    "haiku_correctness.isotonic_minus_native_brier": {
+      "difference": -0.07214714588304176,
+      "ci95": [
+        -0.07974060173607671,
+        -0.06440533811745304
+      ]
+    }
+  },
+  "test_api_usd": 0.8642433500000001,
+  "unique_requests": 9240,
+  "cost_by_stream_usd": {
+    "haiku_same": 0.343881,
+    "haiku_verifier": 0.52517335,
+    "haiku_correctness": 0.8642433500000001
+  },
+  "pipelines": [
+    {
+      "id": "embedding_lr.raw",
+      "stream": "embedding_lr",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.9474025974025974,
+      "brier": 0.04777341614879932,
+      "error_auroc": 0.8989139356400037,
+      "coverage": 0.8711038961038962
+    },
+    {
+      "id": "embedding_lr.logistic_score",
+      "stream": "embedding_lr",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.9474025974025974,
+      "brier": 0.04026264875186673,
+      "error_auroc": 0.8989139356400037,
+      "coverage": 0.8711038961038962
+    },
+    {
+      "id": "embedding_lr.logistic_logit",
+      "stream": "embedding_lr",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.9474025974025974,
+      "brier": 0.040432657788612575,
+      "error_auroc": 0.8989139356400037,
+      "coverage": 0.8711038961038962
+    },
+    {
+      "id": "embedding_lr.isotonic",
+      "stream": "embedding_lr",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.9474025974025974,
+      "brier": 0.04168091083821148,
+      "error_auroc": 0.8813367857233518,
+      "coverage": 0.814935064935065
+    },
+    {
+      "id": "embedding_lr.temperature",
+      "stream": "embedding_lr",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.9474025974025974,
+      "brier": 0.03956943391538172,
+      "error_auroc": 0.903095093036834,
+      "coverage": 0.8814935064935064
+    },
+    {
+      "id": "embedding_mlp.raw",
+      "stream": "embedding_mlp",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.938961038961039,
+      "brier": 0.04336346619672119,
+      "error_auroc": 0.9094834245607839,
+      "coverage": 0.8535714285714285
+    },
+    {
+      "id": "embedding_mlp.logistic_score",
+      "stream": "embedding_mlp",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.938961038961039,
+      "brier": 0.0517947572841858,
+      "error_auroc": 0.9094834245607839,
+      "coverage": 0.8535714285714285
+    },
+    {
+      "id": "embedding_mlp.logistic_logit",
+      "stream": "embedding_mlp",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.938961038961039,
+      "brier": 0.04441800388583862,
+      "error_auroc": 0.9094834245607839,
+      "coverage": 0.8535714285714285
+    },
+    {
+      "id": "embedding_mlp.isotonic",
+      "stream": "embedding_mlp",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.938961038961039,
+      "brier": 0.04487244195125875,
+      "error_auroc": 0.8972615211441689,
+      "coverage": 0.7873376623376623
+    },
+    {
+      "id": "embedding_mlp.temperature",
+      "stream": "embedding_mlp",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.938961038961039,
+      "brier": 0.042593200996661994,
+      "error_auroc": 0.9098172508166328,
+      "coverage": 0.849025974025974
+    },
+    {
+      "id": "tfidf.raw",
+      "stream": "tfidf",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.8707792207792208,
+      "brier": 0.1483793815847179,
+      "error_auroc": 0.8641304958798467,
+      "coverage": 0.0
+    },
+    {
+      "id": "tfidf.logistic_score",
+      "stream": "tfidf",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.8707792207792208,
+      "brier": 0.08654473978454727,
+      "error_auroc": 0.8641304958798467,
+      "coverage": 0.0
+    },
+    {
+      "id": "tfidf.logistic_logit",
+      "stream": "tfidf",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.8707792207792208,
+      "brier": 0.08549925186454392,
+      "error_auroc": 0.8641304958798467,
+      "coverage": 0.0
+    },
+    {
+      "id": "tfidf.isotonic",
+      "stream": "tfidf",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.8707792207792208,
+      "brier": 0.08799276013369563,
+      "error_auroc": 0.8609804241191041,
+      "coverage": 0.0
+    },
+    {
+      "id": "tfidf.temperature",
+      "stream": "tfidf",
+      "api_usd_per_1000": 0,
+      "accuracy": 0.8707792207792208,
+      "brier": 0.07719075205886144,
+      "error_auroc": 0.8963778624666959,
+      "coverage": 0.0
+    },
+    {
+      "id": "decisions_confidence.raw",
+      "stream": "decisions_confidence",
+      "api_usd_per_1000": 0.06898237012987014,
+      "accuracy": 0.7646103896103896,
+      "brier": 0.13326344155844153,
+      "error_auroc": 0.8282606340142031,
+      "coverage": 0.0
+    },
+    {
+      "id": "decisions_confidence.logistic_score",
+      "stream": "decisions_confidence",
+      "api_usd_per_1000": 0.06898237012987014,
+      "accuracy": 0.7646103896103896,
+      "brier": 0.1342230548018303,
+      "error_auroc": 0.8282606340142031,
+      "coverage": 0.0
+    },
+    {
+      "id": "decisions_confidence.logistic_logit",
+      "stream": "decisions_confidence",
+      "api_usd_per_1000": 0.06898237012987014,
+      "accuracy": 0.7646103896103896,
+      "brier": 0.132012967061878,
+      "error_auroc": 0.8282606340142031,
+      "coverage": 0.0
+    },
+    {
+      "id": "decisions_confidence.isotonic",
+      "stream": "decisions_confidence",
+      "api_usd_per_1000": 0.06898237012987014,
+      "accuracy": 0.7646103896103896,
+      "brier": 0.1338344019183672,
+      "error_auroc": 0.8248882055787392,
+      "coverage": 0.0
+    },
+    {
+      "id": "decisions_probability.raw",
+      "stream": "decisions_probability",
+      "api_usd_per_1000": 0.06898237012987014,
+      "accuracy": 0.7646103896103896,
+      "brier": 0.13326435064935066,
+      "error_auroc": 0.8282606340142031,
+      "coverage": 0.0
+    },
+    {
+      "id": "decisions_probability.logistic_score",
+      "stream": "decisions_probability",
+      "api_usd_per_1000": 0.06898237012987014,
+      "accuracy": 0.7646103896103896,
+      "brier": 0.134190773624672,
+      "error_auroc": 0.8282606340142031,
+      "coverage": 0.0
+    },
+    {
+      "id": "decisions_probability.logistic_logit",
+      "stream": "decisions_probability",
+      "api_usd_per_1000": 0.06898237012987014,
+      "accuracy": 0.7646103896103896,
+      "brier": 0.13203430069921385,
+      "error_auroc": 0.8282606340142031,
+      "coverage": 0.0
+    },
+    {
+      "id": "decisions_probability.isotonic",
+      "stream": "decisions_probability",
+      "api_usd_per_1000": 0.06898237012987014,
+      "accuracy": 0.7646103896103896,
+      "brier": 0.1338344019183672,
+      "error_auroc": 0.8248882055787392,
+      "coverage": 0.0
+    },
+    {
+      "id": "decisions_probability.temperature",
+      "stream": "decisions_probability",
+      "api_usd_per_1000": 0.06898237012987014,
+      "accuracy": 0.7646103896103896,
+      "brier": 0.19125775223968608,
+      "error_auroc": 0.8144733875100666,
+      "coverage": 0.0
+    },
+    {
+      "id": "haiku_same.raw",
+      "stream": "haiku_same",
+      "api_usd_per_1000": 0.11164967532467532,
+      "accuracy": 0.7818181818181819,
+      "brier": 0.13206837662337662,
+      "error_auroc": 0.8230532401914253,
+      "coverage": 0.0
+    },
+    {
+      "id": "haiku_same.logistic_score",
+      "stream": "haiku_same",
+      "api_usd_per_1000": 0.11164967532467532,
+      "accuracy": 0.7818181818181819,
+      "brier": 0.13269013882907,
+      "error_auroc": 0.8230532401914253,
+      "coverage": 0.0
+    },
+    {
+      "id": "haiku_same.logistic_logit",
+      "stream": "haiku_same",
+      "api_usd_per_1000": 0.11164967532467532,
+      "accuracy": 0.7818181818181819,
+      "brier": 0.1312236093052257,
+      "error_auroc": 0.8230532401914253,
+      "coverage": 0.0
+    },
+    {
+      "id": "haiku_same.isotonic",
+      "stream": "haiku_same",
+      "api_usd_per_1000": 0.11164967532467532,
+      "accuracy": 0.7818181818181819,
+      "brier": 0.1309555562609915,
+      "error_auroc": 0.8231879597769342,
+      "coverage": 0.0
+    },
+    {
+      "id": "haiku_verifier.raw",
+      "stream": "haiku_verifier",
+      "api_usd_per_1000": 0.17051082792207792,
+      "accuracy": 0.7818181818181819,
+      "brier": 0.13805454545454546,
+      "error_auroc": 0.8108620446725202,
+      "coverage": 0.0
+    },
+    {
+      "id": "haiku_verifier.logistic_score",
+      "stream": "haiku_verifier",
+      "api_usd_per_1000": 0.17051082792207792,
+      "accuracy": 0.7818181818181819,
+      "brier": 0.13726928388388887,
+      "error_auroc": 0.8108620446725202,
+      "coverage": 0.0
+    },
+    {
+      "id": "haiku_verifier.logistic_logit",
+      "stream": "haiku_verifier",
+      "api_usd_per_1000": 0.17051082792207792,
+      "accuracy": 0.7818181818181819,
+      "brier": 0.13569335143946626,
+      "error_auroc": 0.8108620446725202,
+      "coverage": 0.0
+    },
+    {
+      "id": "haiku_verifier.isotonic",
+      "stream": "haiku_verifier",
+      "api_usd_per_1000": 0.17051082792207792,
+      "accuracy": 0.7818181818181819,
+      "brier": 0.1357392744693858,
+      "error_auroc": 0.8096350458788167,
+      "coverage": 0.0
+    },
+    {
+      "id": "haiku_correctness.raw",
+      "stream": "haiku_correctness",
+      "api_usd_per_1000": 0.28059849025974026,
+      "accuracy": 0.7818181818181819,
+      "brier": 0.06098812399056735,
+      "error_auroc": 0.9567265859832305,
+      "coverage": 0.0
+    },
+    {
+      "id": "haiku_correctness.logistic_score",
+      "stream": "haiku_correctness",
+      "api_usd_per_1000": 0.28059849025974026,
+      "accuracy": 0.7818181818181819,
+      "brier": 0.05948231275866772,
+      "error_auroc": 0.9567265859832305,
+      "coverage": 0.0
+    },
+    {
+      "id": "haiku_correctness.logistic_logit",
+      "stream": "haiku_correctness",
+      "api_usd_per_1000": 0.28059849025974026,
+      "accuracy": 0.7818181818181819,
+      "brier": 0.0600387177452583,
+      "error_auroc": 0.9567265859832305,
+      "coverage": 0.0
+    },
+    {
+      "id": "haiku_correctness.isotonic",
+      "stream": "haiku_correctness",
+      "api_usd_per_1000": 0.28059849025974026,
+      "accuracy": 0.7818181818181819,
+      "brier": 0.05992123074033486,
+      "error_auroc": 0.9569224855639931,
+      "coverage": 0.0
+    }
+  ],
+  "frontiers": {
+    "accuracy": [
+      "embedding_lr.raw",
+      "embedding_lr.logistic_score",
+      "embedding_lr.logistic_logit",
+      "embedding_lr.isotonic",
+      "embedding_lr.temperature"
+    ],
+    "brier": [
+      "embedding_lr.temperature"
+    ],
+    "error_auroc": [
+      "embedding_mlp.temperature",
+      "haiku_correctness.isotonic"
+    ],
+    "coverage": [
+      "embedding_lr.temperature"
+    ]
+  },
+  "source_sha256": {
+    "scripts/report_haiku_test.py": "00dd8df67762956dcc9504b2c22802f446d807dd660e0502b82e1dca8662e2d0",
+    "runs/final-evaluation/frozen-plan.json": "98bce8631ee82c0e96d1ce6c1393526c26588fb0a600a3afd0e3e6eb3de24028",
+    "reports/banking77-findings/final-evidence.json": "ed791573df9036c813c78819f704b42911a47843af4b69416bdf386008a19f37",
+    "runs/final-evaluation/haiku/batch_status.json": "c56f8f4a04fa27fcfddf5dd3bf321e4bbcbc9ca220d821849e519ad8bc1b8fed",
+    "runs/final-evaluation/haiku/llm_test.csv": "b7f5967fa4ccf72ee79629fdfff23b23540aad41e7355205af1bde2318cee7ce",
+    "runs/final-evaluation/haiku/haiku_same.raw.predictions.csv": "2755dc27b07e6ef2a13190e3a661130a6f08d1c35bb1d3a5181a95294b937c71",
+    "runs/final-evaluation/haiku/haiku_same.raw.reliability.csv": "963f55b593047ae21dde809333a263cea4f84c146d0d1d6681872ac5eab5d883",
+    "runs/final-evaluation/haiku/haiku_same.raw.risk_coverage.csv": "a9635d8b3491e7c875048916949be6b321527abe33fcadfec9fa7af2e948db51",
+    "runs/final-evaluation/haiku/haiku_same.logistic_score.predictions.csv": "b9ab3fabbe167b5006315ff0cd1f99ef17d08094a198a25a58453e36e8bcd546",
+    "runs/final-evaluation/haiku/haiku_same.logistic_score.reliability.csv": "9fce142e5dd0ab05b272995f9c345ce807f508063cdeffa1b195794aede265f8",
+    "runs/final-evaluation/haiku/haiku_same.logistic_score.risk_coverage.csv": "16fb32f6a5cf20ebbc27e19fab1df19a45307a7584ed4adbeb2937cb9f9b9f53",
+    "runs/final-evaluation/haiku/haiku_same.logistic_logit.predictions.csv": "6ee619bf4aff59c4d6c3e90ff1425e75991ca6f9bc98d51981a6396c07c27759",
+    "runs/final-evaluation/haiku/haiku_same.logistic_logit.reliability.csv": "55645f983991567bada33289eae7f9ec3008792563cf13e6bee66e8089ec6b67",
+    "runs/final-evaluation/haiku/haiku_same.logistic_logit.risk_coverage.csv": "3be78b7268f0a4507091ff7306799a19bd8e789ec3c8eb16ff35ae10b04d56f5",
+    "runs/final-evaluation/haiku/haiku_same.isotonic.predictions.csv": "22a7b9f2ad61a4051bcb2f302063053efcc81e0068af053f2b5f7e6b911d809e",
+    "runs/final-evaluation/haiku/haiku_same.isotonic.reliability.csv": "a47abbf0b5a6cf42f9380ee8c74b86617461f5cc04415b682476b5190c6b17fe",
+    "runs/final-evaluation/haiku/haiku_same.isotonic.risk_coverage.csv": "91a9ee7057ac53bfad367e62c1c0684176697ad1d2dd19c41e4ed1707a32bf00",
+    "runs/final-evaluation/haiku/haiku_verifier.raw.predictions.csv": "9194cf071cc25f373a41d69248fdaa735fc432c7d9ca3be270fb2aca03794bc1",
+    "runs/final-evaluation/haiku/haiku_verifier.raw.reliability.csv": "e478b656b67b02d5e9f974137ff6092772b487cea4fbbf1f416d6af955d8280e",
+    "runs/final-evaluation/haiku/haiku_verifier.raw.risk_coverage.csv": "1eafb25744040427a024f4a2b72eb8372a90dc92d177ef739c2b973db9e61fde",
+    "runs/final-evaluation/haiku/haiku_verifier.logistic_score.predictions.csv": "3e20b6bf8df39ba83ab24a836ab6e963ddf000a2fdb6ad85e0bcb0093bab16cb",
+    "runs/final-evaluation/haiku/haiku_verifier.logistic_score.reliability.csv": "6bdef35541dbd316eee7556c060463f1f416ab293e01bb781a78b90bb2a367bc",
+    "runs/final-evaluation/haiku/haiku_verifier.logistic_score.risk_coverage.csv": "7979c693ec077db06861fe24e657a2c122fc3c6b16b6e678fc273834ce7eaa08",
+    "runs/final-evaluation/haiku/haiku_verifier.logistic_logit.predictions.csv": "a645e8c8eb68d73bb605ec49c504fd144154707610676e51347ad42485e333b2",
+    "runs/final-evaluation/haiku/haiku_verifier.logistic_logit.reliability.csv": "99dfdc2f324bd34408ac04de211b32330e986447c9d8c789665102cc3f65dd6e",
+    "runs/final-evaluation/haiku/haiku_verifier.logistic_logit.risk_coverage.csv": "e4678f0e31ad0a63eecf34015216bf188695ceab6c9649ba67bec2f899968b26",
+    "runs/final-evaluation/haiku/haiku_verifier.isotonic.predictions.csv": "e110337a2ae77c63227d34fba2e1384c5f4442301485fe157ea99ace1f375667",
+    "runs/final-evaluation/haiku/haiku_verifier.isotonic.reliability.csv": "8826675310da2e88437d4d85b754109db48776c87781a1fb7e426115fc500c70",
+    "runs/final-evaluation/haiku/haiku_verifier.isotonic.risk_coverage.csv": "903b5f94136f6b5f435b651721810913d7948e8f42ce0a41eb2657f8ad7f524d",
+    "runs/final-evaluation/haiku/haiku_correctness.raw.predictions.csv": "03c8300b9b8c096a5c5dff23cdc319854399dc43e154f2ed2cd2fc0fad733308",
+    "runs/final-evaluation/haiku/haiku_correctness.raw.reliability.csv": "974fd6d111b9d2f7e640dac4709208b0eba0e7c138b8249a563cf554d9e01ffe",
+    "runs/final-evaluation/haiku/haiku_correctness.raw.risk_coverage.csv": "845984a2583d967d1c64f51d4cab02b7dd81e85ff36f217b822ea4fe1e6a02b8",
+    "runs/final-evaluation/haiku/haiku_correctness.logistic_score.predictions.csv": "c5e1b36996cbbded2cafe5cb468c103de6fe246e3f18718f78861e03db1cfa79",
+    "runs/final-evaluation/haiku/haiku_correctness.logistic_score.reliability.csv": "bd8f7becae647662a74db7bdf9db62b8ac136ad157000eb03eb20b45b4575a23",
+    "runs/final-evaluation/haiku/haiku_correctness.logistic_score.risk_coverage.csv": "155d3bb2009eddf7fb28aef202936f5693cece4e065f94aaf1bfea7688f86d91",
+    "runs/final-evaluation/haiku/haiku_correctness.logistic_logit.predictions.csv": "6287d0536ef522094a65384a03262a47bbdd909a2eca37c32c0354962923d7da",
+    "runs/final-evaluation/haiku/haiku_correctness.logistic_logit.reliability.csv": "222524e633ba8cd5daea7176ee7cfb53c2d958710aea4a4a687535b26ad1abab",
+    "runs/final-evaluation/haiku/haiku_correctness.logistic_logit.risk_coverage.csv": "3169a88892a07756ef9301d5e7ba56d22d32ce94ccff199283c289ee8cfda184",
+    "runs/final-evaluation/haiku/haiku_correctness.isotonic.predictions.csv": "fdeda25ccabe0e40d4d46397b0698d81988d5a160c5e9dc9c798a9d617bcd0df",
+    "runs/final-evaluation/haiku/haiku_correctness.isotonic.reliability.csv": "613f89d3d92fe9b0d978366816f195c11b5749e2ccc4605ab7111ff81a5b6710",
+    "runs/final-evaluation/haiku/haiku_correctness.isotonic.risk_coverage.csv": "f8c2a017c67f92e4052915e54e9733330a44313e17cc5ed1b74025bc979ce2c2",
+    "runs/final-evaluation/haiku/metrics.json": "d58623a237b8ac3360add35e0ce2f71a95c18758d9a5b00cb03c7d8bf6a25ee4",
+    "runs/final-evaluation/haiku/metadata.json": "e177c49ac404eac0dc23ea70fec6bd4934b38a19b62119497c42584376e5dd62",
+    "runs/final-evaluation/haiku/complete.json": "172f4fced12d4c5b60d7654ac74d6378dbd717b6d204af55e21d1b1f0436a92a"
+  },
+  "report_sha256": "f7b8b1fb05cae18a8a43110d47aa6652ba538a47b59ce8e3c7e36dd17701d74e",
+  "thresholds_refitted": false
+}

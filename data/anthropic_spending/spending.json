@@ -1,11 +1,7 @@
 {
-  "usd": 1.3452995999999997,
-  "calls": 13995,
-  "reservations": {
-    "batch:94109c28965bd8084afda6cfdd4f2e3dfc10379f86a48c38fd992470d6975435": 0.9769547000000001,
-    "batch:8e4a88d7a6823b0e2f281935c2e20127b3906a390576c34e78c3e21a9486b782": 0.9764363,
-    "batch:f723eb30c298bc35d039d4a4f3af60ae4dc166ca4ab8a16e9b0142f3b5453143": 0.0779962
-  },
+  "usd": 1.9876215000000006,
+  "calls": 21235,
+  "reservations": {},
   "accounted_batches": {
     "msgbatch_01VL9GLKf1hVnwDuXAr7LYh3": {
       "usd": 0.22200420000000018,
@@ -34,6 +30,26 @@
     "msgbatch_01K3ntuBBbVhx2ERgg8zf1EX": {
       "usd": 0.22192144999999988,
       "successful_requests": 2000
+    },
+    "msgbatch_01SzgBuqNo5iCAmDXVcehq5e": {
+      "usd": 0.22197120000000017,
+      "successful_requests": 2000
+    },
+    "msgbatch_01BoQpwB1twS5VihX47woFLo": {
+      "usd": 0.22140880000000046,
+      "successful_requests": 2000
+    },
+    "msgbatch_019VRfm7hYZKnDdRcQbWsVER": {
+      "usd": 0.017649550000000003,
+      "successful_requests": 160
+    },
+    "msgbatch_01PNNVm7MtG6ks5QHfxaCebj": {
+      "usd": 0.1178041000000001,
+      "successful_requests": 2000
+    },
+    "msgbatch_01M9S7GjJoSqCUK8HwKACFs4": {
+      "usd": 0.06348825,
+      "successful_requests": 1080
     }
   }
 }

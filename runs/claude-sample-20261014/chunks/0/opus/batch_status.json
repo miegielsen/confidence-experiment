@@ -1,0 +1,20 @@
+{
+  "phase": "sample_classification_and_blind",
+  "batches": [
+    {
+      "id": "msgbatch_01DFTo4GJxKkQ52avwsy5ZvN",
+      "state": "in_progress",
+      "counts": {
+        "canceled": 0,
+        "errored": 0,
+        "expired": 0,
+        "processing": 176,
+        "succeeded": 0
+      }
+    }
+  ],
+  "pending_batches": 1,
+  "spent_usd": 0.0,
+  "reserved_usd": 8.313248,
+  "updated_utc": "2026-10-14T20:55:48.032902+00:00"
+}

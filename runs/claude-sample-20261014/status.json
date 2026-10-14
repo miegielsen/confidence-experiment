@@ -1,0 +1,13 @@
+{
+  "state": "running",
+  "completed_messages_per_model": 0,
+  "target_messages_per_model": 616,
+  "current_chunk": {
+    "start": 0,
+    "end": 88,
+    "state": "running",
+    "worst_case_usd": 11.97606
+  },
+  "spent_usd": 0.0,
+  "updated_utc": "2026-10-14T20:47:01.852558+00:00"
+}

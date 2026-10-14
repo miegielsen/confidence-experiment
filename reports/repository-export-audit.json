@@ -1,8 +1,8 @@
 {
   "scope": "staged files, excluding this generated audit report",
-  "staged_file_count": 55028,
-  "staged_bytes": 598029916,
-  "text_files_scanned": 54959,
+  "staged_file_count": 55014,
+  "staged_bytes": 567711578,
+  "text_files_scanned": 54945,
   "checks": [
     "provider_api_key",
     "huggingface_token",
@@ -24,7 +24,7 @@
     },
     "README.md": {
       "files": 1,
-      "bytes": 27374
+      "bytes": 26173
     },
     "REPOSITORY_CONTENTS.md": {
       "files": 1,
@@ -35,8 +35,8 @@
       "bytes": 6231
     },
     "data": {
-      "files": 54249,
-      "bytes": 501611654
+      "files": 54242,
+      "bytes": 471307427
     },
     "experiment.md": {
       "files": 1,
@@ -59,12 +59,12 @@
       "bytes": 1159
     },
     "runs": {
-      "files": 388,
-      "bytes": 68105909
+      "files": 382,
+      "bytes": 68104242
     },
     "scripts": {
-      "files": 37,
-      "bytes": 338810
+      "files": 36,
+      "bytes": 327567
     },
     "src": {
       "files": 10,

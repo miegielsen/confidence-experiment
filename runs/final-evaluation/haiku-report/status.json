@@ -1,3 +1,5 @@
 {
-  "state": "waiting_for_batches"
+  "state": "complete",
+  "report": "H:\\Mijn Drive\\Projects\\confidence-experiment\\reports\\haiku-test\\report.md",
+  "updated_utc": "2026-10-13T20:27:19.511695+00:00"
 }

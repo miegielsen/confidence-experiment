@@ -1,0 +1,13 @@
+{
+  "usd": 0.3896090000000001,
+  "calls": 176,
+  "reservations": {
+    "batch:d10cd8ecbae6d0d01a599e048823f1ca865f5a5c808f41c19ce5e3355a8931c3": 6.592768
+  },
+  "accounted_batches": {
+    "msgbatch_01BGQ1vNvshFAXEL3QsFfCqE": {
+      "usd": 0.3896090000000001,
+      "successful_requests": 176
+    }
+  }
+}

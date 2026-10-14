@@ -1,7 +1,7 @@
 {
   "fingerprint": "f723eb30c298bc35d039d4a4f3af60ae4dc166ca4ab8a16e9b0142f3b5453143",
   "batch_id": "msgbatch_019VRfm7hYZKnDdRcQbWsVER",
-  "state": "in_progress",
+  "state": "imported",
   "reserved_usd": 0.0779962,
   "keys": [
     "83f93b350d0502bf44c508c6f9d925de3b9b0ace27741c81ebcec7ca11272949",
@@ -327,5 +327,7 @@
     "4b8566387f49ff6ddd76e366790a6d1eeeff85fd55df01bad1f478c8de39fb33": false,
     "7af3cbb1b7703c7b7db8b07c2be6a53733902f153903b609e18f61703d3d6cea": false
   },
-  "created_utc": "2026-10-13T20:11:41.277612+00:00"
+  "created_utc": "2026-10-13T20:11:41.277612+00:00",
+  "usd": 0.017649550000000003,
+  "errors": []
 }

@@ -1,5 +1,5 @@
 {
-  "state": "running",
+  "state": "complete",
   "arm": "haiku",
   "test_examples": 3080,
   "variants": 12,
@@ -11,5 +11,7 @@
   "fits_or_thresholds_changed": false,
   "plan_sha256": "9ab1b813dba3d60d9b44c970ee0a2e21aed634c64cdfa5cda879933a3c56921e",
   "report": "reports/haiku-test/report.md",
-  "updated_utc": "2026-10-13T20:14:22.973174+00:00"
+  "updated_utc": "2026-10-13T20:14:22.973174+00:00",
+  "completed_utc": "2026-10-13T20:27:19.541735+00:00",
+  "test_api_usd": 0.8642433500000001
 }

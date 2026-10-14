@@ -1,5 +1,4 @@
 {
-  "state": "running",
-  "started_utc": "2026-10-13T20:10:31.393987+00:00",
-  "pid": 14320
+  "state": "complete",
+  "completed_utc": "2026-10-13T20:27:03.888274+00:00"
 }

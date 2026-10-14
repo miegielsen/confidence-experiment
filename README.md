@@ -56,6 +56,29 @@ status is under `runs/final-evaluation/haiku-report/status.json`. The existing m
 report and ChatGPT Page remain separately versioned and are not rewritten by
 this supplemental runner.
 
+The matched Sonnet/Opus sample uses `scripts/run_claude_sample.py`. Its separate
+sealed plan selects eight random test messages per intent (616 per model) with
+seed 20261014 and a shared $12 limit for new API calls. It inherits every fitted
+object, prompt and development threshold from the original final plan. Work is
+submitted in matched blocks whose worst-case reservations fit the remaining
+budget; the sample can stop early if usage exhausts that limit. The two models
+share a serialized spending ledger, while their batch jobs are isolated from
+the previously prepared full-test jobs. No Sonnet/Opus full-test completion
+markers are written.
+
+```powershell
+. ./scripts/load-anthropic-key.ps1
+& "$env:LOCALAPPDATA/confidence-experiment/venv/Scripts/python.exe" scripts/run_claude_sample.py freeze
+& "$env:LOCALAPPDATA/confidence-experiment/venv/Scripts/python.exe" scripts/run_claude_sample.py run
+```
+
+Status, accepted batch IDs, the selected sample and spending are saved under
+`runs/claude-sample-20261014/`. After inference, the same worker generates
+`reports/claude-sample-test/report.md` and `.html`, per-example outputs, paired
+intervals, and cost/Pareto results for all 60 variants on the same selected IDs.
+Local, OpenAI and Haiku results are reused. To repeat reporting without paid
+requests, use `python scripts/run_claude_sample.py report`.
+
 This GitHub archive includes data, API response caches, results, and reports, but
 excludes model objects and credentials. See [repository contents and reproduction
 limits](REPOSITORY_CONTENTS.md). Before pushing additional files, stage them and
